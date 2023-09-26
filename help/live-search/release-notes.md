@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] Note sulla versione'
+title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _14 marzo 2023_
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di trascinare e rilasciare per creare eventi pin
 ![Nuovo](../assets/new.svg) Nuove azioni pin: * Pin to spot - Pulsante Pin per creare l’evento pin con un clic * Pin to top - Posiziona il prodotto in prima posizione * Pin to bottom - Posiziona il prodotto nella parte inferiore dei risultati * Sblocca un evento con un clic
 ![Nuovo](../assets/new.svg) [Classificazione intelligente per le regole](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta l’inventario multisorsa (MSI). Per utilizzare MSI, è necessario [installare](install.md#update) il `commerce-data-export` Modulo 102.2.0+. Verifica la versione utilizzando il seguente comando: `composer update magento/live-search --with-dependencies`.
 
 ### Aggiornamenti
 
