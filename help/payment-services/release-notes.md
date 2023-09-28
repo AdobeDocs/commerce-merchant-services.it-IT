@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.2.1
+
+_27 settembre 2023_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4870 --> È stato risolto un problema che popolava erroneamente il nuovo attributo di intestazione in Storefront durante l&#39;invio della versione dell&#39;estensione con la versione più recente. In precedenza, con `1.3.0` del connettore Commerce Services, non è stato possibile estendere il `User-Agent header` dall’estensione Payment Services.
 
 ## v2.2.0
 
