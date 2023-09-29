@@ -3,9 +3,9 @@ title: "Pagina cassa"
 description: "Panoramica della pagina di pagamento in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: f40a1b9d2bd2f5247bf219e6de73d00052d18bdc
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,15 @@ Per ulteriori informazioni sulla pagina di pagamento standard di Adobe Commerce,
 
 L’estrazione è costituita da due passaggi predefiniti:
 
+>[!NOTE]
+>
+> [!BADGE 2.4.6-p1]{type=Informative tooltip="Variazione in 2,4,6-p1"}[!BADGE 2.4.7-beta1]{type=Informative tooltip="Variazione in 2.4.7-beta1"}[!UICONTROL Enable Guest Checkout Login] nella configurazione dell&#39;archivio è impostato su `Yes`. Tuttavia, questa impostazione può esporre le informazioni del cliente a utenti non autenticati.
+
 - Informazioni spedizione
 - Verifica e informazioni sul pagamento
 
 >[!NOTE]
 >
-> Al termine del primo passaggio, vengono visualizzati i totali di pagamento e le informazioni sulla barra laterale corrispondenti.
+Al termine del primo passaggio, vengono visualizzati i totali di pagamento e le informazioni sulla barra laterale corrispondenti.
 
 Consulta la sezione [flusso di pagamento](../quick-checkout/checkout-flow.md) per ulteriori informazioni su [!DNL Quick Checkout] flusso.
