@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: ee5749025860a31ac1b4433d0b497f27342f803d
+source-git-commit: 8a290ae260e50b19bab517280b78ee95c9e7668b
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Di seguito sono riportate le modifiche recenti apportate alla documentazione:
 
 | Servizio | Cambia | Tipo |
 | -- | -- | -- |
-| [**Connettore Experience Platform**](../experience-platform-connector/overview.md) | Sono stati aggiunti contenuti su come [integrare](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/mobile-sdk-epc.html) l’SDK di Adobe Experience Platform Mobile con la tua app Commerce. | Nuovo argomento |
-| [**Servizi di pagamento**](../payment-services/guide-overview.md) | È stato aggiunto un nuovo argomento sul nuovo [Protezione contro le frodi significative](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html#security-compliance) funzionalità. | Nuovo argomento |
-| [**Servizi di pagamento**](../payment-services/guide-overview.md) | Aggiornato [Legacy](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure) e [Impostazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=en#apple-pay) argomenti che riflettono la suddivisione di Apple Pay dai pulsanti Smart di PayPal. | Aggiornamento principale |
+| [**Live Search**](../live-search/guide-overview.md) | È stata aggiunta la Live Search [Merchandising categorie](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/category-merch.html) argomento. | Nuovo argomento |
 
 Questa tabella viene aggiornata il primo lunedì di ogni mese.
