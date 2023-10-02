@@ -2,9 +2,9 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
 
    - Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
 
-   In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di fattibilità. Un tipo di consiglio è considerato pronto per la distribuzione quando il suo valore di fattibilità è pari o superiore al 75%. Un tipo di consiglio è considerato parzialmente pronto quando la sua prontezza è almeno del 50%. Infine, un tipo di consiglio viene considerato non pronto per la distribuzione quando il suo valore di fattibilità è inferiore al 50%.
+   In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di fattibilità. Un tipo di consiglio è considerato pronto per la distribuzione quando il suo valore di fattibilità è pari o superiore al 75%. Un tipo di consiglio è considerato parzialmente pronto quando la sua prontezza è almeno del 50%. Un tipo di consiglio è considerato non pronto per la distribuzione quando il suo valore di fattibilità è inferiore al 50%.
+
+   >[!NOTE]
+   >
+   >L’indicatore non può mai raggiungere il 100%.
 
    ![Tipo di consiglio](assets/create-recommendation-select-type.png)
    _Tipo di consiglio_
