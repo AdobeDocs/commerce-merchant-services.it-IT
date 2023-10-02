@@ -1,20 +1,21 @@
 ---
 title: Sincronizzazione catalogo
-description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services] su base continuativa per mantenere aggiornati i servizi.
+description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
+source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
 
+
 # Sincronizzazione catalogo
 
-Adobe Commerce e Magento Open Source utilizzano gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
+Adobe Commerce utilizza gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
 
-Il processo di sincronizzazione del catalogo viene eseguito ogni ora per consentire [!DNL Commerce] servizi per utilizzare i dati del catalogo. La sincronizzazione del catalogo esporta i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce] servizi su base continuativa per mantenere aggiornati i servizi. Ad esempio: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) necessita delle informazioni aggiornate sul catalogo per restituire in modo accurato i consigli con nomi, prezzi e disponibilità corretti. È possibile utilizzare _Sincronizzazione catalogo_ dashboard per osservare e gestire il processo di sincronizzazione o [interfaccia della riga di comando](#resynccmdline) per attivare la sincronizzazione del catalogo e reindicizzare i dati di prodotto per l&#39;utilizzo da parte di [!DNL Commerce] servizi.
+Il servizio di sincronizzazione catalogo sposta i dati del prodotto da un [!DNL Adobe Commerce] istanza al [!DNL Commerce Services] su base continuativa per mantenere i dati aggiornati. Ad esempio: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) richiede informazioni sul catalogo correnti per restituire in modo accurato i consigli con nomi, prezzi e disponibilità corretti. Utilizza il _Sincronizzazione catalogo_ dashboard per osservare e gestire il processo di sincronizzazione o [interfaccia della riga di comando](#resynccmdline) per attivare la sincronizzazione di un catalogo e reindicizzare i dati di prodotto per l&#39;utilizzo da parte di [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -31,9 +32,9 @@ Per accedere al dashboard Sincronizzazione catalogo, seleziona **Sistema** > _Tr
 Con il **Sincronizzazione catalogo** dashboard è possibile:
 
 - Visualizza stato di sincronizzazione (**In corso**, **Completato**, **Non riuscito**)
-- Visualizza il numero totale di prodotti sincronizzati, in caso di esito positivo
+- Visualizza il numero totale di prodotti sincronizzati
 - Cerca i prodotti sincronizzati per visualizzarne lo stato corrente
-- Cerca nel catalogo del negozio per nome, SKU e così via
+- Cerca nel catalogo del negozio per nome, SKU, ecc
 - Visualizza i dettagli del prodotto sincronizzato in JSON per diagnosticare una discrepanza di sincronizzazione
 - Riavvia il processo di sincronizzazione
 
@@ -45,17 +46,15 @@ Segnala uno stato di sincronizzazione di:
 - **Non riuscito** - Visualizza la data e l&#39;ora del tentativo di sincronizzazione
 - **In corso** - Visualizza la data e l&#39;ora dell&#39;ultima sincronizzazione riuscita
 
->[!NOTE]
->
-> Il processo di sincronizzazione del catalogo viene eseguito automaticamente ogni ora. Tuttavia, se non vedi i prodotti nella vetrina o se i prodotti non riflettono le modifiche recenti apportate, puoi risolvere [problemi di sincronizzazione catalogo](#resolvesync).
+Il processo di sincronizzazione del catalogo viene eseguito automaticamente ogni ora. Se non vedi i prodotti previsti nella vetrina o se i prodotti non riflettono le modifiche recenti apportate, puoi risolvere [problemi di sincronizzazione catalogo](#resolvesync).
 
 ### Prodotti sincronizzati
 
-Visualizza il numero totale di prodotti sincronizzati dal [!DNL Commerce] catalogo. Dopo la sincronizzazione iniziale, è possibile che vengano sincronizzati solo i prodotti modificati.
+Visualizza il numero totale di prodotti sincronizzati dal [!DNL Commerce] catalogo. Dopo la sincronizzazione iniziale, solo i prodotti modificati devono essere sincronizzati.
 
 ## Risincronizza {#resync}
 
-Se è necessario avviare una risincronizzazione del catalogo prima che venga eseguita la sincronizzazione oraria pianificata, è possibile forzare una risincronizzazione.
+Se è necessario avviare la risincronizzazione del catalogo prima che venga eseguita la sincronizzazione pianificata su base oraria, è possibile forzare la risincronizzazione.
 
 >[!NOTE]
 >
@@ -78,7 +77,7 @@ Il **Prodotti catalogo sincronizzati** nella tabella vengono visualizzate le inf
 |---|---|
 | ID | Identificatore univoco del prodotto |
 | Nome | Nome vetrina del prodotto |
-| Tipo | Identifica il tipo di prodotto, ad esempio semplice, configurabile, scaricabile e così via |
+| Tipo | Identifica il tipo di prodotto, ad esempio semplice, configurabile o scaricabile |
 | Ultima esportazione | Data dell’ultima esportazione del prodotto dal catalogo |
 | Ultima modifica | Data dell’ultima modifica del prodotto nel catalogo |
 | SKU | Visualizza l&#39;unità di gestione delle scorte per il prodotto |
@@ -87,7 +86,7 @@ Il **Prodotti catalogo sincronizzati** nella tabella vengono visualizzate le inf
 
 ## Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
-Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può richiedere fino a un’ora e può essere incluso nei componenti dell’interfaccia utente, ad esempio le unità per i consigli. Tuttavia, se dopo un’ora di attesa noti ancora delle discrepanze tra il catalogo e ciò che appare sulla vetrina, o se la sincronizzazione del catalogo non è riuscita, consulta quanto segue:
+Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati potrebbe richiedere fino a un’ora e potrebbe essere incluso nei componenti dell’interfaccia utente, ad esempio le unità per i consigli. Se riscontri ancora delle discrepanze tra il catalogo e i dati nella vetrina, o se la sincronizzazione del catalogo non è riuscita, fai riferimento a quanto segue:
 
 ### Discrepanza dei dati
 
@@ -98,7 +97,7 @@ Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può r
 
 ### Sincronizzazione non in esecuzione
 
-Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) articolo.
 
 ### Sincronizzazione non riuscita
 
@@ -106,16 +105,16 @@ Se lo stato della sincronizzazione del catalogo è **Non riuscito**, invia una [
 
 ## Interfaccia della riga di comando {#resynccmdline}
 
-Il `saas:resync` il comando fa parte del `magento/saas-export` pacchetto. È possibile installare questo pacchetto utilizzando uno dei [!DNL Commerce Services] prodotti, come [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) o [[!DNL Live Search]](/help/live-search/install.md).
+Il `saas:resync` il comando fa parte del `magento/saas-export` ed è disponibile con una delle opzioni [!DNL Commerce Services] prodotti, come [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) o [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
-> Quando si esegue una sincronizzazione dati per la prima volta, è importante eseguire `productattributes` primo feed, seguito da `productoverrides`, prima di eseguire `products` feed.
+> Quando si esegue una sincronizzazione dati per la prima volta, eseguire `productattributes` primo feed, seguito da `productoverrides`, prima di eseguire `products` feed.
 
 Opzioni comando:
 
 ```bash
-bin/magento saas:resync --feed <feed name> [no-reindex]
+bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
 ```
 
 La tabella seguente descrive `saas:resync` parametri e descrizioni.
@@ -124,51 +123,86 @@ La tabella seguente descrive `saas:resync` parametri e descrizioni.
 |---| ---| ---|
 | `feed` | Specifica l&#39;entità da risincronizzare, ad esempio `products` | Sì |
 | `no-reindex` | Invia nuovamente i dati del catalogo esistenti a [!DNL Commerce Services] senza reindicizzazione. Se questo parametro non è specificato, il comando esegue una reindicizzazione completa prima di sincronizzare i dati. | No |
+| `cleanup-feed` | Pulire la tabella dell&#39;indicizzatore del feed prima di una sincronizzazione. | No |
 
 Il nome del feed può essere uno dei seguenti:
 
-- `categories`— Categorie nel catalogo
-- `categoryPermissions` - Autorizzazioni per ciascuna categoria
 - `products`— Prodotti nel catalogo
 - `productattributes`— Attributi del prodotto come `activity`, `gender`, `tops`, `bottoms`, e così via
-- `productoverrides`regole specifiche per il cliente per la visibilità dei prezzi e dei cataloghi, ad esempio quelle basate sulle autorizzazioni per le categorie
 - `variants`— varianti di prodotto di un prodotto configurabile, ad esempio colore e dimensioni
+- `prices` — Prezzi dei prodotti
+- `scopesCustomerGroup` — Gruppi di clienti
+- `scopesWebsite` — Siti Web con visualizzazioni dello store
+- `categories`— Categorie nel catalogo
+- `categoryPermissions` - Autorizzazioni per ciascuna categoria
+- `productoverrides`regole specifiche per il cliente per la visibilità dei prezzi e dei cataloghi, ad esempio quelle basate sulle autorizzazioni per le categorie
 
-Quando si attiva la risincronizzazione dei dati dalla riga di comando, l&#39;aggiornamento dei dati potrebbe richiedere fino a un&#39;ora.
+A seconda di quale [Servizi Commerce](../landing/saas.md) , potrebbero essere disponibili diversi tipi di feed per `saas:resync` comando.
 
-### Sincronizzazione dell’indicizzazione dei prezzi SaaS
+Non è consigliabile eseguire il comando `saas:resync` comando su base regolare. Potrebbe essere necessario eseguire manualmente il comando in due scenari:
 
-Se sta usando [Indicizzazione dei prezzi SaaS](../price-index/index.md) e deve essere risincronizzato, esegui il seguente comando:
+- Sincronizzazione iniziale
+- Il [ID spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) è stato modificato
 
-```bash
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-```
+### Sincronizzazione iniziale
 
-### Sincronizzazione del servizio catalogo
+Quando si attiva una `saas:resync` dalla riga di comando, a seconda delle dimensioni del catalogo, l&#39;aggiornamento dei dati potrebbe richiedere da alcuni minuti a alcune ore.
 
-Per eseguire una risincronizzazione per Catalog Service, è importante eseguire i comandi in questo ordine:
+Per la sincronizzazione iniziale, si consiglia di eseguire i comandi nel seguente ordine:
 
 ```bash
 bin/magento saas:resync --feed productattributes
 bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
 bin/magento saas:resync --feed productoverrides
 bin/magento saas:resync --feed variants
 bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions 
 ```
 
-### Esempi
+### Risoluzione dei problemi
 
-L’esempio seguente reindicizza i dati di prodotto dalla sezione [!DNL Commerce] e lo risincronizza con Commerce Services:
+Se non trovi i dati previsti in [!DNL Commerce Service], verifica se si è verificato un problema durante la sincronizzazione da [!DNL Adobe Commerce] istanza al [!DNL Commerce Service] piattaforma.
+
+Ci sono 2 file di registro nel `var/log/` directory:
+
+- `commerce-data-export-errors.log` - in caso di errore durante _raccolta_ fase
+- `saas-export-errors.log` - in caso di errore durante _trasmissione_ fase
+
+#### Verifica payload del feed
+
+Può essere utile visualizzare il payload del feed inviato al [!DNL Commerce Service]. Questo può essere fatto passando la variabile di ambiente `EXPORTER_EXTENDED_LOG=1`. Il `no-reindex` Il flag indica che vengono inviati solo i dati attualmente raccolti.
 
 ```bash
-bin/magento saas:resync --feed products
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
 ```
 
-Se non desideri eseguire una reindicizzazione completa dei prodotti, puoi invece sincronizzare i dati del prodotto già generati:
+Il payload è disponibile in `var/log/saas-export.log`.
+
+#### Mantieni payload nella tabella dell’indice del feed
+
+A partire da `magento/module-data-exporter:103.0.0` alcuni feed: feed di prodotto, feed di prezzo, mantengono solo i dati minimi richiesti nella tabella dell’indice.
+
+In produzione, non è consigliabile mantenere i dati di payload nella tabella di indice, ma questo può essere utile in un’istanza di sviluppo. Questo viene fatto passando il `PERSIST_EXPORTED_FEED=1` variabile di ambiente:
 
 ```bash
-bin/magento saas:resync --feed products --no-reindex
+PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
+
+#### Profilatura
+
+Se il processo di reindicizzazione di un feed specifico richiede un tempo eccessivo, esegui il profiler per raccogliere dati aggiuntivi che potrebbero essere utili per il team di supporto. Per farlo, trasmettere il `EXPORTER_PROFILER=1`variabile di ambiente:
+
+```bash
+EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
+```
+
+I dati del profiler vengono memorizzati in `var/log/commerce-data-export.log` con il formato:
+
+`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
+
+#### Inviare una richiesta di supporto
+
+Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia una [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) con quante più informazioni possibili.

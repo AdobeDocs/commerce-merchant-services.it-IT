@@ -1,20 +1,21 @@
 ---
-title: Installazione dell'indicizzazione dei prezzi SaaS
-description: Installazione dell'indicizzazione dei prezzi SaaS
+title: Installazione manuale dell'indicizzazione dei prezzi SaaS
+description: Installazione dell'indicizzazione dei prezzi SaaS per la versione precedente
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Installazione dell&#39;indicizzazione dei prezzi SaaS
+# Installazione manuale dell&#39;indicizzazione dei prezzi SaaS
 
-L&#39;impostazione dell&#39;indicizzazione dei prezzi SaaS richiede l&#39;installazione di nuovi moduli e l&#39;esecuzione di comandi CLI. Per completare l&#39;installazione, gli amministratori devono poter accedere alla riga di comando.
+L’indicizzazione dei prezzi SaaS è disponibile come opzione predefinita per i prodotti supportati [ultima versione](index.md#Requirements) di Commerce Services.
+Se non disponi della versione più recente e desideri abilitare l’indicizzazione dei prezzi SaaS per la tua istanza di Adobe Commerce, utilizza questa mini-guida.
 
 ## Prerequisiti
 
@@ -33,10 +34,10 @@ Esistono estensioni che aggiungono nuovi feed e il codice di supporto, ed è pre
 1. Aggiungi i seguenti moduli al tuo `composer.json` file:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Esegui il comando di aggiornamento:
@@ -68,17 +69,12 @@ Dopo l&#39;upgrade, sono disponibili tre nuovi feed:
 
 Esegui manualmente gli indicizzatori di cui sopra, in base alle esigenze. In caso contrario, i dati vengono aggiornati nel processo di sincronizzazione standard. Ulteriori informazioni su [Sincronizzazione catalogo](../landing/catalog-sync.md) servizio.
 
-Gli utenti di Luma e Adobe Commerce Core GraphQL possono installare `catalog-adapter` che fornisce compatibilità con Luma e Core GraphQl e disabilita l’indicizzatore del prezzo principale PHP.
-Per utilizzare `catalog-adapter` modulo, [!DNL Live Search] e [!DNL Catalog Service] deve prima essere installato e configurato. Segui le [Installa [!DNL Live Search]](../live-search/install.md) e [Installazione di Catalog Service](../catalog-service/installation.md) prima di continuare.
 
-Per configurare Live Search e l&#39;adattatore del catalogo, procedere come segue [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) istruzioni.
+Gli utenti di Luma e Adobe Commerce Core GraphQL possono installare [`Catalog Adapter`](catalog-adapter.md) estensione che fornisce compatibilità con Luma e Core GraphQl e disabilita l’indicizzatore del prezzo del prodotto di Adobe Commerce.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Avvertenze
 
-Se necessario, l&#39;indicizzatore prezzi PHP di base può essere riattivato con il seguente comando:
+Prima di `103.0.0` Supporto dell’indicizzazione dei prezzi SaaS per i tipi di prodotto semplici, raggruppati, virtuali, configurabili e dinamici bundle.
+Il supporto per i tipi di prodotti scaricabili, gift card e bundle fissi è disponibile a partire da `magento/module-saas-price:103.0.0` e disponibile come opzione predefinita per i servizi Commerce supportati.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+I nuovi feed devono essere sincronizzati manualmente con `resync` [Comando CLI](../landing/catalog-sync.md#resynccmdline). In caso contrario, i dati vengono aggiornati nel processo di sincronizzazione standard. Ulteriori informazioni su [Sincronizzazione catalogo](../landing/catalog-sync.md) processo.

@@ -5,15 +5,16 @@ breadcrumb-title: "Guida all’indicizzazione dei prezzi Saas"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 243c1e3c096f01fe0b46eba8f80f89d3f82ba246
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 8%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
 # Indicizzatore prezzi Saas {#price-indexer}
 
 - [Panoramica della guida](index.md)
+- [Adattatore catalogo](catalog-adapter.md)
 - [Installazione](installation.md)
 
