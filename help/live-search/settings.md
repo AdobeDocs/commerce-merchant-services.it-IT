@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] Settings"
 description: "Configurare le impostazioni per [!DNL Live Search] servizio."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # Impostazioni
 
-Utilizza il *Impostazioni* per configurare gli intervalli e gli intervalli del facet di prezzo e la lingua predefinita per l&#39;indice.
+Utilizza il *Impostazioni* per configurare gli intervalli e gli intervalli del facet di prezzo.
 
 Fatturazione prezzo specifica il numero di gruppi di intervalli di prezzi e il modo in cui i valori di prezzo vengono distribuiti tra di essi.
-
-Le impostazioni della lingua indicano a [!DNL Live Search] indica la lingua prevista durante la scrittura dell&#39;indice.
 
 ![Impostazioni](assets/settings.png)
 
