@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events
 
 ## Inviare dati cronologici degli ordini
 
-Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli ordini](events.md#back-office-events). Puoi utilizzare il connettore Experienci Platform per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
+Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli ordini](events.md#back-office-events). Puoi utilizzare il connettore Experienci Platform per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti e personalizzare le esperienze dei clienti in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
 
 Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario completare diversi passaggi per inviare tali dati ad Experienci Platform.
+
+Guarda questo video per ulteriori informazioni sugli ordini storici, quindi completa i seguenti passaggi per implementare la raccolta e la configurazione degli ordini storici.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Passaggio 1: installare la raccolta dati cronologici degli ordini
 
@@ -248,12 +252,6 @@ Specifica l’intervallo di date per gli ordini storici da inviare all’Experie
 | Da | Data a partire dalla quale si desidera iniziare la raccolta dei dati della cronologia degli ordini. |
 | A | Data a partire dalla quale si desidera terminare la raccolta dei dati della cronologia degli ordini. |
 | Avvia sincronizzazione | Avvia il processo di sincronizzazione dei dati della cronologia dell&#39;ordine con il server perimetrale Experience Platform. Questo pulsante è disattivato se **[!UICONTROL Dataset ID]** è vuoto o l’ID del set di dati non è valido. |
-
-### Dimostrazione ordine storico
-
-Per ulteriori informazioni sugli ordini storici, guarda questo video:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Conferma la raccolta dei dati dell’evento
 
