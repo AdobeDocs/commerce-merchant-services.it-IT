@@ -2,9 +2,9 @@
 title: "Presentazione rapida"
 description: "Dai un’occhiata [!DNL Live Search] dalla vetrina."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Utilizza i facet come parametri URL:`http://yourwebsite.com?color=red`, e Live S
 ## Regole di merchandising
 
 Merchandising [regole](rules.md) forma l’esperienza di acquisto con istruzioni if-then che aggiungono logica ed eventi alla ricerca. Puoi facilmente aumentare o seppellire i prodotti per una promozione, una stagione o un altro periodo di tempo.
+
+## Supporto termini di ricerca
+
+[!DNL Live Search] supporta Commerce [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Ad esempio, gli utenti possono cercare un termine come &quot;Tariffe di spedizione&quot; ed essere portati direttamente alla pagina delle tariffe di spedizione.

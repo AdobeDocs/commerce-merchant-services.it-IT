@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _15 settembre 2023_
 
 ### Aggiornamenti
 
+![Correzione](../assets/fix.svg) Le dimensioni delle tabelle dei prodotti e i feed dei prezzi sono stati notevolmente ridotti. Tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` dovrebbe vedere una riduzione sostanziale delle dimensioni.
 ![Correzione](../assets/fix.svg) La scheda Regole viene rinominata in Regole di ricerca
 ![Correzione](../assets/fix.svg) Quando si classifica per &quot;tendenza&quot;, ora è possibile scegliere tra: * 3 giorni (impostazione predefinita) * 14 giorni * 30 giorni
 ![Correzione](../assets/fix.svg) &#39;Eventi&#39; (Boost/Pin/Bury/Hide) è stato rinominato in &#39;Classifica manuale&#39;

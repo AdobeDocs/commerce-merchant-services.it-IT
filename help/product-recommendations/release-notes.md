@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _15 settembre 2023_
 
 ![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli per supportare [Indicizzatore prezzi Saas](../price-index/index.md).
 ![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli di esportazione dati per supportare l’esportazione di più tipi di prodotto, inclusi prodotti in bundle e gift card.
+![Correzione](../assets/fix.svg) Le dimensioni delle tabelle dei prodotti e i feed dei prezzi sono stati notevolmente ridotti. Tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` dovrebbe vedere una riduzione sostanziale delle dimensioni.
 
 #### Limitazioni note
 
