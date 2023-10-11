@@ -3,16 +3,16 @@ title: Panoramica della guida
 description: Scopri come integrare i dati di Adobe Commerce con Adobe Experience Platform utilizzando il connettore Experienci Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Panoramica del connettore di Experience Platform
 
-L’estensione del connettore di Experience Platform consente ai commercianti di Adobe Commerce di inviare [vetrina](events.md#storefront-events) e [back office](events.md#back-office-events) dati al server Edge di Adobe Experience Platform, in modo che altri prodotti Adobe Experience Cloud, come Adobe Analytics e Adobe Target, possano utilizzarli. Collegando i dati di Commerce ad altri prodotti in Adobe Experience Cloud, puoi eseguire attività quali analizzare il comportamento degli utenti sul sito, eseguire test AB e creare campagne personalizzate.
+L’estensione del connettore di Experience Platform consente ai commercianti di Adobe Commerce di inviare [vetrina](events.md#storefront-events) e [back office](events.md#back-office-events) i dati al server Edge di Adobe Experience Platform, in modo che altri prodotti Adobe Experience Cloud, come Adobe Analytics e Adobe Journey Optimizer, possano utilizzarli. Collegando i dati di Commerce ad altri prodotti in Adobe Experience Cloud, puoi eseguire attività quali analizzare il comportamento degli utenti sul sito, eseguire test AB e creare campagne personalizzate.
 
 [Eventi vetrina](events.md#storefront-events) acquisire interazioni con gli acquirenti, ad esempio `View Page`, `View Product`, `Add to Cart`, e [elenco richieste di acquisto](events.md#b2b-events) informazioni (per gli esercenti B2B). [Back office](events.md#back-office-events) gli eventi acquisiscono informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. I dati acquisiti non includono informazioni personali (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. [Ulteriori informazioni](https://www.adobe.com/privacy/experience-cloud.html).
 
@@ -49,7 +49,7 @@ Consulta la [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/integrat
 
 ### Supporto AEM {#aem-support}
 
-Consulta la [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentazione per scoprire come inviare i dati di un evento vetrina da una pagina di prodotto di cui è stato eseguito il rendering AEM all’Experience Platform utilizzando il CIF - connettore Experienci Platform.
+Consulta la [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentazione per scoprire come inviare i dati di un evento vetrina da una pagina di prodotto di cui è stato eseguito il rendering AEM all’Experience Platform utilizzando il connettore CIF - Experience Platform.
 
 Se hai bisogno di informazioni o hai domande che non sono trattate in questa guida, utilizza le risorse seguenti:
 

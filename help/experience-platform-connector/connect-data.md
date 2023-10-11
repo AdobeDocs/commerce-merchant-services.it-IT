@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Per confermare che i dati vengono raccolti dal tuo archivio Commerce, utilizza [
 In questo esempio, puoi visualizzare i dati dell’evento dal [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e così via. Questa vista ti consente di verificare che i dati di Commerce siano arrivati all’edge.
 
 Se i risultati non sono quelli previsti, apri il set di dati e cerca eventuali importazioni batch non riuscite. Ulteriori informazioni su [risoluzione dei problemi relativi alle importazioni batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Passaggi successivi
+
+Quando i dati di Commerce vengono inviati al server Edge di Experienci Platform, altri prodotti Adobe Experience Cloud, come Adobe Journey Optimizer, possono utilizzarli. Ad esempio, puoi configurare Journey Optimizer per l’ascolto di determinati eventi e, in base a tali dati, attivare un’e-mail per il primo utente o se viene abbandonato un carrello. Scopri come estendere la piattaforma Commerce [creazione di percorsi di clienti](using-ajo.md) in Journey Optimizer.
