@@ -3,9 +3,9 @@ title: Utilizza Adobe Journey Optimizer per inviare un’e-mail con carrello abb
 description: Scopri come utilizzare Adobe Journey Optimizer per inviare un’e-mail con carrello abbandonato.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ Nell’ambiente sandbox di Commerce, puoi visualizzare le pagine dei prodotti, a
 
    Cerca `commerce.checkouts` ed esaminare il payload dell’evento:
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;carrello&quot;: {},
-       &quot;checkout&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Come puoi vedere, il payload completo dell’evento contiene dati dettagliati sull’evento. Nella sezione successiva, configurerai gli eventi in Journey Optimizer per l’ascolto e la risposta al `commerce.checkouts` evento generato dalla vetrina Commerce.
 
 ## Passaggio 3: configurare gli eventi in Journey Optimizer
