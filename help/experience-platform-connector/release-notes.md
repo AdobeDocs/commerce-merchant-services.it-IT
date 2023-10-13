@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione del connettore Adobe Experience Platform da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _12 ottobre 2022_
 _10 ottobre 2023_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+Questa è una versione principale. [Modifica](install.md#update-the-experience-platform-connector) file compositore.json principale del progetto.
 
 ![Nuovo](../assets/new.svg) - Disponibilità generale per [invia ordine storico](connect-data.md#send-historical-order-data) dati e stato dell’Experience Platform.
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per OAuth 2.0 quando [configura](connect-data.md#connect-commerce-data-to-adobe-experience-platform) il connettore di Experience Platform.

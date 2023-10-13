@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli o
 
 Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario completare diversi passaggi per inviare tali dati ad Experienci Platform.
 
-Guarda questo video per ulteriori informazioni sugli ordini storici, quindi completa i seguenti passaggi per implementare la raccolta e la configurazione degli ordini storici.
+Guarda questo video per ulteriori informazioni sugli ordini storici, quindi completa i seguenti passaggi per implementare la raccolta degli ordini storici.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Passaggio 1: installare la raccolta dati cronologici degli ordini
-
-Per abilitare la raccolta dei dati cronologici degli ordini, devi aggiornare la directory principale del progetto [!DNL Composer] `.json` file come segue:
-
-1. Apri la directory principale `composer.json` file e ricerca `magento/experience-platform-connector`.
-
-1. In `require` , aggiorna il numero di versione come segue:
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. Per gli esercenti B2B, aggiorna il `.json` file come segue:
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **Salva** `composer.json`. Quindi, esegui quanto segue dalla riga di comando:
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   oppure, per gli esercenti B2B:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Passaggio 2: creare un progetto nella console Adobe Developer
+### Passaggio 1: creare un progetto nella console Adobe Developer
 
 >[!NOTE]
 >
->Se hai già installato e attivato [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) estensione, hai già completato i passaggi 2 e 3.
+>Se hai già installato e attivato [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) estensione, hai già completato i passaggi 1 e 2 e puoi passare al passaggio 3.
 
 Crea un progetto nella console di Adobe Developer che autentica Commerce in modo da poter effettuare chiamate API Experienci Platform.
 
@@ -182,7 +144,7 @@ Durante l’esercitazione, assicurati che il progetto presenti quanto segue:
 
 Il risultato di questo passaggio crea un file di configurazione da utilizzare nel passaggio successivo.
 
-### Passaggio 3: scarica il file di configurazione
+### Passaggio 2: scarica il file di configurazione
 
 Scarica il file [file di configurazione workspace](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copia e incolla il contenuto di questo file in **Dettagli account servizio/credenziali** pagina dell’amministratore di Commerce.
 
@@ -204,7 +166,7 @@ Scarica il file [file di configurazione workspace](https://developer.adobe.com/c
 
 1. Clic **Salva configurazione**.
 
-### Passaggio 4: configurare il servizio di sincronizzazione ordini
+### Passaggio 3: configurare il servizio di sincronizzazione ordini
 
 Dopo aver immesso le credenziali sviluppatore, imposta il servizio di sincronizzazione degli ordini. Il servizio di sincronizzazione degli ordini utilizza [Framework coda messaggi](https://developer.adobe.com/commerce/php/development/components/message-queues/) e RabbitMQ. Dopo aver completato questi passaggi, i dati sullo stato dell’ordine possono essere sincronizzati con SaaS, operazione necessaria prima dell’invio all’Experience Platform.
 
@@ -229,7 +191,7 @@ Dopo aver immesso le credenziali sviluppatore, imposta il servizio di sincronizz
 
 Con il servizio di sincronizzazione degli ordini abilitato, puoi quindi specificare l’intervallo di date dell’ordine cronologico nella pagina del connettore Experienci Platform.
 
-### Passaggio 5: specificare l&#39;intervallo di date della cronologia ordini
+### Passaggio 4: specificare l&#39;intervallo di date della cronologia ordini
 
 Specifica l’intervallo di date per gli ordini storici da inviare all’Experience Platform.
 
