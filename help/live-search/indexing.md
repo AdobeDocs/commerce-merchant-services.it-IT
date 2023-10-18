@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indicizzazione"
 description: "Scopri come [!DNL Live Search] indicizza le proprietà dell’attributo del prodotto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Il [!DNL Live Search] API consente a un client di ordinare per qualsiasi attribu
 ## Pipeline di indicizzazione
 
 Il client chiama il servizio di ricerca dalla vetrina per recuperare i metadati dell’indice (filtrabili, ordinabili). Solo gli attributi di prodotto ricercabili con *Uso in navigazione a livelli* proprietà impostata su `Filterable (with results)` e *Usa per l’ordinamento nell’elenco dei prodotti* imposta su `Yes` può essere richiamato dal servizio di ricerca.
-Per creare una query dinamica, il servizio di ricerca deve sapere quali attributi sono ricercabili e il loro peso. [!DNL Live Search] rispetta i pesi di ricerca di Adobe Commerce (1-10, dove 10 rappresenta la priorità più elevata). L’elenco dei dati sincronizzati e condivisi con il servizio catalogo si trova nello schema, definito in:
+Per creare una query dinamica, il servizio di ricerca deve sapere quali attributi sono ricercabili e i relativi [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] rispetta i pesi di ricerca di Adobe Commerce (1-10, dove 10 rappresenta la priorità più elevata). L’elenco dei dati sincronizzati e condivisi con il servizio catalogo si trova nello schema, definito in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

@@ -3,9 +3,9 @@ title: '"Impostazioni delle configurazioni Commerce e [!DNL Live Search] '''
 description: Descrive le impostazioni di configurazione di Adobe Commerce che [!DNL Live Search] può leggere.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,11 @@ Alcune impostazioni di configurazione di Commerce [!DNL Live Search] supporta. I
 | Archivi > Configurazione > Valuta > Valuta di visualizzazione predefinita | Sì con 3.1.0+ | Sì con 3.1.0+ |
 | Archivi > Configurazione > Generale > Impostazione divisa > Opzioni divisa > Divisa di base | Sì | Sì |
 
-I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono ora convertiti nella valuta di visualizzazione predefinita utilizzando i tassi di valuta configurati
+I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono ora convertiti nella valuta di visualizzazione predefinita utilizzando i tassi di valuta configurati.
+
+## Termini di ricerca
+
+[!DNL Live Search] supporta [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) sulle implementazioni in cui Adobe Commerce gestisce il routing: Luma e altri temi basati su php.
 
 ## Valori di configurazione non supportati
 

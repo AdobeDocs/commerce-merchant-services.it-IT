@@ -1,17 +1,17 @@
 ---
-title: "Regole di ricerca"
-description: "[!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di acquisto."
+title: "Ricerca merchandising"
+description: "[!DNL Live Search] le regole di merchandising combinano la logica con le azioni per modellare l’esperienza di acquisto."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Regole di ricerca
+# Cerca nel merchandising
 
-[!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di ricerca di un acquirente nel tuo store. Puoi utilizzare le regole per promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca in tempo reale per supportare gli obiettivi aziendali.
+Per &quot;Search Merchandising&quot; si intende un insieme di regole che combinano logica e azioni per dare forma all’esperienza di ricerca di un acquirente nel tuo negozio. Puoi utilizzare le regole di merchandising per promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca in tempo reale per supportare gli obiettivi aziendali.
 
 Ogni regola ha tre componenti principali:
 
@@ -68,7 +68,7 @@ La richiesta effettuata nell’amministratore funziona in modo leggermente diver
 * Se la regola visualizzata in anteprima non ha un `query is` e una successiva regola attiva corrispondente con un `query is` condizione trovata, il `query is` regola applicata.
 * Se la regola visualizzata in anteprima non ha un `query is` e nessun&#39;altra regola con un `query is` viene trovata, viene applicata la regola visualizzata in anteprima.
 
-## Regole di categoria e assegnazioni di prodotti di categoria
+## Assegnazioni di prodotti di categoria e merchandising categorie
 
-[!DNL Live Search] consente di filtrare per Categorie.
+[!DNL Live Search] consente di filtrare per Categorie. Consulta [Merchandising categorie](category-merch.md) per ulteriori informazioni.
 Tuttavia, in Adobe Commerce puoi creare una categoria virtuale con [Assegnazioni prodotti categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Questo tipo di categoria viene creato in fase di esecuzione e non esiste nel database delle categorie. Pertanto, [!DNL Live Search] impossibile leggere o utilizzare questo tipo di categoria.
