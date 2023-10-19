@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Transazioni per ottenere visibilità sui tas
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ Dalla vista del rapporto Transazioni, è possibile filtrare i risultati degli st
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Fai clic su **[!UICONTROL Filter]** selettore.
 1. Attiva/disattiva _[!UICONTROL Transaction Result]_opzioni per visualizzare i risultati del rapporto solo per le transazioni ordine selezionate.
+1. Seleziona la _[!UICONTROL Card Type]_per visualizzare i risultati del rapporto per il tipo di scheda selezionato. Se il processore dei pagamenti non è in grado di identificare il tipo di carta, viene visualizzata una descrizione comandi con ulteriori informazioni.
+1. Seleziona la _[!UICONTROL Card Brand]_per visualizzare i risultati del rapporto per il marchio di carta selezionato. Se il processore dei pagamenti non è in grado di identificare il marchio della carta, viene visualizzata una descrizione comandi con ulteriori informazioni.
 1. Attiva/disattiva _[!UICONTROL Payment Method]_opzioni per visualizzare i risultati del rapporto solo per i metodi di pagamento selezionati.
 1. Immetti un _Importo minimo ordine_ o _Importo massimo ordine_ per visualizzare i risultati del rapporto all&#39;interno dell&#39;intervallo di importi dell&#39;ordine.
 1. Immetti un _[!UICONTROL Order ID]_per cercare una transazione specifica.

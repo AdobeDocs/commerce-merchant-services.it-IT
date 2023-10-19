@@ -4,13 +4,13 @@ description: Protezione automatizzata contro le frodi per [!DNL Payment Services
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Protezione contro le frodi significative
 
@@ -18,15 +18,9 @@ ht-degree: 0%
 
 Adobe Commerce supporta Signifyd versioni 5.4.0 e successive. [!DNL Payment Services] supporta i flussi Signifyd pre-autenticazione e post-autenticazione.
 
+Signifyd/[!DNL Payment Services] L&#39;integrazione fornisce copertura per carte di credito, carte di debito, carte di vaulting, pagamento tramite Admin e metodi di pagamento PayPal e Apple Pay. Mentre alcuni dettagli delle transazioni non sono condivisi tra Payment Services e Signifyd, Signifyd fornisce una copertura completa dei rischi per tutti i metodi di pagamento, garantendo la massima protezione.
+
 Consulta [Documentazione di Signifyd](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) per informazioni sull&#39;installazione e la configurazione dell&#39;estensione.
-
-## Limitazioni dell’integrazione
-
-Attualmente, le seguenti limitazioni si applicano all’integrazione tra Signifyd e [!DNL Payment Services]:
-
-* Signifyd/[!DNL Payment Services] l’integrazione supporta solo [campi carta di credito](../payment-services/payments-options.md#credit-card-fields) (non i pulsanti PayPal o Apple Pay). [!DNL Payment Services] invia i dati dell&#39;ordine ricevuti tramite i pulsanti di pagamento PayPal e Apple Pay a Signifyd, ma l&#39;integrazione fornisce solo i dettagli per gli ordini effettuati tramite i campi della carta di credito.
-* Signifyd non supporta gli ordini di un acquirente immessi nell’amministratore da un commerciante.
-* Signifyd non supporta gli ordini effettuati con [carte di credito a pagamento](../payment-services/vaulting.md).
 
 ## Onboarding
 
