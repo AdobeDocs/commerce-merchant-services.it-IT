@@ -2,9 +2,9 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
 
 1. In _Seleziona tipo di pagina_ , seleziona la pagina in cui vuoi visualizzare il consiglio tra le seguenti opzioni:
 
-   - Home page
-   - Categoria
-   - Dettagli prodotto
-   - Carrello
-   - Conferma
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Home page
+   * Categoria
+   * Dettagli prodotto
+   * Carrello
+   * Conferma
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Puoi creare fino a cinque unità di consigli attive per ogni tipo di pagina e fino a 25 per Page Builder. Il tipo di pagina è disattivato Al raggiungimento del limite.
 
@@ -45,21 +45,6 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
    _Nome consiglio e posizionamento della pagina_
 
 1. In _Seleziona tipo di consiglio_ , specificare [tipo di consiglio](type.md) che si desidera visualizzare nella pagina selezionata. Per alcune pagine, il [posizionamento](placement.md) di raccomandazioni è limitato a determinati tipi.
-
-   Alcuni tipi di consigli utilizzano dati comportamentali provenienti dai tuoi acquirenti per [modelli di apprendimento automatico del treno](behavioral-data.md) per creare consigli personalizzati. Per aiutarti a visualizzare l’avanzamento della formazione di ciascun tipo di consiglio, in questa sezione viene visualizzata una misura di preparazione per ciascun tipo. Questi indicatori di prontezza sono calcolati sulla base di due fattori:
-
-   - Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono presenti risultati sufficienti per evitare di utilizzare [consigli di backup](behavioral-data.md#backuprecs)?
-
-   - Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
-
-   In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di fattibilità. Un tipo di consiglio è considerato pronto per la distribuzione quando il suo valore di fattibilità è pari o superiore al 75%. Un tipo di consiglio è considerato parzialmente pronto quando la sua prontezza è almeno del 50%. Un tipo di consiglio è considerato non pronto per la distribuzione quando il suo valore di fattibilità è inferiore al 50%.
-
-   >[!NOTE]
-   >
-   >L’indicatore non può mai raggiungere il 100%.
-
-   ![Tipo di consiglio](assets/create-recommendation-select-type.png)
-   _Tipo di consiglio_
 
 1. In _Etichetta di visualizzazione vetrina_ , immetti il [etichetta](placement.md#recommendation-labels) visibile agli acquirenti, ad esempio &quot;Più venduti&quot;.
 
@@ -69,8 +54,8 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
 
 1. In _Seleziona posizionamento_ , specifica il percorso in cui l&#39;unità di consigli deve essere visualizzata nella pagina.
 
-   - Nella parte inferiore del contenuto principale
-   - Nella parte superiore del contenuto principale
+   * Nella parte inferiore del contenuto principale
+   * Nella parte superiore del contenuto principale
 
 1. (Facoltativo) Per modificare l’ordine dei consigli, seleziona e sposta le righe nella sezione _Scegli posizione_ tabella.
 
@@ -86,9 +71,50 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
 
 1. Al termine, fare clic su una delle seguenti opzioni:
 
-   - **Salva come bozza** per modificare l&#39;unità di consigli in un secondo momento. Non è possibile modificare il tipo di pagina o il tipo di consiglio per un&#39;unità di consigli in stato bozza.
+   * **Salva come bozza** per modificare l&#39;unità di consigli in un secondo momento. Non è possibile modificare il tipo di pagina o il tipo di consiglio per un&#39;unità di consigli in stato bozza.
 
-   - **Attiva** per abilitare l&#39;unità di consigli nella vetrina.
+   * **Attiva** per abilitare l&#39;unità di consigli nella vetrina.
+
+## Indicatori di preparazione
+
+Alcuni tipi di consigli utilizzano dati comportamentali provenienti dai tuoi acquirenti per [modelli di apprendimento automatico del treno](behavioral-data.md) per creare consigli personalizzati.
+
+Richiede solo dati di catalogo. Non sono necessari dati comportamentali per:
+
+* _Articoli più simili_
+* _Visualizzato di recente_
+* _Somiglianza visiva_
+
+In base agli ultimi sei mesi di dati comportamentali della vetrina:
+
+* _Ha visualizzato questo, ha visualizzato quello_
+* _Ho visto questo, ho comprato quello_
+* _Ho comprato questo e quello_
+* _Consigliato per te_
+
+I tipi di consigli basati sulla popolarità utilizzano gli ultimi sette giorni di dati comportamentali della vetrina:
+
+* Articoli più visualizzati
+* Più acquistati
+* Aggiunto al carrello
+* Di tendenza
+
+I valori dell’indicatore di preparazione dovrebbero variare a causa di fattori quali le dimensioni complessive del catalogo, il volume di eventi di interazione del prodotto (visualizzazioni, aggiunte al carrello, acquisti) e la percentuale di SKU che registrano tali eventi entro una determinata finestra temporale, come indicato sopra. Ad esempio, durante il traffico di picco durante le festività, gli indicatori di prontezza potrebbero mostrare valori più elevati rispetto ai tempi del volume normale.
+
+Per aiutarti a visualizzare l’avanzamento della formazione di ciascun tipo di consiglio, _Seleziona tipo di consiglio_ In questa sezione viene visualizzata una misura di preparazione per ogni tipo. Questi indicatori di prontezza sono calcolati sulla base di due fattori:
+
+* Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono presenti risultati sufficienti per evitare di utilizzare [consigli di backup](behavioral-data.md#backuprecs)?
+
+* Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
+
+In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di fattibilità. Un tipo di consiglio è considerato pronto per la distribuzione quando il suo valore di fattibilità è pari o superiore al 75%. Un tipo di consiglio è considerato parzialmente pronto quando la sua prontezza è almeno del 50%. Un tipo di consiglio è considerato non pronto per la distribuzione quando il suo valore di fattibilità è inferiore al 50%. Si tratta di linee guida generali, ma ogni singolo caso può variare in base alla natura dei dati raccolti come descritto sopra.
+
+![Tipo di consiglio](assets/create-recommendation-select-type.png)
+_Tipo di consiglio_
+
+>[!NOTE]
+>
+>Gli indicatori non possono mai raggiungere il 100%.
 
 ## Anteprima Recommendations {#preview}
 
