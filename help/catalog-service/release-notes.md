@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _18 luglio 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Catalog Service ora supporta [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Query GraphQL per Product Recommendations.
+![Nuovo](../assets/new.svg) Catalog Service ora supporta [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Query GraphQL per Product Recommendations.
 
 ### Versione V1.10
 
@@ -90,7 +90,7 @@ _28 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Campioni aggiunti al [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![Nuovo](../assets/new.svg) Campioni aggiunti al [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query.
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di ottenere `entityId` utilizzo [Mesh API](mesh.md).
 
 ### Versione V1.5
@@ -99,7 +99,7 @@ _6 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunto [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) funzionalità GraphQL.
+![Nuovo](../assets/new.svg) Aggiunto [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) funzionalità GraphQL.
 ![Correzione](../assets/fix.svg) Prestazioni e scalabilità API migliorate.
 
 ### Versione V1.4
