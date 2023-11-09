@@ -3,9 +3,9 @@ title: Sincronizzazione catalogo
 description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Con il **Sincronizzazione catalogo** dashboard è possibile:
 - Visualizza stato di sincronizzazione (**In corso**, **Completato**, **Non riuscito**)
 - Visualizza il numero totale di prodotti sincronizzati
 - Cerca i prodotti sincronizzati per visualizzarne lo stato corrente
-- Cerca nel catalogo del negozio per nome, SKU, ecc
+- Cerca nel catalogo del negozio per nome, SKU, ecc.
 - Visualizza i dettagli del prodotto sincronizzato in JSON per diagnosticare una discrepanza di sincronizzazione
 - Riavvia il processo di sincronizzazione
 
@@ -67,7 +67,6 @@ Se è necessario avviare la risincronizzazione del catalogo prima che venga eseg
 1. In _Risincronizza dati_ , fare clic su [!UICONTROL Resync].
 
    [!DNL Commerce] sincronizza il catalogo durante la successiva finestra di sincronizzazione pianificata. A seconda delle dimensioni del catalogo, questa operazione può richiedere molto tempo.
-
 
 ## Prodotti catalogo sincronizzati
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 Se non trovi i dati previsti in [!DNL Commerce Service], verifica se si è verificato un problema durante la sincronizzazione da [!DNL Adobe Commerce] istanza al [!DNL Commerce Service] piattaforma.
 
-Ci sono 2 file di registro nel `var/log/` directory:
+In sono presenti due file di registro `var/log/` directory:
 
 - `commerce-data-export-errors.log` - in caso di errore durante _raccolta_ fase
 - `saas-export-errors.log` - in caso di errore durante _trasmissione_ fase
