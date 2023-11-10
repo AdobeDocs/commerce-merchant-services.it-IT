@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Consulta [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulte
 
 Il [!UICONTROL Apple Pay] l&#39;opzione di pagamento pulsante consente di fornire un [!UICONTROL Apple Pay] pulsante di pagamento nella cassa del tuo negozio.
 
-Consulta [Opzioni di pagamento](payments-options.md#apple-pay-buttob) per ulteriori informazioni.
+Puoi utilizzare Apple Pay solo dopo aver completato [Registrazione autonoma di Apple Pay tramite Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) e poi [configurare Apple Pay](settings.md/#payment-buttons) per i tuoi negozi. Consulta [Opzioni di pagamento](payments-options.md#apple-pay-button) per ulteriori informazioni.
 
 Puoi abilitare e configurare i [!UICONTROL Apple Pay] opzione di pagamento pulsante:
 
