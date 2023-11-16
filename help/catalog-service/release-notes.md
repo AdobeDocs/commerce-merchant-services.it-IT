@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ _12 ottobre 2023_
 
 ![Nuovo](../assets/new.svg) Catalog Service supporta `inStock` flag per varianti prodotto.
 ![Nuovo](../assets/new.svg) `urlKey` e `externalId` sono stati aggiunti allo schema GraphQL.
+![Nuovo](../assets/new.svg) Sono ora supportati i prodotti scaricabili e le gift card.
 
 #### Limitazioni note
 
@@ -44,7 +45,6 @@ Le seguenti limitazioni possono essere risolte utilizzando l’API Mesh e l’AP
 
 * Prezzo minimo annunciato
 * [Prezzi a livelli](mesh.md)
-* Prodotti scaricabili e carte regalo
 
 ## Versioni precedenti
 
