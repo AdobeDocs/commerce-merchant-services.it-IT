@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25 aprile 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Live Search] i clienti possono ora sfruttare le nuove [Indicizzatore prezzi SaaS](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13 novembre 2023_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+### Nuove funzioni
+
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta i campioni colore nel widget PLP.
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora visualizza il nome della categoria anziché l’ID della categoria.
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta i prezzi barrati nel widget PLP.
+![Nuovo](../assets/new.svg) È stato introdotto il pulsante &quot;Nascondi filtri&quot; per nascondere il pannello dei filtri.
+
+
+### Aggiornamenti
+
+![Correzione](../assets/fix.svg) Il [!DNL Live Search] Il widget PLP è ora abilitato per impostazione predefinita per le nuove installazioni.
+![Correzione](../assets/fix.svg) Stili CSS riconfigurati per isolare meglio le classi widget.
+![Correzione](../assets/fix.svg) Correzioni di bug minori
+
+I commercianti devono aggiornare [!DNL Live Search] estensione alla versione >= 4.0.0 per accedere a queste funzioni.
+
+Dopo aver installato la versione 3.1.1 o successiva, abilita i nuovi indicizzatori:
+
+* Feed prezzi prodotto
+* Feed dati del sito Web degli ambiti
+* Ambiti feed dati di gruppi di clienti
+
+Dopo l&#39;upgrade, verifica la configurazione aggiornata in QA o Staging prima di eseguire il push delle modifiche in produzione.
+
+## Versioni precedenti
+
++++3.1.1 e precedenti
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-### Nuove funzioni
+
 
 ![Nuovo](../assets/new.svg) È stata aggiunta una nuova scheda Categoria merchandising. Gli utenti possono ora aggiungere classificazioni intelligenti e classificazioni manuali (pin, boost, bury, hide) per categoria
 ![Nuovo](../assets/new.svg) Gli utenti possono aggiungere una singola regola di categoria con classificazione intelligente o manuale
@@ -68,20 +102,6 @@ _15 settembre 2023_
 ![Correzione](../assets/fix.svg) &#39;Eventi&#39; (Boost/Pin/Bury/Hide) è stato rinominato in &#39;Classifica manuale&#39;
 ![Correzione](../assets/fix.svg) Il tipo di classificazione è stato rinominato &quot;Classificazione intelligente&quot;
 ![Correzione](../assets/fix.svg) Correzioni di bug minori
-
-I commercianti devono aggiornare [!DNL Live Search] versione dell&#39;estensione >= 3.1.1 per accedere a queste funzioni.
-
-Dopo aver installato la versione 3.1.1, è necessario abilitare i seguenti nuovi indicizzatori:
-
-* Feed prezzi prodotto
-* Feed dati del sito Web degli ambiti
-* Ambiti feed dati di gruppi di clienti
-
-Si consiglia di eseguire l’aggiornamento e il test in QA o Staging prima di inviare le modifiche alla produzione.
-
-## Versioni precedenti
-
-+++3.1.0 e precedenti
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

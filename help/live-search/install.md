@@ -3,7 +3,7 @@ title: "Installa [!DNL Live Search]"
 description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ Effettua le seguenti operazioni:
 
 1. Scegli il metodo di onboarding che soddisfa le tue esigenze e segui le istruzioni.
 
-   * [Metodo 1](#method-1): installazione senza [!DNL Elasticsearch]
-   * [Metodo 2](#method-2): installazione con [!DNL Elasticsearch] (nessun downtime)
+   * [Metodo 1](#method-1): installazione senza [!DNL OpenSearch]
+   * [Metodo 2](#method-2): installazione con [!DNL OpenSearch] (nessun downtime)
 
-## Metodo 1: installare senza Elasticsearch {#method-1}
+>[!IMPORTANT]
+>
+>A causa dell’annuncio di fine del supporto di Elasticsearch 7 relativo ad agosto 2023, si consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante l’aggiornamento del prodotto, consulta [Migrazione a OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) nel _Guida all’aggiornamento_.
+
+## Metodo 1: installare senza OpenSearch {#method-1}
 
 Questo metodo di onboarding è consigliato durante l’installazione [!DNL Live Search] a:
 
 * Nuovo [!DNL Commerce] installazione
 * Ambiente di staging
 
-In questo scenario, le operazioni di storefront vengono interrotte mentre il [!DNL Live Search] service indicizza tutti i prodotti nel catalogo. Durante l&#39;installazione, [!DNL Live Search] i moduli sono abilitati e [!DNL Elasticsearch] i moduli sono disattivati.
+In questo scenario, le operazioni di storefront vengono interrotte mentre il [!DNL Live Search] service indicizza tutti i prodotti nel catalogo. Durante l&#39;installazione, [!DNL Live Search] i moduli sono abilitati e [!DNL OpenSearch] i moduli sono disattivati.
 
 1. Installare Adobe Commerce 2.4.4+ senza [!DNL Live Search].
 
@@ -48,7 +52,7 @@ In questo scenario, le operazioni di storefront vengono interrotte mentre il [!D
    composer require magento/live-search
    ```
 
-1. Esegui i seguenti comandi per disabilitare [!DNL Elasticsearch] e moduli correlati, e installare [!DNL Live Search]:
+1. Esegui i seguenti comandi per disabilitare [!DNL OpenSearch] e moduli correlati, e installare [!DNL Live Search]:
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ In questo scenario, le operazioni di storefront vengono interrotte mentre il [!D
 
 1. [Test](#test-the-connection) la connessione dalla vetrina.
 
-## Metodo 2: installare con Elasticsearch {#method-2}
-
->[!IMPORTANT]
->
->A causa dell’annuncio di fine del supporto di Elasticsearch 7 relativo ad agosto 2023, si consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante l’aggiornamento del prodotto, consulta [Migrazione a OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) nel _Guida all’aggiornamento_.
+## Metodo 2: installare con OpenSearch {#method-2}
 
 Questo metodo di onboarding è consigliato durante l’installazione [!DNL Live Search] a:
 
 * Una produzione esistente [!DNL Commerce] installazione
 
-In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste di ricerca dalla vetrina, mentre [!DNL Live Search] service indicizza tutti i prodotti in background, senza alcuna interruzione delle normali operazioni di storefront. [!DNL Elasticsearch] è disabilitato e [!DNL Live Search] attivato dopo l&#39;indicizzazione e la sincronizzazione di tutti i dati del catalogo.
+In questo scenario, [!DNL OpenSearch] gestisce temporaneamente le richieste di ricerca dalla vetrina, mentre [!DNL Live Search] service indicizza tutti i prodotti in background, senza alcuna interruzione delle normali operazioni di storefront. [!DNL OpenSearch] è disabilitato e [!DNL Live Search] attivato dopo l&#39;indicizzazione e la sincronizzazione di tutti i dati del catalogo.
 
 1. Per scaricare `live-search` , eseguire quanto segue dalla riga di comando:
 
@@ -131,7 +131,7 @@ In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste d
    * Il conteggio dei prodotti restituito si avvicina a quello previsto per la visualizzazione Store.
    * Facet restituiti.
 
-1. Esegui i seguenti comandi per abilitare [!DNL Live Search] moduli, disattiva [!DNL Elasticsearch], ed eseguire `setup`.
+1. Esegui i seguenti comandi per abilitare [!DNL Live Search] moduli, disattiva [!DNL OpenSearch], ed eseguire `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ Da aggiornare [!DNL Live Search], esegui quanto segue dalla riga di comando:
 composer update magento/live-search --with-dependencies
 ```
 
-Per eseguire l’aggiornamento a una versione principale, ad esempio da 2.0.0 a 3.1.1, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
+Per aggiornare a una versione principale, ad esempio da 3.1.1 a 4.0.0, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
 
-1. Se il programma di installazione `magento/live-search` versione è `2.0.3` o inferiore e si sta effettuando l&#39;aggiornamento alla versione `3.0.0` o versione successiva, eseguire il comando seguente prima dell&#39;aggiornamento:
+1. Se il programma di installazione `magento/live-search` versione è `3.1.1` o inferiore e si sta effettuando l&#39;aggiornamento alla versione `4.0.0` o versione successiva, eseguire il comando seguente prima dell&#39;aggiornamento:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ Per eseguire l’aggiornamento a una versione principale, ad esempio da 2.0.0 a 
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```

@@ -3,16 +3,16 @@ title: Introduzione a [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerce offre un''esperienza di ricerca rapida, super-rilevante e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # Introduzione a [!DNL Live Search]
 
-[!DNL Live Search] è un servizio per Adobe Commerce che sostituisce le funzionalità di ricerca standard. Il [!DNL Live Search] viene installato con Composer e connette il [!DNL Commerce] installazione in [!DNL Live Search] [servizio](../landing/saas.md). Una volta configurato, il campo di testo di ricerca predefinito viene sostituito con [!DNL Live Search] campo di testo.
+[!DNL Live Search] è un servizio per Adobe Commerce che sostituisce le funzionalità di ricerca standard. Il [!DNL Live Search] viene installato con Composer e connette il [!DNL Commerce] installazione in [!DNL Live Search] [servizio](../landing/saas.md). Una volta configurato, il campo di testo di ricerca predefinito viene sostituito con [!DNL Live Search] campo di testo. [!DNL Live Search] installa anche il widget Pagina di elenco prodotti (PLP) che fornisce solide funzionalità di filtro durante la navigazione nei risultati di ricerca.
 
 [!DNL Live Search] viene visualizzato sul *Marketing* menu in *SEO e ricerca* nel [!DNL Commerce] *Amministratore*.
 
@@ -26,7 +26,7 @@ Il lato Adobe Commerce dell’architettura include l’hosting della ricerca *Am
 * [Widget pagina elenco prodotti](plp-styling.md) fornisce una pagina di elenco dei prodotti ricercabili con supporto per facet e sinonimi.
 * Componenti dell’CIF dell’AEM: la [Widget popover](https://github.com/adobe/aem-cif-guides-venia/pull/319) e [Widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) consentire ai siti AEM di sfruttare [!DNL Live Search].
 * [[!DNL Live Search] Amministratore](workspace.md) è dove vengono configurati regole, facet e sinonimi.
-* L&#39;adattatore di ricerca è l&#39;implementazione predefinita di [!DNL Live Search].
+* L&#39;adattatore di ricerca è l&#39;implementazione predefinita di [!DNL Live Search]. Consigliato per implementazioni headless e personalizzate.
 
 ## [!DNL Live Search] demo
 

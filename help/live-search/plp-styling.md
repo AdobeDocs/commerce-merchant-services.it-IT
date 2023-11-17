@@ -2,9 +2,9 @@
 title: Widget pagina elenco prodotti
 description: Abilitazione e formattazione di [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ Il [!DNL Live Search Product Listing Page Widget] (PLP) utilizza la piattaforma 
 ## Abilitazione del widget PLP
 
 Quando [!DNL Live Search] è installato, la funzionalità di ricerca predefinita viene convertita in [!DNL Live Search] automaticamente.
-Il widget PLP deve essere abilitato in Admin.
 
-1. Vai a **Negozi** > Impostazioni > **Configurazione** > **[!DNL Live Search]** > **Funzioni vetrina** e imposta **Abilita widget elenco prodotti** a &quot;Sì&quot;.
+Il [!DNL Live Search] Il widget PLP è abilitato per impostazione predefinita per le nuove installazioni. Se si esegue l&#39;aggiornamento [!DNL Live Search] e il widget PLP è già stato disattivato, rimarrà così.
+
+Per disattivare il widget PLP:
+
+1. Vai a **Negozi** > Impostazioni > **Configurazione** > **[!DNL Live Search]** > **Funzioni vetrina** e imposta **Abilita widget elenco prodotti** a &quot;No&quot;.
 1. Seleziona **Salva configurazione** per salvare l&#39;impostazione.
 
 ## Esempio di stile
@@ -28,7 +31,7 @@ Il widget PLP deve essere abilitato in Admin.
 >[!NOTE]
 >
 >Gli elementi con classi personalizzate all’interno di un tema Adobe Commerce non vengono ereditati. Questi elementi devono essere oggetto di targeting da parte della classe specifica per corrispondere alle classi personalizzate; le classi di azione primarie non funzioneranno su un pulsante widget.
->Verranno ereditati gli elementi mirati generici all’interno del CSS; `button` verrà applicato ai pulsanti widget.
+>Vengono ereditati gli elementi mirati generici all’interno del CSS; `button` si applica ai pulsanti widget.
 
 I div evidenziati contengono la classe target `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Input](assets/plp-css-sdk-input.png)

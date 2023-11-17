@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] Indicizzazione"
 description: "Scopri come [!DNL Live Search] indicizza le proprietà dell’attributo del prodotto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # Indicizzazione
+
+Il [!DNL Live Search] il processo di indicizzazione legge nel catalogo gli attributi del prodotto e crea un indice che consente di cercare, filtrare e visualizzare rapidamente i prodotti.
 
 Le proprietà dell’attributo del prodotto (metadati) determinano:
 
