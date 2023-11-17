@@ -3,9 +3,9 @@ title: Configurare la sandbox di prova
 description: Utilizza un conto PayPal sandbox per utilizzare [!DNL Payment Services] in modalità di test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Per ripristinare l’account sandbox:
 
 ## Abilita numero di telefono del contatto
 
-Il numero di telefono di contatto ti consente di ottenere i numeri di telefono di contatto che PayPal raccoglie dai tuoi clienti. PayPal raccoglie sempre i numeri di telefono di contatto dei titolari dei conti PayPal per aiutarli a confermare le loro identità e a contattarli per risolvere i problemi sui loro conti o per completare i loro processi di evasione. Tuttavia, PayPal scoraggia l&#39;uso dei numeri di telefono di contatto direttamente dal commerciante perché può avere un impatto negativo sulle vendite. Consulta la [PayPal ottieni i numeri di telefono del contatto](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) per ulteriori informazioni.
+Il numero di telefono di contatto ti consente di ottenere i numeri di telefono di contatto che PayPal raccoglie dai tuoi clienti. PayPal raccoglie sempre i numeri di telefono di contatto dei titolari dei conti PayPal per aiutarli a confermare le loro identità e a contattarli per risolvere i problemi sui loro conti o per completare i loro processi di evasione. Tuttavia, PayPal scoraggia l&#39;uso dei numeri di telefono di contatto direttamente dal commerciante perché può avere un impatto negativo sulle vendite. Consulta la [PayPal ottieni i numeri di telefono del contatto](https://www.sandbox.paypal.com/businessmanage/preferences/website) per ulteriori informazioni.
 
 Questa funzione è `off` per impostazione predefinita. Quando lo abiliti, gli amministratori dei negozi possono visualizzare i numeri di telefono quando un cliente completa un flusso di pagamento con marchio all’esterno della pagina di pagamento.
 
