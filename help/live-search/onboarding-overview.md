@@ -3,9 +3,9 @@ title: "Panoramica sull’onboarding"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ Il merchandising per categorie consente di configurare [!DNL Live Search] per la
 Questo video è un’introduzione alla categoria Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Archivio del codice widget
+
+Il widget Pagina di elenco prodotti e il widget Popover di ricerca sono entrambi disponibili per il download dall’archivio GitHub.
+
+Questo consente agli sviluppatori di personalizzare completamente la funzionalità e lo stile. Questi utenti ospitano il codice da soli, pur sfruttando [!DNL Live Search] servizio.
+
+* [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
+* [Barra di ricerca](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

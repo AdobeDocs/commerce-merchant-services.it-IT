@@ -2,9 +2,9 @@
 title: "Facet"
 description: "[!DNL Live Search] i facet utilizzano più dimensioni di valori di attributo come criteri di ricerca."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ I requisiti degli attributi di categoria e prodotto per il faceting sono simili 
 * 50 attributi ordinabili
 * 200 attributi filtrabili
 * 200 attributi ricercabili
+
+>[!NOTE]
+>
+> Se sono definiti più di 200 attributi filtrabili, non è deterministico quali 200 saranno effettivamente indicizzati.
+
+Se hai a che fare con un numero elevato di attributi, puoi combinarli in un singolo &quot;meta-attribute&quot;. Ad esempio, le scarpe hanno generalmente dimensioni numeriche, mentre le magliette hanno generalmente le dimensioni &quot;S/M/L/XL&quot;. Questi due tipi di dimensioni possono essere combinati in un unico attributo ricercabile.
 
 | Impostazione | Descrizione |
 |--- |--- |
