@@ -3,9 +3,9 @@ title: Connetti l’istanza
 description: Connetti la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio di dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Vedi un [elenco dei servizi Commerce disponibili che utilizzano l’API](https:/
 Per informazioni su come generare una chiave API per ambienti sandbox o di produzione, consulta [Credenziali](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Si consiglia di non rigenerare una coppia di chiavi API *e* modificare l’identificatore SaaS e/o lo spazio dati in un’istanza di produzione attiva. Se vengono modificati, i dati dell’istanza andranno persi.
 
 ## Configurare Commerce Services
 
 È possibile utilizzare la stessa chiave API in più istanze, ma ogni istanza deve avere il proprio [Spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>I commercianti devono utilizzare le stesse chiavi generate per MageID per i propri diritti all’aiuto.
 
 Dopo aver ottenuto le credenziali, è possibile configurare il progetto SaaS e Saas Data Space.
 

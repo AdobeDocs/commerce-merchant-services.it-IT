@@ -3,9 +3,9 @@ title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Gli acquirenti utilizzano il token memorizzato per completare un pagamento futur
 Possono anche eliminare facilmente le loro carte di credito archiviate da [Metodi di pagamento memorizzati](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) nel loro My Account.
 
 ![Metodi di pagamento memorizzati nel mio account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal può attualmente memorizzare un massimo di cinque carte a pagamento.
 
 ## Abilita vaulting
 
