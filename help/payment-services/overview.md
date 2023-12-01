@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Sia che si tratti di una piccola azienda, di un concorrente del mercato di fasci
 * [**Opzioni di pagamento**](payments-options.md)- Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo negozio (o multistore).
 * **Rendicontazione finanziaria gestione flussi di cassa**- Sincronizza [dati di pagamento](order-payment-status.md) con ordini per ottenere piena trasparenza sul volume elaborato, saldo dei pagamenti, [pagamenti](payouts.md), e dettagliate [reporting a livello di transazione](transactions.md) per la riconciliazione finanziaria e la massima visibilità delle transazioni.
 * **Prezzi trasparenti**—Il prezzo è chiaro e anticipato; quello che si vede è quello che si ottiene.
-* **Esperienza di pagamento efficiente**: elimina le barriere che ostacolano un pagamento semplice e veloce e crea clienti fedeli, con [vaulting delle carte](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) e [Acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (attivata per impostazione predefinita per Adobe Commerce).
+* **Esperienza di pagamento efficiente**: elimina le barriere che ostacolano un pagamento semplice e veloce e crea clienti fedeli, con [vaulting delle carte](vaulting.md) e [Acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (attivata per impostazione predefinita per Adobe Commerce).
 
 ## Disponibilità
 
