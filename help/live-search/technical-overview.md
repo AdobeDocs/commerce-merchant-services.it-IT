@@ -3,9 +3,9 @@ title: "Panoramica tecnica"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ Per limitare i gruppi di clienti utilizzando le autorizzazioni del catalogo:
 * pt_PT
 
 Se il widget rileva che l’impostazione della lingua di amministrazione di Commerce (_Negozi_ > Impostazioni > _Configurazione_ > _Generale_ > Country Options) corrisponde a una lingua supportata. Per impostazione predefinita è tale lingua. In caso contrario, per impostazione predefinita i widget sono inglesi.
+
+Gli amministratori possono anche impostare la lingua [indice di ricerca](settings.md#language), per garantire risultati di ricerca migliori.
 
 ## Merchandising categorie
 
