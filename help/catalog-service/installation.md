@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: Scopri come installare [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Consulta [Ottieni le chiavi di autenticazione](https://experienceleague.adobe.co
 
 Utilizzare questo metodo per installare [!DNL Catalog Service] estensione per un’istanza Commerce Cloud.
 
-1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiornare la sezione require come segue:
+1. Utilizza Composer per aggiungere il modulo Catalog Service al progetto:
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. Verifica la nuova configurazione in locale e aggiorna le dipendenze:
+1. Aggiornare le dipendenze eseguendo:
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ Il comando aggiorna tutte le dipendenze.
 
 Utilizzare questo metodo per installare [!DNL Catalog Service] estensione per un’istanza on-premise.
 
-1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiornare la sezione require come segue:
+1. Utilizza Composer per aggiungere il modulo Catalog Service al progetto:
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. Aggiorna le dipendenze e installa l’estensione:
