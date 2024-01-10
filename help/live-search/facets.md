@@ -2,9 +2,9 @@
 title: "Facet"
 description: "[!DNL Live Search] i facet utilizzano più dimensioni di valori di attributo come criteri di ricerca."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Qualsiasi facet definito può essere utilizzato come parametro URL e i risultati
 
 ## Requisiti di sfaccettato
 
-I requisiti degli attributi di categoria e prodotto per il faceting sono simili agli attributi filtrabili utilizzati per la navigazione su più livelli. Le proprietà storefront di ciascun attributo devono essere impostate su `filterable (with results)`.
+I requisiti degli attributi di categoria e prodotto per il faceting sono simili agli attributi filtrabili utilizzati per la navigazione su più livelli. Per ogni proprietà della vetrina di un attributo, il valore &quot;Use in Search Results Layered Navigation&quot; (Usa nei risultati di ricerca a livello di navigazione) deve essere impostato su &quot;Yes&quot; (Sì).
 
 [!DNL Live Search] supporta fino a:
 
