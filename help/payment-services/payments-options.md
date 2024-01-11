@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posi
 
 [!UICONTROL Credit Card Fields] fornire un pagamento semplice e sicuro per i metodi di pagamento con carta di credito o con carta di debito. Quando un acquirente effettua il check-out utilizzando i campi della carta di credito, inserisce il proprio nome, l’indirizzo di fatturazione e le informazioni sulla carta di credito o di debito per effettuare l’ordine. Le informazioni sui clienti vengono utilizzate in modo sicuro durante la sessione di acquisto per guidarli all’interno del flusso di pagamento.
 
+![Campi carta di credito in pagamento](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Abilita [vaulting con carta di credito](#vaulting) per consentire ai tuoi negozi di archiviare (salvare) le informazioni sulla carta di credito per un pagamento rapido in un secondo momento.
 
 Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione del negozio o nella Home di Payment Services. Consulta [Impostazioni](settings.md#credit-card-fields) per ulteriori informazioni.
@@ -41,6 +43,10 @@ Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione del negozi
 ## [!DNL Apple Pay] pulsante
 
 I clienti possono utilizzare [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), che utilizza le credenziali di pagamento con carta di credito e di debito memorizzate su un dispositivo iOS o macOS, per effettuare acquisti.
+
+[!DNL Apple Pay] è disponibile solo nel browser Safari.
+
+![Pulsante Apple Pay nel minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 Il [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste di pagamento.
 
@@ -54,7 +60,7 @@ Puoi configurare [!UICONTROL Apple Pay] nella configurazione del negozio o nella
 
 [!DNL PayPal Smart Buttons], che utilizzano PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione, gli indirizzi di fatturazione e i dettagli del pagamento del cliente per un uso successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
 
-![[!DNL PayPal Smart Buttons] opzioni](assets/payment-buttons.png){width="400" zoomable="yes"}
+![Pulsante PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
 Puoi configurare [!UICONTROL PayPal Smart Buttons] nella configurazione del negozio o nella Home di Payment Services.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
 
@@ -89,12 +95,6 @@ Il [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, da
 Consulta le informazioni sulle offerte Paga più tardi in [PayPal&#39;s Pay Later offre la documentazione](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilizza il **Paese** per selezionare un’area di interesse.
 
 Consulta [Impostazioni](settings.md#payment-buttons) per scoprire come disabilitare/abilitare [!DNL Pay Later] messaggi.
-
-### [!DNL Pay Now] pulsante
-
-Il [!DNL Pay Now] è visibile nella finestra popup PayPal quando un cliente fa clic su un pulsante di pagamento nella schermata pagamenti.
-
-Se l&#39;importo dell&#39;ordine finale non è ancora noto (ad esempio quando non si dispone ancora di informazioni sull&#39;indirizzo di spedizione) e il cliente è in fase di check-out dalla pagina del prodotto, dal mini-carrello o dal carrello, un _Continua_ al suo posto. Quando un cliente fa clic _Continua_, dopo aver confermato il metodo di pagamento, vengono indirizzati a una pagina di revisione dell&#39;ordine per raccogliere i dettagli necessari prima di completare il pagamento.
 
 ## Utilizza solo i pulsanti di pagamento PayPal
 

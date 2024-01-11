@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Consulta [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulte
 
 ### Apple Pay
 
-Il [!UICONTROL Apple Pay] l&#39;opzione di pagamento pulsante consente di fornire un [!UICONTROL Apple Pay] pulsante di pagamento nella cassa del tuo negozio.
+Il [!UICONTROL Apple Pay] l&#39;opzione di pagamento pulsante consente di fornire un [!UICONTROL Apple Pay] il pulsante di pagamento nella cassa del negozio dal browser Safari.
 
 Puoi utilizzare Apple Pay solo dopo aver completato [Registrazione autonoma di Apple Pay tramite Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) e poi [configurare Apple Pay](settings.md/#payment-buttons) per i tuoi negozi. Consulta [Opzioni di pagamento](payments-options.md#apple-pay-button) per ulteriori informazioni.
 
@@ -230,7 +230,7 @@ Puoi anche configurare il _[!UICONTROL Button style]_opzioni dei pulsanti di pag
 1. Per abilitare il selettore dell’altezza del pulsante, attiva/disattiva **[!UICONTROL Responsive button height]** selettore.
 1. Per modificare **[!UICONTROL Label]**, seleziona l’opzione etichetta desiderata.
 
-   Quando si modificano le opzioni di configurazione per layout, colore, forma, altezza ed etichetta, nella parte inferiore della pagina Impostazioni viene visualizzata un&#39;anteprima visiva della configurazione.
+   Quando si modificano le opzioni di configurazione per layout, colore, forma, altezza ed etichetta, nella parte inferiore della pagina Impostazioni viene visualizzata un&#39;anteprima visiva della configurazione. Nell&#39;immagine seguente, il **[!UICONTROL Shape]** è impostato su _Rettangolo_ e **[!UICONTROL Label]** è impostato su _PayPal (consigliato)_.
 
    ![[!DNL PayPal Smart Buttons] opzioni](assets/payment-buttons.png){width="400" zoomable="yes"}
 
