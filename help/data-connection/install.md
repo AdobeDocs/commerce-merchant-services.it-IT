@@ -4,9 +4,9 @@ description: Scopri come installare, aggiornare e disinstallare [!DNL Data Conne
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ Il [!DNL Data Connection] l&#39;estensione è disponibile da [Adobe Marketplace]
 
 1. (Facoltativo) Per includere i dati B2B, che comprendono [eventi richiesta di acquisto](events.md#b2b-events), installare [Estensione B2B](#install-the-b2b-extension).
 
-### Configurare il connettore ordini
+### Installare gli eventi Adobe I/O
 
-Dopo aver installato `experience-platform-connector` dell&#39;estensione, è necessario finalizzare l&#39;installazione di `orders-connector` modulo basato sul tipo di distribuzione: on-premise o Adobe Commerce su infrastruttura Cloud.
+Dopo aver installato `experience-platform-connector` è necessario installare Adobe I/O Events for Adobe Commerce.
+
+I seguenti passaggi si applicano sia all’infrastruttura cloud di Adobe Commerce che alle installazioni on-premise.
+
+1. Se esegui Commerce 2.4.4 o 2.4.5, utilizza il seguente comando per caricare i moduli di eventi:
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6 e versioni successive carica automaticamente questi moduli.
+
+1. Aggiornare le dipendenze del progetto.
+
+   ```bash
+   composer update
+   ```
+
+1. Abilita i nuovi moduli:
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+Completa l’installazione in base al tipo di distribuzione: on-premise o Adobe Commerce su infrastruttura Cloud.
 
 #### On-premise
 

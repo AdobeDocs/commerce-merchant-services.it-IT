@@ -3,10 +3,10 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Data Connection] estensione da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Consulta la documentazione per gli sviluppatori per [scopri quali versioni di Co
 Queste note sulla versione descrivono le modifiche e le correzioni relative alle estensioni utilizzate da [!DNL Data Connection] estensione.
 
 +++Aggiornamenti dei servizi supportati
+
+_24 gennaio 2024_
+
+![Nuovo](../assets/new.svg) - Aggiornato il `data-services-b2b` estensione per includere un nuovo evento di richiesta di acquisto denominato [deleteRichiesteElenco](events.md#deleterequisitionlist) per gli esercenti B2B.
 
 _16 novembre 2023_
 
@@ -68,7 +72,7 @@ _12 ottobre 2022_
 
 +++
 
-## 3.1.0
+## 3.1.0.
 
 _16 novembre 2023_
 
@@ -78,7 +82,7 @@ _16 novembre 2023_
 ![Correzione](../assets/new.svg) - Aggiunta la possibilità di registrare la risposta di errore se Adobe IMS non è in grado di generare il token di accesso.
 ![Correzione](../assets/new.svg) : è stato aggiunto un messaggio di notifica se si tenta di sincronizzare gli ordini cronologici ma non sono state specificate le credenziali dell’account.
 
-## 3.0.0
+## 3,0,0
 
 _10 ottobre 2023_
 
@@ -90,7 +94,7 @@ Questa è una versione principale. [Modifica](install.md#update-the-data-connect
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per OAuth 2.0 quando [configura](connect-data.md#connect-commerce-data-to-adobe-experience-platform) il [!DNL Data Connection] estensione.
 ![Nuovo](../assets/new.svg) - Supporto terminato per Adobe Commerce 2.4.3.
 
-## 2.3.0
+## 2.3.0.
 
 _27 giugno 2023_
 
@@ -110,7 +114,7 @@ _13 giugno 2023_
 
 ![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [invia ordine storico](connect-data.md#beta-send-historical-order-data) dati e stato dell’Experience Platform. Questa funzione è disponibile solo per gli utenti beta. Per partecipare alla versione beta, invia un’e-mail al seguente indirizzo: `dataconnection@adobe.com`.
 
-## 2.2.0
+## 2.2.0.
 
 _30 marzo 2023_
 
@@ -119,7 +123,7 @@ _30 marzo 2023_
 ![Nuovo](../assets/new.svg) - Il pacchetto `commerce-data-export` e `saas-export` dipendenze con `experience-platform-connector` estensione. In precedenza, era necessario installare queste dipendenze separatamente. Queste dipendenze, insieme alla configurazione dell’esercente, consentono l’elaborazione lato server di [eventi di back office](events.md#back-office-events).
 ![Nuovo](../assets/new.svg) - È stato aggiunto un nuovo evento back office denominato [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
-## 2.1.1
+## 2.1.1.
 
 _28 febbraio 2023_
 
@@ -127,7 +131,7 @@ _28 febbraio 2023_
 
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per PHP 8.2 per tutti [!DNL Data Connection] estensioni.
 
-## 2.1.0
+## 2.1.0.
 
 _17 gennaio 2023_
 
@@ -136,7 +140,7 @@ _17 gennaio 2023_
 ![Nuovo](../assets/new.svg) - Aggiornato il [[!DNL Data Connection] Amministrazione estensioni](connect-data.md) in modo da poter specificare il proprio AEP Web SDK (alloy).
 ![Correzione](../assets/fix.svg) È stato modificato in utilizzando `identityMap` invece di `personID` quando si imposta l’identità primaria per tutti i dati inviati al server Edge di.
 
-## 2.0.1
+## 2.0.1.
 
 _10 novembre 2022_
 
@@ -144,7 +148,7 @@ _10 novembre 2022_
 
 ![Correzione](../assets/fix.svg) - Ora il contesto Adobe Experience Platform viene impostato solo dopo il caricamento di Storefront Event Collector e Storefront Event SDK.
 
-## 2.0.0
+## 2,0,0
 
 _12 ottobre 2022_
 
@@ -153,7 +157,7 @@ _12 ottobre 2022_
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di specificare il proprio Web SDK AEP quando [connessione](connect-data.md) la tua istanza di Adobe Commerce all’Experience Platform.
 ![Correzione](../assets/fix.svg) : è stato aggiornato il requisito dell’ambito dello stream di dati in modo che gli ID dello stream di dati debbano avere l’ambito del sito web anziché della visualizzazione archivio.
 
-## 1.0.0
+## 1,0,0
 
 _9 agosto 2022_
 
