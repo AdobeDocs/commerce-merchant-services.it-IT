@@ -3,9 +3,9 @@ title: Abilita [!DNL Payment Services] per la produzione
 description: Completa il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Dopo di te [configurare Commerce Services](connect.md#configure-commerce-service
 
 1. Clic **[!UICONTROL Save]**.
 1. Clic **[!UICONTROL Go to Payment Services]** per essere reindirizzato al [!DNL Payment Services] A casa.
-1. [Cancellare la cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Cancellare la cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    La cancellazione deve essere eseguita dopo ogni modifica della configurazione.
 
@@ -51,14 +51,58 @@ Consulta [Configura servizi di pagamento](settings.md) per ulteriori informazion
 
 ## Onboarding completo per gli esercenti
 
+Il passaggio successivo per consentire ai negozi di andare in diretta con Payment Services consiste nel completare l’onboarding in tempo reale.
+
+Servizi di pagamento fornisce [**Avanzate** (completamente supportato) e **Standard** Opzioni di pagamento (Pagamento rapido)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) e dei flussi di onboarding, in base al paese in cui operi e all’esperienza di pagamento preferita.
+
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Live onboarding]**.
 
    Questa opzione è visibile se non hai ancora completato l’onboarding live per [!DNL Payment Services].
 
-   Viene visualizzata una finestra PayPal.
+1. In _Seleziona il tuo paese_ , selezionare il paese da cui si sta operando.
 
-1. Continua con il flusso PayPal, utilizzando le credenziali del tuo account PayPal (non le credenziali del tuo account sandbox) o iscriviti a un nuovo account PayPal.
+   Payment Services offre supporto completo per tutte le opzioni di pagamento disponibili in [cinque paesi](../payment-services/overview.md#availability) attualmente. Payment Services fornisce funzionalità di pagamento rapido (un sottoinsieme di opzioni di pagamento) per tutti gli altri paesi rappresentati nell&#39;elenco dei paesi.
+
+   Il paese selezionato dall&#39;elenco determina le opzioni di pagamento e il flusso di onboarding:[Avanzate](#advanced-onboarding) (completamente supportato) oppure [Standard](#standard-onboarding) (Pagamento rapido), disponibile per l&#39;utente.
+
+>[!TIP]
+>
+> Una volta scelta e portata avanti l’opzione di onboarding (Standard o Avanzata), è necessario completare di nuovo l’onboarding per effettuare l’aggiornamento o il downgrade dalla selezione iniziale.
+
+### Onboarding avanzato
+
+Questo flusso di onboarding è disponibile per gli esercenti in [paesi pienamente supportati](../payment-services/overview.md#availability).
+
+Dopo aver selezionato il paese:
+
+1. Nel modale visualizzato, seleziona **Avanzate**.
+
+   Per **Standard** , passare alla [Flusso di onboarding standard](#standard-onboarding).
+
+1. Clic **Continua**.
+1. Continua con il flusso PayPal per l&#39;onboarding avanzato completamente supportato, utilizzando le credenziali del tuo account PayPal (non le credenziali del tuo account sandbox) _o_ Registrati per un nuovo conto PayPal.
+
+>[!IMPORTANT]
+>
+>**Onboarding avanzato** richiede ai commercianti di [richiesta di pagamento diritto](#request-payments-entitlement-from-adobe) per abilitare l’onboarding live.
+
+### Onboarding standard
+
+Questo flusso di onboarding standard è disponibile per i commercianti nei paesi disponibili per i quali [Solo supporto per il Checkpoint rapido](../payment-services/overview.md#availability) viene fornito.
+
+Dopo aver selezionato il paese:
+
+1. In _Contratto di servizi di pagamento_ , fare clic sul pulsante **Contratto di servizi di pagamento** per visualizzare il contratto di Adobe Commerce Payment Services.
+1. In _Contratto di servizi di pagamento_ modale, fai clic su **Accetto**.
+1. Continua con il flusso PayPal per l&#39;onboarding del Checkpoint rapido, utilizzando le credenziali del tuo account PayPal (non le credenziali del tuo account sandbox) o iscriviti a un nuovo account PayPal.
+
+>[!IMPORTANT]
+>
+>[Campi Apple per pagamenti e carte di credito](../payment-services/payments-options.md) non sono disponibili per **Onboarding standard**.
+
+## Conferma indirizzo e-mail
+
 1. Nella barra laterale Amministratore, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    Il _[!UICONTROL Live onboarding]_non è più visibile e viene visualizzato un &quot;[!UICONTROL Live payments pending]&quot;.
@@ -77,7 +121,7 @@ Consulta [Configura servizi di pagamento](settings.md) per ulteriori informazion
 
 ## Richiedi diritti pagamenti da Adobe
 
-Per abilitare l’onboarding in tempo reale, devi richiedere i pagamenti spettanti a Adobe:
+Per consentire ai negozi di andare in diretta, richiedi i pagamenti spettanti a Adobe (per [Solo onboarding avanzato](#advanced-onboarding)):
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Get Live Payments]** nel tuo [!DNL Payment Services] A casa.
@@ -87,7 +131,7 @@ Per abilitare l’onboarding in tempo reale, devi richiedere i pagamenti spettan
 1. Compila il modulo.
 1. Un membro del team vendite ti contatterà.
 
-In alternativa, è possibile richiedere diritti all’aiuto da Adobe all’indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+In alternativa, è possibile richiedere il diritto ai pagamenti da Adobe all’indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -95,8 +139,7 @@ In alternativa, è possibile richiedere diritti all’aiuto da Adobe all’indir
 
 ## Configura piano tariffario
 
-Per ottenere [!DNL Payment Services] _ID esercente_:
-
+Ottieni [!DNL Payment Services] _ID esercente_:
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Nella vista Home, fai clic su **[!UICONTROL Settings]**. Consulta [Home](payments-home.md) per ulteriori informazioni.
@@ -106,7 +149,7 @@ Per ottenere [!DNL Payment Services] _ID esercente_:
 
 A _ID commerciante produzione_ viene generato automaticamente e popolato in [configurazione](configure-admin.md). Non modificare o alterare questo ID.
 
-Per abilitare i pagamenti live:
+Abilita pagamenti live:
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Nella Home, fai clic su **[!UICONTROL Settings]** in alto a destra. Consulta [Home](payments-home.md) per ulteriori informazioni.
