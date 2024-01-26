@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Transazioni per ottenere visibilità sui tas
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UI
 
 Vedi ID transazione fornitore e ordine Commerce collegati, importi transazione, metodo di pagamento per transazione e altro all’interno di questo rapporto.
 
-Non tutti i metodi di pagamento forniscono la stessa granularità delle informazioni. Ad esempio, le transazioni con carta di credito forniscono i codici di risposta, AVS e CCV e le ultime quattro cifre della carta nel rapporto Transazioni, mentre i pulsanti Smart di PayPal no.
+Non tutti i metodi di pagamento forniscono la stessa granularità delle informazioni. Ad esempio, le transazioni con carta di credito forniscono i codici di risposta, AVS e CCV e le ultime quattro cifre della carta nel rapporto Transazioni; i pulsanti di pagamento PayPal no.
 
 È possibile [scarica transazioni](#download-transactions) in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
 

@@ -4,9 +4,9 @@ description: Verifica i requisiti di sicurezza e conformità per il sito.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Quando un acquirente [vaults—o &quot;salva&quot;—le informazioni sulla carta
 
 Consulta [Vaulting con carta di credito](vaulting.md) per ulteriori informazioni.
 
-### Pulsanti avanzati PayPal
+### Pulsanti di pagamento PayPal
 
-Con i Pulsanti avanzati PayPal non vengono trasmessi dati regolamentati PCI ai servizi. Non è necessario archiviare o mantenere tali dati, il che riduce notevolmente i problemi di conformità PCI.
+Con i pulsanti di pagamento PayPal non vengono trasmessi dati regolamentati PCI ai servizi. Non è necessario archiviare o mantenere tali dati, il che riduce notevolmente i problemi di conformità PCI.
 
 Per motivi di sicurezza, PayPal non passa l&#39;indirizzo di fatturazione durante il pagamento: paese, e-mail e nome sono le uniche informazioni di fatturazione utilizzate. Facoltativamente, puoi abilitare l&#39;estrazione PayPal del tuo sito per restituire l&#39;indirizzo di fatturazione completo contattando PayPal e completando un processo di verifica.
 

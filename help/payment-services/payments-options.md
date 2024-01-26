@@ -3,7 +3,7 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Il [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, da
 
 Puoi configurare [!UICONTROL Apple Pay] nella configurazione del negozio o nella Home di Payment Services. Consulta [Impostazioni](settings.md#apple-pay) per ulteriori informazioni.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], che utilizzano PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione, gli indirizzi di fatturazione e i dettagli del pagamento del cliente per un uso successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
+[!DNL PayPal payment buttons], che utilizzano PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione, gli indirizzi di fatturazione e i dettagli del pagamento del cliente per un uso successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
 
 ![Pulsante PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Puoi configurare [!UICONTROL PayPal Smart Buttons] nella configurazione dell&#39;archivio o [!DNL Payment Services] A casa.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
+Puoi configurare [!UICONTROL PayPal payment buttons] nella configurazione dell&#39;archivio o [!DNL Payment Services] A casa.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
 
 Vedi PayPal [Documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) per sapere in quali paesi è attualmente disponibile ogni metodo di pagamento.
 

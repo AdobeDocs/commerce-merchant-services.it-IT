@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _29 gennaio 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4110 --> È stato risolto un problema che impediva agli acquirenti di effettuare un ordine utilizzando i pulsanti avanzati sulla pagina del prodotto, sul mini carrello e sul carrello. Gli acquirenti ora possono completare gli ordini con successo.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4110 --> È stato risolto un problema che impediva agli acquirenti di effettuare un ordine utilizzando i pulsanti di pagamento sulla pagina del prodotto, sul mini carrello e sul carrello. Gli acquirenti ora possono completare gli ordini con successo.
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _22 dicembre 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3992 --> È stata migliorata la fatturazione in Payment Services quando un metodo di pagamento viene rifiutato.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services ora visualizza correttamente i pulsanti avanzati PayPal per gli esercenti che utilizzano [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} modello personalizzato per la pagina di pagamento. In precedenza, i pulsanti venivano visualizzati in modo intermittente.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services ora visualizza correttamente i pulsanti di pagamento PayPal per gli esercenti che utilizzano [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} modello personalizzato per la pagina di pagamento. In precedenza, i pulsanti venivano visualizzati in modo intermittente.
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _23 novembre 2022_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services ora include il numero di versione nell’intestazione dell’agente utente per consentire alle richieste di tenere traccia, filtrare o dichiarare obsoleti gli endpoint non utilizzati.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services ora visualizza correttamente i dati dell&#39;ordine quando un ordine viene effettuato dalla pagina del prodotto utilizzando i pulsanti avanzati.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services ora visualizza correttamente i dati dell&#39;ordine quando un ordine viene effettuato dalla pagina del prodotto utilizzando i pulsanti di pagamento.
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _30 settembre 2022_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3231 --> I commercianti possono [aggiungi un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) a siti web o a singole configurazioni di visualizzazioni store che vengono visualizzate nei rendiconti bancari delle transazioni dei clienti per delineare marchi, negozi o linee di prodotti.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-3707 --> [Attiva o disattiva i campi della carta di credito e gli smart button PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) per il pagamento nelle impostazioni di Payment Services.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3707 --> [Attiva o disattiva i campi della carta di credito e i pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) per il pagamento nelle impostazioni di Payment Services.
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3546 --> Quando un cliente fa clic **[!UICONTROL Edit cart]**, la pagina viene reindirizzata alla pagina del carrello e mostra gli elementi aggiornati anziché mostrare un carrello vuoto.
 
@@ -258,7 +258,7 @@ _29 giugno 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3264 --> In precedenza, quando un utente connesso selezionava un indirizzo di fatturazione/spedizione diverso da quello predefinito per il proprio account, l’estrazione non riusciva. Il problema è stato risolto ed è stato inviato l&#39;indirizzo di fatturazione/spedizione selezionato (anziché l&#39;indirizzo salvato predefinito) ed è stato completato il pagamento.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3314 --> Se disattivi i pulsanti avanzati PayPal per il pagamento, non vengono visualizzati errori.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3314 --> Se disattivi i pulsanti di pagamento PayPal per il pagamento, non vengono visualizzati errori.
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3330 --> I pagamenti non hanno più esito negativo durante l&#39;estrazione quando un utente ospite immette un numero di telefono che include trattini.
 
@@ -288,7 +288,7 @@ _31 marzo 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-2742 --> Ora puoi abilitare e disabilitare i metodi di pagamento disponibili, come Venmo, a livello di visualizzazione punto vendita. In precedenza era possibile configurare i metodi di pagamento solo per il sito Web.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-2277 --> Ora puoi selezionare [attivare o disattivare singoli pulsanti avanzati PayPal](settings.md#payment-buttons).
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-2277 --> Ora puoi selezionare [abilita o disabilita singoli pulsanti di pagamento PayPal](settings.md#payment-buttons).
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-2561 --> I prodotti precedentemente rimossi non vengono visualizzati nel carrello nella _Ordine di revisione_ pagina.
 
@@ -314,7 +314,7 @@ _29 novembre 2021_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supporta prezzi flessibili su più livelli, basati sul volume totale di elaborazione, adattati a qualsiasi commerciante.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-1443 --> Si può facilmente [personalizzazione dell&#39;aspetto](payments-options.md) di campi smart button e carta di credito PayPal per [!DNL Payment Services] estensione.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-1443 --> Si può facilmente [personalizzazione dell&#39;aspetto](payments-options.md) dei pulsanti di pagamento PayPal e dei campi della carta di credito per [!DNL Payment Services] estensione.
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2473 --> Utilizzo di [chiavi di composizione non corrette](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) durante l&#39;installazione dell&#39;estensione impedisce all&#39;utente di [autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) con il corretto `MAGEID`.
 

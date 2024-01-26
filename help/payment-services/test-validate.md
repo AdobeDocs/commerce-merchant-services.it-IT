@@ -3,9 +3,9 @@ title: Test e convalida
 description: I test e la convalida garantiscono che [!DNL Payment Services] Le funzioni funzionano come previsto e forniscono ai clienti le migliori opzioni di pagamento
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Prima di esporre [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magen
 
 Test [!DNL Payment Services] in un ambiente sandbox è un passaggio importante di convalida, anche se si tratta di un ambiente simulato connesso solo alla sandbox PayPal, non a banche e commercianti reali.
 
-1. Completa il pagamento dal tuo negozio tramite [Campi carta di credito](payments-options.md#credit-card-fields) o uno qualsiasi dei [Pulsanti avanzati PayPal](payments-options.md#paypal-smart-buttons). Consulta [Verifica delle credenziali](#testing-credentials) per ulteriori informazioni sull&#39;utilizzo di carte di credito false per i test.
+1. Completa il pagamento dal tuo negozio tramite [Campi carta di credito](payments-options.md#credit-card-fields) o uno qualsiasi dei [Pulsanti di pagamento PayPal](payments-options.md#paypal-smart-buttons). Consulta [Verifica delle credenziali](#testing-credentials) per ulteriori informazioni sull&#39;utilizzo di carte di credito false per i test.
 1. Acquisizione (quando l&#39;azione di pagamento è [imposta su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborso](refunds.md), o [void](voids.md) l’ordine appena completato. È inoltre possibile [creare una fattura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} per un ordine, se l’azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
 1. Entro 24-48 ore, visualizza la transazione e altre informazioni in [Rapporto Pagamenti](payouts.md).
 1. Vedi i dettagli dell’ordine in [Rapporto stato pagamento ordine](order-payment-status.md).
