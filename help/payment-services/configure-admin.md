@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Consulta [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ul
 
 ## [!UICONTROL Apple Pay]
 
-Il [!UICONTROL Apple Pay] L&#39;opzione di pagamento consente al commerciante di offrire Apple Pay ai propri acquirenti, che possono utilizzare il Touch ID sui loro dispositivi per effettuare acquisti dal browser Safari.
+Il [!UICONTROL Apple Pay] L&#39;opzione di pagamento consente al commerciante di offrire Apple Pay ai propri acquirenti, che possono utilizzare il Touch ID sui loro dispositivi per effettuare acquisti dal browser Safari. Gli esercenti possono aggiungere fino a 99 domini per account esercente.
 
 Consulta [Opzioni di pagamento](payments-options.md#apple-pay-button) per ulteriori informazioni.
 

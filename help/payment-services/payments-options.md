@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione dell&#39;a
 
 I clienti possono utilizzare [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), che utilizza le credenziali di pagamento con carta di credito e di debito memorizzate su un dispositivo iOS o macOS, per effettuare acquisti.
 
-[!DNL Apple Pay] è disponibile solo nel browser Safari.
+[!DNL Apple Pay] è disponibile solo nel browser Safari. Gli esercenti possono aggiungere fino a 99 domini per account esercente.
 
 ![Pulsante Apple Pay nel minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
