@@ -4,7 +4,7 @@ description: Scopri i dati acquisiti da ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## Eventi back office
 
-Gli eventi di back office contengono informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. I dati raccolti da questi eventi lato server mostrano una visualizzazione 360 dell’ordine cliente. Questa visualizzazione consente ai commercianti di eseguire meglio il targeting o analizzare l’intero stato dell’ordine durante lo sviluppo di campagne di marketing. Ad esempio, puoi individuare le tendenze in determinate categorie di prodotti che ottengono risultati ottimali in momenti diversi dell’anno. Ad esempio, vestiti invernali che vendono meglio durante i mesi più freddi o alcuni colori di prodotto che gli acquirenti sono interessati negli anni. Inoltre, i dati sullo stato dell&#39;ordine possono essere utili per calcolare il valore del cliente per tutta la sua durata comprendendo la propensione di un acquirente a eseguire la conversione in base agli ordini precedenti.
+Gli eventi di back office contengono informazioni sullo stato di un ordine, ad esempio se è stato [posizionato](#orderplaced), [annullato](#ordercancelled), [rimborsato](#orderitemreturncompleted), [spedito](#ordershipmentcompleted), o [completato](#ordershipmentcompleted). I dati raccolti da questi eventi lato server mostrano una visualizzazione 360 dell’ordine cliente. Questa visualizzazione consente ai commercianti di eseguire meglio il targeting o analizzare l’intero stato dell’ordine durante lo sviluppo di campagne di marketing. Ad esempio, puoi individuare le tendenze in determinate categorie di prodotti che ottengono risultati ottimali in momenti diversi dell’anno. Ad esempio, vestiti invernali che vendono meglio durante i mesi più freddi o alcuni colori di prodotto che gli acquirenti sono interessati negli anni. Inoltre, i dati sullo stato dell&#39;ordine possono essere utili per calcolare il valore del cliente per tutta la sua durata comprendendo la propensione di un acquirente a eseguire la conversione in base agli ordini precedenti.
 
 >[!NOTE]
 >

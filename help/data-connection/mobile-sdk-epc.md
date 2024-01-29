@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’SDK di Adobe Experience Platform Mobile 
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,4 @@ Dopo aver completato la configurazione SDK per Experience Platform, aggiungi la 
 
    Ora hai integrato l’SDK di Adobe Experience Platform Mobile con la tua app mobile Commerce. I dati dell’evento fluiscono dall’app all’edge dell’Experience Platform.
 
-Per scoprire come recuperare i tipi di pubblico di Real-Time CDP dall’app Commerce mobile per informare le regole di prezzo del carrello e i blocchi dinamici, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+Per scoprire come recuperare i tipi di pubblico di Real-Time CDP dall’app Commerce mobile per informare le regole di prezzo del carrello e i blocchi dinamici, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
