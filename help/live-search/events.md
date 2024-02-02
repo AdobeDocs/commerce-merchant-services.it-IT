@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Eventi'
 description: Scopri come gli eventi raccolgono i dati per [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ Questa tabella descrive gli eventi utilizzati da [!DNL Live Search] strategie.
 
 ## Eventi dashboard richiesti
 
-Alcuni eventi sono necessari per compilare il [Dashboard di Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Alcuni eventi sono necessari per compilare il [Dashboard di Live Search](performance.md)
 
-| Area del dashboard | Eventi |
-| ----- | ---- | 
-| Ricerche univoche | `search-request-sent`,`search-response-received` |
-| Nessuna ricerca di risultati | `search-request-sent`,`search-response-received` |
-| Percentuale risultati zero | `search-request-sent`,`search-response-received` |
-| Ricerche comuni | `search-request-sent`,`search-response-received` |
-| Media posizione clic | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Percentuale di click-through | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Tasso di conversione | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Area del dashboard | Eventi | Unisci campo |
+| ------------------- | ------------- | ---------- |
+| Ricerche univoche | `page-view`, `search-request-sent`, | searchRequestId |
+| Nessuna ricerca di risultati | `page-view`, `search-request-sent`, | searchRequestId |
+| Percentuale risultati zero | `page-view`, `search-request-sent`, | searchRequestId |
+| Ricerche comuni | `page-view`, `search-request-sent`, | searchRequestId |
+| Media posizione clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Percentuale di click-through | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Tasso di conversione | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### Contesti richiesti
 
