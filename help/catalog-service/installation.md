@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: "Scopri come installare [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
+source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -144,4 +144,8 @@ Per consentire [!DNL Catalog Service] tramite un firewall, aggiungi `commerce.ad
 
 Il [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe utilizzando Adobe IO.
 
-Consulta la [[!DNL Catalog Service] e Mesh API](mesh.md) argomento per i dettagli di installazione e configurazione.
+Consulta la  [[!DNL Catalog Service] e Mesh API](mesh.md) argomento per i dettagli di installazione e configurazione.
+
+## Dashboard di gestione dati
+
+Gli utenti possono fare riferimento al [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) per ulteriori dati su [!DNL Catalog Service] sincronizzazione dei dati.

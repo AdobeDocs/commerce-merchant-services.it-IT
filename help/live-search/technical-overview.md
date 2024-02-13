@@ -3,9 +3,9 @@ title: "Panoramica tecnica"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Questo video è un’introduzione alla categoria Merchandising.
 
 ## Archivio del codice widget
 
-Il widget Pagina di elenco prodotti e il widget Popover di ricerca sono entrambi disponibili per il download dall’archivio GitHub.
+I widget Pagina di elenco prodotti e Campo Live Search sono entrambi disponibili per il download dall’archivio GitHub.
 
 Questo consente agli sviluppatori di personalizzare completamente la funzionalità e lo stile. Questi utenti ospitano il codice da soli, pur sfruttando [!DNL Live Search] servizio.
 
@@ -160,6 +160,8 @@ Attualmente sono sostenuti i prezzi di base. I prezzi avanzati non supportati so
 * Prezzo minimo annunciato
 
 Osserva [Mesh API](../catalog-service/mesh.md) per calcoli dei prezzi più complessi.
+
+Il formato del prezzo supporta l’impostazione di configurazione locale nell’istanza Commerce: *Negozi* > Impostazioni > *Configurazione* > Generale > *Generale* > Opzioni locali > Impostazioni internazionali.
 
 ## Supporto PWA
 
@@ -192,7 +194,7 @@ Da utilizzare [!DNL Live Search] con PWA Studi, gli integratori devono anche:
 ## Non attualmente supportato
 
 * Il [Ricerca avanzata](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) il modulo è disattivato quando [!DNL Live Search] e il collegamento Ricerca avanzata nel piè di pagina della vetrina viene rimosso.
-* [Determinazione prezzi livello](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) e [Prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) non sono supportati nella [!DNL Live Search] Widget pagina elenco prodotti e popover.
+* [Determinazione prezzi livello](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) e [Prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) non sono supportati nella [!DNL Live Search] campo e widget pagina elenco prodotti.
 
 ## Cookie
 

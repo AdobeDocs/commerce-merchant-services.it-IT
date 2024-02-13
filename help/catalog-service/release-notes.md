@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] Note sulla versione'
+title: '''[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
-### Versione V1.13
+### Versione V1.16
 
-_12 ottobre 2023_
+_13 febbraio 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Catalog Service supporta `inStock` flag per varianti prodotto.
-![Nuovo](../assets/new.svg) `urlKey` e `externalId` sono stati aggiunti allo schema GraphQL.
-![Nuovo](../assets/new.svg) Sono ora supportati i prodotti scaricabili e le gift card.
+![Nuovo](../assets/new.svg) I video sui prodotti sono ora supportati dall’API Catalog Service.
+![Correzione](../assets/fix.svg) Sono ora supportati i prodotti in bundle a prezzi fissi.
+![Correzione](../assets/fix.svg) Le opzioni esaurite vengono ora visualizzate nel widget PDP.
 
 #### Limitazioni note
 
 Queste funzioni non sono ancora supportate:
 
-* Pacchetto prodotti a prezzo fisso
 * La dimensione massima per il payload degli attributi dinamici è di 9 MB.
 * Prezzo del prodotto di gruppo. Può essere calcolato con prezzi di prodotto semplici.
 * In un array di immagini, solo la prima immagine contiene ruoli.
@@ -49,6 +48,16 @@ Le seguenti limitazioni possono essere risolte utilizzando l’API Mesh e l’AP
 ## Versioni precedenti
 
 +++ Versioni precedenti
+
+### Versione V1.13
+
+_12 ottobre 2023_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg) Catalog Service supporta `inStock` flag per varianti prodotto.
+![Nuovo](../assets/new.svg) `urlKey` e `externalId` sono stati aggiunti allo schema GraphQL.
+![Nuovo](../assets/new.svg) Sono ora supportati i prodotti scaricabili e le gift card.
 
 ### Versione V1.12
 

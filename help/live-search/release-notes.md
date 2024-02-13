@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,39 @@ _25 aprile 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Live Search] i clienti possono ora sfruttare le nuove [Indicizzatore prezzi SaaS](../price-index/index.md).
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.1.0. {#410}
+
+_13 febbraio 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+### Nuove funzioni
+
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta l’impostazione di una regola predefinita per [Cerca nel merchandising](rules.md).
+![Nuovo](../assets/new.svg) Sono state aggiunte diverse nuove funzioni al [Widget PLP](plp-styling.md):
+
+* Attivazione/disattivazione della vista a elenco/griglia
+* Pulsanti Aggiungi al carrello
+* Supporto campioni
+* Più immagini per prodotto
+* Cursori prezzo
+* Supporto linguistico
+
+I commercianti devono aggiornare [!DNL Live Search] estensione alla versione >= 4.1.0 per accedere a queste funzioni.
+
+Dopo aver installato la versione 3.1.1 o successiva, abilita i nuovi indicizzatori:
+
+* Feed prezzi prodotto
+* Feed dati del sito Web degli ambiti
+* Ambiti feed dati di gruppi di clienti
+
+Dopo l&#39;upgrade, verifica la configurazione aggiornata in QA o Staging prima di eseguire il push delle modifiche in produzione.
+
+## Versioni precedenti
+
++++4.0.0 e versioni precedenti
+
+## [!DNL Live Search] 4,0,0 {#400}
 
 _13 novembre 2023_
 
@@ -61,27 +93,11 @@ _13 novembre 2023_
 ![Correzione](../assets/fix.svg) Stili CSS riconfigurati per isolare meglio le classi widget.
 ![Correzione](../assets/fix.svg) Correzioni di bug minori
 
-I commercianti devono aggiornare [!DNL Live Search] estensione alla versione >= 4.0.0 per accedere a queste funzioni.
-
-Dopo aver installato la versione 3.1.1 o successiva, abilita i nuovi indicizzatori:
-
-* Feed prezzi prodotto
-* Feed dati del sito Web degli ambiti
-* Ambiti feed dati di gruppi di clienti
-
-Dopo l&#39;upgrade, verifica la configurazione aggiornata in QA o Staging prima di eseguire il push delle modifiche in produzione.
-
-## Versioni precedenti
-
-+++3.1.1 e precedenti
-
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1. {#311}
 
 _15 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
-
-
 
 ![Nuovo](../assets/new.svg) È stata aggiunta una nuova scheda Categoria merchandising. Gli utenti possono ora aggiungere classificazioni intelligenti e classificazioni manuali (pin, boost, bury, hide) per categoria
 ![Nuovo](../assets/new.svg) Gli utenti possono aggiungere una singola regola di categoria con classificazione intelligente o manuale
@@ -103,7 +119,7 @@ _15 settembre 2023_
 ![Correzione](../assets/fix.svg) Il tipo di classificazione è stato rinominato &quot;Classificazione intelligente&quot;
 ![Correzione](../assets/fix.svg) Correzioni di bug minori
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0. {#310}
 
 _1 settembre 2023_
 
@@ -113,7 +129,7 @@ _1 settembre 2023_
 
 ![Correzione](../assets/fix.svg) Il widget Elenco prodotti è stato aggiornato per utilizzare [API Catalog Service](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2. {#302}
 
 _7 agosto 2023_
 
@@ -142,7 +158,7 @@ Si consiglia di eseguire l’aggiornamento e il test prima di passare alla produ
 
 L’utilizzo del widget Pagina di elenco prodotti di Live Search causerà il mancato funzionamento di Gestione tag di Google. Se è necessario Google Tag Manager, utilizzare l&#39;adattatore di ricerca predefinito.
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1. {#301}
 
 _14 marzo 2023_
 
@@ -193,7 +209,7 @@ Per accedere a queste funzioni, i commercianti devono aggiornare la versione del
 
 Si consiglia di eseguire l’aggiornamento e il test prima di passare alla produzione. Dopo aver verificato i risultati dell’ambiente di test, è consigliabile aggiornare l’ambiente di produzione nelle ore di minore utilizzo.
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4. {#204}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -207,7 +223,7 @@ I commercianti devono aggiornare [!DNL Live Search] versione dell&#39;estensione
 
 Si consiglia agli utenti di eseguire l’aggiornamento e il test prima di passare alla produzione. Dopo aver verificato i risultati dell’ambiente di test, è consigliabile aggiornare l’ambiente di produzione nelle ore di minore utilizzo.
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3. {#203}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -217,7 +233,7 @@ I commercianti devono aggiornare [!DNL Live Search] versione dell&#39;estensione
 
 Si consiglia agli utenti di eseguire l’aggiornamento e il test prima di passare alla produzione. Dopo aver verificato i risultati dell’ambiente di test, è consigliabile aggiornare l’ambiente di produzione nelle ore di minore utilizzo.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2,0 {#20}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -232,7 +248,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 ![Bug](../assets/bug.svg) I seguenti attributi di prodotto non sono supportati da [API Commerce GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) se utilizzato in relazione alla versione beta di PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) Versione beta di PWA per [!DNL Live Search] non supporta [gestione degli eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1. {#131}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -240,7 +256,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 ![Correzione](../assets/fix.svg) È stato risolto un problema che causava la visualizzazione di un errore in caso di [simbolo di valuta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`).
 ![Correzione](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) mostra ora il [Prezzo speciale](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (prezzo finale minimo) se disponibile.
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0. {#130}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -251,7 +267,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 ![Bug](../assets/bug.svg) La patch per l&#39;adattatore di ricerca gestisce i prodotti duplicati.
 ![Bug](../assets/bug.svg) [!DNL Live Search] supporta [fonte singola](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) ubicazioni di inventario (fisiche) con più ubicazioni (virtuali) [scorte](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). Al momento non sono supportate più origini inventario.
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0. {#120}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
@@ -264,7 +280,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 ![Correzione](../assets/fix.svg) [!DNL Live Search] non genera più un errore se il criterio di ricerca contiene un valore di ordinamento vuoto
 ![Correzione](../assets/fix.svg) Il filtro degli intervalli non si interrompe più se i codici attributo contengono stringhe &quot;a&quot; o &quot;da&quot;
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0. {#110}
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 

@@ -2,9 +2,9 @@
 title: "Ricerca merchandising"
 description: "[!DNL Live Search] le regole di merchandising combinano la logica con le azioni per modellare l’esperienza di acquisto."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Ogni regola ha tre componenti principali:
 * Eventi: le azioni che hanno luogo quando vengono soddisfatte le condizioni.
 * Dettagli: il nome della regola, l’intervallo di tempo facoltativo e la descrizione.
 
-È possibile combinare più condizioni e azioni e pianificare una regola affinché sia attiva per un periodo.
+È possibile combinare più condizioni e azioni e pianificare una regola affinché sia attiva per un periodo. Puoi anche impostare una regola predefinita che viene applicata anche quando non è impostato alcun termine di ricerca.
 
 ## Requisiti
 
@@ -46,6 +46,10 @@ Operatori di corrispondenza `All` e `Any` determina l’operatore logico utilizz
 * `Any` - Utilizza il `OR` per unire più condizioni.
 
 Durante la composizione di una regola complessa, può essere utile scriverla con un rientro per descrivere le condizioni, gli eventi associati e i nomi dei prodotti o gli SKU necessari per restituire i risultati desiderati. Quindi, crea la regola e verifica il risultato.
+
+## Regola predefinita
+
+È possibile impostare una regola predefinita che viene applicata quando non viene fornito alcun termine di ricerca o non è possibile applicare altre regole di ricerca. Se imposti la regola predefinita su &quot;Più acquistati&quot;, tutte le query assumeranno per impostazione predefinita tale tipo di classificazione, a meno che non vengano precedute da un termine di ricerca più specifico. Nessun termine di ricerca può essere impostato per la regola predefinita.
 
 ## Ordine di precedenza con più regole
 

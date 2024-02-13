@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare regole di Search Merchandising."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 1. Fai clic su **Cerca nel merchandising** scheda.
 1. Clic **Aggiungi regola** per avviare l’editor di regole.
 
+## Tipo di regola
+
+Una query di ricerca è il luogo in cui si definiscono termini di ricerca, condizioni e tipi di classificazione specifici.
+
+È possibile impostare una regola predefinita che viene applicata a tutte le query, a meno che non venga definita una query di ricerca più specifica. È possibile impostare una sola regola predefinita che non può contenere condizioni. Se si seleziona Default, l&#39;interfaccia Conditions (Condizioni) non viene visualizzata.
+Scegli il tipo di classificazione intelligente predefinito ed eventuali classificazioni manuali da applicare a tutte le ricerche predefinite. Le classificazioni manuali vengono sempre applicate.
+
 ## Condizioni
 
-Le condizioni sono i requisiti per attivare un evento. Una regola può avere fino a dieci condizioni e 25 eventi.
+Le condizioni sono i requisiti per attivare un evento. Una regola può avere fino a dieci condizioni e 25 eventi. Una regola predefinita non può avere condizioni.
 
 ![Regola: creare la regola](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Inizialmente, il riquadro dei test esegue il rendering della query dalla casella
 
 1. Per creare una regola con più condizioni, fai clic su **Aggiungi condizione**.
 Una regola può avere fino a dieci condizioni. L’operatore logico che unisce due condizioni si basa sulla condizione corrente *Corrispondenza* impostazione. Per impostazione predefinita, *Corrispondenza* è `All` e l’operatore logico è `AND`.
-
-   ![Regole: la query di ricerca contiene](assets/rules-search-query-contains-and.png)
 
 1. Seleziona la seconda condizione e immetti il testo della query richiesto.
 
@@ -180,6 +185,7 @@ Le informazioni immesse vengono visualizzate nel [Dettagli regola](rules-workspa
 | Campo | Descrizione |
 |--- |--- |
 | Nome | Nome della regola. I nomi delle regole devono essere univoci. |
+| Tipo di regola | Predefinito o Query. Il valore predefinito viene applicato a tutte le regole, a meno che non sia definita una regola di query più specifica. |
 | Data di inizio | Data di inizio della regola, se pianificata. |
 | Data di fine | Data di fine della regola, se pianificata. |
 | Descrizione | Breve descrizione della regola. |

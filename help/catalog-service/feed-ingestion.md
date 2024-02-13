@@ -1,19 +1,15 @@
 ---
 title: Servizio di acquisizione feed
 description: Scopri il servizio di acquisizione di feed per Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Servizio di acquisizione feed
-
->[!NOTE]
->
->Il servizio di acquisizione feed è attualmente in versione beta privata. Non è ancora disponibile per un uso generico.
 
 Il servizio di acquisizione dei feed consente ai clienti con cataloghi grandi e/o complessi di inviare direttamente i dati ai servizi Adobe Commerce.
 
@@ -36,12 +32,6 @@ A seconda della configurazione di Adobe Commerce, l’archiviazione e i flussi d
 
 Ignorando l’applicazione Commerce di base e spostando i dati direttamente nei servizi Commerce, gli aggiornamenti dei prodotti si riflettono nello store più rapidamente. I dati del catalogo di base, come gli SKU, vengono inviati all’applicazione Commerce di base per l’elaborazione separata.
 
-## Partecipa alla versione beta
+## API
 
-Il servizio di acquisizione dei feed è progettato per:
-
-* Clienti di medie imprese con implementazioni headless
-* Clienti con cataloghi complessi e di grandi dimensioni
-* I clienti che non utilizzano l’amministratore Adobe Commerce per gestire i dati del catalogo utilizzano un sistema ERP o di terze parti per gestire i dati del catalogo
-
-Se ti interessa partecipare al programma beta, contatta il team all’indirizzo sagonzal@adobe.com.
+Il [Documentazione API del servizio di acquisizione feed](https://developer.adobe.com/commerce/services/feed-ingestion) fornisce dettagli su come implementare il servizio.

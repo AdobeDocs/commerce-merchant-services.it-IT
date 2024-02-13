@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] per Adobe Commerce consente di recuperare i contenuti delle pagine di visualizzazione dei prodotti e delle pagine dell’elenco dei prodotti in modo molto più rapido rispetto alle query native di Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Il [!DNL Catalog Service] utilizza [GraphQL](https://graphql.org/) per richieder
 
 Adobe Commerce dispone di due sistemi GraphQL. Il sistema GraphQL di base fornisce un’ampia gamma di query (operazioni di lettura) e mutazioni (operazioni di scrittura) che consentono a un acquirente di interagire con molti tipi di pagine, tra cui prodotto, account cliente, carrello, pagamento e altro ancora. Tuttavia, le query che restituiscono le informazioni sul prodotto non sono ottimizzate per la velocità. Il sistema GraphQL dei servizi può eseguire query solo sui prodotti e sulle informazioni correlate. Queste query sono più performanti di query di base simili.
 
-I clienti di Catalog Service possono utilizzare il nuovo [Indicizzatore prezzi SaaS](../price-index/index.md), che fornisce aggiornamenti più rapidi per la modifica del prezzo e tempi di sincronizzazione.
+[!DNL Catalog Service] i clienti possono utilizzare il nuovo [Indicizzatore prezzi SaaS](../price-index/index.md), che fornisce aggiornamenti più rapidi per la modifica del prezzo e tempi di sincronizzazione.
 
 ## Architettura
 
@@ -62,13 +62,13 @@ Le opzioni di prodotto complesse sono unificate e si distinguono per il loro com
 
 ### Prezzi
 
-I prodotti semplici rappresentano l&#39;unità di vendita di base che ha un prezzo. Catalog Service calcola il prezzo regolare prima degli sconti e il prezzo finale dopo gli sconti. I calcoli dei prezzi possono includere imposte sui prodotti fisse. Escludono le promozioni personalizzate.
+I prodotti semplici rappresentano l&#39;unità di vendita di base che ha un prezzo. [!DNL Catalog Service] calcola il prezzo regolare prima degli sconti e il prezzo finale dopo gli sconti. I calcoli dei prezzi possono includere imposte sui prodotti fisse. Escludono le promozioni personalizzate.
 
 Un prodotto complesso non ha un prezzo stabilito. Catalog Service restituisce invece i prezzi dei semplici collegati. Ad esempio, un esercente può inizialmente assegnare gli stessi prezzi a tutte le varianti di un prodotto configurabile. Se determinate dimensioni o colori sono impopolari, il commerciante può ridurre i prezzi di tali varianti. Pertanto, il prezzo del prodotto complesso (configurabile) presenta inizialmente una fascia di prezzo, che riflette il prezzo sia delle varianti standard che di quelle impopolari. Dopo che l&#39;acquirente ha selezionato un valore per tutte le opzioni disponibili, la vetrina visualizza un solo prezzo.
 
 >[!NOTE]
 >
-> Clienti Commerce con [!DNL Catalog Service] possono sfruttare gli aggiornamenti più veloci delle modifiche di prezzo e i tempi di sincronizzazione sui loro siti web con [Indicizzatore prezzi SaaS](../price-index/index.md).
+> Clienti Commerce con [!DNL Catalog Service] possono sfruttare gli aggiornamenti più rapidi dei cambiamenti di prezzo e i tempi di sincronizzazione sui loro siti web con [Indicizzatore prezzi SaaS](../price-index/index.md).
 
 ## Implementazione
 
