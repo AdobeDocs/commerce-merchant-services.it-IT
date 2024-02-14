@@ -3,9 +3,9 @@ title: Sincronizzazione catalogo
 description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 6513fd6dce9648407b0878785f5f59f9f39cd5e1
+source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 # Sincronizzazione catalogo
 
->[!NOTE]
->
-> Il Dashboard di sincronizzazione del catalogo è ora il Dashboard di gestione dati. Questo dashboard rinnovato ora supporta [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service]. I clienti possono ottenere Data Management Dashboard aggiornando all’ultima versione di uno di questi servizi. Per ulteriori informazioni, consulta [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentazione. Questo argomento corrente rimane valido per gli utenti che devono ancora effettuare l’aggiornamento e che dispongono ancora della dashboard Sincronizzazione catalogo.
-
 Adobe Commerce utilizza gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
 
 Il servizio di sincronizzazione catalogo sposta i dati del prodotto da un [!DNL Adobe Commerce] istanza al [!DNL Commerce Services] su base continuativa per mantenere i dati aggiornati. Ad esempio: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) richiede informazioni sul catalogo correnti per restituire in modo accurato i consigli con nomi, prezzi e disponibilità corretti. Utilizza il _Sincronizzazione catalogo_ dashboard per osservare e gestire il processo di sincronizzazione o [interfaccia della riga di comando](#resynccmdline) per attivare la sincronizzazione di un catalogo e reindicizzare i dati di prodotto per l&#39;utilizzo da parte di [!DNL Commerce Services].
 
+>[!NOTE]
+>
+> Per utilizzare _Sincronizzazione catalogo_ o l&#39;interfaccia della riga di comando, è necessario disporre di un [Chiave API e spazio dati SaaS configurati](saas.md).
+
 ## Accesso al dashboard di sincronizzazione del catalogo
+
+>[!NOTE]
+>
+> Il _Sincronizzazione catalogo_ è disponibile solo quando _Recommendations del prodotto_ vengono installati e riflettono le proiezioni di dati relative solo a tale funzione. Supporto per altri servizi Commerce come _Live Search_ e _Servizio catalogo_ sono pianificate per il futuro.
 
 Per accedere al dashboard Sincronizzazione catalogo, seleziona **Sistema** > _Trasferimento dati_ > **Sincronizzazione catalogo**.
 
@@ -42,7 +46,7 @@ Segnala uno stato di sincronizzazione di:
 - **Non riuscito** - Visualizza la data e l&#39;ora del tentativo di sincronizzazione
 - **In corso** - Visualizza la data e l&#39;ora dell&#39;ultima sincronizzazione riuscita
 
-Il processo di sincronizzazione del catalogo viene eseguito tramite il processo cron. Se non trovi i prodotti previsti nella vetrina o se i prodotti non riflettono le modifiche recenti apportate, puoi risolvere [problemi di sincronizzazione catalogo](#resolvesync).
+Il processo di sincronizzazione del catalogo viene eseguito automaticamente ogni ora. Se non trovi i prodotti previsti nella vetrina o se i prodotti non riflettono le modifiche recenti apportate, puoi risolvere [problemi di sincronizzazione catalogo](#resolvesync).
 
 ### Prodotti sincronizzati
 

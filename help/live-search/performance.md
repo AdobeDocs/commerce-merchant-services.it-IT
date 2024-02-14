@@ -2,9 +2,9 @@
 title: "Dashboard delle prestazioni"
 description: "Il [!DNL Live Search] La dashboard delle prestazioni fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Il [!DNL Live Search] La dashboard delle prestazioni fornisce informazioni appro
 * Risultati comuni
 
 ![Prestazioni](assets/performance-unique-searches.png)
-
-È inoltre possibile fare riferimento al [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) per ulteriori dati sulla sincronizzazione dei dati.
 
 ## Visualizzare un rapporto
 
