@@ -3,7 +3,7 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Data Connection] estensione da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16 novembre 2023_
 
 _10 ottobre 2023_
 
-![Nuovo](../assets/new.svg) - Aggiunti nuovi eventi di stato dell&#39;ordine: [Ordine fatturato](events-backoffice.md#orderinvoiced), [Restituzione articolo ordine avviata](events.md#orderitemsreturninitiated), e [Restituzione articolo ordine completata](events.md#orderitemreturncompleted).
+![Nuovo](../assets/new.svg) - Aggiunti nuovi eventi di stato dell&#39;ordine: [Ordine fatturato](events-backoffice.md#orderinvoiced), [Restituzione articolo ordine avviata](events-backoffice.md#orderitemsreturninitiated), e [Restituzione articolo ordine completata](events-backoffice.md#orderitemreturncompleted).
 ![Correzione](../assets/fix.svg) - È stato risolto un problema a causa del quale le modifiche alla configurazione della valuta non venivano applicate negli eventi dopo l’aggiornamento della cache.
 ![Correzione](../assets/fix.svg) - È stato corretto un errore che si verificava quando non veniva visualizzato il messaggio di conferma dell’ordine se era stato abilitato il posizionamento asincrono dell’ordine.
 ![Nuovo](../assets/new.svg) - Dati aggiunti a [addToRichiesteList](events.md#addtorequisitionlist) nella pagina di visualizzazione Categoria.

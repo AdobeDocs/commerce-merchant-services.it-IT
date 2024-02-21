@@ -3,7 +3,7 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In questa sezione si specifica il tipo di dati che si desidera raccogliere e inv
 
 Per garantire che la tua istanza di Adobe Commerce possa iniziare la raccolta dei dati, controlla [prerequisiti](overview.md#prerequisites).
 
-Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events.md#storefront-events), [back office](events.md#back-office-events), e [profilo](events.md#customer-profile-events-server-side) eventi.
+Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events.md#storefront-events), [back office](events-backoffice.md), e [profilo](events-backoffice.md#customer-profile-events-server-side) eventi.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ La disponibilità di un record di profilo in Real-Time CDP può richiedere circa
 
 ### Inviare dati cronologici degli ordini
 
-Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli ordini](events.md#back-office-events). È possibile utilizzare [!DNL Data Connection] estensione per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti e personalizzare l’esperienza del cliente in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
+Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli ordini](events-backoffice.md#back-office-events). È possibile utilizzare [!DNL Data Connection] estensione per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti e personalizzare l’esperienza del cliente in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
 
 Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario completare diversi passaggi per inviare tali dati ad Experienci Platform.
 
