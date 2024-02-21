@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
+source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.3.3
+
+_14 febbraio 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg)<!-- PAY-5048 --> Supporto per PHP 8.3
+
+![Correzione](../assets/fix.svg)<!-- PAY-5048 --> È stato corretto un errore relativo al `is_deleted` flag. Ora, gli ordini non falliscono a causa della `Rejected` Stato inviato dall&#39;estensione.
 
 ## v2.3.2
 
