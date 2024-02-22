@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _25 aprile 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Live Search] i clienti possono ora sfruttare le nuove [Indicizzatore prezzi SaaS](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0. {#410}
 
-_Feb 13, 2024_
+_22 febbraio 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-### New Features
+### Nuove funzioni
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![Nuovo](../assets/new.svg) Il [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) è ora disponibile. Questa dashboard rinnovata fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service].
+![Nuovo](../assets/new.svg) Sono state aggiunte diverse nuove funzioni al [Widget PLP](plp-styling.md):
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* Attivazione/disattivazione della vista a elenco/griglia
+* Pulsanti Aggiungi al carrello
+* Supporto campioni
+* Più immagini per prodotto
+* Cursori prezzo
+* Supporto linguistico
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+I commercianti devono aggiornare [!DNL Live Search] estensione alla versione >= 4.1.0 per accedere a queste funzioni.
 
---->
+### Aggiornamenti
+
+![Correzione](../assets/fix.svg) È stato risolto un problema che causava un errore quando gli utenti guest aggiungevano prodotti al carrello in visualizzazioni store non predefinite.
+![Correzione](../assets/fix.svg) È stato risolto un problema che causava la visualizzazione del simbolo di valuta davanti al valore del prezzo da parte del popover di ricerca, indipendentemente dalle impostazioni internazionali.
+![Correzione](../assets/fix.svg) Sono state rimosse le definizioni dei tipi non necessarie per i plug-in core disabilitati per risolvere i problemi di compatibilità durante l’installazione.
 
 ## [!DNL Live Search] 4,0,0 {#400}
 
