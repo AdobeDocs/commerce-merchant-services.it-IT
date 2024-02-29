@@ -2,9 +2,9 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Quando attivi l’unità di consigli, Adobe Commerce inizia a [raccogliere dati]
 1. In _Denomina il consiglio_ , immettere un nome descrittivo per il riferimento interno, ad esempio `Home page most popular`.
 
 1. In _Seleziona tipo di pagina_ , seleziona la pagina in cui vuoi visualizzare il consiglio tra le seguenti opzioni:
+
+   >[!NOTE]
+   >
+   > I Recommendations dei prodotti non sono supportati nella pagina del carrello quando lo store è configurato per [mostra la pagina del carrello subito dopo l’aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Home page
    * Categoria
