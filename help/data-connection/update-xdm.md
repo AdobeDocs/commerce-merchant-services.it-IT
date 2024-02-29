@@ -4,9 +4,9 @@ description: Scopri come creare schemi, set di dati e flussi di dati per raccogl
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Con gli schemi, i set di dati e i flussi di dati configurati per i dati comporta
 Per includere le informazioni sul profilo dell&#39;acquirente, vedere la sezione successiva.
 
 ## Dati evento profilo serie temporali
-
->[!NOTE]
->
->Questa funzione è in versione beta. Se desideri partecipare al programma beta, invia una richiesta a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 I dati dell’evento profilo di serie temporali vengono generati dai seguenti eventi:
 

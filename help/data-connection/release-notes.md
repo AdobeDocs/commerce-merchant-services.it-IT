@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Data Connection] estensione da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _13 giugno 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [invia ordine storico](connect-data.md#beta-send-historical-order-data) dati e stato dell’Experience Platform. Questa funzione è disponibile solo per gli utenti beta. Per partecipare alla versione beta, invia un’e-mail al seguente indirizzo: `dataconnection@adobe.com`.
+![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [invia ordine storico](connect-data.md#beta-send-historical-order-data) dati e stato dell’Experience Platform.
 
 ## 2.2.0.
 

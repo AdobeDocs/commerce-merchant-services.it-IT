@@ -3,18 +3,14 @@ title: Aggiornamento dello schema dei record di profilo per l’acquisizione di 
 description: Scopri come creare schemi, set di dati e flussi di dati per raccogliere e inviare all’Experience Platform i dati dei record del profilo Commerce.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Aggiornamento dello schema dei record di profilo per l’acquisizione di dati Commerce
-
->[!NOTE]
->
->Questa funzione è in versione beta. Se desideri partecipare al programma beta, invia una richiesta a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Quando gli acquirenti creano un profilo nel sito Commerce, viene creato un record di profilo e i dati vengono acquisiti. È necessario creare uno schema e un set di dati specifici per quel record di profilo prima di poter inviare in streaming i dati di profilo all’Experience Platform.
 

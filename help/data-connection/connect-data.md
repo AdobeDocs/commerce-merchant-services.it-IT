@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In questa sezione imparerai a configurare il [!DNL Data Connection] estensione.
 
 ### Aggiungi dettagli account servizio e credenziali
 
-Se prevedi di raccogliere e inviare [dati ordine cronologico](#send-historical-order-data) o [Dati del profilo cliente (Beta)](#send-customer-profile-data), è necessario aggiungere i dettagli dell&#39;account del servizio e delle credenziali. Inoltre, se si sta configurando [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) devi completare questi passaggi.
+Se prevedi di raccogliere e inviare [dati ordine cronologico](#send-historical-order-data) o [dati del profilo cliente](#send-customer-profile-data), è necessario aggiungere i dettagli dell&#39;account del servizio e delle credenziali. Inoltre, se si sta configurando [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) devi completare questi passaggi.
 
 Se raccogli e invii solo dati di vetrina o di back office, puoi passare al [generale](#general) sezione.
 
@@ -97,7 +97,7 @@ In questa sezione si specifica il tipo di dati che si desidera raccogliere e inv
 
 - **Back office** (dati lato server) sono dati acquisiti nei server Commerce. Ciò include informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. Include inoltre [dati ordine cronologico](#send-historical-order-data).
 
-- (**Beta**) **Profilo** sono dati relativi alle informazioni del profilo dell’acquirente. Scopri [altro](#send-customer-profile-data).
+- **Profilo** sono dati relativi alle informazioni del profilo dell’acquirente. Scopri [altro](#send-customer-profile-data).
 
 Per garantire che la tua istanza di Adobe Commerce possa iniziare la raccolta dei dati, controlla [prerequisiti](overview.md#prerequisites).
 
@@ -158,13 +158,9 @@ Dopo l’onboarding, i dati della vetrina iniziano a fluire verso il server Edge
 
 ### Inviare dati del profilo cliente
 
->[!IMPORTANT]
->
->Questa funzione è in versione beta. Se desideri partecipare al programma beta, invia una richiesta a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Esistono due tipi di dati di profilo che puoi inviare all’Experience Platform: i record di profilo e gli eventi di profilo della serie temporale.
 
-Un record di profilo contiene dati salvati quando un acquirente crea un profilo nell’istanza Commerce, ad esempio il nome dell’acquirente. Quando lo schema e il set di dati sono [configurato correttamente](profile-data.md), un record di profilo viene inviato all’Experience Platform e inoltrato al servizio di gestione e segmentazione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Un record di profilo contiene dati salvati quando un acquirente crea un profilo nell’istanza Commerce, ad esempio il nome dell’acquirente. Quando lo schema e il set di dati sono [configurato correttamente](profile-data.md), un record di profilo viene inviato all’Experience Platform e inoltrato al servizio di gestione e segmentazione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=it).
 
 Gli eventi di profilo della serie temporale contengono dati sulle informazioni del profilo dell’acquirente, ad esempio se creano, modificano o eliminano un account sul sito. Quando i dati dell’evento profilo vengono inviati all’Experience Platform, risiedono in un set di dati in cui possono essere utilizzati da altri prodotti DX.
 

@@ -3,9 +3,9 @@ title: Eventi di back office
 description: Scopri i dati acquisiti da ogni evento di back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `productListItems.categories.path` | Percorso della categoria. |
 
 ## Eventi profilo cliente (back office)
-
->[!NOTE]
->
->**Beta** Gli eventi di profilo generati lato server sono disponibili per i partecipanti beta. Se desideri partecipare al programma beta, invia una richiesta a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Gli eventi profilo acquisiti lato server includono informazioni sull’account, ad esempio `accountCreated`, `accountUpdated`, e `accountDeleted`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [vetrina](#customer-profile-events-storefront).
 

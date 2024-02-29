@@ -3,18 +3,14 @@ title: Record profilo
 description: Scopri quali dati acquisisce un record di profilo.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Record profilo (Beta)
-
->[!NOTE]
->
->Questa funzione è in versione beta. Se desideri partecipare al programma beta, invia una richiesta a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Record profilo
 
 Di seguito sono descritti i dati del record del profilo di Commerce disponibili quando installi [!DNL Data Connection] estensione. I dati nei record del profilo vengono inviati a Adobe Experience Platform.
 
