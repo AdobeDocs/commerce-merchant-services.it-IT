@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
+source-git-commit: 36475f3071e819efa9884aefffc8bbeb6b6ac788
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.3.4
+
+_4 marzo 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg)<!-- PAY-5244 --> È stata corretta la compatibilità dell’estrazione asincrona.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5253 --> È stato corretto un errore che impediva l’eliminazione di un token di Vault non appartenente a Payment Services.
 
 ## v2.3.3
 
