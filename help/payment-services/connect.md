@@ -3,9 +3,9 @@ title: Connetti l’istanza
 description: Connetti la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio di dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Se è stato *ha già connesso l’istanza*, ottenendo e utilizzando le credenziali API e configurando Commerce Services, puoi procedere a [configurazione della sandbox di test](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Se si continua *necessità di collegare l’istanza*, consulta le informazioni in questo argomento su [recupero credenziali API](#obtain-api-credentials) e [configurazione di Commerce Services](#configure-commerce-services).
 * Se sei *non sei sicuro se l’istanza è connessa*, passa a **Sistema** > Servizi > **Connettore Commerce Services** e visualizzare i valori delle chiavi API pubblica e privata in [!UICONTROL Sandbox Keys] e [!UICONTROL Production Keys] sezioni e *Progetto* e *Spazio dati* campi in [!UICONTROL SaaS Identifier] sezione. Se tali valori sono presenti, l’istanza è connessa.
+
+>[!NOTE]
+>
+>Tutti i commercianti autorizzati a Payment Services possono utilizzare uno spazio dati di produzione e due spazi dati di test.
 
 ## Ottenere le credenziali API
 
