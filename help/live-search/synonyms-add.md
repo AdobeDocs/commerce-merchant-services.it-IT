@@ -2,9 +2,9 @@
 title: "Aggiungi sinonimi"
 description: "Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Seguire le istruzioni per [tipo di sinonimo](synonyms-type.md) che desideri crea
 
 1. Inserisci il **Parola chiave** termine o frase da associare.
 1. Inserisci il **Espansione** termini da aggiungere come sinonimi per la parola chiave. Separa più termini con una virgola.
-In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#39;insieme dei termini di espansione sono &quot;pantaloni lunghi, pantaloni, pantaloni allungati&quot;.
+In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#39;insieme dei termini di espansione sono &quot;pantaloni, slacks&quot;.
 
    ![Esempio di sinonimo bidirezionale](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia bidirezion
 
    ![Esempio di sinonimo unidirezionale](assets/synonym-add-one-way-example.png)
 
-   In questo esempio, la parola chiave è &quot;pantaloni&quot; e i termini di espansione unidirezionale &quot;capri, pantaloni a lunghezza di polpaccio, spintori a pedale&quot; sono ciascuno un sottoinsieme di &quot;pantaloni&quot;, ma con un significato specifico.
+   In questo esempio, la parola chiave è &quot;pantaloni&quot; e i termini di espansione unidirezionale &quot;capris, peddle-pushers&quot; sono ciascuno un sottoinsieme di &quot;pantaloni&quot;, ma con un significato specifico.
 
 1. Al termine, fai clic su **Salva**.
 Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia unidirezionale che punta dai termini di espansione alla parola chiave per indicare che i termini sono sottoinsiemi della parola chiave. Un segno più separa ogni termine di espansione.
