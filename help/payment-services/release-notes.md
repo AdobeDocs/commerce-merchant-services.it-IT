@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Consulta [Disponibilità del prodotto](https://experienceleague.adobe.com/docs/c
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e sono state rilasciate al di fuori delle normali versioni del servizio ospitato.
 
 +++Aggiornamenti dei servizi in hosting
+
+_5 marzo 2024_
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-5252 --> Ora gli esercenti possono copiare i dati dalle griglie del dashboard selezionando il contenuto di una singola cella.
 
 _10 ottobre 2023_
 
