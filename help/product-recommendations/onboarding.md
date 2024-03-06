@@ -2,9 +2,9 @@
 title: Onboarding
 description: Scopri i requisiti e le piattaforme supportate in [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Consulta [[!DNL Page Builder] Integrazione](page-builder.md) per istruzioni su c
 
 ### Indicizzazione dei prezzi SaaS
 
-I clienti che utilizzano i consigli di prodotto possono utilizzare [Indicizzazione dei prezzi SaaS](../price-index/index.md), che fornisce aggiornamenti più rapidi sui cambiamenti di prezzo e tempi di sincronizzazione.
+I clienti che utilizzano i consigli di prodotto possono utilizzare [Indicizzazione dei prezzi SaaS](../price-index/price-indexing.md), che fornisce aggiornamenti più rapidi sui cambiamenti di prezzo e tempi di sincronizzazione.
 
 ### Supporto B2B {#b2bsupport}
 
