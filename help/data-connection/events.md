@@ -4,9 +4,9 @@ description: Scopri i dati acquisiti da ogni evento comportamentale.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `productListItems.selectedOptions.attribute` | Identifica un attributo del prodotto configurabile, ad esempio `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica il valore dell’attributo come `small` o `black`. |
 
-## Eventi profilo cliente (comportamentali)
+## Eventi profilo cliente
 
-Gli eventi profilo acquisiti dalla vetrina includono informazioni sull’account, ad esempio `signIn`, `signOut`, `createAccount`, e `editAccount`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [lato server](events-backoffice.md#customer-profile-events-back-office).
+Gli eventi profilo acquisiti dalla vetrina includono informazioni sull’account, ad esempio `signIn`, `signOut`, `createAccount`, e `editAccount`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [lato server](events-backoffice.md#customer-profile-events).
 
 ### signIn
 

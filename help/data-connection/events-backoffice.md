@@ -3,9 +3,10 @@ title: Eventi di back office
 description: Scopri i dati acquisiti da ogni evento di back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Di seguito è riportato un elenco degli eventi di back office di Commerce dispon
 
 Oltre ai dati raccolti dai seguenti eventi, otterrai anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornite da Adobe Experience Platform Web SDK.
 
-Gli eventi di back office contengono dati lato server. Questi dati comprendono [stato ordine](#order-status) informazioni come se un ordine fosse stato effettuato, annullato, rimborsato, spedito o completato. I dati lato server includono [eventi del profilo cliente](#customer-profile-events-back-office) informazioni, ad esempio se un account è stato creato, aggiornato o eliminato.
+Gli eventi di back office contengono dati lato server. Questi dati comprendono [stato ordine](#order-status) informazioni come se un ordine fosse stato effettuato, annullato, rimborsato, spedito o completato. I dati lato server includono [eventi del profilo cliente](#customer-profile-events) informazioni, ad esempio se un account è stato creato, aggiornato o eliminato.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `productListItems.categories.name` | Nome della categoria. |
 | `productListItems.categories.path` | Percorso della categoria. |
 
-## Eventi profilo cliente (back office)
+## Eventi profilo cliente
 
-Gli eventi profilo acquisiti lato server includono informazioni sull’account, ad esempio `accountCreated`, `accountUpdated`, e `accountDeleted`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [vetrina](#customer-profile-events-storefront).
+Gli eventi profilo acquisiti lato server includono informazioni sull’account, ad esempio `accountCreated`, `accountUpdated`, e `accountDeleted`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [vetrina](events.md#customer-profile-events).
 
 ### accountCreated
 
