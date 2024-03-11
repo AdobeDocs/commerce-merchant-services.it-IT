@@ -2,9 +2,9 @@
 title: "Tipi di sinonimi"
 description: "Unidirezionale e bidirezionale [!DNL Live Search] i sinonimi ampliano la definizione delle parole chiave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Non è necessario definire sia la forma singolare che quella plurale di una paro
 ### Coerenza
 
 Coerenza con il modo in cui la terminologia viene utilizzata nel catalogo. Tieni presente che potrebbero esserci differenze regionali nell’utilizzo e a volte differenze all’interno di un settore.
-
-### Mappatura parole chiave
-
-Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può comparire nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
