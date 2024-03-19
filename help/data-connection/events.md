@@ -4,9 +4,9 @@ description: Scopri i dati acquisiti da ogni evento comportamentale.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `commerce.commerceScope.storeCode` | Il codice univoco dell’archivio. Puoi avere molti negozi per sito web. |
 | `commerce.commerceScope.storeViewCode` | Il codice univoco della visualizzazione store. Puoi avere molte visualizzazioni per negozio. |
 | `commerce.commerceScope.websiteCode` | Il codice univoco del sito web. In un ambiente possono essere presenti molti siti Web. |
+| `commerce.order` | Contiene informazioni sull&#39;ordine in sospeso per uno o più prodotti. |
+| `commerce.order.discountAmount` | Indica l&#39;importo dello sconto applicato all&#39;intero ordine. |
 | `productListItems` | Un array di prodotti che sono stati aggiunti al carrello. |
 | `productListItems.SKU` | Unità di stoccaggio. L’identificatore univoco del prodotto. |
 | `productListItems.name` | Il nome visualizzato o leggibile del prodotto. |
