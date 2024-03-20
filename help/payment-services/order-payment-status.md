@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Nella vista Visualizzazione stato pagamento ordine è possibile personalizzare l
 
 ### Informazioni sugli stati
 
-Gli stati dei pagamenti per un intervallo di date selezionato sono visualizzati a sinistra della visualizzazione dei dati di stato dei pagamenti dell&#39;ordine. Le date per l’intervallo di date selezionato sono visualizzate nella parte inferiore della visualizzazione. Se non vi sono ordini in una data specifica, tale data non verrà visualizzata.
+Gli stati dei pagamenti per un intervallo di date selezionato sono visualizzati a sinistra della visualizzazione dei dati di stato dei pagamenti dell&#39;ordine. Le date per l’intervallo di date selezionato sono visualizzate nella parte inferiore della visualizzazione. Se non vi sono ordini in una data specifica, tale data non viene visualizzata.
 
 La visualizzazione dei dati relativi allo stato del pagamento dell&#39;ordine include le seguenti informazioni.
 
@@ -83,9 +83,36 @@ Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UI
 >
 >I dati mostrati in questa tabella sono ordinati in ordine decrescente (`DESC`) per impostazione predefinita utilizzando `TRANS DATE`. Il `TRANS DATE` è la data e l’ora in cui è stata avviata la transazione.
 
+### Aggiornamenti dello stato del pagamento
+
+Alcuni metodi di pagamento richiedono un periodo di tempo per l&#39;acquisizione del pagamento. [!DNL Payment Services] ora rileva gli stati in sospeso di una transazione di pagamento in un ordine in base a:
+
+* Rilevamento sincrono `pending capture` transazioni
+* Monitoraggio asincrono `pending capture` transazioni
+
+>[!NOTE]
+>
+>Il rilevamento degli stati in sospeso delle transazioni di pagamento in un ordine impedisce la spedizione accidentale di ordini se il pagamento non è ancora stato ricevuto. Ciò può verificarsi per gli assegni elettronici e le transazioni PayPal.
+
+#### Rilevamento sincrono delle transazioni di acquisizione in sospeso
+
+Rileva automaticamente le transazioni di acquisizione in un `Pending` stato e impedire agli ordini di immettere un `Processing` stato quando viene rilevata una transazione di questo tipo.
+
+Durante il pagamento del cliente o quando un amministratore crea una fattura per un pagamento autorizzato in precedenza, [!DNL Payment Services] rileva automaticamente le transazioni di acquisizione in un `Pending` stato e sposta gli ordini corrispondenti in `Payment Review` stato.
+
+#### Monitoraggio asincrono delle transazioni di acquisizione in sospeso
+
+Rileva quando una transazione di acquisizione in sospeso immette un `Completed` in modo che gli esercenti possano riprendere l’elaborazione dell’ordine interessato.
+
+Per assicurarti che questo processo funzioni come previsto, gli esercenti devono configurare un nuovo processo cron. Una volta configurato il processo per l’esecuzione automatica, non sono previsti altri interventi da parte del commerciante.
+
+Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini che si trovano in una `Payment Review` stato.
+
+Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la visualizzazione rapporto Stato pagamento ordine.
+
 ### Dati utilizzati nel rapporto
 
-Il [!DNL Payment Services] Il modulo utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre fonti (incluso PayPal) per fornire rapporti significativi e molto utili.
+[!DNL Payment Services] utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre fonti (incluso PayPal) per fornire rapporti significativi e molto utili.
 
 I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modificare o aggiungere stati degli ordini](https://docs.magento.com/user-guide/sales/order-status-custom.html) o [modificare una visualizzazione store](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [archiviare](https://docs.magento.com/user-guide/stores/store-information.html), o nome del sito Web, tali dati vengono combinati con i dati di pagamento e il rapporto sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
 
@@ -132,9 +159,9 @@ Per selezionare l&#39;origine dati per [!UICONTROL Order Payment Status] rapport
 
    I risultati del report vengono rigenerati in base all&#39;origine dati selezionata.
 
-### Personalizzare l’intervallo temporale delle date
+### Personalizzare le date dell’ordine nell’arco temporale
 
-Nella visualizzazione del rapporto Stato pagamento ordine è possibile personalizzare l&#39;intervallo temporale degli stati che si desidera visualizzare selezionando date specifiche. Per impostazione predefinita, nella griglia sono visualizzati 30 giorni di stato di pagamento dell&#39;ordine.
+Nella visualizzazione del rapporto Stato pagamento ordine è possibile personalizzare l&#39;intervallo temporale dei risultati dello stato che si desidera visualizzare selezionando date specifiche. Per impostazione predefinita, nella griglia sono visualizzati 30 giorni di stato di pagamento dell&#39;ordine.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Fai clic su _[!UICONTROL Order dates]_filtro selettore calendario.
@@ -148,7 +175,7 @@ Nella visualizzazione del rapporto Stato pagamento ordine è possibile filtrare 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Fai clic su **[!UICONTROL Filter]** selettore.
 1. Attiva/disattiva _Stato pagamento_ opzioni per visualizzare i risultati del rapporto solo per gli stati di pagamento dell&#39;ordine selezionati.
-1. Immetti un _Importo minimo ordine_ o _Importo massimo ordine_ per visualizzare i risultati del rapporto all&#39;interno dell&#39;intervallo di importi dell&#39;ordine.
+1. Visualizzare i risultati del rapporto all&#39;interno di un intervallo di importi dell&#39;ordine inserendo un _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
 1. Clic **[!UICONTROL Hide filters]** per nascondere il filtro.
 
 ### Mostra e nascondi colonne
@@ -159,7 +186,7 @@ Il rapporto Stato pagamento ordine mostra tutte le colonne di informazioni dispo
 1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
-   Il rapporto Stato pagamento ordine visualizza immediatamente le modifiche apportate nel menu Impostazioni colonna. Le preferenze delle colonne verranno salvate e rimarranno attive anche quando ci si allontana dalla vista del rapporto.
+   Nel rapporto Stato pagamento ordine vengono immediatamente visualizzate le modifiche apportate nel menu Impostazioni colonna. Le preferenze di colonna vengono salvate e rimangono attive se ci si sposta dalla vista del rapporto.
 
 ### Stati di visualizzazione
 
@@ -197,10 +224,10 @@ Puoi visualizzare eventuali controversie sugli ordini del tuo Negozio e passare 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Accedi a **[!UICONTROL Disputes column]**.
 1. Visualizzare eventuali controversie per un ordine specifico e vedere [lo stato della controversia](#order-payment-status-information).
-1. Fare clic sul collegamento ID controversia (che inizia con _PP-D-_) per passare al [Centro soluzioni PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Rivedi i dettagli della controversia da [Centro soluzioni PayPal](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) facendo clic sul collegamento ID controversia che inizia con _PP-D-_.
 1. Adottare le misure appropriate per la controversia, se necessario.
 
-   Per ordinare le controversie in base allo stato, fai clic sull’intestazione della colonna Controversie.
+   Per ordinare le controversie in base allo stato, fare clic sul pulsante [!UICONTROL Disputes] intestazione di colonna.
 
 ### Scarica stati di pagamento ordine
 

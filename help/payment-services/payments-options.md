@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -64,15 +64,31 @@ Il [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, da
 
 Puoi configurare [!UICONTROL Apple Pay] nella configurazione del negozio o nella Home di Payment Services. Consulta [Impostazioni](settings.md#apple-pay) per ulteriori informazioni.
 
+## [!DNL Google Pay] pulsante
+
+I clienti possono utilizzare [[!DNL Google Pay]](https://pay.google.com/about/) aggiungendo i dettagli del pagamento al loro account Google, dove vengono memorizzati in modo sicuro per un&#39;esperienza di pagamento senza soluzione di continuità.
+
+[!DNL Google Pay] è disponibile solo in alcuni paesi o regioni e su alcuni dispositivi. Consulta [[!DNL Google Pay] documentazione](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) per ulteriori informazioni.
+
+![Pulsante Paga Google nel pagamento](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+Il [!DNL Google Pay] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste di pagamento.
+
+Puoi configurare [!UICONTROL Google Pay] nella configurazione del negozio o nella Home di Payment Services. Consulta [Impostazioni](settings.md) per ulteriori informazioni.
+
+>[!NOTE]
+>
+> Il [!DNL Google Pay] L’API può essere utilizzata solo su siti web in un contesto sicuro. Consulta [Risoluzione dei problemi](https://developers.google.com/pay/api/web/support/troubleshooting) per ulteriori informazioni.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], che utilizzano PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione, gli indirizzi di fatturazione e i dettagli del pagamento del cliente per un uso successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
 
 ![Pulsante PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Puoi configurare [!UICONTROL PayPal payment buttons] nella configurazione dell&#39;archivio o [!DNL Payment Services] A casa.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
+Puoi configurare [!UICONTROL PayPal payment buttons] nella configurazione dell&#39;archivio o [!DNL Payment Services] A casa. Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
 
-Vedi PayPal [Documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) per sapere in quali paesi è attualmente disponibile ogni metodo di pagamento.
+Scopri la disponibilità di metodi di pagamento per paese in PayPal [Documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] pulsante
 
@@ -102,17 +118,17 @@ Il [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, da
 
 Consulta le informazioni sulle offerte Paga più tardi in [PayPal&#39;s Pay Later offre la documentazione](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilizza il **Paese** per selezionare un’area di interesse.
 
-Consulta [Impostazioni](settings.md#payment-buttons) per scoprire come disabilitare/abilitare [!DNL Pay Later] messaggi.
+Scopri come disabilitare o abilitare [!DNL Pay Later] messaggi aggiornando la [Impostazioni](settings.md#payment-buttons) configurazione.
 
 ## Utilizza solo i pulsanti di pagamento PayPal
 
-Per attivare rapidamente la modalità di produzione, puoi configurare _solo_ Pulsanti di pagamento PayPal (Venmo, PayPal, ecc.)- invece di utilizzare anche l&#39;opzione di pagamento con carta di credito PayPal.
+Per attivare rapidamente la modalità di produzione, puoi configurare _solo_ Pulsanti di pagamento PayPal (Venmo, PayPal e così via).- invece di utilizzare anche l&#39;opzione di pagamento con carta di credito PayPal.
 
 Questo consente di:
 
-* Fornisci ai tuoi clienti varie opzioni di pagamento, tra cui i pulsanti di pagamento Venmo e PayPal, con la possibilità di disattivare i campi della carta ospitata PayPal e utilizzare un provider di carta di credito esistente.
+* Fornisci diverse opzioni di pagamento per i tuoi clienti, tra cui i pulsanti di pagamento Venmo e PayPal, con la possibilità di disattivare i campi della carta ospitata PayPal e utilizzare un provider di carta di credito esistente.
 * Utilizza il provider di carte di credito esistente per i pagamenti con carta di credito, utilizzando anche le altre opzioni di pagamento di PayPal.
-* Utilizza i pulsanti di pagamento di PayPal in un&#39;area in cui PayPal non supporta le carte di credito come opzione di pagamento.
+* Utilizza i pulsanti di pagamento di PayPal nelle aree in cui PayPal non supporta le carte di credito come opzione di pagamento.
 
 A **acquisire pagamenti con _solo_ Pulsanti di pagamento PayPal (_non_ l&#39;opzione di pagamento con carta di credito PayPal)**:
 
