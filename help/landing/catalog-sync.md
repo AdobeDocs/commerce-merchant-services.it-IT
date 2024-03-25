@@ -3,7 +3,7 @@ title: Sincronizzazione catalogo
 description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: d95c11a35c78d72da8126affb0753d86aa695827
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Il Dashboard di sincronizzazione del catalogo è ora il Dashboard di gestione dati. Questo dashboard rinnovato ora supporta [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service]. I clienti possono ottenere Data Management Dashboard aggiornando all’ultima versione di uno di questi servizi. Per ulteriori informazioni, consulta [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentazione. Questo argomento corrente rimane valido per gli utenti che devono ancora effettuare l’aggiornamento e che dispongono ancora della dashboard Sincronizzazione catalogo.
+> Il Dashboard di sincronizzazione del catalogo è ora il Dashboard di gestione dati. Questo dashboard rinnovato ora supporta [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/guide-overview.md), e [[!DNL Catalog Service]](../catalog-service/overview.md). I clienti possono ottenere Data Management Dashboard aggiornando all’ultima versione di uno di questi servizi. Per ulteriori informazioni, consulta [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentazione. Questo argomento corrente rimane valido per gli utenti che devono ancora effettuare l’aggiornamento e che dispongono ancora della dashboard Sincronizzazione catalogo.
 
 Adobe Commerce utilizza gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
 
