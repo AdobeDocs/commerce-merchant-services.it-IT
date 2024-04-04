@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’SDK di Adobe Experience Platform Mobile 
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Dopo aver completato la configurazione SDK per Experience Platform, aggiungi la 
 
    Ora hai integrato l’SDK di Adobe Experience Platform Mobile con la tua app mobile Commerce. I dati dell’evento fluiscono dall’app all’edge dell’Experience Platform.
 
-Per scoprire come recuperare i tipi di pubblico di Real-Time CDP dall’app Commerce mobile per informare le regole di prezzo del carrello e i blocchi dinamici, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Come distinguere gli eventi Commerce generati dalle applicazioni mobili
+
+Tutti [Eventi](events.md) contiene un campo denominato `channel`. Il `channel` il campo contiene `channel._id` e `channel._type` per una vetrina Luma i cui valori di spazio dei nomi sono `"https://ns.adobe.com/xdm/channels/web"` e `"https://ns.adobe.com/xdm/channel-types/web"` rispettivamente. Tuttavia, per una vetrina mobile, i valori dello spazio dei nomi sono `"https://ns.adobe.com/xdm/channels/mobile-app"` e `"https://ns.adobe.com/xdm/channel-types/mobile"` rispettivamente.
+
+## Passaggi successivi
+
+Per scoprire come recuperare il pubblico di Real-Time CDP dalla tua app Commerce mobile per informare le regole di prezzo del carrello, i blocchi dinamici e le regole di prodotto correlate, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
