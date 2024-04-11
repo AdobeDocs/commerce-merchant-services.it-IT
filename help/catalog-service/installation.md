@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: "Scopri come installare [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Il processo di onboarding per [!DNL Catalog Service] richiede l&#39;accesso alla
 [!DNL Catalog Service] dispone di due endpoint disponibili per l’onboarding:
 
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`): utilizzato per il test e la convalida prima della pubblicazione
-- Produzione (`https://catalog-service.adobe.io/graphql`): utilizzato per il traffico in tempo reale per i commercianti e i siti web di Commerce
+- Produzione (`https://catalog-service.adobe.io/graphql`): utilizzato per il traffico in tempo reale per i rivenditori e i siti Web Commerce
 
 Tutte le istanze di test di Commerce devono utilizzare l’endpoint Sandbox.
 
@@ -120,7 +120,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Service] estensione per un
 
 Dopo l’installazione [!DNL Catalog Service], è necessario configurare [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
-Al termine della configurazione SaaS, eseguire una sincronizzazione iniziale dei dati seguendo [Sincronizzazione catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guida.
+Al termine della configurazione SaaS, eseguire una sincronizzazione iniziale dei dati utilizzando [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). È possibile utilizzare questo dashboard per monitorare lo stato di sincronizzazione dei dati di prodotto trasferiti dal database di Commerce ai servizi SaaS di Commerce.
 
 Per garantire il corretto funzionamento dell’esportazione del catalogo:
 

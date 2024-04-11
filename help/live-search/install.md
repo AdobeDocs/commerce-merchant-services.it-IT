@@ -3,9 +3,9 @@ title: "Installa [!DNL Live Search]"
 description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ Per generare una chiave API e una chiave privata, consulta [Connettore Commerce 
 
 ### Sviluppatore Adobe Commerce o SI
 
-Lo sviluppatore o il SI configura lo spazio dati SaaS come descritto nella *Servizi Commerce* sezione della configurazione. In *Amministratore*, Commerce Services diventa disponibile in *Configurazione* barra laterale quando è installato un modulo SaaS.
+Lo sviluppatore o il SI configura lo spazio dati SaaS come descritto nella *Servizi Commerce* sezione della configurazione. In *Amministratore*, i servizi Commerce diventano disponibili nel *Configurazione* barra laterale quando è installato un modulo SaaS.
 
 ## Sincronizza dati catalogo {#synchronize-catalog-data}
 
 [!DNL Live Search] richiede dati prodotto sincronizzati per le operazioni di ricerca e dati attributo sincronizzati per configurare i facet. La sincronizzazione iniziale tra il catalogo prodotti e il servizio catalogo inizia quando [!DNL Live Search] è il primo collegamento. A seconda del metodo di installazione e delle dimensioni del catalogo, l&#39;esportazione e l&#39;indicizzazione dei dati possono richiedere fino a 30 minuti [!DNL Live Search]. L’elenco dei dati sincronizzati e condivisi con il servizio catalogo si trova nello schema, definito in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Utilizza il [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) per monitorare lo stato di sincronizzazione dei dati di prodotto trasferiti dal database Commerce ai servizi SaaS Commerce.
 
 ### Verifica esportazione {#verify-export}
 
