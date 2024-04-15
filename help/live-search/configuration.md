@@ -1,11 +1,11 @@
 ---
-title: '"Impostazioni delle configurazioni Commerce e [!DNL Live Search] '''
+title: '"Impostazioni delle configurazioni del Commerce e [!DNL Live Search] '''
 description: Descrive le impostazioni di configurazione di Adobe Commerce che [!DNL Live Search] può leggere.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,4 @@ I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono ora co
 | Archivi > Configurazione > Catalogo > Storefront > Modalità elenco | Esegue correttamente il rendering, ma per alcune interazioni di pagina non vengono inviati eventi |
 | Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Lunghezza massima query | Non implementato; Search Services accetta fino a 255 caratteri |
 | Configurazione > Vendite > Imposta > Impostazioni visualizzazione prezzo > Visualizza prezzi prodotto nel catalogo |  |
+| Negozi > Configurazione > Catalogo > Vetrina > Elenco prodotti Ordina per | Non si applica al [!DNL Live Search] [Widget pagina elenco prodotti](plp-styling.md) |
