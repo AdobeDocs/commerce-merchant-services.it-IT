@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _27 ottobre 2023_
 
 _12 ottobre 2023_
 
-![Nuovo](../assets/new.svg) Gli amministratori Commerce ora possono specificare la lingua dell’indice per [!DNL Live Search]. Consulta [Impostazioni](settings.md).
+![Nuovo](../assets/new.svg) Gli amministratori di Commerce ora possono specificare la lingua dell’indice per [!DNL Live Search]. Consulta [Impostazioni](settings.md).
 ![Correzione](../assets/fix.svg) La scheda &quot;Regole di ricerca&quot; è stata rinominata &quot;Ricerca merchandising&quot;.
 
 _13 giugno 2023_
@@ -54,7 +54,7 @@ _19 marzo 2024_
 ### Nuove funzioni
 
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto linguistico per [Polacco](technical-overview.md#language-support).
-![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta PHP 8.3 per le installazioni con Adobe Commerce 2.4.4.
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta PHP 8.3 per le installazioni con Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0. {#410}
 
@@ -193,7 +193,7 @@ _14 marzo 2023_
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di trascinare e rilasciare per creare eventi pin
 ![Nuovo](../assets/new.svg) Nuove azioni pin: * Pin to spot - Pulsante Pin per creare l’evento pin con un clic * Pin to top - Posiziona il prodotto in prima posizione * Pin to bottom - Posiziona il prodotto nella parte inferiore dei risultati * Sblocca un evento con un clic
 ![Nuovo](../assets/new.svg) [Classificazione intelligente per le regole](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiorna](install.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come MSI, Multi-Source Inventory). Per abilitare il supporto completo, è necessario [aggiorna](install.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 ### Aggiornamenti
 
@@ -266,7 +266,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 ![Nuovo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) supportato per [!DNL Live Search].
 ![Nuovo](../assets/new.svg) Il [!DNL Live Search] il processo di installazione viene aggiornato con modifiche avanzate.
 ![Correzione](../assets/fix.svg) [Ricerca avanzata](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) collegamento rimosso dal piè di pagina vetrina.
-![Bug](../assets/bug.svg) I seguenti attributi di prodotto non sono supportati da [API Commerce GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) se utilizzato in relazione alla versione beta di PWA: `description`, `name`, `short_description`
+![Bug](../assets/bug.svg) I seguenti attributi di prodotto non sono supportati da [API GRAPHQL COMMERCE](https://developer.adobe.com/commerce/services/graphql/live-search/) se utilizzato in relazione alla versione beta di PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) Versione beta di PWA per [!DNL Live Search] non supporta [gestione degli eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1. {#131}

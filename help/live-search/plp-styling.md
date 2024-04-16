@@ -2,9 +2,9 @@
 title: Widget pagina elenco prodotti
 description: Abilitazione e formattazione di [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,12 @@ Il [!DNL Live Search Product Listing Page Widget] (PLP) utilizza la piattaforma 
 Quando [!DNL Live Search] è installato, la funzionalità di ricerca predefinita viene convertita in [!DNL Live Search] automaticamente.
 
 Il [!DNL Live Search] Il widget PLP è abilitato per impostazione predefinita per le nuove installazioni. Se si esegue l&#39;aggiornamento [!DNL Live Search] e il widget PLP è già stato disattivato, rimarrà così.
+
+>[!IMPORTANT]
+>
+>Quando [!DNL Live Search Product Listing Page Widget] è attivato, non è possibile modificare la direzione dell’ordinamento in una pagina di elenco dei prodotti.
+
+## Disattivazione del widget PLP
 
 Per disattivare il widget PLP:
 

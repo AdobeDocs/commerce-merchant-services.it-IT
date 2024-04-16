@@ -3,9 +3,9 @@ title: "Panoramica tecnica"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo argomento esamina i requisiti tecnici e i suggerimenti per l&#39;installa
 ## Requisiti {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
+* PHP 8,1 / 8,2 / 8,3
 * [!DNL Composer]
 
 ### Piattaforme supportate
@@ -29,11 +29,11 @@ Questo argomento esamina i requisiti tecnici e i suggerimenti per l&#39;installa
 
 [!DNL Live Search] comunica attraverso l’endpoint in corrispondenza di `https://catalog-service.adobe.io/graphql`.
 
-As [!DNL Live Search] non ha accesso alla banca dati completa dei prodotti, [!DNL Live Search] GraphQL e Commerce core GraphQL non avranno parità completa.
+As [!DNL Live Search] non ha accesso alla banca dati completa dei prodotti, [!DNL Live Search] GraphQL e Commerce Core GraphQL non avranno parità completa.
 
 Si consiglia di chiamare direttamente le API SaaS, in particolare l’endpoint Catalog Service.
 
-* Migliora le prestazioni e riduci il carico del processore bypassando il database Commerce/processo Graphql
+* Migliorare le prestazioni e ridurre il carico del processore ignorando il database Commerce/processo Graphql
 * Sfrutta i vantaggi [!DNL Catalog Service] federazione da chiamare [!DNL Live Search], [!DNL Catalog Service], e [!DNL Product Recommendations] da un singolo endpoint.
 
 Per alcuni casi d’uso, potrebbe essere meglio chiamare [!DNL Catalog Service] per informazioni dettagliate sul prodotto e casi simili. Consulta [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) per ulteriori informazioni.
@@ -120,7 +120,7 @@ Per limitare i gruppi di clienti utilizzando le autorizzazioni del catalogo:
 | Cinese | Cina | zh_CN | zh_Hans_CN |
 | Cinese | Taiwan | zh_TW | zh_Hant_TW |
 
-Se il widget rileva che l’impostazione della lingua di amministrazione di Commerce (_Negozi_ > Impostazioni > _Configurazione_ > _Generale_ > Country Options) corrisponde a una lingua supportata. Per impostazione predefinita è tale lingua. In caso contrario, per impostazione predefinita i widget sono inglesi.
+Se il widget rileva che l&#39;impostazione della lingua di amministrazione di Commerce (_Negozi_ > Impostazioni > _Configurazione_ > _Generale_ > Country Options) corrisponde a una lingua supportata. Per impostazione predefinita è tale lingua. In caso contrario, per impostazione predefinita i widget sono inglesi.
 
 Gli amministratori possono anche impostare la lingua [indice di ricerca](settings.md#language), per garantire risultati di ricerca migliori.
 
@@ -143,7 +143,7 @@ Questo consente agli sviluppatori di personalizzare completamente la funzionalit
 
 ## Inventory management
 
-[!DNL Live Search] supporta [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiorna](install.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+[!DNL Live Search] supporta [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come MSI, Multi-Source Inventory). Per abilitare il supporto completo, è necessario [aggiorna](install.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 [!DNL Live Search] restituisce un valore booleano che indica se un prodotto è disponibile in Inventory management, ma non contiene informazioni sull’origine del titolo.
 
@@ -162,7 +162,7 @@ Attualmente sono sostenuti i prezzi di base. I prezzi avanzati non supportati so
 
 Osserva [Mesh API](../catalog-service/mesh.md) per calcoli dei prezzi più complessi.
 
-Il formato del prezzo supporta l’impostazione di configurazione locale nell’istanza Commerce: *Negozi* > Impostazioni > *Configurazione* > Generale > *Generale* > Opzioni locali > Impostazioni internazionali.
+Il formato del prezzo supporta l&#39;impostazione di configurazione delle impostazioni internazionali nell&#39;istanza di Commerce: *Negozi* > Impostazioni > *Configurazione* > Generale > *Generale* > Opzioni locali > Impostazioni internazionali.
 
 ## Supporto PWA
 
