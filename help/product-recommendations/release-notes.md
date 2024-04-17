@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _20 marzo 2023_
 
 ![Nuovo](../assets/new.svg) Aggiornato [!DNL Product Recommendations] per supportare Adobe Commerce 2.4.6.
 ![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiorna](install-configure.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come MSI, Multi-Source Inventory). Per abilitare il supporto completo, è necessario [aggiorna](install-configure.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 ### 4.0.1 di magento/product-recommendations
 
@@ -125,7 +125,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunto [Supporto B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) a Commerce Services tramite la riga di comando
+![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) ai servizi Commerce tramite la riga di comando
 
 ### 3.3.3 di magento/product-recommendations
 
