@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
+source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.5.0
+
+_23 aprile 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Correzione](../assets/fix.svg)<!-- Issue PAY-5396 --> Servizi di pagamento ora supporta [Linee guida di Adobe Commerce per `--db-prefix` parametro](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) per Adobe Commerce versione 2.4.7 e successive.
 
 ## v2.4.3
 
