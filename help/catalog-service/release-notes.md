@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,16 @@ Gli aggiornamenti includono:
 ![Bug](../assets/bug.svg) Problemi noti
 
 ## Versione principale corrente
+
+### Versione V1.18
+
+_11 aprile 2023_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg) È stato aggiunto il supporto per PHP 8.3.
+
+![Nuovo](../assets/new.svg) Il [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query ora restituisce dati di opzioni personalizzabili per prodotti semplici e complessi.<!--DATA-5538-->
 
 ### Versione V1.17
 
@@ -49,10 +59,10 @@ _13 febbraio 2023_
 Queste funzioni non sono ancora supportate:
 
 * La dimensione massima per il payload degli attributi dinamici è di 9 MB.
-* Prezzo del prodotto di gruppo. Può essere calcolato con prezzi di prodotto semplici.
+* Prezzo del prodotto di gruppo. Questo valore può essere calcolato con prezzi dei prodotti semplici.
 * In un array di immagini, solo la prima immagine contiene ruoli.
 
-Le seguenti limitazioni possono essere risolte utilizzando l’API Mesh e l’API core di GraphQL:
+Le seguenti limitazioni possono essere risolte utilizzando API Mesh e l’API core di GraphQL:
 
 * Prezzo minimo annunciato
 * [Prezzi a livelli](mesh.md)
@@ -64,7 +74,7 @@ _12 ottobre 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Catalog Service supporta `inStock` flag per varianti prodotto.
-![Nuovo](../assets/new.svg) `urlKey` e `externalId` sono stati aggiunti allo schema GraphQL.
+![Nuovo](../assets/new.svg) Il `urlKey` e `externalId` I campi sono stati aggiunti allo schema GraphQL.
 ![Nuovo](../assets/new.svg) Sono ora supportati i prodotti scaricabili e le gift card.
 
 ### Versione V1.12
@@ -90,7 +100,7 @@ _27 giugno 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) L’API di Catalog Service ora supporta i &quot;prodotti correlati&quot;.
+![Nuovo](../assets/new.svg) L’API di Catalog Service ora supporta `related products`.
 
 ### Versione V1.7
 
@@ -184,5 +194,3 @@ _9 agosto 2022_
 * Un prezzo specifico per prodotti semplici e fasce di prezzo per prodotti configurabili.
 * Prezzi e fasce di prezzo del gruppo di clienti. Restituiscono un prezzo predefinito di fallback sugli acquirenti senza un gruppo di clienti.
 * Tipi di prodotto che utilizzano prezzi specifici per il cliente B2B.
-
-+++
