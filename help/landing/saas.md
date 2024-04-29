@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Le chiavi API di produzione e sandbox sono generate dal [!DNL Commerce] conto de
 
 1. Ripeti i passaggi precedenti per ogni ambiente (produzione e sandbox).
 
-   Il **Chiavi API** Nella sezione sono ora visualizzate le chiavi API. Quando hai bisogno dei tasti di produzione e sandbox [selezionare o creare un progetto SaaS](#createsaasenv).
+   Il **Chiavi API** Nella sezione sono ora visualizzate le chiavi API (pubbliche). Sono necessari sia i tasti di produzione che i tasti sandbox (pubblico+privato) quando [selezionare o creare un progetto SaaS](#createsaasenv).
 
 ## Configurazione SaaS {#saasenv}
 
