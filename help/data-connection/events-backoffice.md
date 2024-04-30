@@ -4,16 +4,16 @@ description: Scopri i dati acquisiti da ogni evento di back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] Eventi di back office
 
-Di seguito è riportato un elenco degli eventi di back office di Commerce disponibili quando si installa [!DNL Data Connection] estensione. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) per la raccolta di dati aggiuntivi non inclusi nella confezione.
+Nell&#39;elenco seguente sono elencati gli eventi di back office di Commerce disponibili quando si installa [!DNL Data Connection] estensione. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) per la raccolta di dati aggiuntivi non inclusi nella confezione.
 
 Oltre ai dati raccolti dai seguenti eventi, otterrai anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornite da Adobe Experience Platform Web SDK.
 
@@ -404,7 +404,15 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## Eventi profilo cliente
 
+>[!IMPORTANT]
+>
+>Questa funzione è in versione beta.
+
 Gli eventi profilo acquisiti lato server includono informazioni sull’account, ad esempio `accountCreated`, `accountUpdated`, e `accountDeleted`. Questi dati vengono utilizzati per compilare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio inviare offerte di sconto per l’iscrizione, conferme di modifica dell’account e così via. Sono presenti eventi di profilo simili acquisiti da [vetrina](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Ogni evento del profilo cliente include anche [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , che include l&#39;ID cliente Commerce generato dal sistema come identificatore principale del profilo e un ID e-mail utilizzato come identificatore secondario.
 
 ### accountCreated
 

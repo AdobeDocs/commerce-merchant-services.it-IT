@@ -1,16 +1,16 @@
 ---
 title: Connettere dati Commerce a Adobe Experience Platform
-description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
+description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
 
-# Connettere i dati di Commerce a Adobe Experience Platform
+# Connettere i dati Commerce a Adobe Experience Platform
 
 Quando si installa [!DNL Data Connection] , due nuove pagine di configurazione vengono visualizzate nel **Sistema** menu in **Servizi** in Commerce _Amministratore_.
 
@@ -19,15 +19,15 @@ Quando si installa [!DNL Data Connection] , due nuove pagine di configurazione v
 
 Per collegare la tua istanza di Adobe Commerce a Adobe Experience Platform, devi configurare entrambi i connettori, partendo dal connettore Commerce Services e terminando con [!DNL Data Connection] estensione.
 
-## Configurare il connettore Commerce Services
+## Configurare il connettore dei servizi Commerce
 
-Se in precedenza hai installato un servizio Adobe Commerce, probabilmente hai già configurato il connettore Commerce Services. In caso contrario, è necessario completare le seguenti attività nella [Connettore Commerce Services](../landing/saas.md) pagina:
+Se in precedenza hai installato un servizio Adobe Commerce, probabilmente hai già configurato il connettore dei servizi Commerce. In caso contrario, è necessario completare le seguenti attività nella [Connettore servizi Commerce](../landing/saas.md) pagina:
 
 1. Accedi al tuo account Commerce per [recuperare le chiavi API di produzione e sandbox](../landing/saas.md#credentials).
 1. Seleziona un [Spazio dati SaaS](../landing/saas.md#saas-configuration).
 1. Accedi al tuo account Adobe per [recuperare l’ID organizzazione](../landing/saas.md#ims-organization-optional).
 
-Dopo aver configurato il connettore Commerce Services, puoi quindi configurare [!DNL Data Connection] estensione.
+Dopo aver configurato il connettore Commerce Services, è possibile configurare [!DNL Data Connection] estensione.
 
 ## Configurare [!DNL Data Connection] estensione
 
@@ -41,7 +41,7 @@ Se raccogli e invii solo dati di vetrina o di back office, puoi passare al [gene
 
 #### Passaggio 1: creare un progetto nella console Adobe Developer
 
-Crea un progetto nella console di Adobe Developer che autentica Commerce in modo da poter effettuare chiamate API Experienci Platform.
+Crea un progetto nella console Adobe Developer che autentica Commerce in modo da poter effettuare chiamate API Experienci Platform.
 
 Per creare il progetto, segui i passaggi descritti in [Autenticazione e accesso alle API di Experienci Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) esercitazione.
 
@@ -57,7 +57,7 @@ Il risultato di questo passaggio crea un file di configurazione da utilizzare ne
 
 Scarica il file [file di configurazione workspace](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copia e incolla il contenuto di questo file in **Dettagli account servizio/credenziali** pagina dell’amministratore di Commerce.
 
-1. Nell’amministrazione di Commerce, passa a **Negozi** > Impostazioni > **Configurazione** > **Servizi** > **[!DNL Data Connection]**.
+1. In Amministrazione Commerce, passa a **Negozi** > Impostazioni > **Configurazione** > **Servizi** > **[!DNL Data Connection]**.
 
 1. Selezionare il metodo di autorizzazione server-to-server implementato da **Tipo di autorizzazione Adobe Developer** menu. Adobe consiglia di utilizzare OAuth. Il codice JWT è stato dichiarato obsoleto. [Ulteriori informazioni](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -97,7 +97,7 @@ In questa sezione si specifica il tipo di dati che si desidera raccogliere e inv
 
 - **Back office** (dati lato server) sono dati acquisiti nei server Commerce. Ciò include informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. Include inoltre [dati ordine cronologico](#send-historical-order-data).
 
-- **Profilo** sono dati relativi alle informazioni del profilo dell’acquirente. Scopri [altro](#send-customer-profile-data).
+- **Profilo (Beta)** sono dati relativi alle informazioni del profilo dell’acquirente. Scopri [altro](#send-customer-profile-data).
 
 Per garantire che la tua istanza di Adobe Commerce possa iniziare la raccolta dei dati, controlla [prerequisiti](overview.md#prerequisites).
 
@@ -158,6 +158,10 @@ Dopo l’onboarding, i dati della vetrina iniziano a fluire verso il server Edge
 
 ### Inviare dati del profilo cliente
 
+>[!IMPORTANT]
+>
+>Questa funzione è in versione beta.
+
 Esistono due tipi di dati di profilo che puoi inviare all’Experience Platform: i record di profilo e gli eventi di profilo della serie temporale.
 
 Un record di profilo contiene dati salvati quando un acquirente crea un profilo nell’istanza Commerce, ad esempio il nome dell’acquirente. Quando lo schema e il set di dati sono [configurato correttamente](profile-data.md), un record di profilo viene inviato all’Experience Platform e inoltrato al servizio di gestione e segmentazione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=it).
@@ -191,7 +195,7 @@ La disponibilità di un record di profilo in Real-Time CDP può richiedere circa
 
 Adobe Commerce raccoglie fino a cinque anni di [dati e stato cronologici degli ordini](events-backoffice.md#back-office-events). È possibile utilizzare [!DNL Data Connection] estensione per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti e personalizzare l’esperienza del cliente in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
 
-Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario completare diversi passaggi per inviare tali dati ad Experienci Platform.
+Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario completare diversi passaggi per inviare tali dati a Experienci Platform.
 
 Guarda questo video per ulteriori informazioni sugli ordini storici, quindi completa i seguenti passaggi per implementare la raccolta degli ordini storici.
 
@@ -207,7 +211,7 @@ Il servizio di sincronizzazione degli ordini utilizza [Framework coda messaggi](
 
    >[!NOTE]
    >
-   >RabbitMQ è già configurato per le versioni Commerce 2.4.7 e successive, ma devi abilitare i consumatori.
+   >RabbitMQ è già configurato per Commerce versione 2.4.7 e successive, ma è necessario abilitare i consumatori.
 
 1. Abilitare i consumatori della coda di messaggi in base al processo cron in `.magento.env.yaml` utilizzo `CRON_CONSUMERS_RUNNER` variabile di ambiente.
 
@@ -250,7 +254,7 @@ Specifica l’intervallo di date per gli ordini storici da inviare all’Experie
 
 ## Conferma la raccolta dei dati dell’evento
 
-Per confermare che i dati vengono raccolti dal tuo archivio Commerce, utilizza [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) per esaminare il tuo sito Commerce. Dopo aver confermato che i dati vengono raccolti, è possibile verificare che i dati dell&#39;evento della vetrina e del back office vengano visualizzati nella periferia eseguendo una query che restituisce i dati dalla [set di dati creato](overview.md#prerequisites).
+Per confermare che i dati vengono raccolti dal tuo archivio Commerce, utilizza [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) per esaminare il sito Commerce. Dopo aver confermato che i dati vengono raccolti, è possibile verificare che i dati dell&#39;evento della vetrina e del back office vengano visualizzati nella periferia eseguendo una query che restituisce i dati dalla [set di dati creato](overview.md#prerequisites).
 
 1. Seleziona **Query** nel menu di navigazione a sinistra di Experienci Platform, fai clic su [!UICONTROL Create Query].
 
@@ -270,7 +274,7 @@ Per confermare che i dati vengono raccolti dal tuo archivio Commerce, utilizza [
 
    ![Editor query](assets/query-results.png)
 
-In questo esempio, puoi visualizzare i dati dell’evento dal [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e così via. Questa vista ti consente di verificare che i dati di Commerce siano arrivati all’edge.
+In questo esempio, puoi visualizzare i dati dell’evento dal [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e così via. Questa vista ti consente di verificare che i dati Commerce siano arrivati al server Edge di.
 
 Se i risultati non sono quelli previsti, apri il set di dati e cerca eventuali importazioni batch non riuscite. Ulteriori informazioni su [risoluzione dei problemi relativi alle importazioni batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
