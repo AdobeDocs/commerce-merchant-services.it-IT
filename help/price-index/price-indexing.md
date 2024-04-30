@@ -4,7 +4,7 @@ description: Utilizzo dell'indicizzazione dei prezzi SaaS per migliorare le pres
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 L&#39;indicizzazione dei prezzi SaaS accelera il tempo necessario per riflettere le variazioni di prezzo [Servizi Commerce](../landing/saas.md) dopo che sono stati inviati. Questo consente ai commercianti con cataloghi complessi di grandi dimensioni o con più siti web o gruppi di clienti di elaborare continuamente le variazioni di prezzo.
 Se hai una vetrina headless o utilizza [catalog-adapter](./catalog-adapter.md) I clienti possono disabilitare l’indicizzatore dei prezzi core di Adobe Commerce.
 
-I processi computazionali pesanti come l’indicizzazione e il calcolo dei prezzi sono stati spostati dal core Commerce all’infrastruttura cloud di Adobe. Questo consente agli esercenti di aumentare rapidamente le risorse per accelerare i tempi di indicizzazione dei prezzi e riflettere tali cambiamenti più rapidamente.
+I processi pesanti computazionali come l’indicizzazione e il calcolo dei prezzi sono stati spostati dall’infrastruttura core di Commerce all’infrastruttura cloud di Adobe. Questo consente agli esercenti di aumentare rapidamente le risorse per accelerare i tempi di indicizzazione dei prezzi e riflettere tali cambiamenti più rapidamente.
 
 Il flusso di dati di indicizzazione Core ai servizi SaaS è simile al seguente:
 
@@ -39,10 +39,10 @@ Questa guida descrive come funziona l’indicizzazione dei prezzi SaaS e come ab
 ## Requisiti
 
 * Adobe Commerce 2.4.4+
-* Almeno uno dei seguenti servizi Commerce con la versione più recente dell’estensione Adobe Commerce:
+* Almeno uno dei seguenti servizi Commerce con la versione più recente dell&#39;estensione Adobe Commerce:
 
    * [Servizio catalogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
    * [Recommendations del prodotto](../product-recommendations/guide-overview.md)
 
 Gli utenti di Luma e Adobe Commerce Core GraphQL possono installare [`catalog-adapter`](catalog-adapter.md) estensione che fornisce compatibilità con Luma e Core GraphQl e disabilita l’indicizzatore del prezzo del prodotto di Adobe Commerce.

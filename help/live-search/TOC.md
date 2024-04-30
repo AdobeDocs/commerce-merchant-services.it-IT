@@ -4,24 +4,21 @@ user-guide-description: "Questa guida fornisce istruzioni dettagliate per l’ut
 breadcrumb-title: “Guida [!DNL Live Search]”
 role: Admin
 feature: Services, Search
-source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
+source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 11%
+source-wordcount: '78'
+ht-degree: 10%
 
 ---
 
 # [!DNL Live Search] per Commerce {#live-search}
 
-- [Panoramica della guida](guide-overview.md)
-- [Introduzione a [!DNL Live Search]](overview.md)
+- [Cos’è [!DNL Live Search]?](overview.md)
+- [Installa](install.md)
+- [Limiti e limiti](boundaries-limits.md)
 - [Note sulla versione](release-notes.md)
-- Live Search integrato {#onboard}
-   - [Panoramica tecnica](technical-overview.md)
-   - [Installa [!DNL Live Search]](install.md)
 - [!DNL Live Search] Vetrina {#live-search-storefront}
    - [Widget pagina elenco prodotti](plp-styling.md)
-   - [Presentazione rapida](quick-tour.md)
    - [Vetrina [!DNL Popover]](storefront-popover.md)
    - [Stile [!DNL Popover] Elementi](storefront-popover-styling.md)
 - [!DNL Live Search] Amministratore{#live-search-admin}

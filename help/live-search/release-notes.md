@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19 marzo 2024_
 
 ### Nuove funzioni
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto linguistico per [Polacco](technical-overview.md#language-support).
-![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta PHP 8.3 per le installazioni con Adobe Commerce 2.4.7.
+![Nuovo](../assets/new.svg) È stato aggiunto il supporto linguistico per il polacco.
+![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta PHP 8.3 per le installazioni con Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0. {#410}
 
@@ -262,7 +262,7 @@ Esistente [!DNL Live Search] le installazioni devono essere aggiornate a [!DNL L
 
 ![Nuovo](../assets/new.svg) [!DNL Live Search] ora supporta PHP 8.1 per le installazioni con Adobe Commerce 2.4.4.
 ![Nuovo](../assets/new.svg) Il `Magento_ElasticsearchCatalogPermissionsGraphQl` viene aggiunto all&#39;elenco dei moduli disattivati durante l&#39;installazione.
-![Nuovo](../assets/new.svg) Numero di righe disponibili nel [[!DNL storefront popover]](quick-tour.md) può essere configurato dal *Amministratore*.
+![Nuovo](../assets/new.svg) Numero di righe disponibili nel [[!DNL storefront popover]](overview.md) può essere configurato dal *Amministratore*.
 ![Nuovo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) supportato per [!DNL Live Search].
 ![Nuovo](../assets/new.svg) Il [!DNL Live Search] il processo di installazione viene aggiornato con modifiche avanzate.
 ![Correzione](../assets/fix.svg) [Ricerca avanzata](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) collegamento rimosso dal piè di pagina vetrina.

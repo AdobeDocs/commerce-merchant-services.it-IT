@@ -3,13 +3,13 @@ title: Estensione scheda catalogo
 description: Utilizzo di Catalog Adapter per il rendering dei prezzi da Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Adattatore catalogo
 
@@ -22,7 +22,7 @@ L’indicizzatore del prezzo del prodotto Adobe Commerce è disabilitato e non p
 * Installare entrambi i servizi Commerce seguenti:
 
    * [Servizio catalogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
 
 ## Installazione
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Disattiva l&#39;indicizzatore del prezzo del prodotto per lo scenario Headless Storefront
 
-Se disponi di un’istanza Commerce headless, potresti dover disabilitare l’indicizzatore prezzo prodotto Adobe Commerce per ridurre il carico sull’istanza Adobe Commerce.
+Se disponi di un’istanza Commerce headless, potrebbe essere necessario disabilitare l’indicizzatore prezzo prodotto Adobe Commerce per ridurre il carico sull’istanza Adobe Commerce.
 A questo scopo, installa il `magento/module-price-indexer-disabler` modulo:
 
 ```bash
