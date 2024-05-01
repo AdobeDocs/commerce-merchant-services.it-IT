@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Data Connection] estensione da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ _10 ottobre 2023_
 
 _10 giugno 2023_
 
-![Correzione](../assets/fix.svg) - È stato risolto un problema che si verificava quando `orderId` non passato nel contesto a causa di prefissi nell’identificatore dell’ordine Commerce.
+![Correzione](../assets/fix.svg) - È stato risolto un problema che si verificava quando `orderId` non passato nel contesto a causa di prefissi nell&#39;identificatore dell&#39;ordine di Commerce.
 ![Correzione](../assets/fix.svg) - Configurazioni criteri per la sicurezza dei contenuti aggiornate.
 
 _30 marzo 2023_
@@ -87,7 +87,7 @@ _4 marzo 2024_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg) - Se partecipi alla versione beta, assicurati che il tuo `composer.json` il file presenta le seguenti caratteristiche a livello di radice: ` "minimum-stability": "beta"`.
+![Nuovo](../assets/new.svg) - Se partecipi alla versione beta, assicurati che il tuo `composer.json` il file presenta le seguenti caratteristiche a livello di radice: ` "minimum-stability": "beta"`. Aggiungi anche `composer require "magento/customers-connector: ^1.2.0"` per inviare i profili cliente dall’istanza Commerce a SaaS.
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [aggiungi attributi personalizzati](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [raccogliere e inviare record di profilo](connect-data.md#send-customer-profile-data) e i dati di Experience Platform.
 
