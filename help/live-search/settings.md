@@ -1,17 +1,17 @@
 ---
-title: "[!DNL Live Search] Settings"
+title: "Impostazioni"
 description: "Configurare le impostazioni per [!DNL Live Search] servizio."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # Impostazioni
 
-Utilizza il *Impostazioni* per configurare gli intervalli e gli intervalli del facet di prezzo e la lingua predefinita per l&#39;indice.
+Utilizza il *Impostazioni* workspace per configurare gli intervalli e gli intervalli del facet di prezzo e la lingua predefinita per l&#39;indice.
 
 Fatturazione prezzo specifica il numero di gruppi di intervalli di prezzi e il modo in cui i valori di prezzo vengono distribuiti tra di essi.
 
@@ -24,7 +24,7 @@ L’impostazione della lingua comunica al [!DNL Live Search] indica la lingua pr
 È possibile specificare il numero di gruppi di intervalli di prezzi e il modo in cui i valori di prezzo vengono distribuiti tra di essi. Ogni fascia di prezzo si sovrappone al gruppo precedente di uno. Ad esempio, cinque gruppi con un intervallo di 20 creano le seguenti fasce di prezzo: 0-20, 20-40, 40-60, 60-80 e >80. Se il catalogo non contiene un numero di prodotti sufficiente per riempire tutti gli intervalli definiti, la visualizzazione dei gruppi disponibili viene regolata di conseguenza. Ad esempio: 0-20, 60-80, >80.
 
 1. In Admin (Amministrazione), vai a **Marketing** > *SEO e ricerca* > **[!DNL Live Search]**.
-1. Il giorno **Impostazioni** scheda in *Fatturazione del prezzo*, eseguire le operazioni seguenti:
+1. Il giorno **Impostazioni** workspace in *Fatturazione del prezzo*, eseguire le operazioni seguenti:
    * Inserisci il **Numero di selezioni** o gruppi di prezzi. È possibile definire fino a 50 raggruppamenti di prezzi.
    * Inserisci il **Valore intervallo**, o fascia di prezzo per ciascun gruppo. Il valore massimo è 10.000.
 1. Clic **Salva**.

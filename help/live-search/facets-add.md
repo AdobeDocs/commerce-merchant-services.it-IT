@@ -2,9 +2,9 @@
 title: "Aggiungi facet"
 description: "Scopri come aggiungere attributi di prodotto filtrabili come [!DNL Live Search] facet."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet. Il *Aggiungi facet* Il pannello elenca i facet correnti e semplifica l’assegnazione di attributi di prodotto aggiuntivi come facet. Durante questo processo in tre fasi, viene scelto un attributo da utilizzare come facet, le proprietà vengono modificate se necessario e le modifiche pubblicate nella vetrina.
 
-![Area di lavoro di sfaccettatura](assets/facets-add.png)
+![Aggiungi facet](assets/facets-add.png)
 
 ## Passaggio 1: aggiungere un facet
 
@@ -48,7 +48,7 @@ Il facet viene aggiunto alla parte inferiore del *Facet dinamici* e *Pubblica mo
 
 1. Al termine, fai clic su **Salva**.
 
-   ![Area di lavoro di sfaccettatura](assets/facet-edit.png)
+   ![Modifica facet](assets/facet-edit.png)
 
 1. Per fissare il facet alla parte superiore del *Filtri* , fare clic sulla puntina grigia (![Fissa selettore](assets/btn-pin-gray.png)).
 1. Per modificare l&#39;ordine del facet fissato, fare clic sul pulsante **Sposta** (![Sposta selettore](assets/btn-move.png)) e trascinare la riga in una nuova posizione nella *Facet bloccati* sezione.

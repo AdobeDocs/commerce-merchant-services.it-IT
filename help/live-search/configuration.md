@@ -1,18 +1,18 @@
 ---
-title: '"Impostazioni delle configurazioni del Commerce e [!DNL Live Search] '''
-description: Descrive le impostazioni di configurazione di Adobe Commerce che [!DNL Live Search] può leggere.
+title: 'Impostazioni configurazioni Commerce'
+description: Descrive le impostazioni di configurazione di Commerce che [!DNL Live Search] può leggere.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] e Adobe Commerce Configuration Settings
+# Impostazioni configurazione Commerce
 
-Alcune impostazioni di configurazione di Commerce [!DNL Live Search] supporta. In questo argomento sono elencati questi valori di configurazione.
+Alcune impostazioni di configurazione di Commerce [!DNL Live Search] supporta. In questo articolo sono elencati questi valori di configurazione.
 
 ## Valori di configurazione supportati
 

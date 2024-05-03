@@ -2,16 +2,16 @@
 title: "Area di lavoro faceting"
 description: "Scopri come utilizzare il [!DNL Live Search] area di lavoro di faceting."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Area di lavoro di faceting
 
-Il [!DNL Live Search] workspace elenca tutti i facet attualmente disponibili e fornisce accesso agli strumenti necessari per impostare e gestire i facet. I facet bloccati vengono visualizzati per primi nell&#39;elenco dei facet esistenti, seguiti dai facet dinamici. L’elenco può essere filtrato per mostrare tutti i facet oppure solo quelli bloccati o dinamici.
+Il *Faceting* workspace elenca tutti i facet attualmente disponibili e fornisce accesso agli strumenti necessari per impostare e gestire i facet. I facet bloccati vengono visualizzati per primi nell&#39;elenco dei facet esistenti, seguiti dai facet dinamici. L’elenco può essere filtrato per mostrare tutti i facet oppure solo quelli bloccati o dinamici.
 
 ![Area di lavoro di sfaccettatura](assets/faceting-workspace.png)
 

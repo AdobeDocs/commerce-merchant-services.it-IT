@@ -3,9 +3,9 @@ title: "Introduzione a [!DNL Live Search]"
 description: "Scopri i requisiti di sistema e i passaggi di installazione per [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 ## Panoramica del flusso di lavoro
 
 Ad alto livello, onboarding [!DNL Live Search] richiede di:
-
-- Installare l’estensione
-- Configurare le chiavi API
-- Sincronizza dati catalogo
-- Verifica che i dati siano stati esportati
-- Configurare i dati
-- Verifica la connessione
-- Personalizza per la vetrina
 
 ![Flusso di lavoro Live Search](assets/livesearch-workflow.png)
 

@@ -3,7 +3,7 @@ title: Merchandising categorie
 description: Utilizzare [!DNL Live Search] Merchandising tra categorie per un’esperienza di acquisto più rapida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ La funzione è accessibile in Admin (Amministrazione) all’indirizzo **Marketin
 
 >[!NOTE]
 >
->Il merchandising per categorie è disponibile con [!DNL Live Search] [3.0.0 o versione successiva](release-notes.md). Se viene visualizzata la scheda Merchandising per categoria, ma non sono presenti dati, aggiorna la [!DNL Live Search] modulo.
+>Il merchandising per categorie è disponibile con [!DNL Live Search] [3.0.0 o versione successiva](release-notes.md). Se trovi l’area di lavoro Merchandising per categorie ma non sono presenti dati, aggiorna la [!DNL Live Search] modulo.
 
 ![Merchandising per categoria](assets/category_workspace.png)
 

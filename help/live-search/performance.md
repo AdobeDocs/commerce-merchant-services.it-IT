@@ -1,17 +1,17 @@
 ---
-title: "Dashboard delle prestazioni"
-description: "Il [!DNL Live Search] La dashboard delle prestazioni fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
+title: "Prestazioni"
+description: "Il [!DNL Live Search] Performance Workspace fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Dashboard delle prestazioni
+# Prestazioni
 
-Il [!DNL Live Search] La dashboard delle prestazioni fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. Il dashboard Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
+Il *Prestazioni* workspace fornisce informazioni sui termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. L’area di lavoro Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
 
 * Ricerche univoche
 * Nessun risultato
@@ -30,7 +30,7 @@ Il [!DNL Live Search] La dashboard delle prestazioni fornisce informazioni appro
 
 >[!NOTE]
 >
->Il dashboard delle prestazioni viene aggiornato ogni 12 ore.
+>L’area di lavoro delle prestazioni viene aggiornata ogni 12 ore.
 
 ## Descrizioni dei campi
 

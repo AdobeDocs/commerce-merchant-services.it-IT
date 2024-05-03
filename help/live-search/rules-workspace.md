@@ -2,16 +2,16 @@
 title: "Cerca in Merchandising Workspace"
 description: "Scopri come utilizzare l’area di lavoro Search Merchandising."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
 
 # Cerca in Merchandising Workspace
 
-L’area di lavoro Ricerca merchandising elenca la selezione corrente di regole e il loro stato e fornisce l’accesso agli strumenti necessari per creare e gestire le regole. Dall’area di lavoro puoi:
+Il *Cerca nel merchandising* workspace elenca la selezione corrente delle regole e il relativo stato e fornisce l&#39;accesso agli strumenti necessari per creare e gestire le regole. Dall’area di lavoro puoi:
 
 * Cerca regole
 * Visualizza dettagli regola
@@ -19,7 +19,7 @@ L’area di lavoro Ricerca merchandising elenca la selezione corrente di regole 
 * Elimina regole
 * Accedere all’editor di regole
 
-![Cerca nell’area di lavoro di merchandising](assets/rules-workspace.png)
+![Cerca in Merchandising Workspace](assets/rules-workspace.png)
 
 ## Impostare l&#39;ambito
 

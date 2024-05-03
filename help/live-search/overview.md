@@ -3,16 +3,16 @@ title: Cos’è [!DNL Live Search]?
 description: '"[!DNL Live Search] Adobe Commerce offre un’esperienza di ricerca rapida, pertinente e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Cos’è [!DNL Live Search]?
 
-[!DNL Live Search] è un’estensione che sostituisce le funzionalità di ricerca standard di Adobe Commerce. Il [!DNL Live Search] L&#39;estensione viene installata con Composer e collega [!DNL Commerce] installazione in [!DNL Live Search] [servizio](../landing/saas.md). Una volta configurato, il campo di testo di ricerca predefinito viene sostituito con [!DNL Live Search] campo di testo. [!DNL Live Search] installa anche il widget Pagina di elenco prodotti (PLP), che fornisce solide funzionalità di filtro durante la navigazione nei risultati di ricerca.
+[!DNL Live Search] è una funzione che sostituisce le funzionalità di ricerca standard di Adobe Commerce. Il [!DNL Live Search] viene installata con Composer e collega [!DNL Commerce] memorizzare in [Connettore Commerce Services](../landing/saas.md). Una volta configurato, il campo di testo di ricerca predefinito viene sostituito con [!DNL Live Search] campo di testo. [!DNL Live Search] installa anche il widget Pagina di elenco prodotti (PLP), che fornisce solide funzionalità di filtro durante la navigazione nei risultati di ricerca.
 
 Con [!DNL Live Search], è possibile:
 
@@ -75,7 +75,6 @@ Merchandising [regole](rules.md) forma l’esperienza di acquisto con istruzioni
 
 - [!DNL Live Search] [widget popover](storefront-popover.md) è la casella che si apre sotto il campo di ricerca contenente i risultati della ricerca.
 - [Widget pagina elenco prodotti](plp-styling.md) fornisce una pagina di elenco dei prodotti ricercabili con supporto per facet e sinonimi.
-- [[!DNL Live Search] Amministratore](workspace.md) è dove vengono configurati regole, facet e sinonimi.
 
 ## [!DNL Live Search] workspace
 
