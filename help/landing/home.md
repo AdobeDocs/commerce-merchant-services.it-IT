@@ -6,24 +6,24 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentazione
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Guide ai servizi di Adobe Commerce
 
-Adobe fornisce una raccolta di servizi commerciali, di integrazione e di dati per aiutare gli esercenti a supportare i componenti chiave della loro attività.
+Adobe fornisce una raccolta di Commerce, integrazioni e servizi dati per aiutare gli esercenti a supportare i componenti chiave della loro attività.
 
 >[!BEGINSHADEBOX &quot;Informazioni sulla versione&quot;]
 
-Consulta [novità della documentazione](whats-new.md) o [note sulla versione](release-notes-all.md) per ciascun servizio Commerce.
+Consulta [novità della documentazione](whats-new.md) o [note sulla versione](release-notes-all.md) per ogni servizio Commerce.
 
 >[!ENDSHADEBOX]
 
-## Servizi commerciali
+## Servizi Commerce
 
 <table>
 <tr>
@@ -56,13 +56,6 @@ Consulta [novità della documentazione](whats-new.md) o [note sulla versione](re
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="Pagamento rapido" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Pagamento rapido</strong></a>  <br><em>(Disponibile per il Magento Open Source)</em>
-    <div>Convertire i clienti occasionali in clienti fedeli offrendo un'esperienza di acquisto rapida e intuitiva.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="Evasione negozio" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Evasione negozio</strong></a></br>
@@ -80,7 +73,7 @@ Consulta [novità della documentazione](whats-new.md) o [note sulla versione](re
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel Manager</strong></a> <br><em>(Disponibile per il Magento Open Source)</em>
-    <div>Incrementa le vendite, raggiungi nuovi clienti, semplifica le operazioni e risparmia tempo grazie all’integrazione con Walmart Marketplace. Consente al personale di gestire senza interruzioni le vendite, l'inventario e i prezzi di Walmart Marketplace in Commerce.</div>
+    <div>Incrementa le vendite, raggiungi nuovi clienti, semplifica le operazioni e risparmia tempo grazie all’integrazione con Walmart Marketplace. Consente al personale di gestire in modo semplice le vendite, l'inventario e i prezzi di Walmart Marketplace, il tutto in Commerce.</div>
   </td>
    </tr>
 </table>
@@ -100,7 +93,7 @@ Consulta [novità della documentazione](whats-new.md) o [note sulla versione](re
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services Connector fornisce l’integrazione per l’istanza Adobe Commerce o di Magento Open Source utilizzando una chiave API e una chiave privata. Per i servizi dati (solo Adobe Commerce), puoi anche specificare lo spazio di dati nella configurazione.</div>
+    <div>Il connettore dei servizi Commerce fornisce l’integrazione per l’istanza Adobe Commerce o di Magento Open Source utilizzando una chiave API e una chiave privata. Per i servizi dati (solo Adobe Commerce), puoi anche specificare lo spazio di dati nella configurazione.</div>
   </td>
    </tr>
 </table>
@@ -112,7 +105,7 @@ Consulta [novità della documentazione](whats-new.md) o [note sulla versione](re
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>La sincronizzazione dei cataloghi esporta i dati dei prodotti dal server Commerce a Commerce Services su per mantenere aggiornati i servizi. Gli indicizzatori, attivati da eventi quali la modifica di un prezzo di prodotto o di un livello di inventario, compilano i dati del catalogo. Puoi osservare e gestire questo processo tramite il dashboard *Sincronizzazione catalogo* o l’interfaccia della riga di comando.</div>
+    <div>La sincronizzazione dei cataloghi esporta i dati dei prodotti dal server Commerce ai servizi Commerce su per mantenere aggiornati i servizi. Gli indicizzatori, attivati da eventi quali la modifica di un prezzo di prodotto o di un livello di inventario, compilano i dati del catalogo. Puoi osservare e gestire questo processo tramite il dashboard *Sincronizzazione catalogo* o l’interfaccia della riga di comando.</div>
   </td>
 </tr>
 </table>

@@ -5,10 +5,10 @@ title: Servizi per Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: e1ad97f602eeaa2d0d95d6620dd8e4fa6c5c0152
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 48%
+source-wordcount: '57'
+ht-degree: 49%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 48%
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
-   - [[!DNL Quick Checkout]](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)
    - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
