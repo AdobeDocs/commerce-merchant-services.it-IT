@@ -3,9 +3,9 @@ title: "Introduzione a [!DNL Live Search]"
 description: "Scopri i requisiti di sistema e i passaggi di installazione per [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -419,9 +419,23 @@ Osserva [Mesh API](../catalog-service/mesh.md) per calcoli dei prezzi più compl
 
 Il formato del prezzo supporta l&#39;impostazione di configurazione delle impostazioni internazionali nell&#39;istanza di Commerce: *Negozi* > Impostazioni > *Configurazione* > Generale > *Generale* > Opzioni locali > Impostazioni internazionali.
 
+### Supporto per vetrina headless
+
+In alternativa, potrebbe essere necessario installare `module-data-services-graphql` modulo che espande la copertura GraphQL esistente dell’applicazione per includere i campi necessari per la raccolta di dati comportamentali storefront.
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+Questo modulo aggiunge contesti aggiuntivi alle query GraphQL:
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
+
 ### Supporto PWA
 
-[!DNL Live Search] funziona con PWA Studi, ma gli utenti possono vedere lievi differenze rispetto ad altre implementazioni di Commerce. Le funzionalità di base, come la ricerca e la pagina di elenco dei prodotti, funzionano in Venia, ma alcune permutazioni di Graphql potrebbero non funzionare correttamente. Potrebbero esserci anche differenze di prestazioni.
+[!DNL Live Search] funziona con PWA Studi, ma gli utenti potrebbero vedere lievi differenze rispetto ad altre implementazioni di Commerce. Le funzionalità di base, come la ricerca e la pagina di elenco dei prodotti, funzionano in Venia, ma alcune permutazioni di Graphql potrebbero non funzionare correttamente. Potrebbero esserci anche differenze di prestazioni.
 
 - L’attuale implementazione PWA di [!DNL Live Search] richiede più tempo di elaborazione per restituire i risultati di ricerca di [!DNL Live Search] con la vetrina nativa di Commerce.
 - [!DNL Live Search] in PWA non supporta [gestione degli eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Di conseguenza, funzioneranno sia la generazione di rapporti di ricerca che il merchandising intelligente.
