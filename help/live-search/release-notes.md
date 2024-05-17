@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
+source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1946'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,16 @@ _13 giugno 2023_
 _25 aprile 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Live Search] i clienti possono ora sfruttare le nuove [Indicizzatore prezzi SaaS](../price-index/price-indexing.md).
+
+## [!DNL Live Search] 4.1.2. {#412}
+
+_16 maggio 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+### Aggiornamenti
+
+![Correzione](../assets/fix.svg) È stato corretto il [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) Query GraphQL per filtrare correttamente in base al `categoryPath` e `categoryList` per le categorie.
 
 ## [!DNL Live Search] 4.1.1. {#411}
 

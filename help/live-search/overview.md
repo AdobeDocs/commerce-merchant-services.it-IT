@@ -3,9 +3,9 @@ title: Cos’è [!DNL Live Search]?
 description: '"[!DNL Live Search] Adobe Commerce offre un’esperienza di ricerca rapida, pertinente e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Con [!DNL Live Search], è possibile:
 
 >[!IMPORTANT]
 >
->Adobe Commerce offre diverse opzioni per la ricerca del sito. Assicurati di leggere [Limiti e limiti](boundaries-limits.md) prima dell&#39;implementazione, per garantire [!DNL Live Search] si adatta alle esigenze aziendali.
+>Adobe Commerce offre diverse opzioni per la ricerca del sito. Prima dell’implementazione, controlla [Limiti e limiti](boundaries-limits.md) informazioni per garantire che [!DNL Live Search] si adatta alle esigenze aziendali.
 
 ## Architettura
 
@@ -37,11 +37,11 @@ Con particolare attenzione a velocità, pertinenza e facilità d&#39;uso, [!DNL 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Per un video più approfondito sull’utilizzo e la configurazione di Live Search, vedi [Dimostrazione completa su [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) argomento.
+Per un video più approfondito sull’utilizzo e la configurazione di Live Search, vedi [Dimostrazione completa su [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) argomento.
 
 ### Cerca durante la digitazione
 
-[!DNL Live Search] risponde con i prodotti suggeriti e un&#39;immagine in miniatura dei risultati di ricerca principali in un [popover](storefront-popover.md) quando gli acquirenti digitano query in [Ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) casella. Il [dettagli prodotto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) Questa pagina viene visualizzata quando gli acquirenti fanno clic su un prodotto suggerito o in primo piano. A _Visualizza tutto_ nel piè di pagina del popover viene visualizzata la pagina dei risultati della ricerca.
+[!DNL Live Search] risponde con i prodotti suggeriti e un&#39;immagine in miniatura dei risultati di ricerca principali in un [popover](storefront-popover.md) quando gli acquirenti digitano query in [Ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) casella. Il [dettagli prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) Questa pagina viene visualizzata quando gli acquirenti fanno clic su un prodotto suggerito o presentato. A _Visualizza tutto_ nel piè di pagina del popover viene visualizzata la pagina dei risultati della ricerca.
 
 [!DNL Live Search] restituisce i risultati di &quot;ricerca durante la digitazione&quot; per una query di due o più caratteri. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri nella query non è configurabile. Il popover include`name`, `sku`, e `category_ids` campi.
 
@@ -55,7 +55,7 @@ Per elencare tutti i prodotti restituiti dalla query di ricerca durante la digit
 
 ### Ricerca filtrata con facet
 
-La ricerca filtrata utilizza più dimensioni di valori di attributo, oppure [facet](facets.md), come criterio di ricerca. La selezione dei filtri è definita dall’esercente e cambia in base ai prodotti restituiti, con i facet più comunemente utilizzati inseriti nella parte superiore dell’elenco.
+La ricerca filtrata utilizza più dimensioni di valori di attributo, oppure [facet](facets.md), come criterio di ricerca. La selezione dei filtri è definita dall’esercente e cambia a seconda dei prodotti restituiti, con le sfaccettature più comunemente utilizzate fissate all’inizio dell’elenco.
 
 Utilizza i facet come parametri URL:`http://yourwebsite.com?color=red`, e Live Search filtra i risultati in base a questi valori di attributo.
 
@@ -69,12 +69,13 @@ Merchandising [regole](rules.md) forma l’esperienza di acquisto con istruzioni
 
 ### Supporto termini di ricerca
 
-[!DNL Live Search] supporta Commerce [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Ad esempio, gli utenti possono cercare un termine come &quot;Tariffe di spedizione&quot; ed essere portati direttamente alla pagina delle tariffe di spedizione.
+[!DNL Live Search] supporta Commerce [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Ad esempio, gli utenti possono cercare un termine come &quot;Tariffe di spedizione&quot; ed essere portati direttamente alla pagina delle tariffe di spedizione.
 
 ## Componenti Live Search
 
 - [!DNL Live Search] [widget popover](storefront-popover.md) è la casella che si apre sotto il campo di ricerca contenente i risultati della ricerca.
-- [Widget pagina elenco prodotti](plp-styling.md) fornisce una pagina di elenco dei prodotti ricercabili con supporto per facet e sinonimi.
+- [Widget pagina elenco prodotti](plp-styling.md) (PLP) fornisce una pagina di elenco dei prodotti ricercabili con facet e supporto dei sinonimi. Il widget viene installato e abilitato in Live Search 4.0.0+.
+- (**Obsoleto**) La scheda di ricerca era il precursore del widget PLP ed è stata installata con Live Search &lt; 4.0.0. Se utilizzi una versione di Live Search precedente alla 4.0.0, Commerce consiglia di effettuare l&#39;aggiornamento per ricevere i vantaggi delle funzioni del widget PLP e i miglioramenti futuri.
 
 ## [!DNL Live Search] workspace
 
