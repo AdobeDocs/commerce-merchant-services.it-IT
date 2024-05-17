@@ -71,7 +71,7 @@ Per vedere i metodi di pagamento supportati da PayPal, vedere [Documentazione su
 Onboarding e configurazione [!DNL Payment Services] viene completato in pochi passaggi:
 
 1. Ottieni [[!DNL Payment Services] estensione](install.md).
-1. Connetti la tua istanza Commerce a Commerce Services.
+1. Connetti la tua istanza di Commerce a Commerce Services.
 1. Effettua l’onboarding e configura il servizio sandbox.
 1. Abilita [!DNL Payment Services] come metodo di pagamento e inizia a elaborare i pagamenti di prova.
 1. Completa l’onboarding degli esercenti per consentire pagamenti live per i tuoi siti web.
