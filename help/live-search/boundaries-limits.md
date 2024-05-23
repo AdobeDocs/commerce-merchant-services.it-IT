@@ -3,9 +3,9 @@ title: 'Limiti e limiti'
 description: Scopri i limiti e le limitazioni di [!DNL Live Search] per soddisfare le esigenze dell'azienda.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
    - 200 attributi ricercabili
 - [!DNL Live Search] indicizza solo i prodotti dal database di Adobe Commerce.
 - Le pagine CMS non sono indicizzate.
+- Gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Assicurati di annullare l’assegnazione dei prodotti dalle categorie se non sono destinati a essere in tali categorie.
 
 ## Facet
 
