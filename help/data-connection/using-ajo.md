@@ -4,36 +4,85 @@ description: Scopri come utilizzare Adobe Journey Optimizer per inviare un’e-m
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # Utilizzare Adobe Journey Optimizer per inviare un messaggio e-mail per carrello abbandonato
 
+Scopri come inviare un’e-mail o una notifica di ricoinvolgimento personalizzata se una sessione del carrello o del browser è stata abbandonata. In questo articolo, puoi utilizzare dati generati da clienti che hanno visualizzato una serie di prodotti e categorie, che sono coinvolti in un prodotto o che hanno trascorso del tempo su una pagina.
+
+## Quali dati devo prendere in considerazione per l’utilizzo?
+
+Crea un carrello abbandonato, sfoglia le e-mail o notifica utilizzando i dati provenienti da eventi di vetrina e di back office.
+
+| Tipi di dati | Dati storefront (eventi comportamentali) | Dati di back office (eventi lato server) |
+|---|---|---|
+| **Definizione** | Clic o azioni eseguite dai clienti sul sito. | Informazioni sul ciclo di vita e dettagli di ciascun ordine (passato e corrente). |
+| **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Cronologia ordini](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
+
+### Cosa posso fare con Adobe Commerce?
+
+Utilizza Adobe [!DNL Commerce] per impostare promemoria e-mail basati su regole, che possono fungere da carrello o sfogliare le e-mail di abbandono. Scopri come.
+
+### Cosa posso fare con Adobe [!DNL Commerce] e Experience Cloud?
+
+- **Adobe [!DNL Commerce] con Adobe Journey Optimizer** - Utilizzo di Adobe [!DNL Commerce] con Adobe Journey Optimizer consente di utilizzare [!DNL Commerce] come attivatore di un percorso di abbandono omni-channel. Puoi personalizzare il percorso in base agli attributi del cliente, agli elementi abbandonati, ad altri comportamenti di acquisto e ai comportamenti di acquisto precedenti.
+
+- **Adobe Commerce, Adobe Journey Optimizer e Adobe Real-Time CDP** - L’aggiunta di Real-Time CDP consente di perfezionare ulteriormente le campagne di abbandono in base ai profili cliente unificati e a tipi di pubblico gestiti centralmente in base a regole o basati sull’intelligenza artificiale. Ad esempio, puoi creare:
+
+   - Un pubblico di &quot;convertitori forti&quot; con un tasso di abbandono basso
+   - Un pubblico con &quot;alta considerazione&quot; che ha rivisitato determinate categorie più volte
+   - Un pubblico &quot;ad alto potenziale&quot;, che ha un alto tasso di spesa e di fedeltà, ma che ha recentemente abbandonato
+
+### Quali sono stati i risultati ottenuti dagli altri clienti?
+
+Adobe [!DNL Commerce] i clienti hanno raggiunto impatti aziendali significativi implementando campagne di abbandono personalizzate utilizzando Adobe [!DNL Commerce], ADOBE [!DNL Journey Optimizer], e ADOBE [!DNL Real-Time CDP].
+
+Un rivenditore di abbigliamento globale e multimarca ha raggiunto:
+
+- Conversione 1.9x al clic delle nuove campagne
+- Aumento del 57% dei ricavi derivanti dai percorsi di abbandono omni-channel
+- Aumento del 41% del tasso di conversione delle campagne di ricoinvolgimento
+- Più di 1000 nuovi acquirenti impegnati a settimana
+
+Un&#39;azienda di bevande globale ha ottenuto:
+
+- Il 36% dei tassi di apertura delle e-mail di ricoinvolgimento
+- Incremento del 21% nelle percentuali di clickthrough
+- Aumento dell&#39;8,5% nel tasso di conversione
+- L&#39;89% degli abbandoni reimpiegati si converte
+
+## Iniziamo
+
+Questo caso d’uso particolare si concentra sulla creazione di un’e-mail del carrello abbandonata utilizzando i dati provenienti dai [!DNL Commerce] e inviarlo all&#39;Adobe [!DNL Journey Optimizer].
+
+### Cos’è Adobe Journey Optimizer?
+
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) ti consente di personalizzare l’esperienza di e-commerce per i tuoi acquirenti. Ad esempio, puoi utilizzare Journey Optimizer per creare e distribuire campagne di marketing pianificate, come le promozioni settimanali di un negozio al dettaglio, o generare un’e-mail abbandonato nel carrello se un cliente ha aggiunto un prodotto a un carrello ma non lo ha completato.
 
-Seguendo questi passaggi, puoi imparare ad ascoltare un `checkout` generato dalla tua istanza Commerce e rispondere a tale evento in Journey Optimizer per generare un’e-mail del carrello abbandonata.
+In questo argomento, imparerai a creare un’e-mail del carrello abbandonata ascoltando un `checkout` evento generato dal tuo [!DNL Commerce] e rispondere a tale evento in Journey Optimizer.
 
 >[!IMPORTANT]
 >
->A scopo dimostrativo, assicurati di utilizzare il tuo ambiente sandbox Commerce. In questo modo, i dati dell’evento di vetrina e di back office inviati ad Experienci Platform non diluiscono i dati dell’evento di produzione.
+>A scopo dimostrativo, utilizza [!DNL Commerce] ambiente sandbox per non diluire i dati dell’evento di produzione con i dati dell’evento di vetrina e di back office che invii ad Experienci Platform.
 
-## Prerequisiti
+### Prerequisiti
 
 Prima di iniziare con questi passaggi, assicurati:
 
-- È stato eseguito il provisioning per utilizzare Adobe Journey Optimizer
-- Tu [configurato](connect-data.md) il [!DNL Data Connection] estensione
-- Tu [confermato](connect-data.md#confirm-that-event-data-is-collected) che i dati dell’evento Commerce arrivino al server Edge di Experienci Platform
+- È stato effettuato il provisioning per utilizzare Adobe [!DNL Journey Optimizer]. In caso di dubbi, rivolgiti all’integratore di sistemi o al team di sviluppo che gestisce progetti e ambienti.
+- Tu [installato](install.md) e [configurato](connect-data.md) il [!DNL Data Connection] estensione in [!DNL Commerce].
+- Tu [confermato](connect-data.md#confirm-that-event-data-is-collected) che il tuo [!DNL Commerce] i dati dell’evento stanno arrivando al server edge di Experienci Platform.
 
-## Passaggio 1: creare un utente nell’ambiente sandbox di Commerce
+## Passaggio 1: creare un utente nel [!DNL Commerce] ambiente sandbox
 
 Crea un utente nell’ambiente sandbox e verifica che le informazioni sull’account utente siano visualizzate in Experience Platform. Verifica che l’e-mail specificata sia valida, poiché verrà utilizzata più avanti in questa sezione per inviare l’e-mail del carrello abbandonato.
 
-1. Accedi o crea un account nell’ambiente sandbox di Commerce.
+1. Accedi o crea un account nel tuo [!DNL Commerce] ambiente sandbox.
 
    ![Accedi al tuo account di prova](assets/sign-in-account.png){width="700" zoomable="yes"}
 
@@ -47,7 +96,7 @@ Crea un utente nell’ambiente sandbox e verifica che le informazioni sull’acc
 
 ## Passaggio 2: visualizzare gli eventi in Journey Optimizer
 
-Nell’ambiente sandbox di Commerce, puoi visualizzare le pagine dei prodotti, aggiungere articoli al carrello e varie altre attività che un acquirente eseguirebbe. Queste attività attivano gli eventi sulla vetrina. Ora puoi confermare che questi eventi fluiscono in Journey Optimizer.
+Nel tuo [!DNL Commerce] ambiente sandbox, attiva gli eventi nella vetrina visualizzando le pagine dei prodotti, aggiungendo elementi al carrello e completando varie altre attività eseguite da un acquirente. Quindi, verifica che questi eventi vengano trasmessi a Journey Optimizer.
 
 1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 1. Seleziona **[!UICONTROL Profiles]**.
@@ -59,22 +108,22 @@ Nell’ambiente sandbox di Commerce, puoi visualizzare le pagine dei prodotti, a
 
    Cerca `commerce.checkouts` ed esaminare il payload dell’evento:
 
-   ```json
-   "personID": "84281643067178465783746543501073369488", 
-   "eventType": "commerce.checkouts", 
-   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-   "commerce": { 
-       "cart": {}, 
-       "checkouts": { 
-           "value": 1 
-       } 
-   ```
-
-   Come puoi vedere, il payload completo dell’evento contiene dati dettagliati sull’evento. Nella sezione successiva, configurerai gli eventi in Journey Optimizer per l’ascolto e la risposta al `commerce.checkouts` evento generato dalla vetrina Commerce.
+       &quot;json
+       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
+       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
+       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
+       &quot;commerce&quot;: {
+       &quot;carrello&quot;: {},
+       &quot;checkout&quot;: {
+       &quot;value&quot;: 1
+       }
+       &quot;
+   
+   Come puoi vedere, il payload completo dell’evento contiene dati dettagliati sull’evento. Nella sezione successiva, configurerai gli eventi in Journey Optimizer per l’ascolto e la risposta al `commerce.checkouts` evento generato dal tuo [!DNL Commerce] vetrina.
 
 ## Passaggio 3: configurare gli eventi in Journey Optimizer
 
-Configura due eventi in Journey Optimizer: un evento è in ascolto del `commerce.checkouts` l’altro è un evento di timeout di base che attende un periodo di tempo specifico prima di attivare un’e-mail del carrello abbandonata.
+Configura due eventi in Journey Optimizer: un evento è in ascolto del `commerce.checkouts` Commerce l’altro è un evento di timeout di base che attende un periodo di tempo specifico prima di attivare un’e-mail del carrello abbandonata.
 
 ### Creare un evento listener
 
@@ -93,10 +142,10 @@ Configura due eventi in Journey Optimizer: un evento è in ascolto del `commerce
    1. Imposta il **[!UICONTROL Name]** a: `firstname_lastname_checkout`.
    1. Imposta **[!UICONTROL Type]** a **[!UICONTROL Unitary]**.
    1. Imposta **[!UICONTROL Event id typ]e** a **[!UICONTROL Rule based]**.
-   1. Imposta **[!UICONTROL Schema]** al tuo Commerce [schema](update-xdm.md).
-   1. Seleziona **[!UICONTROL Fields]** e nella **[!UICONTROL Fields]** nella pagina visualizzata, seleziona i campi utili per l’evento. Ad esempio, seleziona tutti i campi sotto il **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, e **[!UICONTROL Web]**.
+   1. Imposta **[!UICONTROL Schema]** al tuo [!DNL Commerce] [schema](update-xdm.md).
+   1. Seleziona **[!UICONTROL Fields]** per aprire **[!UICONTROL Fields]** pagina. Quindi, seleziona i campi utili per questo evento. Ad esempio, seleziona tutti i campi sotto il **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, e **[!UICONTROL Web]**.
    1. Clic **[!UICONTROL OK]** per salvare i campi selezionati.
-   1. Fai clic all’interno del **[!UICONTROL Event id condition]** e crea una condizione di `eventType` è uguale a `commerce.checkouts` E `personalEmail.address` è uguale all’indirizzo e-mail utilizzato al momento della creazione del profilo nella sezione precedente.
+   1. Fai clic all’interno del **[!UICONTROL Event id condition]** campo. Quindi, crea una condizione: `eventType` è uguale a `commerce.checkouts` E `personalEmail.address` è uguale all’indirizzo e-mail utilizzato al momento della creazione del profilo nella sezione precedente.
 
       ![Imposta condizione Journey Optimizer](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
@@ -111,8 +160,8 @@ Configura due eventi in Journey Optimizer: un evento è in ascolto del `commerce
 
    1. Imposta il **[!UICONTROL Name]** a: `firstname_lastname_timeout`.
    1. Imposta **[!UICONTROL Type]** a **[!UICONTROL Unitary]**.
-   1. Imposta **[!UICONTROL Event id typ]e** a **[!UICONTROL Rule based]**.
-   1. Imposta **[!UICONTROL Schema]** al tuo Commerce [schema](update-xdm.md).
+   1. Imposta **[!UICONTROL Event id type]** a **[!UICONTROL Rule based]**.
+   1. Imposta **[!UICONTROL Schema]** al tuo [!DNL Commerce] [schema](update-xdm.md).
    1. Imposta il **[!UICONTROL Schema]**, **[!UICONTROL Fields]**, e **[!UICONTROL Event id condition]** come sopra.
    1. Clic **[!UICONTROL Save]** per salvare l’evento.
 
@@ -153,7 +202,7 @@ Crea un’e-mail carrello abbandonata che viene inviata quando viene rilevato un
 
 1. Segui le [passaggi](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) nella guida di Journey Optimizer per creare l’e-mail del carrello abbandonato.
 
-Ora disponi di un percorso in Journey Optimizer che ascolta `commerce.checkouts` dal tuo punto vendita Commerce e un’e-mail del carrello abbandonata, inviata dopo un certo periodo di tempo. Nella sezione successiva verrà eseguito il test del percorso.
+Ora disponi di un percorso in Journey Optimizer che ascolta `commerce.checkouts` evento dal tuo [!DNL Commerce] store e un’e-mail del carrello abbandonata, inviata dopo un certo periodo di tempo. Nella sezione successiva viene illustrato come verificare il funzionamento del percorso.
 
 ## Passaggio 5: attivare l’evento di pagamento in tempo reale
 
@@ -163,7 +212,7 @@ In questa sezione l’evento viene testato in tempo reale.
 
    ![Abilita modalità di test](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. Per testare questo percorso in tempo reale, apri un’altra scheda del browser e passa al sito web di Commerce sandbox.
+1. Per eseguire il test del percorso in tempo reale, apri un&#39;altra scheda del browser e passa al [!DNL Commerce] del sito web nell’ambiente sandbox.
 
    1. Aggiungi un prodotto al carrello.
    1. Passa alla pagina di pagamento.
