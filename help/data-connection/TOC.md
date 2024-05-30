@@ -5,10 +5,10 @@ breadcrumb-title: "[!DNL Data Connection] estensione per Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: ae9a87d3a1dd2b20acc534defd51556a9edc31c2
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
    - [Aggiornare gli schemi evento serie temporali per l’acquisizione dei dati di Commerce](update-xdm.md)
    - [Aggiornamento dello schema dei record di profilo per l’acquisizione di dati Commerce (Beta)](profile-data.md)
    - [Collegare i dati Commerce a Adobe Experience Platform](connect-data.md)
-   - [Integrare Adobe Experience Platform Mobile SDK con Commerce](mobile-sdk-epc.md)
+   - [Integrare l’SDK di Adobe Experience Platform Mobile con Commerce](mobile-sdk-epc.md)
 - Acquisire dati {#event-forwarding}
    - [Eventi comportamentali](events.md)
    - [Eventi di back office](events-backoffice.md)
@@ -31,3 +31,4 @@ ht-degree: 4%
    - [Utilizzare i tag di Adobe Experience Platform](using-tags.md)
 - Caso d’uso {#use-cases}
    - [Utilizzare Adobe Journey Optimizer per inviare un messaggio e-mail per carrello abbandonato](using-ajo.md)
+   - [Creare un pubblico in Real-Time CDP utilizzando i dati evento di Commerce](create-audience.md)
