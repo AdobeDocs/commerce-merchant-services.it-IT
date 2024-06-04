@@ -3,9 +3,9 @@ title: Abilita [!DNL Payment Services] per la produzione
 description: Completa il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Imposta [!DNL Payment Services] come metodo di pagamento
 
-Dopo di te [configurare Commerce Services](connect.md#configure-commerce-services) e abilita [test sandbox](sandbox.md#enable-sandbox-testing) o [pagamenti live](#enable-live-payments), è necessario impostare [!DNL Payment Services] come metodo di pagamento.
+Dopo di te [configurare i servizi Commerce](connect.md#configure-commerce-services) e abilita [test sandbox](sandbox.md#enable-sandbox-testing) o [pagamenti live](#enable-live-payments), è necessario impostare [!DNL Payment Services] come metodo di pagamento.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Ottieni [!DNL Payment Services] _ID esercente_:
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Nella vista Home, fai clic su **[!UICONTROL Settings]**. Consulta [Home](payments-home.md) per ulteriori informazioni.
 1. Seleziona la richiesta _ID esercente_ e inviarlo al proprio rappresentante commerciale, che configurerà il piano tariffario corretto.
+
+Consulta [Elaborazione di livello 2 e livello 3](levels-card-payment-transactions.md) per ulteriori informazioni sulle transazioni di pagamento.
 
 ## Abilita pagamenti live
 

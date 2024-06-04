@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 3%
+source-wordcount: '91'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 3%
    - [Rapporto stato pagamento ordine](order-payment-status.md)
    - [Rapporto Pagamenti](payouts.md)
    - [Dati disponibili](data.md)
+   - [Elaborazione di livello 2 e livello 3](levels-card-payment-transactions.md)
 - Gestire i pagamenti {#manage}
    - [Rimborsi](refunds.md)
    - [Vuoti](voids.md)
