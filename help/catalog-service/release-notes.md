@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Gli aggiornamenti includono:
 
 _23 maggio 2024_
 
-![Correzione](../assets/fix.svg) Il `InStock` flag per i valori di opzione ora tiene conto dell&#39;ambito `enabled` stato della variante prodotto.
+![Correzione](../assets/fix.svg) <!--DATA-5033-->Il `InStock` flag per i valori di opzione ora tiene conto dell&#39;ambito `enabled` stato della variante prodotto.
+
+![Correzione](../assets/fix.svg) <!--DATA-5888-->È stato aggiunto il supporto per i prezzi dei prodotti che richiedono numeri elevati (fino a 16 cifre) e una maggiore precisione decimale (fino a 4 cifre decimali). Per applicare gli aggiornamenti della configurazione del prezzo al catalogo esistente, risincronizza i dati del catalogo da [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), o utilizzando [Interfaccia della riga di comando di Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+## Versioni precedenti
+
++++ Versioni precedenti
 
 ### Versione V1.18
 
@@ -37,10 +43,6 @@ _11 aprile 2024_
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto per PHP 8.3.
 
 ![Nuovo](../assets/new.svg) Il [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) e [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) le query ora restituiscono dati di opzioni personalizzabili per prodotti semplici e complessi.<!--DATA-5538-->
-
-## Versioni precedenti
-
-+++ Versioni precedenti
 
 ### Versione V1.17
 
