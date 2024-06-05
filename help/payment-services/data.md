@@ -1,13 +1,13 @@
 ---
 title: Dati disponibili
-description: Utilizza i dati dei rapporti finanziari per riconciliare i rapporti con sistemi non commerciali.
+description: Utilizza i dati di reporting finanziario per riconciliare il reporting con sistemi non Commerce.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -79,5 +79,5 @@ Il `invoice_id` e `custom_id` sono visualizzati nella parte inferiore dei dettag
 
 Per ulteriori informazioni, consulta la documentazione sulle API REST di PayPal:
 
-* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedere](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Comprimi)
+* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedere](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Mostra dettagli ordine](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
