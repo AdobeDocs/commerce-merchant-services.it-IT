@@ -3,9 +3,9 @@ title: 'Limiti e limiti'
 description: Scopri i limiti e le limitazioni di [!DNL Live Search] per soddisfare le esigenze dell'azienda.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 - All’interno di un facet, è possibile restituire un massimo di 30 bucket. Se devono essere restituiti più di 30 bucket, [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) Adobe può quindi analizzare l’impatto sulle prestazioni e determinare se è possibile aumentare questo limite per il tuo ambiente.
 - I facet dinamici possono causare problemi di prestazioni in indici e indici di grandi dimensioni con elevata ordinalità. Se hai creato facet dinamici e noti un deterioramento delle prestazioni o una pagina non caricata con errori di timeout, prova a modificare i facet in modo che siano bloccati per determinare se questo risolve il problema di prestazioni.
 - Stato scorte (`quantity_and_stock_status`) non è supportato come facet. È possibile utilizzare `inStock: 'true'` per filtrare i prodotti di magazzino. Questa funzione è supportata come funzionalità integrata nella `LiveSearchAdapter` quando &quot;Display out of stock products&quot; è impostato su &quot;True&quot; nel [!DNL Commerce] Amministratore
+- Gli attributi del tipo di data non sono supportati come facet.
 
 ## Query
 
 - [!DNL Live Search] non ha accesso alla tassonomia completa dell’albero delle categorie, il che rende alcuni scenari di ricerca di navigazione a più livelli al di fuori della sua portata.
 - [!DNL Live Search] utilizza un valore univoco [Endpoint GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) per le query che supportano funzionalità quali il faceting dinamico e la ricerca in base alla digitazione. Anche se simile al [API GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/), esistono alcune differenze e alcuni campi potrebbero non essere completamente compatibili.
 - Il numero massimo di risultati che possono essere restituiti in una query di ricerca è 10.000.
+- Non è possibile filtrare i risultati utilizzando un attributo di tipo data.
 
 ## Regole
 
@@ -56,7 +58,7 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 ## Sinonimi
 
 - [!DNL Live Search] può gestire fino a 200 [sinonimi](synonyms.md) per la visualizzazione store.
-- I sinonimi con più parole non sono supportati.
+- I sinonimi con più parole sono limitati a 20 per visualizzazione store.
 
 ## Merchandising categorie
 
