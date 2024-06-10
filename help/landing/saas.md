@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ Le sezioni seguenti descrivono ciascuno di questi elementi in modo più dettagli
 
 ## Credenziali {#apikey}
 
-Le chiavi API di produzione e sandbox sono generate dal [!DNL Commerce] conto del [proprietario licenza](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) che è identificato da un [!DNL Commerce] ID (MageID). Per superare la convalida dell&#39;adesione per servizi quali [!DNL Product Recommendations] o [!DNL Live Search], il proprietario della licenza per l’organizzazione del commerciante può generare il set di chiavi API purché l’account sia in buono stato. Le chiavi possono essere condivise in base alle necessità con l&#39;integratore di sistemi o il team di sviluppo che gestisce progetti e ambienti per conto del titolare della licenza. Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL Commerce Services]. Se sei un integratore di soluzioni, il firmatario del [!DNL Commerce] Il contratto del partner deve generare le chiavi API.
+Le chiavi API di produzione e sandbox sono generate dal [!DNL Commerce] conto del [proprietario licenza](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) che è identificato da un [!DNL Commerce] ID (MageID). Per superare la convalida dell&#39;adesione per servizi quali [!DNL Product Recommendations] o [!DNL Live Search], il proprietario della licenza per l’organizzazione del commerciante può generare il set di chiavi API, purché l’account sia in buono stato.
+
+Le chiavi possono essere condivise in base alla necessità di sapere con l&#39;integratore di sistemi o il team di sviluppo che gestisce progetti e ambienti per conto del titolare della licenza. Sviluppatori che hanno ottenuto [!DNL Shared Access] dal proprietario della licenza non può generare le chiavi per loro conto anche se l&#39;organizzazione del commerciante è presente nel [!DNL Switch Accounts] nell’elenco a discesa del loro account.
+
+Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL Commerce Services]. Se sei un integratore di soluzioni, il firmatario del [!DNL Commerce] Il contratto del partner deve generare le chiavi API.
 
 >[!NOTE]
 >
