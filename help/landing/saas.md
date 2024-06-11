@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ Per [!DNL Product Recommendations], lo spazio dati SaaS contiene dati di catalog
 
 ### Selezionare o creare un progetto SaaS {#createsaasenv}
 
-Per selezionare o creare un progetto SaaS, richiedi [!DNL Commerce] Chiave API da [!DNL Commerce] titolare della licenza per il tuo negozio.
+Per selezionare o creare un progetto SaaS, richiedi [!DNL Commerce] Chiave API da [!DNL Commerce] proprietario licenza per il tuo negozio:
+
+>[!NOTE]
+>
+> Se non vede il **[!UICONTROL Commerce Services Connector]** sezione nella sezione [!DNL Commerce] , è necessario installare il [!DNL Commerce] moduli per il [[!DNL Commerce] servizio](#availableservices).
 
 1. Il giorno _Amministratore_ barra laterale, vai a **Sistema** > Servizi > **Connettore Commerce Services**.
 
@@ -102,10 +106,14 @@ Tutti i progetti SaaS associati alle chiavi vengono visualizzati nel **Progetto*
 1. Se non esistono progetti SaaS, fai clic su **Crea progetto**. Quindi nel **Progetto** immettere un nome per il progetto SaaS.
 
    Quando crei un progetto SaaS, [!DNL Commerce] genera uno o più spazi di dati SaaS a seconda [!DNL Commerce] licenza:
-   - Adobe Commerce: uno spazio dati di produzione; due spazi dati di test
+   - Adobe Commerce: uno spazio dati di produzione; due spazi dati di test. Nei progetti Cloud Pro con più ambienti di staging, puoi richiedere spazi di dati di test aggiuntivi per ogni ambiente di staging tramite [invio di una richiesta di assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source: uno spazio dati di produzione; nessuno spazio dati di prova
 
 1. Seleziona la **Spazio dati** da utilizzare per la configurazione corrente del [!DNL Commerce] archiviare.
+
+>[!NOTE]
+>
+>Se disponi di istanze separate da integrare con i servizi Commerce, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) per richiedere un nuovo progetto SaaS per ogni istanza aggiuntiva. Dopo aver creato il progetto SaaS, configura l’integrazione dei servizi Commerce per l’istanza utilizzando la stessa chiave API e selezionando il nuovo progetto SaaS per lo spazio dati.
 
 >[!WARNING]
 >
