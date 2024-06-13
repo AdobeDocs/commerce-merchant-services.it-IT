@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Il [!DNL Live Search storefront popover] restituisce dinamicamente prodotti e miniature suggeriti."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,6 @@ Quando [!DNL Live Search] è [installato](install.md), a [!DNL popover] viene vi
 Per impostazione predefinita, [!DNL Live Search] supporta [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
-
-## Attributi ricercabili
-
-Per produrre risultati altamente mirati, rivedi l’insieme di [ricercabile](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) attributi del prodotto. Per garantire la rilevanza, rendi gli attributi ricercabili solo se contengono contenuto con un significato chiaro e conciso. Evita di utilizzare attributi che contengono testo meno preciso e lungo, ad esempio `description`, anche se la ricerca è abilitata per impostazione predefinita, può ridurre la precisione dei risultati di ricerca.
-Ad esempio, se una persona cerca i &quot;pantaloncini corti&quot; e ci sono camicie con una descrizione che include il termine &quot;maniche corte&quot;, allora le camicie saranno incluse nei risultati della ricerca.
-
-[!DNL Live Search] rispetta anche le [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) di un attributo di prodotto, come impostato in Adobe Commerce. Gli attributi con un peso maggiore appariranno più in alto nei risultati di ricerca.
-
-È sempre possibile cercare i seguenti attributi:
-
-* `sku`
-* `name`
-* `categories`
 
 ## [!DNL Popover] dimensioni pagina
 
