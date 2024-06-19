@@ -4,53 +4,55 @@ description: Utilizzo dell'indicizzazione dei prezzi SaaS per migliorare le pres
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Indicizzazione dei prezzi SaaS
 
-L&#39;indicizzazione dei prezzi SaaS accelera il tempo necessario per riflettere le variazioni di prezzo [Servizi Commerce](../landing/saas.md) dopo che sono stati inviati. Questo consente ai commercianti con cataloghi complessi di grandi dimensioni o con più siti web o gruppi di clienti di elaborare continuamente le variazioni di prezzo.
+L’indicizzazione dei prezzi SaaS migliora le prestazioni del sito spostando pesanti processi di calcolo, come l’indicizzazione e il calcolo dei prezzi, dall’applicazione Commerce all’infrastruttura cloud di Adobe. Questo approccio consente ai commercianti di aumentare rapidamente le risorse per aumentare i tempi di indicizzazione dei prezzi in modo da riflettere più rapidamente le variazioni di prezzo durante l’invio dei dati allo storefront e ai servizi Commerce connessi.
 
-Se hai una vetrina headless o utilizza [catalog-adapter](./catalog-adapter.md) I clienti possono utilizzare l’indicizzazione dei prezzi SaaS disabilitando l’indicizzatore dei prezzi core di Adobe Commerce.
-
-I processi pesanti computazionali come l’indicizzazione e il calcolo dei prezzi sono stati spostati dall’infrastruttura core di Commerce all’infrastruttura cloud di Adobe. Questo consente agli esercenti di aumentare rapidamente le risorse per accelerare i tempi di indicizzazione dei prezzi e riflettere tali cambiamenti più rapidamente.
-
-Il flusso di dati di indicizzazione Core ai servizi SaaS è simile al seguente:
+Il diagramma seguente mostra il flusso di dati di indicizzazione verso i servizi SaaS quando Commerce utilizza [indicizzazione dei prezzi](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) processo incluso nell&#39;applicazione Commerce:
 
 ![Flusso di dati predefinito](assets/old_way.png)
 
-Con l’indicizzazione dei prezzi SaaS, il flusso è:
+Con l’indicizzazione dei prezzi SaaS abilitata, il flusso di dati cambia. L’indicizzazione dei prezzi viene eseguita utilizzando [Esportazione di dati SaaS Commerce](../data-export/data-synchronization.md).
 
 ![Flusso di dati di indicizzazione prezzi SaaS](assets/new_way.png)
 
-Tutti i commercianti possono trarre vantaggio da questi miglioramenti, ma coloro che ne trarranno i maggiori vantaggi sono i clienti con:
+Tutti i commercianti possono beneficiare dell’indicizzazione dei prezzi SaaS, ma i commercianti che hanno progetti con le seguenti caratteristiche possono realizzare i maggiori vantaggi:
 
-* Variazioni di prezzo costanti: commercianti che richiedono modifiche ripetute ai prezzi per soddisfare obiettivi strategici quali promozioni frequenti, sconti stagionali o riduzioni di scorte.
-* Più siti web e/o gruppi di clienti: commercianti con cataloghi di prodotti condivisi su più siti web (domini/marchi) e/o gruppi di clienti.
-* Un numero elevato di prezzi univoci su siti web o gruppi di clienti: commercianti con cataloghi di prodotti condivisi e completi che contengono prezzi univoci su siti web o gruppi di clienti, ad esempio commercianti B2B con prezzi pre-negoziati, marchi con diverse strategie di prezzo.
+* **Variazioni di prezzo costanti**-Mercanti che richiedono ripetute modifiche ai prezzi per soddisfare obiettivi strategici quali promozioni frequenti, sconti stagionali o riduzioni di scorte.
+* **Più siti web e/o gruppi di clienti**-Mercanti con cataloghi di prodotti condivisi su più siti web (domini/marchi) e/o gruppi di clienti.
+* **Molti prezzi univoci tra siti web o gruppi di clienti**-Mercanti con estesi cataloghi di prodotti condivisi che contengono prezzi univoci tra siti web o gruppi di clienti. Alcuni esempi includono i commercianti B2B che hanno prezzi pre-negoziati o marchi con diverse strategie di prezzo.
 
-L’indicizzazione dei prezzi SaaS è disponibile gratuitamente per i clienti che utilizzano i servizi Adobe Commerce e supporta il calcolo dei prezzi per tutti i tipi di prodotto Adobe Commerce incorporati.
+## Usa indicizzazione prezzi SaaS
 
-Questa guida descrive come funziona l’indicizzazione dei prezzi SaaS e come abilitarla.
+L’indicizzazione dei prezzi SaaS viene abilitata automaticamente quando si installa Adobe Commerce Services. Supporta il calcolo dei prezzi per tutti i tipi di prodotto Adobe Commerce incorporati.
 
-## Requisiti
+### Requisiti
 
 * Adobe Commerce 2.4.4+
-* Almeno uno dei seguenti servizi Commerce con la versione più recente dell&#39;estensione Adobe Commerce:
+
+### Prerequisiti
+
+* Con la versione più recente dell&#39;estensione Commerce deve essere installato uno dei servizi Commerce seguenti:
 
    * [Servizio catalogo](../catalog-service/overview.md)
    * [Live Search](../live-search/overview.md)
    * [Recommendations del prodotto](../product-recommendations/guide-overview.md)
 
-Gli utenti di Luma e Adobe Commerce Core GraphQL possono installare [`catalog-adapter`](catalog-adapter.md) estensione che fornisce compatibilità con Luma e Core GraphQl e disabilita l’indicizzatore del prezzo del prodotto di Adobe Commerce.
 
-## Utilizzo
+>[!NOTE]
+>
+>Se necessario, l&#39;indicizzatore prezzi predefinito nell&#39;applicazione Commerce può essere disabilitato utilizzando [Adattatore catalogo](catalog-adapter.md).
 
-Dopo aver aggiornato l’istanza di Adobe Commerce con il supporto per l’indicizzazione dei prezzi SaaS, sincronizza i nuovi feed:
+## Sincronizzare i prezzi con l&#39;indicizzazione SaaS
+
+Dopo aver abilitato l’indicizzazione dei prezzi SaaS per Adobe Commerce, aggiorna i prezzi su Storefront e in Commerce Services sincronizzando i nuovi feed:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,9 +60,9 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Prezzi per tipi di prodotto personalizzati
+### Prezzi per tipi di prodotto personalizzati
 
-I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati come prezzo di base, prezzo speciale, prezzo di gruppo, prezzo della regola di catalogo e così via.
+I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati, ad esempio il prezzo di base, il prezzo speciale, il prezzo di gruppo, il prezzo delle regole di catalogo e così via.
 
 Se si dispone di un tipo di prodotto personalizzato che utilizza una formula specifica per calcolare il prezzo finale, è possibile estendere il comportamento del feed del prezzo del prodotto.
 
@@ -94,3 +96,4 @@ Se si dispone di un tipo di prodotto personalizzato che utilizza una formula spe
        }
    }
    ```
+
