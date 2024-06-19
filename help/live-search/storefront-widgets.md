@@ -1,0 +1,35 @@
+---
+title: Widget vetrina
+description: Scopri la finestra a comparsa vetrina e i widget di pagina per l’elenco dei prodotti.
+exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
+source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 0%
+
+---
+
+# Widget vetrina
+
+Quando si installa [!DNL Live Search] nella vetrina sono disponibili due nuovi widget:
+
+- [!DNL Live Search] [widget popover](storefront-popover.md) è la casella che si apre sotto il campo di ricerca contenente i risultati della ricerca.
+- [Widget pagina elenco prodotti](plp-styling.md) (PLP) fornisce una pagina di elenco dei prodotti ricercabili con facet e supporto dei sinonimi. Il widget viene installato e abilitato in Live Search 4.0.0+.
+
+Puoi personalizzare l’aspetto di questi widget in base alle linee guida di stile e branding della tua azienda.
+
+## Widget popover Live Search
+
+Quando si inizia a digitare nella casella di ricerca della vetrina Commerce, [!DNL Live Search] risponde con i prodotti suggeriti e un&#39;immagine in miniatura dei risultati di ricerca principali nel [widget popover](storefront-popover.md).
+
+![Widget popover](assets/ls-search-popover.png)
+
+Per ulteriori informazioni sul widget popover e su come personalizzarlo per la vetrina, consulta [[!DNL Storefront Popover]](storefront-popover.md).
+
+## Widget pagina di elenco prodotti
+
+Quando fai clic su per visualizzare tutti i risultati dal popover vetrina, il widget della pagina di elenco dei prodotti mostra le funzioni che puoi utilizzare per perfezionare continuamente la ricerca.
+
+![Widget pagina di elenco prodotti](assets/ls-plp.png)
+
+Per ulteriori informazioni sul widget della pagina di elenco dei prodotti e su come personalizzarlo per la vetrina, consulta [widget pagina elenco prodotti](plp-styling.md).
