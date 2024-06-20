@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: "Scopri come installare [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ Dopo aver installato [!DNL Catalog Service], completa le seguenti attività per 
 1. Eseguire una sincronizzazione iniziale dei dati da [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    La sincronizzazione iniziale può richiedere da alcuni minuti ad ore, a seconda della dimensione del catalogo. Puoi monitorare lo stato della sincronizzazione dal dashboard Gestione dati. Dopo la sincronizzazione iniziale, il catalogo esporta i dati dei prodotti su base continuativa per mantenere aggiornati i servizi.
+
+   >[!NOTE]
+   >
+   >È inoltre possibile avviare la sincronizzazione iniziale dalla riga di comando utilizzando Commerce CLI. Consulta [Sincronizzazione iniziale](../data-export/data-export-cli-commands.md#initial-sync) nel _Guida all’esportazione dei dati SaaS_.
 
 Per garantire il corretto funzionamento dell’esportazione del catalogo:
 

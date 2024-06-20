@@ -1,10 +1,11 @@
 ---
 title: Interfaccia della riga di comando per l'esportazione dei dati SaaS
-description: "Scopri come utilizzare i comandi dell’interfaccia della riga di comando per gestire feed e processi per [!DNL data export extension] per i servizi SaaS di Adobe Commerce."
+description: Scopri come utilizzare i comandi dell’interfaccia della riga di comando per gestire feed e processi per [!DNL data export extension] per i servizi SaaS di Adobe Commerce.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ L’Adobe non consiglia di utilizzare il `saas:resync` comandare regolarmente. G
 
 ## Sincronizzazione iniziale
 
+>[!NOTE]
+>Se utilizzi Live Search o Product Recommendations, non è necessario eseguire la sincronizzazione iniziale. Il processo viene avviato automaticamente dopo la connessione del servizio all’istanza di Commerce.
+
 Quando si attiva una `saas:resync` dalla riga di comando, a seconda delle dimensioni del catalogo, l&#39;aggiornamento dei dati può richiedere da alcuni minuti a poche ore.
 
->[!NOTE]
->Se utilizzi Live Search o Product Recommendations, non è necessario avviare la sincronizzazione. Il processo viene avviato automaticamente dopo la connessione del servizio all’istanza di Commerce.
+Per la sincronizzazione iniziale, l&#39;Adobe consiglia di eseguire i comandi nell&#39;ordine seguente:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Esempi di comandi
 
