@@ -3,7 +3,7 @@ title: "Introduzione a [!DNL Live Search]"
 description: "Scopri i requisiti di sistema e i passaggi di installazione per [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ Per consentire [!DNL Live Search] tramite un firewall, aggiungi `commerce.adobe.
 
 È stato installato [!DNL Live Search] ha sincronizzato, convalidato e configurato i tuoi dati. A questo punto, è necessario assicurarsi che [!DNL Live Search] i widget si adattano all&#39;aspetto del tuo negozio.
 
-Puoi assegnare uno stile ai widget popover e PLP definendo regole CSS personalizzate in base alle esigenze. Consulta [Elementi Popover Di Stile](storefront-popover-styling.md) e [Widget pagina elenco prodotti](plp-styling.md).
+Puoi assegnare uno stile ai widget popover e PLP definendo regole CSS personalizzate in base alle esigenze. Consulta [Elementi Popover Di Stile](storefront-popover.md#styling-popover-example) e [Widget pagina elenco prodotti](plp-styling.md#styling-example).
 
 Se desideri estendere la funzionalità dei widget, il codice sorgente per ciascuno di essi è disponibile in un repository pubblico.
 In questo scenario, puoi personalizzare il JavaScript in base alle tue esigenze e quindi ospitare il codice personalizzato sulla CDN. Questo script personalizzato comunica con [!DNL Live Search] e restituisce i risultati come normale, consentendoti di controllare la funzionalità del widget.
