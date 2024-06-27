@@ -2,9 +2,9 @@
 title: "Configurazione di Live Search"
 description: Il [!DNL Live Search] workspace viene utilizzato per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,19 @@ ht-degree: 0%
 Nell’area di lavoro puoi configurare, gestire e monitorare le prestazioni di [!DNL Live Search]. Il menu nella parte superiore fornisce l’accesso agli strumenti in ogni area funzionale. Le funzioni disponibili riflettono la selezione del menu corrente.
 
 ![Workspace](assets/workspace.png)
+
+## Raccolta dati
+
+Per garantire che ogni area funzionale nell’area di lavoro contenga i dati corretti, devi configurare la raccolta dati in base all’implementazione della vetrina selezionata:
+
+1. Luma - La raccolta dei dati è disponibile come strumento pronto all’uso.
+1. Headless: la raccolta dei dati deve essere configurata manualmente, a seconda dell’implementazione in vetrina.
+
+Se utilizzi una vetrina headless, consulta la seguente documentazione per ulteriori informazioni sugli eventi richiesti da aggiungere:
+
+- [Eventi richiesti](events.md) per il dashboard di Live Search.
+- [Raccoglitore eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) questo deve essere aggiunto come prerequisito.
+- [Esempi](https://github.com/adobe/commerce-events/tree/main/examples) della struttura degli eventi.
 
 ## Impostare l&#39;ambito
 
@@ -47,9 +60,9 @@ La procedura seguente illustra come consentire la ricerca di attributi:
 
 È sempre possibile cercare i seguenti attributi:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facet](facets.md) sono attributi di prodotto definiti in [!DNL Live Search] per essere filtrabile. È possibile impostare qualsiasi attributo filtrabile come facet in [!DNL Live Search], ma esistono [limiti](boundaries-limits.md) al numero di facet che è possibile cercare contemporaneamente.
 
