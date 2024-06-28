@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ Consulta la documentazione per gli sviluppatori per [informazioni sul supporto d
 
 ## Aggiornamenti dei servizi in hosting
 
-Queste note descrivono gli aggiornamenti pubblicati al di fuori di una versione con versione o i miglioramenti al servizio ospitato.
+Queste note descrivono aggiornamenti o problemi noti pubblicati o rilevati al di fuori di una versione con versione o miglioramenti al servizio ospitato.
 
-+++Aggiornamenti dei servizi in hosting
+_28 giugno 2024_
+
+![Bug](../assets/bug.svg) Prodotti aggiunti al carrello da un [!DNL Product Recommendations] L&#39;unità nella pagina del carrello non viene rimossa dall&#39;elenco dei prodotti consigliati quando la pagina del carrello viene ricaricata.
+![Bug](../assets/bug.svg) I prodotti rimossi dal carrello continuano a persistere nel `cartSkus` finché la pagina del carrello non viene ricaricata.
 
 _18 luglio 2023_
 
@@ -40,8 +43,6 @@ _18 luglio 2023_
 _25 aprile 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Product Recommendations] i clienti possono ora sfruttare [Indicizzazione dei prezzi SaaS](../price-index/price-indexing.md).
-
-+++
 
 ## Versione principale corrente
 
@@ -97,7 +98,7 @@ _20 marzo 2023_
 
 ![Nuovo](../assets/new.svg) Aggiornato [!DNL Product Recommendations] per supportare Adobe Commerce 2.4.6.
 ![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come MSI, Multi-Source Inventory). Per abilitare il supporto completo, è necessario [aggiorna](install-configure.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiorna](install-configure.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 ### 4.0.1 di magento/product-recommendations
 
