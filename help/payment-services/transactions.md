@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Transazioni per ottenere visibilità sui tas
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ La vista del rapporto Transazioni è disponibile nella vista Transazioni di Paym
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata Visualizzazione del rapporto Transazioni.
 
-![Visualizzazione report transazioni](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Visualizzazione report transazioni](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 È possibile configurare questa visualizzazione in base alle sezioni di questo argomento per presentare al meglio i dati che si desidera visualizzare.
 
-Vedi ID transazione fornitore e ordine Commerce collegati, importi transazione, metodo di pagamento per transazione e altro all’interno di questo rapporto.
+Vedere gli ID delle transazioni fornitore e dell&#39;ordine Commerce collegati, gli importi delle transazioni, il metodo di pagamento per transazione e altro all&#39;interno di questo report.
 
 Non tutti i metodi di pagamento forniscono la stessa granularità delle informazioni. Ad esempio, le transazioni con carta di credito forniscono i codici di risposta, AVS e CCV e le ultime quattro cifre della carta nel rapporto Transazioni; i pulsanti di pagamento PayPal no.
 
 È possibile [scarica transazioni](#download-transactions) in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
+
+>[!WARNING]
+>
+> Il report delle transazioni non includerà alcuna acquisizione eseguita al di fuori di [!DNL Payment Services].
 
 ### Seleziona origine dati
 
@@ -127,8 +131,9 @@ I rapporti sulle transazioni includono le seguenti informazioni.
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine commerciale (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare i [informazioni ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine Commerce (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare i [informazioni ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
 | [!UICONTROL Provider Transaction ID] | ID transazione fornito dal provider dei pagamenti; contiene solo valori per le transazioni riuscite e un trattino per le transazioni rifiutate. |
+| [!UICONTROL Customer ID] | ID cliente Commerce di un ordine<br> <br>Consulta [informazioni cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} per ulteriori informazioni. |
 | [!UICONTROL Transaction Date] | Timestamp data transazione |
 | [!UICONTROL Payment Method] | Metodo di pagamento della transazione con informazioni dettagliate sul marchio e sul tipo di carta. Consulta [tipi di schede](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) per ulteriori informazioni; disponibile per Payment Services versione 1.6.0 e successive |
 | [!UICONTROL Card Last Four Digits] | Ultime quattro cifre delle carte di credito o di debito utilizzate per la transazione |

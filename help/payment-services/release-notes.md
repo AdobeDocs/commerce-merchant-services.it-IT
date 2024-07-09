@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e sull
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e sono state rilasciate al di fuori delle normali versioni del servizio ospitato.
 
 +++Aggiornamenti dei servizi in hosting
+
+_9 luglio 2024_
+
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5488 --> Ora gli esercenti possono visualizzare l’ID cliente Commerce come colonna nella [rapporto transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) per identificare le transazioni effettuate da un particolare cliente. Inoltre, gli esercenti possono filtrare il rapporto transazioni in base a questo ID cliente Commerce per gli ordini associati.
 
 _5 marzo 2024_
 
@@ -171,6 +175,7 @@ _7 dicembre 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg)<!-- PAY-5047 --> Il marchio della carta di credito/debito o il tipo di metodo di pagamento è ora disponibile nelle seguenti posizioni:
+
 - la pagina ordine cliente nella vetrina
 - l’e-mail di conferma dell’ordine inviata all’acquirente
 - dal [visualizzazione dettagli ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in Commerce Admin.
