@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _23 maggio 2024_
 ![Correzione](../assets/fix.svg) <!--DATA-5033-->Il `InStock` flag per i valori di opzione ora tiene conto dell&#39;ambito `enabled` stato della variante prodotto.
 
 ![Correzione](../assets/fix.svg) <!--DATA-5888-->È stato aggiunto il supporto per i prezzi dei prodotti che richiedono numeri elevati (fino a 16 cifre) e una maggiore precisione decimale (fino a 4 cifre decimali). Per applicare gli aggiornamenti della configurazione del prezzo al catalogo esistente, risincronizza i dati del catalogo da [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), o utilizzando [Interfaccia della riga di comando di Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+#### Limitazioni note
+
+Le seguenti funzioni non sono ancora supportate:
+
+* La dimensione massima per il payload degli attributi dinamici è di 9 MB.
+* Il prezzo del prodotto del gruppo può essere calcolato con prezzi del prodotto semplici.
+* In un array di immagini, solo la prima immagine contiene ruoli.
+
+Risolvi le seguenti limitazioni utilizzando API Mesh e l’API Core di GraphQL:
+
+* Prezzo minimo annunciato
+* Prezzi a livelli
+* Prodotti in bundle a prezzi fissi
+
+Per dettagli ed esempi, vedi [Catalog Service e Mesh API](mesh.md)
 
 ## Versioni precedenti
 
@@ -59,7 +75,6 @@ _13 febbraio 2024_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) I video sui prodotti sono ora supportati dall’API Catalog Service.
-![Correzione](../assets/fix.svg) Sono ora supportati i prodotti in bundle a prezzi fissi.
 ![Correzione](../assets/fix.svg) Le opzioni esaurite vengono ora visualizzate nel widget PDP.
 
 #### Limitazioni note
@@ -134,7 +149,7 @@ _6 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunto [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) funzionalità GraphQL.
+![Nuovo](../assets/new.svg) Aggiunto [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) funzionalità GraphQL.
 ![Correzione](../assets/fix.svg) Prestazioni e scalabilità API migliorate.
 
 ### Versione V1.4
@@ -187,7 +202,7 @@ _12 settembre 2022_
 ![Correzione](../assets/fix.svg) Miglioramento della stabilità e delle prestazioni del servizio
 ![Nuovo](../assets/new.svg) Ricevi aggiornamenti quando i prodotti vengono eliminati dal catalogo
 
-### Versione beta
+### Versione Beta
 
 _9 agosto 2022_
 
