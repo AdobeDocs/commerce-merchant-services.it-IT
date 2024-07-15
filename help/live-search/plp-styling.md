@@ -1,6 +1,6 @@
 ---
 title: Widget pagina elenco prodotti
-description: Abilitazione e formattazione di [!DNL Live Search Product Listing Page Widget]
+description: Abilitazione e formattazione di  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Widget pagina elenco prodotti
 
-Il [!DNL Live Search Product Listing Page Widget] (PLP) utilizza la piattaforma Commerce Services per fornire una pagina di elenco dei prodotti performante, ricercabile e facet-able. In questo argomento viene descritto come abilitare e assegnare uno stile al widget PLP.
+[!DNL Live Search Product Listing Page Widget] (PLP) utilizza la piattaforma Commerce Services per fornire una pagina di elenco di prodotti performante, ricercabile e facet-able. In questo argomento viene descritto come abilitare e assegnare uno stile al widget PLP.
 
 ## Abilitazione del widget PLP
 
-Quando [!DNL Live Search] è installato, la funzionalità di ricerca predefinita viene convertita in [!DNL Live Search] automaticamente.
+Quando il servizio [!DNL Live Search] è installato, la funzionalità di ricerca predefinita viene convertita automaticamente in [!DNL Live Search].
 
-Il [!DNL Live Search] Il widget PLP è abilitato per impostazione predefinita per le nuove installazioni. Se si esegue l&#39;aggiornamento [!DNL Live Search] e il widget PLP è già stato disattivato, rimarrà così.
+Il widget PLP [!DNL Live Search] è abilitato per impostazione predefinita per le nuove installazioni. Se si sta aggiornando [!DNL Live Search] e il widget PLP è già stato disattivato, rimarrà tale.
 
 >[!IMPORTANT]
 >
->Quando [!DNL Live Search Product Listing Page Widget] è attivato, non è possibile modificare la direzione dell’ordinamento in una pagina di elenco dei prodotti.
+>Quando [!DNL Live Search Product Listing Page Widget] è abilitato, non è possibile modificare la direzione dell&#39;ordinamento in una pagina dell&#39;elenco prodotti.
 
 ## Funzioni widget
 
@@ -29,7 +29,7 @@ Il widget PLP fornisce le seguenti funzioni predefinite:
 
 - Pulsanti Aggiungi al carrello - Disponibile solo per prodotti semplici.
 - Più immagini per prodotto: l’immagine può cambiare quando si sceglie un colore diverso per un prodotto configurabile.
-- Supporto per i campioni colore: l’attributo colore deve essere scritto `color` affinché il codice possa essere convalidato correttamente.
+- Supporto per i campioni di colore: tieni presente che l&#39;attributo di colore deve essere digitato `color` affinché il codice possa essere convalidato correttamente.
 
 ### Personalizzazione del widget
 
@@ -39,7 +39,7 @@ Oltre alle funzioni predefinite del widget PLP, potete personalizzare ulteriorme
 - Supporto di più lingue
 - Cursori prezzo
 
-Per informazioni su come personalizzare il widget PLP per gestire le funzioni di cui sopra, vedere `storefront-product-listing-page` leggimi nei seguenti [repository](https://github.com/adobe/storefront-product-listing-page/).
+Per informazioni su come personalizzare il widget PLP per gestire le funzionalità di cui sopra, vedere il file readme `storefront-product-listing-page` nel seguente [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 >[!WARNING]
 >
@@ -47,13 +47,13 @@ Per informazioni su come personalizzare il widget PLP per gestire le funzioni di
 
 ## Esempio di stile
 
-È possibile personalizzare l&#39;aspetto del widget PLP in modo che corrisponda al sito utilizzando [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Puoi personalizzare l&#39;aspetto del widget PLP in modo che corrisponda al tuo sito utilizzando [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Gli elementi con classi personalizzate all’interno di un tema Adobe Commerce non vengono ereditati. Questi elementi devono essere oggetto di targeting da parte della classe specifica per corrispondere alle classi personalizzate; le classi di azione primarie non funzioneranno su un pulsante widget. Vengono ereditati gli elementi mirati generici all’interno del CSS; `button` si applica ai pulsanti widget.
+>Gli elementi con classi personalizzate all’interno di un tema Adobe Commerce non vengono ereditati. Questi elementi devono essere oggetto di targeting da parte della classe specifica per corrispondere alle classi personalizzate; le classi di azione primarie non funzioneranno su un pulsante widget. Gli elementi di destinazione generici all&#39;interno del CSS vengono ereditati; `button` si applica ai pulsanti widget.
 
-I div evidenziati contengono la classe target `ds-sdk-product-item__product-name`.
+Gli elementi div evidenziati contengono la classe di destinazione `ds-sdk-product-item__product-name`.
 
 ![Paginazione](assets/plp-css-example.png)
 
@@ -88,7 +88,7 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 
 - `.ds-plp-pagination_item--current`
 
-![Impaginazione elemento corrente](assets/plp-css-pagination-item-current.png)
+![Elemento corrente di paginazione](assets/plp-css-pagination-item-current.png)
 
 ### Widget
 
@@ -102,7 +102,7 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 
 - `.ds-sdk-sort-dropdown`
 
-![Menu a discesa Ordina](assets/plp-css-dropdown.png)
+![Elenco a discesa degli ordini](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -162,7 +162,7 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![Etichetta di input](assets/plp-css-labelled-input-label.png)
+![Etichetta input](assets/plp-css-labelled-input-label.png)
 
 ### Elemento prodotto
 
@@ -190,5 +190,5 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 
 Per disattivare il widget PLP:
 
-1. Vai a **Negozi** > Impostazioni > **Configurazione** > **[!DNL Live Search]** > **Funzioni vetrina** e imposta **Abilita widget elenco prodotti** a &quot;No&quot;.
+1. Vai a **Archivi** > Impostazioni > **Configurazione** > **[!DNL Live Search]** > **Funzioni vetrina** e imposta **Abilita widget elenco prodotti** su &quot;No&quot;.
 1. Seleziona **Salva configurazione** per salvare l&#39;impostazione.

@@ -7,14 +7,14 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
 # Configurazione di più siti web e ambiti
 
-È possibile impostare [Ambito](https://docs.magento.com/user-guide/configuration/scope.html) alcuni elementi per ospitare più siti web, store e visualizzazioni dello store:
+È possibile impostare l&#39;[Ambito](https://docs.magento.com/user-guide/configuration/scope.html) per alcuni elementi in modo da includere più siti Web, store e visualizzazioni dello store:
 
 - [Gestisci Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) per ambito
 
@@ -26,16 +26,16 @@ Dopo aver aggiornato correttamente la configurazione, è possibile selezionare l
 
 ## Gestione impostazioni di ritiro in-store
 
-Attiva o disattiva la [!UICONTROL In-Store Pickup] opzioni per ogni sito Web o ambito di archiviazione dal [Configurazioni dei metodi di consegna](enable-general.md#delivery-methods) in Admin.
+Abilita o disabilita le opzioni [!UICONTROL In-Store Pickup] per ogni sito Web o ambito archivio dalle [Configurazioni del metodo di consegna](enable-general.md#delivery-methods) nell&#39;amministratore.
 
-1. Accedi a **[!UICONTROL Stores > Configuration]**.
+1. Passa a **[!UICONTROL Stores > Configuration]**.
 
 1. Selezionare l&#39;ambito (sito Web da archiviare) da configurare.
 
-1. Con l’ambito selezionato, passa a **[!UICONTROL Sales > Delivery Methods]**.
+1. Con ambito selezionato, passare a **[!UICONTROL Sales > Delivery Methods]**.
 
-1. Disattiva o abilita **[!UICONTROL In-Store Pickup]** Metodo di consegna.
+1. Disabilitare o abilitare il metodo di consegna **[!UICONTROL In-Store Pickup]**.
 
 In questa sezione puoi anche gestire la disponibilità globale del ritiro lato bordo o in-store.
 
-Gestire [!UICONTROL In-Store Pickup] e [!UICONTROL Delivery Method] impostazioni per origine di magazzino. Esistono numerose altre configurazioni per garantire la massima flessibilità nell’implementazione.
+Gestisci le impostazioni [!UICONTROL In-Store Pickup] e [!UICONTROL Delivery Method] per origine azionaria. Esistono numerose altre configurazioni per garantire la massima flessibilità nell’implementazione.

@@ -19,7 +19,7 @@ Adobe fornisce una raccolta di Commerce, integrazioni e servizi dati per aiutare
 
 >[!BEGINSHADEBOX &quot;Informazioni sulla versione&quot;]
 
-Consulta [novità della documentazione](whats-new.md) o [note sulla versione](release-notes-all.md) per ogni servizio Commerce.
+Consulta le [novità](whats-new.md) o le [note sulla versione](release-notes-all.md) per ogni servizio Commerce.
 
 >[!ENDSHADEBOX]
 
@@ -51,14 +51,14 @@ Consulta [novità della documentazione](whats-new.md) o [note sulla versione](re
 <tr>
   <td valign="top" width="200px">
     <img alt="Servizi di pagamento" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Servizi di pagamento</strong></a>  <br><em>(Disponibile per il Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Servizi di pagamento</strong></a> <br><em>(Disponibile per il Magento Open Source)</em>
     <div>Aumenta la soddisfazione dei clienti offrendo facilmente diversi metodi di pagamento, tra cui rate di pagamento senza interessi e un'unica vista sull'elaborazione dei pagamenti, gli ordini e le fatture.</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Evasione negozio" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Evasione negozio</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Evasione archivio</strong></a></br>
     <div>Offrite un acquisto online di qualità superiore, la customer experience "pick up in store" (BOPIS) e ottimizzate la produttività dei dipendenti grazie a un flusso di lavoro di implementazione completo, abilitato tramite un dispositivo mobile.</div>
   </td>
    </tr>

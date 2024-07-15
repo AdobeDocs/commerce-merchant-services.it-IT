@@ -1,6 +1,6 @@
 ---
 user-guide-title: “Guida [!DNL Payment Services]”
-user-guide-description: "Questa guida fornisce informazioni dettagliate sull'installazione e la configurazione [!DNL Payment Services] per [!DNL Adobe Commerce] o [!DNL Magento Open Source] archiviare."
+user-guide-description: "In questa guida vengono fornite informazioni dettagliate sull'installazione e la configurazione di  [!DNL Payment Services] per l'archivio [!DNL Adobe Commerce] o [!DNL Magento Open Source] personale."
 breadcrumb-title: “Guida [!DNL Payment Services]”
 index: true
 role: Admin, Leader, User
@@ -17,7 +17,7 @@ ht-degree: 4%
 # [!DNL Payment Services] per Commerce {#payment-services}
 
 - [Panoramica della guida](guide-overview.md)
-- [Introduzione a [!DNL Payment Services]](overview.md)
+- [Introduzione a  [!DNL Payment Services]](overview.md)
 - [Note sulla versione](release-notes.md)
 - Pagamenti e pagamento {#payments-checkout}
    - [Opzioni di pagamento](payments-options.md)
@@ -25,13 +25,13 @@ ht-degree: 4%
    - [Pagamento](checkout.md)
 - Onboarding [!DNL Payment Services] {#get-started}
    - [Panoramica sull’onboarding](onboard.md)
-   - [Installare [!DNL Payment Services] estensione](install.md)
+   - [Installa l&#39;estensione  [!DNL Payment Services] ](install.md)
    - [Connetti l’istanza](connect.md)
    - [Configurare la sandbox di prova](sandbox.md)
    - [Abilita per produzione](production.md)
 - Configura [!DNL Payment Services] {#configure}
-   - [[!DNL Payment Services] Home](payments-home.md)
-   - [[!DNL Payment Services] Impostazioni](settings.md)
+   - [Home di [!DNL Payment Services]](payments-home.md)
+   - [Impostazioni [!DNL Payment Services]](settings.md)
    - [Configurazione della riga di comando](configure-cli.md)
    - [Configurazione legacy](configure-admin.md)
 - [Test e convalida](test-validate.md)
@@ -42,9 +42,9 @@ ht-degree: 4%
    - [Rapporto Pagamenti](payouts.md)
    - [Dati disponibili](data.md)
    - [Elaborazione di livello 2 e livello 3](levels-card-payment-transactions.md)
-- Gestire i pagamenti {#manage}
+- Gestisci pagamenti {#manage}
    - [Rimborsi](refunds.md)
    - [Vuoti](voids.md)
-- Sicurezza {#security-compliance}
+- Protezione {#security-compliance}
    - [Sicurezza e conformità](security.md)
    - [Protezione contro le frodi significative](fraud-protection.md)

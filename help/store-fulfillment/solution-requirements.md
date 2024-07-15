@@ -1,13 +1,13 @@
 ---
 title: Requisiti di evasione del negozio
-description: Requisiti per il provisioning e l’onboarding di [!DNL Store Fulfillment solution].
+description: Requisiti per il provisioning e l'onboarding di  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Le sezioni seguenti descrivono i requisiti tecnici e aziendali per l’installaz
 
 ## Requisiti di versione della piattaforma e del software
 
-Il [!DNL Store Fulfillment] La soluzione è disponibile per i clienti Adobe Commerce sulle seguenti piattaforme.
+La soluzione [!DNL Store Fulfillment] è disponibile per i clienti Adobe Commerce sulle seguenti piattaforme.
 
 - Adobe Commerce sull’infrastruttura cloud (ECE)
 - Adobe Commerce on-premise (EE)
@@ -27,9 +27,9 @@ Prima di eseguire l&#39;installazione o l&#39;aggiornamento, esaminare le note s
 
 - [Note sulla versione di Store Fulfillment](release-notes.md)
 
-- [Note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) nel *Informazioni sulla versione di Adobe Commerce*.
+- [Note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) nelle *Informazioni sulla versione di Adobe Commerce*.
 
-- [Requisiti di sistema di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) nel *Guida all’installazione di Adobe Commerce*.
+- [Requisiti di sistema di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) nella *Guida all&#39;installazione di Adobe Commerce*.
 
 
 ## Requisiti dell’app Store Assist
@@ -38,7 +38,7 @@ Il processo end-to-end per gestire gli ordini di ritiro dallo store viene gestit
 
 **Requisiti minimi del sistema operativo**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **Requisiti hardware minimi**
@@ -62,6 +62,6 @@ La tua azienda deve soddisfare i seguenti criteri minimi per implementare la sol
 
 - Memorizza la disponibilità Wi-Fi in tutte le sedi che supportano la soluzione Store Fulfillment: velocità minima di Internet di 3 Mbps
 
-- Gli associati al negozio e al magazzino hanno accesso a dispositivi mobili iOS o Android durante i loro turni, personali o forniti dal commerciante
+- I dipendenti del negozio e del magazzino hanno accesso a dispositivi mobili iOS o Android durante i loro turni, personali o forniti dal commerciante
 
 - I prodotti gestiti tramite la soluzione Store Fulfillment devono avere attributi di prodotto che includano un codice prodotto SKU o UPC

@@ -7,37 +7,37 @@ feature: Shipping/Delivery, Integration, Tools and External Services, Configurat
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 # Impostazione della posizione del negozio e della mappatura
 
-Abilitare la posizione del negozio e le funzionalità di mappatura per il Store Fulfillment configurando un [provider di distanze](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) per cercare le posizioni dei negozi al dettaglio.
+Abilitare le funzionalità di mappatura e posizione del negozio per il completamento del negozio configurando un provider di [distanza](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) per la ricerca di posizioni del negozio al dettaglio.
 
 **Requisiti**
 
-Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. Se non ne hai uno, [generarne uno dalla piattaforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. In caso contrario, [generarne uno dalla piattaforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
 
 Per configurare il provider di distanze:
 
-1. Dalla sezione **[!UICONTROL Stores > General]** in Admin, aggiungi l’integrazione Google Maps per il tipo di contenuto Map.
+1. Dalla configurazione **[!UICONTROL Stores > General]** in Admin, aggiungi l&#39;integrazione Google Maps per il tipo di contenuto Map.
 
    - Vai a **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
-   - Aggiungi la chiave API Google a **[!UICONTROL Google Maps API Key]** campo.
+   - Aggiungi la chiave API Google al campo **[!UICONTROL Google Maps API Key]**.
 
-1. Dalla sezione **[!UICONTROL Stores > Inventory]** in Admin, selezionare il provider di distanza per Store Fulfillment.
+1. Dalla configurazione **[!UICONTROL Stores > Inventory]** nell&#39;amministratore, selezionare il provider di distanza per il completamento del punto vendita.
 
    - Vai a **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
-   - Espandi **[!UICONTROL Distance Provider for Distance Based SSA]** sezione.
+   - Espandere la sezione **[!UICONTROL Distance Provider for Distance Based SSA]**.
 
-   - Imposta il **Provider** a **Google Map**.
+   - Impostare **Provider** su **Google Map**.
 
-1. Configura le impostazioni per **[!UICONTROL Google Distance Provider]**.
+1. Configurare le impostazioni per **[!UICONTROL Google Distance Provider]**.
 
-   - Aggiungi il **Chiave API Google**.
+   - Aggiungi la tua **chiave API Google**.
 
-   - Imposta **[!UICONTROL Computation Mode]** a `Driving` e **[!UICONTROL Value]** a `Distance`
+   - Imposta **[!UICONTROL Computation Mode]** su `Driving` e **[!UICONTROL Value]** su `Distance`

@@ -32,22 +32,22 @@ Il processo di onboarding per [!DNL Product Recommendations] richiede l&#39;acce
 
 ## Endpoint
 
-[!DNL Product Recommendations] comunica attraverso l’endpoint in corrispondenza di `https://catalog-service.adobe.io/graphql`.
+[!DNL Product Recommendations] comunica attraverso l&#39;endpoint in `https://catalog-service.adobe.io/graphql`.
 
 ### Supporto di Page Builder
 
-[!DNL Product Recommendations] possono essere aggiunte a una pagina come tipo di contenuto Page Builder. Per aggiungere il supporto di Page Builder al Product Recommendations, fare riferimento a [Installazione e configurazione](install-configure.md).
+[!DNL Product Recommendations] può essere aggiunto a una pagina come tipo di contenuto Page Builder. Per aggiungere il supporto di Page Builder al Product Recommendations, fare riferimento a [Installa e configura](install-configure.md).
 
-Consulta [[!DNL Page Builder] Integrazione](page-builder.md) per istruzioni su come aggiungere [!DNL Product Recommendations] in [!DNL Page Builder] contenuto.
+Per istruzioni su come aggiungere [!DNL Product Recommendations] al contenuto di [!DNL Page Builder], vedere [[!DNL Page Builder] Integrazione](page-builder.md).
 
 ### Indicizzazione dei prezzi SaaS
 
-I clienti che utilizzano i consigli di prodotto possono utilizzare [Indicizzazione dei prezzi SaaS](../price-index/price-indexing.md), che fornisce aggiornamenti più rapidi sui cambiamenti di prezzo e tempi di sincronizzazione.
+I clienti di Product Recommendation possono utilizzare l&#39;[indicizzazione dei prezzi SaaS](../price-index/price-indexing.md), che fornisce aggiornamenti più veloci sulle modifiche dei prezzi e tempi di sincronizzazione.
 
 ### Supporto B2B {#b2bsupport}
 
-I punti vendita B2B spesso richiedono una logica complessa che determina la visibilità dei prodotti e i prezzi per ogni acquirente o gruppo di clienti. [!DNL Product Recommendations] now [supporto](release-notes.md) questa funzionalità rispettando [autorizzazioni categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [cataloghi condivisi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), e [prezzo specifico del gruppo di clienti](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Ad esempio, se hai nascosto alcune categorie dal segmento dei clienti al dettaglio, a un acquirente in quel segmento non verranno mostrati i consigli per i prodotti in quelle categorie. Inoltre, quando definisci un catalogo condiviso per gruppi di clienti e aziende specifici, questi acquirenti visualizzano i consigli solo per i prodotti a cui possono accedere. Tutti i prodotti consigliati riflettono il prezzo corretto specifico per il gruppo di clienti in base al gruppo di clienti di ciascun acquirente.
+I punti vendita B2B spesso richiedono una logica complessa che determina la visibilità dei prodotti e i prezzi per ogni acquirente o gruppo di clienti. [!DNL Product Recommendations] ora [supporta](release-notes.md) questa funzionalità rispettando [le autorizzazioni categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [i cataloghi condivisi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) e [i prezzi specifici del gruppo di clienti](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Ad esempio, se hai nascosto alcune categorie dal segmento dei clienti al dettaglio, a un acquirente in quel segmento non verranno mostrati i consigli per i prodotti in quelle categorie. Inoltre, quando definisci un catalogo condiviso per gruppi di clienti e aziende specifici, questi acquirenti visualizzano i consigli solo per i prodotti a cui possono accedere. Tutti i prodotti consigliati riflettono il prezzo corretto specifico per il gruppo di clienti in base al gruppo di clienti di ciascun acquirente.
 
 >[!NOTE]
 >
->I commercianti possono personalizzare ed estendere widget o elementi della vetrina utilizzando [Servizio catalogo](../catalog-service/overview.md) API Storefront, ma qualsiasi personalizzazione esula dall’ambito del team di supporto di Adobe.
+>I commercianti possono personalizzare ed estendere widget o elementi della vetrina utilizzando l&#39;API [Catalog Service](../catalog-service/overview.md) della vetrina, ma qualsiasi personalizzazione non rientra nell&#39;ambito del team di supporto di Adobe.

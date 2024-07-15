@@ -1,37 +1,37 @@
 ---
-title: '[!DNL Catalog Service] Panoramica della guida'
-description: '''[!DNL Catalog Service for Adobe Commerce] consente di recuperare i contenuti delle pagine di visualizzazione dei prodotti e delle pagine elenco dei prodotti in modo più rapido rispetto alle query native di Adobe Commerce GraphQL."'
+title: Panoramica della guida '[!DNL Catalog Service]'
+description: '''[!DNL Catalog Service for Adobe Commerce] consente di recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine dell''elenco dei prodotti più rapidamente rispetto alle query native di Adobe Commerce GraphQL.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Panoramica della guida
+# Panoramica della guida di [!DNL Catalog Service]
 
-Questa guida è destinata agli amministratori di Adobe [!DNL Commerce]. Include informazioni generali su [!DNL Catalog Service], inclusi l’onboarding e l’installazione. È necessario conoscere le nozioni di base [!DNL Commerce] configurazione e funzionalità.
+Questa guida è destinata agli amministratori di Adobe [!DNL Commerce]. Include informazioni generali su [!DNL Catalog Service], inclusi l&#39;onboarding e l&#39;installazione. Si presuppone una conoscenza di base della configurazione e delle funzionalità di base di [!DNL Commerce].
 
-[!DNL Catalog Service] dispone di due tipi di utenti:
+[!DNL Catalog Service] ha due tipi di utenti:
 
-* Adobe [!DNL Commerce] gli amministratori di sistema installano e gestiscono il servizio. [!DNL Catalog Service] non dispone di un’interfaccia utente o di funzioni di amministrazione per gli utenti amministratori standard.
+* Adobe [!DNL Commerce] amministratori di sistema installano e gestiscono il servizio. [!DNL Catalog Service] non dispone di un&#39;interfaccia utente o di funzionalità amministratore per gli utenti amministratori standard.
 * Gli integratori creano query GraphQL e le integrano in una vetrina che utilizza un client front-end.
 
 ## Documentazione aggiuntiva
 
-| Guida  | Descrizione |
+| Guida | Descrizione |
 |------ | ----------- |
 | [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
 | [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
 
-Il [processo di onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) è progettato per guidarti attraverso i passaggi necessari per impostare e abilitare [!DNL Catalog Service] funzionalità.
+Il [processo di onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) è progettato per guidarti attraverso i passaggi necessari per configurare e abilitare la funzionalità [!DNL Catalog Service].
 
 Se hai bisogno di informazioni o hai domande che non sono trattate in questa guida, utilizza le risorse seguenti:
 
 * [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) per gli articoli sulla risoluzione dei problemi.
-* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Inviate un ticket per ricevere ulteriore aiuto.
-* Unisciti al team di progettazione di Adobe Commerce e agli utenti dei servizi di vetrina SaaS in [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canale di Slack pubblico da aggiornare.
+* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Invia un ticket per ricevere ulteriore assistenza.
+* Unisciti al team di progettazione di Adobe Commerce e agli utenti dei servizi di vetrina SaaS nel canale di Slack pubblico [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) per essere aggiornato.

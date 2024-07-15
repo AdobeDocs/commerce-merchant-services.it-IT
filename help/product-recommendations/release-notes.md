@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Product Recommendations] Note sulla versione'
-description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
+title: '[!DNL Product Recommendations] Note sulla versione'
+description: Informazioni aggiornate sulla versione di  [!DNL Product Recommendations]  da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
 source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
@@ -10,22 +10,22 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Note sulla versione
+# Note sulla versione [!DNL Product Recommendations]
 
-Le note sulla versione contengono aggiornamenti ai seguenti elementi [!DNL Product Recommendations] moduli:
+Le note sulla versione contengono aggiornamenti ai seguenti [!DNL Product Recommendations] moduli:
 
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
-* Supporto di Page Builder in [!DNL Product Recommendations] (facoltativo) modulo: `magento/module-page-builder-product-recommendations`
-* Supporto del tipo di consiglio per somiglianza visiva per [!DNL Product Recommendations] (facoltativo) modulo: `magento/module-visual-product-recommendations`
+* Supporto di Page Builder nel modulo [!DNL Product Recommendations] (facoltativo): `magento/module-page-builder-product-recommendations`
+* Supporto del tipo di consiglio per similarità visiva per il modulo [!DNL Product Recommendations] (facoltativo): `magento/module-visual-product-recommendations`
 
 È disponibile il supporto per la versione principale rilasciata corrente. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
 Le note sulla versione includono:
 
-![Nuovo](../assets/new.svg) Nuove funzioni
-![Correzione](../assets/fix.svg) Correzioni e miglioramenti
-![Bug](../assets/bug.svg) Problemi noti
+![Nuove](../assets/new.svg) nuove funzionalità
+![Correzioni](../assets/fix.svg) correzioni e miglioramenti
+![Bug](../assets/bug.svg) problemi noti
 
-Consulta la documentazione per gli sviluppatori per [informazioni sul supporto del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Per [informazioni sul supporto del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability), consulta la documentazione per gli sviluppatori.
 
 ## Aggiornamenti dei servizi in hosting
 
@@ -33,16 +33,16 @@ Queste note descrivono aggiornamenti o problemi noti pubblicati o rilevati al di
 
 _28 giugno 2024_
 
-![Bug](../assets/bug.svg) Prodotti aggiunti al carrello da un [!DNL Product Recommendations] L&#39;unità nella pagina del carrello non viene rimossa dall&#39;elenco dei prodotti consigliati quando la pagina del carrello viene ricaricata.
-![Bug](../assets/bug.svg) I prodotti rimossi dal carrello continuano a persistere nel `cartSkus` finché la pagina del carrello non viene ricaricata.
+![Bug](../assets/bug.svg) I prodotti aggiunti al carrello da un&#39;unità [!DNL Product Recommendations] nella pagina del carrello non vengono rimossi dall&#39;elenco dei prodotti consigliati quando la pagina del carrello viene ricaricata.
+![Bug](../assets/bug.svg) I prodotti rimossi dal carrello continuano a persistere nell&#39;array `cartSkus` fino al ricaricamento della pagina del carrello.
 
 _18 luglio 2023_
 
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora dispone di un GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
+![New](../assets/new.svg) [!DNL Product Recommendations] ora dispone di una query GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/).
 
 _25 aprile 2023_
 
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] i clienti possono ora sfruttare [Indicizzazione dei prezzi SaaS](../price-index/price-indexing.md).
+I clienti di ![New](../assets/new.svg) [!DNL Product Recommendations] ora possono usufruire dell&#39;indicizzazione dei prezzi di [SaaS](../price-index/price-indexing.md).
 
 ## Versione principale corrente
 
@@ -52,8 +52,8 @@ _9 maggio 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato risolto un problema che si verificava facendo clic su **[!DNL Add to Cart]** all&#39;interno di un&#39;unità Product Recommendations, il cliente viene reindirizzato alla home page anziché rimanere nella pagina corrente.
-![Bug](../assets/bug.svg) Si è verificato un errore di convalida causato da `referenceBlock` elemento nel `ProductRecommendations Layout` File XML.
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava il reindirizzamento dell&#39;acquirente alla home page anziché alla pagina corrente quando si faceva clic sul pulsante **[!DNL Add to Cart]** di un prodotto semplice all&#39;interno di un&#39;unità Recommendations di prodotto.
+![Bug](../assets/bug.svg) Si è verificato un errore di convalida causato dall&#39;elemento `referenceBlock` nel file XML `ProductRecommendations Layout`.
 
 ### Versioni precedenti
 
@@ -63,7 +63,7 @@ _19 marzo 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per PHP 8.3.
+![Nuovo](../assets/new.svg) aggiunto supporto PHP 8.3.
 
 ### 6.0.0 di magento/product-recommendations
 
@@ -71,8 +71,8 @@ _22 febbraio 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Il [!DNL Catalog Sync Dashboard] è ora il [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Questa dashboard rinnovata fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service].
-![Correzione](../assets/fix.svg) È stato risolto un problema che causava errori di estrazione per [!DNL Product Recommendations].
+![Nuovo](../assets/new.svg) [!DNL Catalog Sync Dashboard] è ora [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Questo dashboard rinnovato fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search] e [!DNL Catalog Service].
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava errori di estrazione per [!DNL Product Recommendations].
 
 +++5.0.0 e versioni precedenti
 
@@ -82,13 +82,13 @@ _15 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli per supportare [Indicizzatore prezzi Saas](../price-index/price-indexing.md).
-![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli di esportazione dati per supportare l’esportazione di più tipi di prodotto, inclusi prodotti in bundle e gift card.
-![Correzione](../assets/fix.svg) Le dimensioni delle tabelle dei prodotti e i feed dei prezzi sono stati notevolmente ridotti. Tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` dovrebbe vedere una riduzione sostanziale delle dimensioni.
+![Nuovo](../assets/new.svg) sono stati aggiunti nuovi moduli per supportare [Indicizzatore prezzi Saas](../price-index/price-indexing.md).
+![Nuovo](../assets/new.svg) sono stati aggiunti nuovi moduli di esportazione dati per supportare l&#39;esportazione di più tipi di prodotto, inclusi prodotti in bundle e gift card.
+![Correzione](../assets/fix.svg) La dimensione della tabella dei prodotti e dei feed di prezzo è stata notevolmente ridotta. Nelle tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` dovrebbe verificarsi una riduzione sostanziale delle dimensioni.
 
 #### Limitazioni note
 
-* Il `websiteCode` viene restituito erroneamente se contiene un carattere di sottolineatura (_).
+* Il valore `websiteCode` non viene restituito correttamente se contiene un carattere di sottolineatura (_).
 
 ### 5.0.0 di magento/product-recommendations
 
@@ -96,202 +96,202 @@ _20 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiornato [!DNL Product Recommendations] per supportare Adobe Commerce 2.4.6.
-![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) funzionalità in Commerce (noto in precedenza come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiorna](install-configure.md#update) modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [!DNL Product Recommendations] aggiornato per supportare Adobe Commerce 2.4.6.
+![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) il file radice `composer.json` del progetto.
+![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta le funzionalità complete di [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) in Commerce (in precedenza noto come inventario Multi-Source o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install-configure.md#update) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 ### 4.0.1 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) Precedentemente, [!DNL Product Recommendations] mostrava un errore quando la valuta di visualizzazione era cambiata in una valuta non predefinita. Il cambio delle valute ora funziona correttamente.
+![Correzione](../assets/fix.svg) In precedenza, [!DNL Product Recommendations] mostrava un errore quando la valuta di visualizzazione veniva cambiata in una valuta non predefinita. Il cambio delle valute ora funziona correttamente.
 
 ### 4.0.0 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunto [indicatori di predisposizione](create.md) per aiutarti a visualizzare l’avanzamento della formazione di ciascun tipo di consiglio.
-![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto. Questa versione richiede anche di fornire due chiavi API durante l’installazione e la configurazione [!DNL Product Recommendations]: [una chiave di produzione e una chiave sandbox](../landing/saas.md).
+![Nuovo](../assets/new.svg) aggiunti [indicatori di preparazione](create.md) per aiutarti a visualizzare l&#39;avanzamento della formazione di ciascun tipo di consiglio.
+![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) il file radice `composer.json` del progetto. Questa versione richiede inoltre di fornire due chiavi API durante l&#39;installazione e la configurazione di [!DNL Product Recommendations]: [una chiave di produzione e una chiave sandbox](../landing/saas.md).
 
 #### Limitazioni note
 
-* Il `websiteCode` viene restituito erroneamente se contiene un carattere di sottolineatura (_).
+* Il valore `websiteCode` non viene restituito correttamente se contiene un carattere di sottolineatura (_).
 
 ### 3.3.7 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Supporto PHP 8.1 aggiunto
-![Nuovo](../assets/new.svg) È stato migliorato il ridimensionamento delle immagini in modo da gestirlo più correttamente nel modello di visualizzazione di riferimento
+![Nuovo](../assets/new.svg) aggiunto supporto PHP 8.1
+![Nuovo](../assets/new.svg) È stato migliorato il ridimensionamento delle immagini in modo che vengano gestite in modo più coerente nel modello di visualizzazione di riferimento
 
 ### 3.3.6 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Ottimizzato [!DNL Product Recommendations] metapackage elencando esplicitamente le dipendenze
+![New](../assets/new.svg) ha ottimizzato il metapacchetto [!DNL Product Recommendations] elencando esplicitamente le dipendenze
 
 ### 3.3.5 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunto [Supporto B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) ai servizi Commerce tramite la riga di comando
+![Nuovo](../assets/new.svg) aggiunto [Supporto B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
+![Nuovo](../assets/new.svg) Aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) in Commerce Services tramite la riga di comando
 
 ### 3.3.3 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunto nuovo [tipi di consigli](type.md): Conversione (dalla vista al carrello), Conversione (dalla vista all’acquisto) e Visualizzato di recente. Questi nuovi tipi di consigli sono disponibili nel `magento/product-recommendations` modulo 3.2.2 e versioni successive.
-![Correzione](../assets/fix.svg) È stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
-![Correzione](../assets/fix.svg) È stato risolto un problema che impediva la visualizzazione dei prodotti assegnati alla visualizzazione Store non predefinita in _Anteprima prodotto Recommendations_ durante la creazione di un consiglio per quella specifica visualizzazione store
-![Correzione](../assets/fix.svg) È stato risolto un problema a causa del quale alcuni nomi di unità di consigli in Page Builder impedivano la visualizzazione dell&#39;unità di consigli nella vetrina
+![Nuovo](../assets/new.svg) aggiunti nuovi [tipi di consigli](type.md): Conversione (da vista a carrello), Conversione (da vista a acquisto) e Visualizzato di recente. Questi nuovi tipi di consigli sono disponibili nel modulo `magento/product-recommendations` 3.2.2 e versioni successive.
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
+![Correzione](../assets/fix.svg) è stato risolto un problema che impediva la visualizzazione dei prodotti assegnati alla visualizzazione Store non predefinita nel pannello _Anteprima prodotto Recommendations_ durante la creazione di un consiglio per quella visualizzazione Store specifica
+![Correzione](../assets/fix.svg) è stato corretto un problema a causa del quale alcuni nomi di unità di consigli in Page Builder impedivano la visualizzazione dell&#39;unità di consigli nella vetrina
 
 ### 3.3.2 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stata corretta una dipendenza mancante per il supporto B2B
+![Correzione](../assets/fix.svg) è stata corretta una dipendenza mancante per il supporto B2B
 
 ### 3.3.1 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per i prezzi di gruppo dei clienti B2B. Quando si imposta un [filtro prezzi](filters.md) in un’unità di consigli, i clienti B2B che hanno effettuato l’accesso vedono i prezzi del gruppo di clienti impostati per i prodotti visualizzati.
+![Nuovo](../assets/new.svg) è stato aggiunto il supporto per i prezzi dei gruppi di clienti B2B. Quando imposti un [filtro prezzi](filters.md) su un&#39;unità di consigli, i clienti B2B che hanno effettuato l&#39;accesso visualizzano i prezzi del gruppo di clienti impostati per i prodotti visualizzati.
 
 ### 3.3.0 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto di Adobe Client Data Layer per standardizzare la raccolta di dati comportamentali tra le funzioni e i servizi di Adobe Commerce. Consulta la [leggimi](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) per ulteriori informazioni.
+![Nuovo](../assets/new.svg) È stato aggiunto il supporto di Adobe Client Data Layer per standardizzare la raccolta di dati comportamentali tra le funzioni e i servizi di Adobe Commerce. Per ulteriori informazioni, consulta il [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato corretto un errore modale JavaScript
-![Correzione](../assets/fix.svg) È stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
+![Correzione](../assets/fix.svg) è stato corretto un errore modale di JavaScript
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
 
 ### 3.2.5 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Servizi di Magento rinominati [Servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) e una migliore usabilità in Admin
+![Nuovo](../assets/new.svg) ha rinominato i servizi di Magento in [Servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) e ne è stata migliorata l&#39;usabilità in Amministrazione
 
 ### 3.2.4 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante l’indicizzazione degli attributi del prodotto
+![Correzione](../assets/fix.svg) è stato corretto l&#39;errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante l&#39;indicizzazione degli attributi di prodotto
 
 ### 3.2.3 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante la sincronizzazione del catalogo
-![Correzione](../assets/fix.svg) È stato risolto un problema che impediva la corretta impostazione del codice store quando si abilitava la configurazione &quot;Aggiungi codice store a URL&quot;
-![Correzione](../assets/fix.svg) È stato migliorato il rilevamento delle modifiche alla configurazione del pannello di amministrazione per garantire che tali modifiche vengano riportate nei dati di sincronizzazione del catalogo
+![Correzione](../assets/fix.svg) è stato corretto l&#39;errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante la sincronizzazione del catalogo
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale il codice dello store non veniva impostato correttamente quando si abilitava la configurazione &quot;Aggiungi codice dello store all&#39;URL&quot;
+![Correzione](../assets/fix.svg) è stato migliorato il rilevamento delle modifiche alla configurazione del pannello di amministrazione per garantire che tali modifiche vengano applicate ai dati di sincronizzazione del catalogo
 
 ### 3.2.2 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di [visualizzare in anteprima i risultati dei consigli](create.md) al momento della creazione. Potrebbe essere necessario aggiornare il modulo alla versione più recente.
-![Nuovo](../assets/new.svg) Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) il processo di sincronizzazione del catalogo dall’amministratore.
-![Nuovo](../assets/new.svg) Aggiunto [filtri](filters.md) per controllare quali prodotti vengono visualizzati nei consigli.
-![Nuovo](../assets/new.svg) È stata aggiunta la [Somiglianza visiva](type.md#visualsim) tipo di consiglio.
+![Nuovo](../assets/new.svg) Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) il processo di sincronizzazione del catalogo da parte dell&#39;amministratore.
+![Nuovo](../assets/new.svg) aggiunti [filtri](filters.md) per controllare quali prodotti vengono visualizzati nei consigli.
+![Nuovo](../assets/new.svg) aggiunto il tipo di consiglio [Somiglianza visiva](type.md#visualsim).
 
 ### 1.2.1 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per la versione 3.2.0+ di `magento/product-recommendations` modulo
+![Nuovo](../assets/new.svg) Aggiunto supporto per la versione 3.2.0+ del modulo `magento/product-recommendations`
 
 ### 3.1.0 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Aggiunta la possibilità di [risincronizza](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) il catalogo ai servizi SaaS tramite riga di comando.
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per i prefissi delle tabelle del database
-![Correzione](../assets/fix.svg) Supporto di PHP 7.1 rimosso
+![Nuovo](../assets/new.svg) Aggiunta la possibilità di [risincronizzare](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) il catalogo con i servizi SaaS tramite riga di comando.
+![Nuovo](../assets/new.svg) aggiunto supporto per i prefissi delle tabelle di database
+![Correzione](../assets/fix.svg) Supporto PHP 7.1 rimosso
 
 ### 3.0.8 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato risolto un problema a causa del quale gli eventi venivano inviati per la raccolta dati prima della configurazione del modulo, causando traffico non valido.
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale gli eventi venivano inviati per la raccolta dati prima che il modulo fosse configurato, causando traffico non valido
 
 ### 3.0.6 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) **(Beta)** Include il supporto per i nuovi [Somiglianza visiva](type.md#visualsim) tipo di consiglio.
+![Nuovo](../assets/new.svg) **(Beta)** Include il supporto per il nuovo tipo di consiglio [Somiglianza visiva](type.md#visualsim).
 
 ### 1.0.0 di magento/module-visual-product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) **(Beta)** [Somiglianza visiva](type.md#visualsim). Con il _Somiglianza visiva_ tipo di consiglio, puoi implementare un’unità di consigli nella pagina dei dettagli del prodotto che mostra prodotti visivamente simili al prodotto visualizzato.
+![Nuovo](../assets/new.svg) **(Beta)** [Somiglianza visiva](type.md#visualsim). Con il tipo di consiglio _Somiglianza visiva_, puoi distribuire un&#39;unità di consigli nella pagina dei dettagli del prodotto che mostra prodotti visivamente simili al prodotto visualizzato.
 
 ### 3.0.5 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni del prodotto&quot; che poteva verificarsi durante l’esportazione del catalogo.
-![Correzione](../assets/fix.svg) Il simbolo di valuta nel _Ricavi_ colonna sulla _[!DNL Product Recommendations]_la dashboard ora riflette correttamente la valuta di base configurata.
+![Correzione](../assets/fix.svg) è stato corretto l&#39;errore &quot;Impossibile recuperare i dati delle opzioni prodotto&quot; che poteva verificarsi durante l&#39;esportazione del catalogo.
+![Correzione](../assets/fix.svg) Il simbolo di valuta nella colonna _Entrate_ del dashboard _[!DNL Product Recommendations]_ora riflette correttamente la valuta di base configurata.
 
 ### 3.0.4 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) È stato aggiunto il supporto per Adobe Commerce 2.4.0
+![Correzione](../assets/fix.svg) aggiunta del supporto per Adobe Commerce 2.4.0
 
 ### 3.0.3 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) Miglioramento dell’implementazione dei simboli nel modello storefront
+![Correzione](../assets/fix.svg) implementazione migliorata del simbolo nel modello storefront
 
 ### 1.0.4 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il nome del consiglio di prodotto durante la modifica del tipo di contenuto Page Builder
+![Nuovo](../assets/new.svg) aggiunto il nome del consiglio di prodotto durante la modifica del tipo di contenuto Page Builder
 
 ### 3.0.2 magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stata aggiunta una colonna di stato sulla griglia durante la selezione delle unità per i consigli in Page Builder
-![Correzione](../assets/fix.svg) È stato risolto un problema relativo a protocolli http/https errati negli URL di prodotti e immagini.
+![Nuovo](../assets/new.svg) Aggiunta di una colonna di stato nella griglia durante la selezione delle unità per i consigli in Page Builder
+![Correzione](../assets/fix.svg) è stato risolto un problema relativo a protocolli http/https non corretti negli URL di prodotti e immagini
 
 ### 3.0.1 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-Questa è una versione principale. [Modifica](install-configure.md#update) file compositore.json principale del progetto.
+Questa è una versione principale. [Modifica](install-configure.md#update) il file compositore.json principale del progetto.
 
-![Nuovo](../assets/new.svg) Recupera [!DNL Product Recommendations] da spazi dati SaaS alternativi. Questo ti consente di utilizzare [!DNL Product Recommendations] calcolato nell’ambiente del prodotto in altri ambienti non di produzione. [Passaggio da uno spazio dati SaaS a un altro](settings.md) descrive ulteriormente questa funzione.
+![Nuovo](../assets/new.svg) Recupero di [!DNL Product Recommendations] da spazi dati SaaS alternativi. Ciò ti consente di utilizzare [!DNL Product Recommendations] calcolato nell&#39;ambiente del prodotto in altri ambienti non di produzione. [Il passaggio da uno spazio dati SaaS](settings.md) descrive ulteriormente questa funzione.
 
-![Correzione](../assets/fix.svg) È stato risolto un problema che impediva il pagamento da parte degli acquirenti che utilizzavano Origine uBlock.
-![Correzione](../assets/fix.svg) È stato risolto un problema che inviava eventi aggiuntivi al carrello estranei
+![Correzione](../assets/fix.svg) è stato risolto un problema che impediva l&#39;estrazione per gli acquirenti che utilizzano uBlock Origin.
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava l&#39;invio di eventi aggiuntivi al carrello estranei
 
 ### 1.0.3 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Supporto di Page Builder. Con l’integrazione di Page Builder, puoi posizionare in modo accurato e dettagliato le unità di consigli in qualsiasi posizione arbitraria su contenuti creati da Page Builder. Puoi anche assegnare uno stile ai titoli e alle unità di consigli. Vai a [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) per ulteriori informazioni.
+Supporto di ![New](../assets/new.svg) Page Builder. Con l’integrazione di Page Builder, puoi posizionare in modo accurato e dettagliato le unità di consigli in qualsiasi posizione arbitraria su contenuti creati da Page Builder. Puoi anche assegnare uno stile ai titoli e alle unità di consigli. Per ulteriori informazioni, vai a [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 ### 2.0.0 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Rilascio di disponibilità generale.
+![Nuovo](../assets/new.svg) rilascio di disponibilità generale.
 
 +++
 
 ## Documentazione
 
-Per ulteriori informazioni su [!DNL Product Recommendations] e [!DNL Product Recommendations] Sviluppo:
+Per ulteriori informazioni sullo sviluppo di [!DNL Product Recommendations] e [!DNL Product Recommendations]:
 
 * [Guida utente](overview.md)
-* [Documentazione per gli sviluppatori](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)
+* [Documentazione per sviluppatori](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)

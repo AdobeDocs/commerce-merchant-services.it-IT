@@ -1,11 +1,11 @@
 ---
 title: Test in ambiente di staging
-description: Scopri come utilizzare [!DNL Product Recommendations] dall’ambiente di produzione nell’ambiente di staging a scopo di test.
+description: Scopri come utilizzare  [!DNL Product Recommendations]  dall'ambiente di produzione nell'ambiente di staging a scopo di test.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Prima di implementare i consigli nell’ambiente di produzione, è necessario eseguire il test in un ambiente non di produzione per assicurarsi che tutto funzioni come previsto.
 
-[!DNL Product Recommendations] restituisce prodotti in base a [dati sul comportamento degli acquirenti](behavioral-data.md) raccolte dalla vetrina. In un ambiente non di produzione, tuttavia, è probabile che non siano presenti dati comportamentali provenienti dagli acquirenti. L’unico tipo di consiglio che puoi verificare senza dati comportamentali è `More like this`. Questo tipo di consiglio non richiede alcun dato di input, in quanto utilizza una corrispondenza diretta di somiglianza dei contenuti.
+[!DNL Product Recommendations] restituiscono i prodotti in base a [dati sul comportamento dell&#39;acquirente](behavioral-data.md) raccolti dalla tua vetrina. In un ambiente non di produzione, tuttavia, è probabile che non siano presenti dati comportamentali provenienti dagli acquirenti. L&#39;unico tipo di consiglio che è possibile verificare senza dati comportamentali è `More like this`. Questo tipo di consiglio non richiede alcun dato di input, in quanto utilizza una corrispondenza diretta di somiglianza dei contenuti.
 
 I seguenti tipi di consigli richiedono dati comportamentali:
 
@@ -26,20 +26,20 @@ Come puoi testare i consigli in un ambiente non di produzione utilizzando i dati
 
 ## Recupera consigli dall’ambiente di produzione (scelta consigliata)
 
-Adobe Commerce consente di recuperare i consigli dall’ambiente di produzione e di visualizzarli in anteprima in un ambiente non di produzione tramite [commutazione](settings.md) lo spazio dati SaaS.
+Adobe Commerce ti consente di recuperare i consigli dall&#39;ambiente di produzione e di visualizzarli in anteprima nell&#39;ambiente non di produzione [cambiando](settings.md) lo spazio dati SaaS.
 
 Per recuperare i consigli dall’ambiente di produzione, è necessario assicurarsi che:
 
-- La raccolta dati di Storefront è [configurato e abilitato](install-configure.md) sulla produzione.
+- La raccolta dati Storefront è [configurata e abilitata](install-configure.md) in produzione.
 - Il catalogo degli ambienti non di produzione è in gran parte lo stesso di quello esistente in produzione. L’utilizzo di cataloghi simili garantisce che i prodotti restituiti nelle unità di consigli rispecchino fedelmente quelli in produzione.
 
 ## Generare dati comportamentali in ambienti non di produzione
 
-1. Distribuire `magento/product-recommendations` in un ambiente non di produzione in cui i dati del catalogo sono simili a quelli del catalogo di produzione.
+1. Distribuire il modulo `magento/product-recommendations` in un ambiente non di produzione in cui i dati del catalogo sono simili a quelli del catalogo di produzione.
 
-1. Utilizza uno degli ID spazio dati non di produzione per [configurazione](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in Admin.
+1. Utilizza uno degli ID spazio dati non di produzione per la [configurazione](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) nell&#39;amministratore.
 
-1. Genera i dati da solo facendo clic sulla vetrina per simulare il comportamento degli acquirenti effettivi (o crea uno script di automazione). Attraverso i test, puoi generare eventi comportamentali nell’ambiente non di produzione. Tali eventi vengono utilizzati per produrre affinità di prodotto che alimentano le raccomandazioni. Per le prove, [!DNL Commerce] consiglia di interagire con i seguenti tipi di consigli:
+1. Genera i dati da solo facendo clic sulla vetrina per simulare il comportamento degli acquirenti effettivi (o crea uno script di automazione). Attraverso i test, puoi generare eventi comportamentali nell’ambiente non di produzione. Tali eventi vengono utilizzati per produrre affinità di prodotto che alimentano le raccomandazioni. Per il test, [!DNL Commerce] consiglia di interagire con i seguenti tipi di consigli:
 
    - Più visualizzati: richiede un minimo di dati di input. Gli utenti devono visualizzare i prodotti.
    - Visualizzato questo, visto che - Richiede più utenti per visualizzare più prodotti.

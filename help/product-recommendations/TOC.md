@@ -1,6 +1,6 @@
 ---
 user-guide-title: “Guida [!DNL Product Recommendations]”
-user-guide-description: Questa guida fornisce istruzioni dettagliate per l’utilizzo di [!DNL Product Recommendations] da Adobe Commerce.
+user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Product Recommendations]  da Adobe Commerce.
 breadcrumb-title: “Guida [!DNL Product Recommendations]”
 role: Admin
 feature: Services, Recommendations
@@ -14,9 +14,9 @@ ht-degree: 12%
 # [!DNL Product Recommendations] per Commerce {#product-recommendations}
 
 - [Panoramica della guida](guide-overview.md)
-- [Introduzione a [!DNL Product Recommendations]](overview.md)
+- [Introduzione a  [!DNL Product Recommendations]](overview.md)
 - [Note sulla versione](release-notes.md)
-- Introduzione {#getting-started}
+- Introduzione a {#getting-started}
    - [Onboarding](onboarding.md)
    - [Flusso di lavoro di implementazione](implementation-workflow.md)
    - [Dati comportamentali](behavioral-data.md)
@@ -26,7 +26,7 @@ ht-degree: 12%
    - [Verifica](verify.md)
    - [Ambiente di staging](staging-environment.md)
    - [Integrazione Page Builder](page-builder.md)
-- [!DNL Product Recommendations] Amministratore {#admin}
+- Amministratore [!DNL Product Recommendations] {#admin}
    - [Workspace](workspace.md)
    - [Crea](create.md)
    - [Modifica](edit.md)

@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Data Export] Guida per i servizi SaaS"
-user-guide-description: "Questa guida fornisce istruzioni dettagliate per l'utilizzo di [!DNL Data Export] per i servizi SaaS di Adobe Commerce."
+user-guide-description: "Questa guida fornisce istruzioni dettagliate per l'utilizzo dell'estensione  [!DNL Data Export] per i servizi SaaS di Adobe Commerce."
 breadcrumb-title: "[!DNL Data Export] Guida per i servizi SaaS"
 hide: true
 role: Admin

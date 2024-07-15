@@ -1,9 +1,10 @@
 ---
-title: "Visualizzare i prezzi tassati con API Mesh"
-description: '''Usa [!DNL API Mesh] affinché Adobe Commerce e Catalog Service visualizzino i prezzi, comprese le imposte."'
+title: Visualizzare i prezzi tassati con API Mesh
+description: Utilizza  [!DNL API Mesh] per Adobe Commerce e Catalog Service per visualizzare i prezzi, comprese le imposte.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: d235f28c7f438fe89eb20ea7ef8bda7ae39733c0
+exl-id: 0d3da296-4409-4653-b397-99eae35e4cb7
+source-git-commit: 33573d3fb75e7a822b3d6ad8a9e45d2ebee4a3c3
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,18 +21,18 @@ In questo argomento, API Mesh viene utilizzato per visualizzare i prezzi dei pro
 
 Per visualizzare le imposte nella pagina Dettagli prodotto, è necessario configurarle.
 
-1. [Imposta aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Abilita imposte da [visualizzato nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)e impostarlo su `Including and Excluding Tax` o `Including Tax`.
+1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Abilita la visualizzazione delle imposte [ nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
 
 Verifica che Catalog Service funzioni controllando una pagina di dettagli prodotto.
 
-![Imposte visualizzate nella pagina Dettagli prodotto](assets/display-tax.png)
+![Imposte visualizzate nella pagina dettagli prodotto](assets/display-tax.png)
 
 ## Configura Mesh API
 
-Se non l’hai già fatto, connetti l’Mesh API con Catalog Service all’istanza. Consulta le istruzioni dettagliate nella sezione [Guida introduttiva](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) nella guida per gli sviluppatori API Mesh.
+Se non l’hai già fatto, connetti l’Mesh API con Catalog Service all’istanza. Consulta le istruzioni dettagliate nell&#39;argomento [Guida introduttiva](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) nella guida per gli sviluppatori di API Mesh.
 
-In `mesh.json` file, sostituisci il `name `, `endpoint`, e `x-api-key` valori.
+Nel file `mesh.json`, sostituire i valori `name `, `endpoint` e `x-api-key`.
 
 ```json
 {
@@ -104,17 +105,17 @@ In `mesh.json` file, sostituisci il `name `, `endpoint`, e `x-api-key` valori.
   }
 ```
 
-Questo `mesh.json` file di configurazione:
+Il file di configurazione `mesh.json`:
 
-* Trasforma l’applicazione principale Commerce in modo da richiedere &quot;Core_&quot; anteposto a qualsiasi query o tipo. In questo modo si evitano possibili conflitti di denominazione con Catalog Service.
-* Estende il `ComplexProductView` e `SimpleProductView` tipi con un nuovo campo denominato `priceWithTaxes`.
+* Trasforma l’applicazione principale Commerce in modo che richieda &quot;Core_&quot; anteposto a qualsiasi delle sue query o tipi. In questo modo si evitano possibili conflitti di denominazione con Catalog Service.
+* Estende i tipi `ComplexProductView` e `SimpleProductView` con un nuovo campo denominato `priceWithTaxes`.
 * Aggiunge un risolutore personalizzato per il nuovo campo.
 
-Creare la mesh con [comando create](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) con `mesh.json` file.
+Crea la mesh con il comando [create](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) con il file `mesh.json`.
 
 ### Query GraphQL
 
-È possibile recuperare il nuovo `priceWithTaxes` dati tramite GraphQL.
+È possibile recuperare i nuovi dati di `priceWithTaxes` utilizzando GraphQL.
 
 Esempio di query:
 

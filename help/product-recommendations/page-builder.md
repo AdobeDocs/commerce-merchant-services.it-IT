@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Page Builder] Integrazione'
-description: Scopri come utilizzare [!DNL Product Recommendations] in Page Builder.
+title: Integrazione '[!DNL Page Builder]'
+description: Scopri come utilizzare  [!DNL Product Recommendations]  unità in Page Builder.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
 source-git-commit: 6bd1010066919d8339ddfb70cd7443d701a4ac78
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Page Builder] Integrazione
+# Integrazione di [!DNL Page Builder]
 
 Product Recommendations può essere integrato in qualsiasi contenuto di Page Builder distribuito sul sito.
 
 >[!NOTE]
 >
-> In una pagina nativa di Page Builder puoi avere fino a 25 unità di consigli. Le pagine di Page Builder non native possono avere fino a 5 unità di consigli. Consulta [Crea nuovo consiglio](create.md) per ulteriori informazioni.
+> In una pagina nativa di Page Builder puoi avere fino a 25 unità di consigli. Le pagine di Page Builder non native possono avere fino a 5 unità di consigli. Per ulteriori informazioni, vedere [Crea nuovo consiglio](create.md).
 
 ## Utilizzo del Recommendations di prodotto con il contenuto di Page Builder
 
@@ -24,17 +24,17 @@ Product Recommendations può essere integrato in qualsiasi contenuto di Page Bui
 
    >[!NOTE]
    >
-   >Le metriche per le unità di consigli di Page Builder vengono visualizzate solo nella visualizzazione predefinita dello store [!DNL Product Recommendations] Workspace. Anche se inserisci un’unità di consigli di Page Builder in una visualizzazione store che non è quella predefinita, le metriche relative a tali unità di consigli di Page Builder non verranno visualizzate nella visualizzazione store non predefinita [!DNL Product Recommendations] Workspace. Per visualizzare le metriche di Page Builder in una visualizzazione store non predefinita [!DNL Product Recommendations] workspace, apri e [modifica](edit.md) nell’unità di consigli di Page Builder nella visualizzazione store non predefinita, quindi fai clic su [!UICONTROL **Salva**]. Le metriche di Page Builder vengono ora visualizzate nel [!DNL Product Recommendations] in storeview non predefinito.
+   >Le metriche per le unità di consigli di Page Builder vengono visualizzate solo nell&#39;area di lavoro predefinita [!DNL Product Recommendations] della visualizzazione archivio. Anche se si inserisce un&#39;unità di consigli di Page Builder in una visualizzazione archivio diversa da quella predefinita, le metriche relative a tali unità di consigli di Page Builder non verranno visualizzate nell&#39;area di lavoro [!DNL Product Recommendations] della visualizzazione archivio non predefinita. Per visualizzare le metriche di Page Builder in un&#39;area di lavoro [!DNL Product Recommendations] con visualizzazione archivio non predefinita, aprire e [modificare](edit.md) l&#39;unità di consigli di Page Builder nella visualizzazione archivio non predefinita, quindi fare clic su [!UICONTROL **Salva**]. Le metriche di Page Builder vengono ora visualizzate nell&#39;area di lavoro [!DNL Product Recommendations] nella visualizzazione dello store non predefinita.
 
 1. In Page Builder, seleziona il widget di contenuto Recommendations del prodotto e inseriscilo sul tuo sito.
 
-![Inserisci unità per consigli](assets/pb-insert.png)
+![Inserisci unità consigli](assets/pb-insert.png)
 
-1. Clic **Modifica consiglio prodotto**
-1. Clic **Seleziona**
-1. Seleziona l’unità Consigli creata in precedenza e fai clic su **Aggiungi selezionati**
+1. Fai clic su **Modifica consiglio prodotto**
+1. Fai clic su **Seleziona**
+1. Seleziona l&#39;unità di consigli creata in precedenza e fai clic su **Aggiungi selezionati**
 
-![Inserisci unità per consigli](assets/pb-select.png)
+![Inserisci unità consigli](assets/pb-select.png)
 
 1. Apporta eventuali altre modifiche al contenuto di Page Builder e salva le modifiche.
 

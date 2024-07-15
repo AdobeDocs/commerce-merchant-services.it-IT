@@ -16,17 +16,17 @@ ht-degree: 0%
 
 L&#39;app Store Assist fornisce a Store Associates quattro moduli per gestire il processo di evasione in-store per gli ordini di acquisto online e ritiro in store:
 
-- **[Scegli](#pick-module)**- Visibilità completa di tutti gli articoli ordinati e degli strumenti per garantire che vengano prelevati gli articoli e le quantità corrette. Gli associati al negozio possono scegliere uno o più ordini contemporaneamente per una maggiore efficienza.
+- **[Prelievo](#pick-module)**: ottieni la piena visibilità di tutti gli articoli ordinati e degli strumenti per assicurarti che vengano prelevati gli articoli e le quantità corrette. Gli associati al negozio possono scegliere uno o più ordini contemporaneamente per una maggiore efficienza.
 
-- **[Fase](#stage-module)**- Immettere il luogo in cui vengono effettuati gli ordini mentre i clienti si recano al negozio, in modo che gli associati al negozio possano trovare e consegnare gli ordini più rapidamente.
+- **[Fase](#stage-module)** - Immettere il luogo in cui vengono effettuati gli ordini mentre i clienti si recano al negozio, in modo che gli associati al negozio possano trovare e consegnare gli ordini più rapidamente.
 
-- **[Mano spenta](#hand-off-module)**- Ricevi notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di trasferimento.
+- **[Mano spenta](#hand-off-module)** - Ricevi notifiche in tempo reale dopo l&#39;arrivo dei clienti allo store per ridurre al minimo il tempo di attesa e gli ordini di trasferimento.
 
-- **[Ordini](#orders-module)**- Visualizza un elenco di tutti gli ordini effettuati per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
+- **[Ordini](#orders-module)**: visualizza un elenco di tutti gli ordini effettuati per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
 
 >[!NOTE]
 >
->Prima che gli associati allo store possano usare l&#39;app Store Assist, un amministratore deve completare [processo di configurazione dell’app](app-setup.md).
+>Prima che gli Store Associates possano usare l&#39;app Store Assist, un amministratore deve completare il [processo di configurazione dell&#39;app](app-setup.md).
 
 ## Scegli modulo
 
@@ -53,7 +53,7 @@ Puoi anche aggiornare facilmente la posizione di staging nell&#39;app, se i tuoi
 
 ## Modulo Mano spento
 
-Il [!UICONTROL Hand Off] Il modulo mostra quali clienti hanno effettuato il check-in per ritirare gli ordini e dove questi vengono posizionati nell&#39;area intermedia e li attendono. I clienti possono ritirare gli ordini sia nel negozio o nel parcheggio fuori/sul marciapiede. Le informazioni sulla loro esatta posizione vengono presentate in questo modulo dopo il check-in.
+Il modulo [!UICONTROL Hand Off] mostra quali clienti hanno effettuato il check-in per ritirare i loro ordini, dove i loro ordini sono posizionati nell&#39;area intermedia e li attendono. I clienti possono ritirare gli ordini sia nel negozio o nel parcheggio fuori/sul marciapiede. Le informazioni sulla loro esatta posizione vengono presentate in questo modulo dopo il check-in.
 
 Dopo aver selezionato un ordine pronto per il trasferimento del cliente. Tutti possono visualizzare le informazioni sull&#39;ordine, inclusi eventuali articoli non trovati, l&#39;ubicazione di attesa del cliente, il tempo di attesa, la posizione in cui l&#39;ordine è posizionato nell&#39;area intermedia e il numero di telefono del cliente, se disponibile.
 

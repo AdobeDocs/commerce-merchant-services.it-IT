@@ -1,6 +1,6 @@
 ---
 user-guide-title: “Guida [!DNL Live Search]”
-user-guide-description: "Questa guida fornisce istruzioni dettagliate per l’utilizzo di [!DNL Live Search] da Adobe Commerce."
+user-guide-description: "Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Live Search]  da Adobe Commerce."
 breadcrumb-title: “Guida [!DNL Live Search]”
 role: Admin
 feature: Services, Search
@@ -13,15 +13,15 @@ ht-degree: 10%
 
 # [!DNL Live Search] per Commerce {#live-search}
 
-- [Cos’è [!DNL Live Search]?](overview.md)
+- [Cos&#39;è  [!DNL Live Search]?](overview.md)
 - [Installa](install.md)
 - [Configurazione di Live Search](workspace.md)
 - [Limiti e limiti](boundaries-limits.md)
 - [Note sulla versione](release-notes.md)
-- Vetrina {#live-search-storefront}
+- Storefront {#live-search-storefront}
    - [Widget vetrina](storefront-widgets.md)
    - [Pagina di elenco prodotti](plp-styling.md)
-   - [Vetrina [!DNL Popover]](storefront-popover.md)
+   - [Storefront [!DNL Popover]](storefront-popover.md)
 - Amministratore {#live-search-admin}
    - [Prestazioni](performance.md)
    - Facet {#facets}

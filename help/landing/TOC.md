@@ -31,7 +31,7 @@ ht-degree: 43%
    - [Connettore servizi](/help/landing/saas.md)
 - Strumenti dati {#data-services}
    - [Esportazione dati SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [Indicizzazione dei prezzi SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+   - [Indicizzazione prezzo SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [Sincronizzazione catalogo](/help/landing/catalog-sync.md)
 
 

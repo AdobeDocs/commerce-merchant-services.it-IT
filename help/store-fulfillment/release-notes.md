@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione'
-description: "Consulta le note sulla versione per informazioni su tutti [!DNL Store Fulfillment by Walmart Commerce Technologies] versioni."
+description: "Per informazioni su tutte le  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versioni, consulta le note sulla versione."
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 1%
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 Queste note sulla versione descrivono la versione iniziale di [!DNL Store Fulfillment Services by Walmart Commerce Technologies] e includono:
 
-![Nuovo](../assets/new.svg) Nuove funzioni
-![Problema risolto](../assets/fix.svg) Correzioni e miglioramenti
+![Nuove](../assets/new.svg) nuove funzionalità
+![Problema risolto](../assets/fix.svg) correzioni e miglioramenti
 ![Problema noto](../assets/bug.svg) Problemi noti
 
-Consulta [Prossime versioni](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) per informazioni sulle pianificazioni delle versioni e sul supporto.
+Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html).
 
-Consulta [Disponibilità del prodotto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) per scoprire quali versioni di Adobe Commerce supportano questa estensione.
+Consulta [Disponibilità del prodotto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) per sapere quali versioni di Adobe Commerce supportano questa estensione.
 
 ## v1.5.0
 
@@ -33,35 +33,35 @@ Questa versione contiene i seguenti aggiornamenti:
 
 ![Nuovo](../assets/fix.svg) Aggiornamento dell&#39;estensione per supportare [Versioni delle patch di sicurezza di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
 
-![Nuovo](../assets/new.svg)<!-- WMTP-918 --> È stato aggiunto il supporto per [Invio asincrono](sales-emails.md) opzione di configurazione per e-mail di vendita. I commercianti che eseguono l’aggiornamento alla versione 1.5.0 possono inviare le e-mail immediatamente (impostazione predefinita) o in modo asincrono.
+![New](../assets/new.svg)<!-- WMTP-918 --> ha aggiunto il supporto per l&#39;opzione di configurazione [Invio asincrono](sales-emails.md) per e-mail vendite. I commercianti che eseguono l’aggiornamento alla versione 1.5.0 possono inviare le e-mail immediatamente (impostazione predefinita) o in modo asincrono.
 
-![Nuovo](../assets/new.svg)<!-- WMTP-916--> È stato aggiornato il [Configurazione origini](merchant-store-configuration.md) per supportare i formati dei numeri telefonici internazionali.
+![Nuovo](../assets/new.svg)<!-- WMTP-916--> È stata aggiornata la configurazione [Origini](merchant-store-configuration.md) per supportare i formati dei numeri di telefono internazionali.
 
-![Nuovo](../assets/new.svg) È stata aggiunta una logica per evitare che gli importi dei rimborsi superino l&#39;importo rimanente o fatturato.
+![Nuovo](../assets/new.svg) aggiunta della logica per impedire che gli importi di rimborso superino l&#39;importo rimanente o fatturato.
 
-![Nuovo](../assets/new.svg)<!-- WMTP-882 --> Sostituito `google.map.LatLng` oggetto con valori letterali JSON per supportare la compatibilità con versioni precedenti di [!DNL Google Maps].
+![New](../assets/new.svg)<!-- WMTP-882 --> ha sostituito l&#39;oggetto `google.map.LatLng` con valori letterali JSON per supportare la compatibilità con le versioni precedenti di [!DNL Google Maps].
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP- --> È stato aggiornato lo script che crea `[!DNL Available for Store Pickup]` e `[!DNL Available for Home Delivery]` attributi di prodotto per evitare conflitti di categorie di attributi.
+![Problema risolto](../assets/fix.svg)<!-- WMTP- --> Aggiornato lo script che crea gli attributi di prodotto `[!DNL Available for Store Pickup]` e `[!DNL Available for Home Delivery]` per evitare conflitti di categoria degli attributi.
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP-915 --> È stato risolto un problema di compatibilità che causava un ciclo infinito durante il caricamento e il salvataggio di alcune entità.
+![È stato risolto un problema](../assets/fix.svg)<!-- WMTP-915 --> che causava un ciclo infinito durante il caricamento e il salvataggio di alcune entità.
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP-921 --> È stato risolto un problema che impediva [!DNL Ship to Store] la convalida delle offerte viene attivata quando un articolo viene aggiunto al carrello da una pagina dei dettagli del prodotto (PDP).
+![È stato risolto un problema](../assets/fix.svg)<!-- WMTP-921 --> che impediva l&#39;attivazione della convalida delle offerte [!DNL Ship to Store] quando un elemento veniva aggiunto al carrello da una pagina di dettagli prodotto (PDP).
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP- 932 --> È stato risolto un problema di pagamento che consentiva ai clienti di selezionare il metodo di consegna a domicilio per gli articoli non idonei per la consegna a domicilio.
+![È stato risolto un problema](../assets/fix.svg)<!-- WMTP- 932 --> che consentiva ai clienti di selezionare il metodo di consegna a domicilio per gli elementi non idonei per la consegna a domicilio.
 
 ![Problema risolto](../assets/fix.svg) Aggiornamenti all&#39;installazione:
 
-- <!-- WMTP-880--> È stato risolto un problema che causava la restituzione di un codice sito Web errato durante l&#39;installazione di [!DNL Store Fulfillment] estensione.
+- <!-- WMTP-880--> È stato risolto un problema che causava la restituzione di un codice del sito Web errato durante l&#39;installazione dell&#39;estensione [!DNL Store Fulfillment].
 
 - <!-- WMTP-878--> È stato risolto un problema relativo ai valori SKU integer che richiedeva il cast del tipo di dati al tipo stringa durante l’installazione.
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP-915--> È stato corretto un errore causato da un codice di errore di archiviazione mancante.
+![È stato risolto un problema](../assets/fix.svg)<!-- WMTP-915--> a causa del quale si verificava un errore dovuto a un codice di errore di archiviazione mancante.
 
-![Problema risolto](../assets/fix.svg)<!-- WMTP-932 --> È stato corretto un bug relativo al rifiuto parziale durante le operazioni di dispensazione.
+![È stato corretto un problema](../assets/fix.svg)<!-- WMTP-932 --> È stato corretto un bug relativo al rifiuto parziale durante le operazioni di dispensazione.
 
-![Nuovo](../assets/new.svg)<!-- WMTP-953 --> L’endpoint API Cancel è stato aggiornato per utilizzare il parametro di stato come oggetto facoltativo.
+![Nuovo](../assets/new.svg)<!-- WMTP-953 --> Aggiornamento dell&#39;endpoint API Cancel per utilizzare il parametro di stato come oggetto facoltativo.
 
-![Nuovo](../assets/new.svg)<!-- WMTP-960 --> Sono stati migliorati i dettagli di registrazione per l’endpoint API Dispense.
+![Nuovo](../assets/new.svg)<!-- WMTP-960 --> Sono stati migliorati i dettagli di registrazione per l&#39;endpoint API Dispense.
 
 ## v1.4.0
 
@@ -69,7 +69,7 @@ Questa versione contiene i seguenti aggiornamenti:
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/fix.svg) [!DNL Store Fulfillment] è ora [compatibile con [!DNL Adobe Commerce] Da 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nuovo](../assets/fix.svg) [!DNL Store Fulfillment] è ora [compatibile con [!DNL Adobe Commerce] 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
@@ -80,7 +80,7 @@ Questa versione contiene i seguenti aggiornamenti:
 
 Questa versione contiene i seguenti aggiornamenti:
 
-![Nuovo](../assets/fix.svg)<!-- WMTP-795 --> È stata aggiunta la possibilità di disabilitare la soluzione Store Fulfillment per un sito specifico modificando l’ambito predefinito per l’impostazione Configurazione di sistema da sito web a globale.
+![Nuovo](../assets/fix.svg)<!-- WMTP-795 --> è stata aggiunta la possibilità di disabilitare la soluzione Store Fulfillment per un sito specifico modificando l&#39;ambito predefinito per l&#39;impostazione Configurazione di sistema da sito Web a globale.
 
 ## v1.2.0
 
@@ -90,7 +90,7 @@ Questa versione contiene i seguenti aggiornamenti:
 
 Questa versione contiene i seguenti aggiornamenti:
 
-![Nuovo](../assets/fix.svg) [!DNL Store Fulfillment] è ora [compatibile con [!DNL Adobe Commerce] Da 2.4.4 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nuovo](../assets/fix.svg) [!DNL Store Fulfillment] è ora [compatibile con [!DNL Adobe Commerce] 2.4.4 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
@@ -101,7 +101,7 @@ Questa versione contiene i seguenti aggiornamenti:
 
 Stabilità: disponibilità generale
 
-![Nuovo](../assets/fix.svg)<!-- WMTP-731 --> Semplificato il [Configurazione dell’esperienza di archiviazione](check-in-experience-setup.md) per l’app Store Assist, aggiungendo le selezioni predefinite per marca e modello dell’auto. Nella versione precedente, i commercianti dovevano configurare manualmente le selezioni di marca e modello dell&#39;auto.
+![Nuovo](../assets/fix.svg)<!-- WMTP-731 --> ha semplificato la [configurazione dell&#39;esperienza di archiviazione](check-in-experience-setup.md) per l&#39;app Store Assist aggiungendo le selezioni predefinite per la marca dell&#39;auto e il modello. Nella versione precedente, i commercianti dovevano configurare manualmente le selezioni di marca e modello dell&#39;auto.
 
 ## v1.0.0
 
@@ -113,4 +113,4 @@ Stabilità: disponibilità generale
 
 ## App Store Assist
 
-Per informazioni sulle nuove versioni dell&#39;app Store Assist, vedi le informazioni sull&#39;app in [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+Per informazioni sulle nuove versioni dell&#39;app Store Assist, vedi le informazioni sull&#39;app in [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} o [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.

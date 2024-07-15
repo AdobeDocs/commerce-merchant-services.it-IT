@@ -15,19 +15,19 @@ ht-degree: 0%
 
 L’indicizzazione dei prezzi SaaS migliora le prestazioni del sito spostando pesanti processi di calcolo, come l’indicizzazione e il calcolo dei prezzi, dall’applicazione Commerce all’infrastruttura cloud di Adobe. Questo approccio consente ai commercianti di aumentare rapidamente le risorse per aumentare i tempi di indicizzazione dei prezzi in modo da riflettere più rapidamente le variazioni di prezzo durante l’invio dei dati allo storefront e ai servizi Commerce connessi.
 
-Il diagramma seguente mostra il flusso di dati di indicizzazione verso i servizi SaaS quando Commerce utilizza [indicizzazione dei prezzi](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) processo incluso nell&#39;applicazione Commerce:
+Il diagramma seguente mostra il flusso di dati di indicizzazione ai servizi SaaS quando Commerce utilizza il processo di indicizzazione dei prezzi [](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluso nell&#39;applicazione Commerce:
 
 ![Flusso di dati predefinito](assets/old_way.png)
 
-Con l’indicizzazione dei prezzi SaaS abilitata, il flusso di dati cambia. L’indicizzazione dei prezzi viene eseguita utilizzando [Esportazione di dati SaaS Commerce](../data-export/data-synchronization.md).
+Con l’indicizzazione dei prezzi SaaS abilitata, il flusso di dati cambia. L&#39;indicizzazione dei prezzi viene eseguita utilizzando [esportazione dati Commerce SaaS](../data-export/data-synchronization.md).
 
-![Flusso di dati di indicizzazione prezzi SaaS](assets/new_way.png)
+![Flusso dati indicizzazione prezzo SaaS](assets/new_way.png)
 
 Tutti i commercianti possono beneficiare dell’indicizzazione dei prezzi SaaS, ma i commercianti che hanno progetti con le seguenti caratteristiche possono realizzare i maggiori vantaggi:
 
-* **Variazioni di prezzo costanti**-Mercanti che richiedono ripetute modifiche ai prezzi per soddisfare obiettivi strategici quali promozioni frequenti, sconti stagionali o riduzioni di scorte.
-* **Più siti web e/o gruppi di clienti**-Mercanti con cataloghi di prodotti condivisi su più siti web (domini/marchi) e/o gruppi di clienti.
-* **Molti prezzi univoci tra siti web o gruppi di clienti**-Mercanti con estesi cataloghi di prodotti condivisi che contengono prezzi univoci tra siti web o gruppi di clienti. Alcuni esempi includono i commercianti B2B che hanno prezzi pre-negoziati o marchi con diverse strategie di prezzo.
+* **Cambiamenti di prezzo costanti**-Commercianti che richiedono modifiche ripetute ai loro prezzi per soddisfare obiettivi strategici come promozioni frequenti, sconti stagionali o riduzioni di inventario.
+* **Più siti Web e/o gruppi di clienti**-Commercianti con cataloghi di prodotti condivisi su più siti Web (domini/marchi) e/o gruppi di clienti.
+* **Molti prezzi univoci per siti Web o gruppi di clienti**-Commercianti con cataloghi di prodotti condivisi estesi che contengono prezzi univoci per siti Web o gruppi di clienti. Alcuni esempi includono i commercianti B2B che hanno prezzi pre-negoziati o marchi con diverse strategie di prezzo.
 
 ## Usa indicizzazione prezzi SaaS
 
@@ -48,7 +48,7 @@ L’indicizzazione dei prezzi SaaS viene abilitata automaticamente quando si ins
 
 >[!NOTE]
 >
->Se necessario, l&#39;indicizzatore prezzi predefinito nell&#39;applicazione Commerce può essere disabilitato utilizzando [Adattatore catalogo](catalog-adapter.md).
+>Se necessario, è possibile disabilitare l&#39;indicizzatore prezzi predefinito nell&#39;applicazione Commerce utilizzando [Catalog Adapter](catalog-adapter.md).
 
 ## Sincronizzare i prezzi con l&#39;indicizzazione SaaS
 
@@ -66,7 +66,7 @@ I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati, ad e
 
 Se si dispone di un tipo di prodotto personalizzato che utilizza una formula specifica per calcolare il prezzo finale, è possibile estendere il comportamento del feed del prezzo del prodotto.
 
-1. Creare un plug-in in `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` classe.
+1. Creare un plug-in nella classe `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

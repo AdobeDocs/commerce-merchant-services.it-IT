@@ -18,6 +18,6 @@ Di seguito sono riportate le modifiche di rilievo apportate di recente alla docu
 
 | Servizio | Cambia | Tipo |
 | -- | -- | -- |
-| [**Servizio catalogo**](../live-search/overview.md) | È stata aggiunta la [Visualizza imposte con Catalog Service e Mesh API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) argomento. | Nuovo argomento |
+| [**Servizio catalogo**](../live-search/overview.md) | È stato aggiunto l&#39;argomento [Visualizza imposte con Catalog Service e API Mesh](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html). | Nuovo argomento |
 
 Questa tabella viene aggiornata il primo lunedì di ogni mese.

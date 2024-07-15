@@ -19,7 +19,7 @@ Store Fulfillment offre un set esteso di modelli e-mail transazionali per suppor
 
 I modelli e-mail per il completamento dell’archivio sono configurati con messaggi e impostazioni predefiniti. Gli amministratori di esercenti di Adobe Commerce possono gestire e modificare le configurazioni e selezionare i modelli e-mail per comunicare con i clienti in scenari diversi. Gli amministratori possono configurare e personalizzare anche i modelli.
 
-Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configurare i modelli e-mail per le vendite dall&#39;amministratore: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## E-mail - Impostazioni generali
 
@@ -34,7 +34,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 </thead>
 <tbody><tr>
 <td><strong>Invio asincrono</strong></td>
-<td>Determina se le e-mail di vendita vengono inviate in modo asincrono. Opzioni: <br/>**`Disable`** - (Predefinito) Le e-mail di vendita vengono inviate quando attivate da un evento. Utilizza l’impostazione predefinita per ottenere i tempi di comunicazione e risposta più rapidi per il ritiro dello store. <br/>**`Abilita`** - L’abilitazione di questa opzione sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell’ordine, in modo che vengano inviati a intervalli regolari predeterminati.</td>
+<td>Determina se le e-mail di vendita vengono inviate in modo asincrono. Opzioni: <br/>**`Disabilita`** - (Predefinito) Le e-mail di vendita vengono inviate quando attivate da un evento. Utilizza l’impostazione predefinita per ottenere i tempi di comunicazione e risposta più rapidi per il ritiro dello store. <br/>**`Abilita`** - L'abilitazione di questa opzione consente di spostare in background i processi che gestiscono le notifiche di pagamento e di elaborazione dell'ordine in modo che vengano inviati a intervalli regolari predeterminati.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -207,7 +207,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente per informarlo che il suo ordine è stato annullato presso il negozio di vendita. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, questa funzione non impedisce l’annullamento di un ordine.</td>
+<td>Questa e-mail viene inviata al cliente per informarlo che il suo ordine è stato annullato presso il negozio di vendita. Impostare su <code>No</code> per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, questa funzione non impedisce l’annullamento di un ordine.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -257,7 +257,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente per informarlo che parte dell’ordine è stato annullato presso il negozio di alimentari. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, ciò non impedisce che un ordine venga parzialmente annullato.</td>
+<td>Questa e-mail viene inviata al cliente per informarlo che parte dell’ordine è stato annullato presso il negozio di alimentari. Impostare su <code>No</code> per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, ciò non impedisce che un ordine venga parzialmente annullato.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -312,7 +312,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 </thead>
 <tbody><tr>
 <td><strong>L'ordine ha il mittente dell'e-mail per i prodotti del Negozio</strong></td>
-<td>E-mail inviata a personale commerciante specificato come rapporto aggregato di tutti gli ordini aperti che non possono essere prelevati in un negozio commerciale finché il loro inventario non è disponibile. </br></br> I commercianti possono utilizzare questo rapporto per avviare e gestire trasferimenti di magazzino o rifornimento dal punto vendita al punto vendita. </br></br>Questa notifica si applica solo quando [!DNL Ship-to-Store] le funzioni di sono abilitate.
+<td>E-mail inviata a personale commerciante specificato come rapporto aggregato di tutti gli ordini aperti che non possono essere prelevati in un negozio commerciale finché il loro inventario non è disponibile. </br></br> I commercianti possono utilizzare questo rapporto per avviare e gestire trasferimenti o rifornimenti di magazzino da punto di vendita. </br></br>Questa notifica si applica solo quando le funzionalità di [!DNL Ship-to-Store] sono abilitate.
 </br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette disponibili per il metodo di spedizione.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
@@ -333,7 +333,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 
 >[!NOTE]
 >
->Se consenti ordini inevasi, devi fornire un indirizzo e-mail di amministratore per ricevere notifiche su questi ordini. Aggiungi l’indirizzo alle seguenti impostazioni di configurazione: **[!UICONTROL Send Order Delayed Email Copy To]** nel [Ritardo ordine](#order-delayed) modello e [!UICONTROL Ship To Store Email Recipients] nel [Spedisci al negozio](#ship-to-store) modello.
+>Se consenti ordini inevasi, devi fornire un indirizzo e-mail di amministratore per ricevere notifiche su questi ordini. Aggiungere l&#39;indirizzo alle impostazioni di configurazione seguenti: **[!UICONTROL Send Order Delayed Email Copy To]** nel modello [Ritardo ordine](#order-delayed) e [!UICONTROL Ship To Store Email Recipients] nel modello [Spedisci all&#39;archivio](#ship-to-store).
 
 
 

@@ -20,13 +20,13 @@ Alcuni dati di ordini e pagamenti sono disponibili per consentire di coordinare 
 
 È possibile eseguire la quadratura di Adobe Commerce Financial Reporting con il sistema ERP (Enterprise Resource Planning) non Adobe utilizzando l&#39;ID incremento associato a un ordine specifico.
 
-Quando Payment Services invia l&#39;ordine Commerce a PayPal, l&#39;ID di incremento viene incluso come `custom_id` _e_ nel `invoice_id` (che contiene anche una stringa casuale dopo il `increment_id`).
+Quando Payment Services invia l&#39;ordine Commerce a PayPal, l&#39;ID di incremento viene incluso come `custom_id` _e_ in `invoice_id` (che contiene anche una stringa casuale dopo `increment_id`).
 
 Gli ID sono facilmente accessibili sia nei dettagli dell&#39;attività esercente per un pagamento che nel webhook PayPal.
 
-Il `invoice_id` e `custom_id` sono visualizzati nella parte inferiore dei dettagli dell&#39;attività esercente per una vincita:
+`invoice_id` e `custom_id` sono visualizzati in fondo ai dettagli dell&#39;attività esercente per una vincita:
 
-![`custom_id` nei dettagli dell’attività di esercente](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` nei dettagli attività esercente](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` e `invoice_id` nei dettagli nel webhook di PayPal:
 
@@ -79,5 +79,5 @@ Il `invoice_id` e `custom_id` sono visualizzati nella parte inferiore dei dettag
 
 Per ulteriori informazioni, consulta la documentazione sulle API REST di PayPal:
 
-* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedere](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedono](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Mostra dettagli ordine](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

@@ -1,27 +1,27 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] per Adobe Commerce offre un modo per integrare più origini dati tramite un endpoint GraphQL comune."'
+description: '[!DNL API Mesh] per Adobe Commerce fornisce un modo per integrare più origini dati tramite un endpoint GraphQL comune.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-Il [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe utilizzando Adobe I/O Runtime.
+La rete API [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe I/O Runtime.
 
-![Diagramma dell’architettura del catalogo](assets/catalog-service-architecture-mesh.png)
+![Diagramma dell&#39;architettura del catalogo](assets/catalog-service-architecture-mesh.png)
 
-Il primo passaggio per utilizzare la rete API con Catalog Service consiste nel collegare la rete API all’istanza. Consulta le istruzioni dettagliate in [Creare una rete](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Il primo passaggio per utilizzare la rete API con Catalog Service consiste nel collegare la rete API all’istanza. Vedere le istruzioni dettagliate in [Creare una rete](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Per completare l&#39;installazione, installare [Pacchetto Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Per completare l&#39;installazione, installare il [pacchetto Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Una volta configurato Mesh su Adobe I/O Runtime, esegui il seguente comando che aggiunge `CommerceCatalogServiceGraph` alla rete.
+Una volta configurato Mesh su Adobe I/O Runtime, esegui il seguente comando che aggiunge un&#39;origine `CommerceCatalogServiceGraph` alla mesh.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -36,16 +36,16 @@ Ad esempio, la chiave API può essere salvata all’interno del file:
 }
 ```
 
-Dopo aver eseguito questo comando, il servizio catalogo deve essere in esecuzione tramite la rete API. È possibile eseguire `aio api-mesh:get` per visualizzare la configurazione della rete aggiornata.
+Dopo aver eseguito questo comando, il servizio catalogo deve essere in esecuzione tramite la rete API. È possibile eseguire il comando `aio api-mesh:get` per visualizzare la configurazione della rete aggiornata.
 
 ## Esempi di API Mesh
 
-API Mesh consente agli utenti di utilizzare sorgenti di dati esterne per migliorare l’istanza di Adobe Commerce. Può essere utilizzato anche per configurare i dati Commerce esistenti per abilitare nuove funzionalità.
+API Mesh consente agli utenti di utilizzare sorgenti di dati esterne per migliorare l’istanza di Adobe Commerce. Può anche essere utilizzato per configurare dati Commerce esistenti per abilitare nuove funzionalità.
 
 ### Abilita prezzi livello
 
 In questo esempio, l’API Mesh viene utilizzata per abilitare i prezzi a livello in Adobe Commerce.
-Sostituisci il `name `, `endpoint`, e `x-api-key` valori.
+Sostituire i valori `name `, `endpoint` e `x-api-key`.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Ottieni un ID entità
 
-Questa mesh aggiunge `entityId` all&#39;interfaccia ProductView. Sostituisci il `name `, `endpoint`, e `x-api-key` valori.
+Questa Mesh aggiunge `entityId` all&#39;interfaccia ProductView. Sostituire i valori `name `, `endpoint` e `x-api-key`.
 
 ```json
 {
@@ -237,7 +237,7 @@ Questa mesh aggiunge `entityId` all&#39;interfaccia ProductView. Sostituisci il 
   }
 ```
 
-`entityId` è ora possibile eseguire una query:
+È ora possibile eseguire una query su `entityId`:
 
 ```graphql
 query {

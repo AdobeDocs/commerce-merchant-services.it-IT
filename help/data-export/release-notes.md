@@ -1,24 +1,25 @@
 ---
-title: "[!DNL SaaS Data Export Extension] Note sulla versione"
-description: Informazioni aggiornate sulla versione di [!DNL Data Export Extension] per Adobe Commerce.
+title: '[!DNL SaaS Data Export Extension] Note sulla versione'
+description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extension]  per Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# [!DNL SaaS Data Export] Note sulla versione dell’estensione
+# Note sulla versione dell&#39;estensione [!DNL SaaS Data Export]
 
-Queste note sulla versione descrivono le versioni più recenti di [!DNL SaaS data export] estensione. È disponibile il supporto per la versione principale rilasciata corrente. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
+Queste note sulla versione descrivono le versioni più recenti dell&#39;estensione [!DNL SaaS data export]. È disponibile il supporto per la versione principale rilasciata corrente. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
 
 Gli aggiornamenti includono:
 
-![Nuovo](../assets/new.svg) Nuove funzioni
-![Correzione](../assets/fix.svg) Correzioni e miglioramenti
-![Bug](../assets/bug.svg) Problemi noti
+![Nuove](../assets/new.svg) nuove funzionalità
+![Correzioni](../assets/fix.svg) correzioni e miglioramenti
+![Bug](../assets/bug.svg) problemi noti
 
 
 >[!NOTE]
@@ -29,68 +30,68 @@ Gli aggiornamenti includono:
 
 ## Versione 103.3.5
 
-![Correzione](../assets/fix.svg) Imposta la dipendenza per la versione più recente compatibile di esportazione dei dati per il modulo comune SaaS.
+![Correzione](../assets/fix.svg) Imposta la dipendenza per la versione più recente compatibile dell&#39;esportazione dei dati per il modulo comune SaaS.
 
-![Correzione](../assets/fix.svg) Sostituito `ScopeConfig` istanza con `ServiceConfigInterface` per supportare diverse configurazioni di servizio.
+![Correzione](../assets/fix.svg) L&#39;istanza `ScopeConfig` è stata sostituita con `ServiceConfigInterface` per supportare diverse configurazioni di servizio.
 
 ## Versione 103.3.4
 
-![Correzione](../assets/fix.svg) Migliora la registrazione dell’esportazione dei dati SaaS di Commerce aggiungendo ulteriori dettagli sul processo di reindicizzazione.
+![Correzione](../assets/fix.svg) Migliora la registrazione dell&#39;esportazione dei dati SaaS di Commerce aggiungendo ulteriori dettagli sul processo di reindicizzazione.
 
 ## Versione 103.3.3
 
-![Nuovo](../assets/new.svg) L’esportazione dei dati SaaS ora memorizza nella cache gli attributi Entity-Attribute-Value (EAV) per la query dei metadati degli attributi.
+L&#39;esportazione dei dati SaaS ![New](../assets/new.svg) ora memorizza nella cache gli attributi Entity-Attribute-Value (EAV) per la query dei metadati degli attributi.
 
-![Correzione](../assets/fix.svg) È stato risolto un problema a causa del quale `InventoryStockStatus` il feed non è stato salvato al nuovo tentativo se il prodotto è stato eliminato.
+![Correzione](../assets/fix.svg) è stato risolto un problema che impediva il salvataggio del feed `InventoryStockStatus` durante un nuovo tentativo se il prodotto era stato eliminato.
 
 ## Versione 103.3.2
 
-![Correzione](../assets/fix.svg) È stato risolto un problema a causa del quale `modifiedAt` campo mancante nei feed di entità rimossi.
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava l&#39;assenza del campo `modifiedAt` dai feed di entità rimossi.
 
 ## Versione 103.3.1
 
-![Correzione](../assets/fix.svg) È stato risolto un problema che causava `Invalid Template File` messaggio da visualizzare durante la reindicizzazione del feed dei prodotti quando è installato Page Builder.
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava la visualizzazione di un messaggio `Invalid Template File` durante la reindicizzazione del feed dei prodotti quando Page Builder è installato.
 
 ## Versione 103.3.0
 
-![Nuovo](../assets/new.svg) Migrazione delle tabelle dei feed di esportazione immediata alla struttura unificata:
+![Nuovo](../assets/new.svg) è stata eseguita la migrazione delle tabelle dei feed di esportazione immediata nella struttura unificata:
 `id`, `source_entity_id`, `feed_id`, `modified_at`, `is_deleted`, `status`, `feed_data`, `feed_hash`, `errors`
 
-![Nuovo](../assets/new.svg) Migrazione dei feed di catalogo e inventario alla soluzione di esportazione immediata.
+![Nuovo](../assets/new.svg) ha eseguito la migrazione dei feed di catalogo e inventario alla soluzione di esportazione immediata.
 
-![Nuovo](../assets/new.svg) I processi cron del feed di esportazione immediata sono stati rinominati in `*_feed_resend_failed_items`.
+![Nuovo](../assets/new.svg) ha rinominato i processi cron del feed di esportazione immediata in `*_feed_resend_failed_items`.
 
-![Nuovo](../assets/new.svg) Il feed di esportazione immediata e le tabelle di registro delle modifiche sono stati rinominati.
+![Nuovo](../assets/new.svg) ha rinominato il feed di esportazione immediata e le tabelle di registro delle modifiche.
 
-![Correzione](../assets/fix.svg) Imposta `modified_at` campo nei dati feed solo per i feed che lo richiedono.
+![Correzione](../assets/fix.svg) Imposta il campo `modified_at` nei dati del feed solo per i feed che lo richiedono.
 
-![Correzione](../assets/fix.svg) Modifica il `productAttributes` per recuperare solo gli attributi del prodotto.
+![Correzione](../assets/fix.svg) Modificare la query `productAttributes` per recuperare solo gli attributi del prodotto.
 
 ## Versione 103.2.6
 
-![Correzione](../assets/fix.svg) È stato risolto un problema che impediva la reindicizzazione dei feed quando le tabelle avevano un prefisso.
+![Correzione](../assets/fix.svg) è stato risolto un problema che impediva la reindicizzazione dei feed quando le tabelle hanno un prefisso.
 
 ## Versione 103.2.5
 
-![Correzione](../assets/fix.svg) Query prezzo ottimizzata.
+![Correzione](../assets/fix.svg) Ottimizzata la query del prezzo.
 
 ## Versione 103.2.4
 
-![Correzione](../assets/fix.svg) È stato corretto lo stato Stock errato visualizzato per un prodotto quando Commerce Inventory management è abilitato.
+![Correzione](../assets/fix.svg) è stato corretto lo stato Stock errato visualizzato per un prodotto quando Commerce Inventory management è abilitato.
 
 ## Versione 103.2.3
 
-![Correzione](../assets/fix.svg) Prezzi speciali a livello di sito web fisso.
-![Correzione](../assets/fix.svg) È stato aggiunto il mutex per tutti i feed elaborati.
+![Correzione](../assets/fix.svg) prezzo speciale fisso a livello di sito Web.
+![Correzione](../assets/fix.svg) aggiunto mutex per tutti i feed elaborati.
 
 
 ## Versione 103.2.2
 
-![Correzione](../assets/fix.svg) È stata migliorata la strategia di gestione dei feed in batch per i cataloghi di grandi dimensioni. La tabella dei batch ora è compilata con un numero limitato di ID per ridurre l’utilizzo di memoria.
+![Correzione](../assets/fix.svg) Miglioramento della strategia di invio in batch dei feed per i cataloghi di grandi dimensioni. La tabella dei batch ora è compilata con un numero limitato di ID per ridurre l’utilizzo di memoria.
 
-![Correzione](../assets/fix.svg) È stata eliminata la dipendenza rigida di CommerceInventoryDataExporter dai moduli MSI.
+![Correzione](../assets/fix.svg) eliminata dipendenza rigida di CommerceInventoryDataExporter ai moduli MSI.
 
-![Correzione](../assets/fix.svg) Migliorato `commerce-data-exporter` registri per raccogliere ulteriori informazioni e organizzare in base a diverse fasi di esportazione.
+![Correzione](../assets/fix.svg) Sono stati migliorati `commerce-data-exporter` registri per raccogliere ulteriori informazioni e organizzarli in base a diverse fasi di esportazione.
 
 ## Versione 103.2.1
 
@@ -99,4 +100,3 @@ Gli aggiornamenti includono:
 ## Versione 103.2.0
 
 - È stata aggiunta la sincronizzazione di dati multi-thread per prodotti e prezzi.
-

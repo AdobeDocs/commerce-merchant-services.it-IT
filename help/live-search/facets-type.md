@@ -1,6 +1,6 @@
 ---
 title: "Tipi di facet"
-description: "[!DNL Live Search] I facet sono dinamici e vengono visualizzati nell’elenco Filtri quando necessario."
+description: "[!DNL Live Search] facet sono dinamici e vengono visualizzati nell'elenco Filtri quando necessario."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Tipi di facet
 
-[!DNL Live Search] utilizza diversi tipi di facet e vengono visualizzati nel *Filtri* elencare solo se pertinente. L’elenco dei facet disponibili cambia in base ai prodotti restituiti. Le seguenti caratteristiche influiscono sulla loro presentazione e sul loro comportamento:
+[!DNL Live Search] utilizza diversi tipi di facet e vengono visualizzati nell&#39;elenco *Filtri* solo se pertinenti. L’elenco dei facet disponibili cambia in base ai prodotti restituiti. Le seguenti caratteristiche influiscono sulla loro presentazione e sul loro comportamento:
 
-* Facet bloccati: i facet più comunemente utilizzati possono essere bloccati in alto nell’elenco. I facet rimanenti sono elencati in *Tipo di ordinamento* ordina dopo i facet bloccati.
-* Facet dinamici: attributi di prodotto che [Adobe Sensei](https://www.adobe.com/sensei.html) trova più rilevanti per un set di prodotti e una query. Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
+* Facet bloccati: i facet più comunemente utilizzati possono essere bloccati in alto nell’elenco. I facet rimanenti sono elencati nell&#39;ordine *Tipo di ordinamento* dopo i facet bloccati.
+* Facet dinamici - Attributi del prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe Sensei](https://www.adobe.com/sensei.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
 * Facet popolari: attributi di prodotto più spesso presenti nei risultati di ricerca.
-* Facet di prezzo - Restituisci i prodotti per fascia di prezzo. È possibile specificare il numero di selezioni e l&#39;intervallo di prezzo nel campo [*Impostazioni*](settings.md) Workspace.
+* Facet di prezzo - Restituisci i prodotti per fascia di prezzo. È possibile specificare il numero di selezioni e l&#39;intervallo di prezzi nell&#39;area di lavoro [*Impostazioni*](settings.md).
 
 Al momento della query, [!DNL Live Search] genera i risultati della ricerca in gruppi di facet dinamici e popolari.
 
@@ -24,13 +24,13 @@ Al momento della query, [!DNL Live Search] genera i risultati della ricerca in g
 
 ## Opzioni vetrina e headless
 
-Facet sottoposti a rendering per [!DNL Commerce] storefront vengono elaborati dall’adattatore di ricerca, che instrada le richieste ed esegue il rendering dei risultati nella vetrina. Tutti [!DNL Commerce] i facet storefront sono ordinati alfabeticamente con opzioni a selezione singola, indipendentemente dal tipo di input assegnato all’attributo corrispondente. I facet disponibili nella vetrina vengono riprodotti in base al tema corrente e riflettono eventuali personalizzazioni apportate alla presentazione della navigazione a livelli.
+I facet di cui viene eseguito il rendering per la vetrina [!DNL Commerce] vengono elaborati dall&#39;adattatore di ricerca, che indirizza le richieste ed esegue il rendering dei risultati nella vetrina. Tutti i facet [!DNL Commerce] della vetrina sono ordinati alfabeticamente con opzioni di selezione singola, indipendentemente dal tipo di input assegnato all&#39;attributo corrispondente. I facet disponibili nella vetrina vengono riprodotti in base al tema corrente e riflettono eventuali personalizzazioni apportate alla presentazione della navigazione a livelli.
 
-Al contrario, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) Le implementazioni di vengono elaborate dall’API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
+Al contrario, [implementazioni headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) vengono elaborate dall&#39;API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
 
 ### Etichette facet
 
-Per [!DNL Commerce] storefronts, l&#39;etichetta facet è determinata dal [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Per i negozi con più viste, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dalla [area di lavoro faceting](faceting-workspace.md).
+Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
 
 ### Tipo di ordinamento
 
@@ -38,5 +38,5 @@ Tutti i facet di cui è stato eseguito il rendering per la vetrina sono ordinati
 
 | Tipo di ordinamento | Descrizione |
 |--- |--- |
-| Alfabetico | Nella vetrina *Filtri* I facet sono ordinati alfabeticamente. |
+| Alfabetico | Nell&#39;elenco *Filtri* della vetrina, i facet sono ordinati alfabeticamente. |
 | Conteggio | (Solo headless) Per le implementazioni headless, i facet possono essere ordinati anche in base al numero di valori trovati per facet nel set corrente di prodotti restituiti. |

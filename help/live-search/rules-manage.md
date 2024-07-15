@@ -15,23 +15,23 @@ Segui queste istruzioni per aggiornare le proprietà delle regole esistenti.
 
 ## Modifica regola
 
-1. Il giorno *Cerca nel merchandising* , individuare la regola nella griglia che si desidera modificare e fare clic su **Altro** (...) opzioni.
-1. Clic **Modifica** per accedere all’editor di regole.
+1. Nell&#39;area di lavoro *Ricerca merchandising*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altre** (...) opzioni.
+1. Fai clic su **Modifica** per accedere all&#39;editor di regole.
 1. Aggiorna condizioni, operatori ed eventi in base alle esigenze.
 1. Se necessario, aggiorna i campi nome, data di inizio e di fine e descrizione. Tutti i nomi delle regole devono essere univoci.
 1. Verifica la regola.
-1. Pubblica le modifiche.
-La regola viene aggiunta all’elenco nella sezione *Regole* Workspace. Anche se le regole attive entrano in vigore immediatamente, potrebbero essere necessari fino a 15 minuti perché i risultati delle query memorizzate nella cache vengano aggiornati nella vetrina.
+1. Publish le modifiche.
+La regola viene aggiunta all&#39;elenco nell&#39;area di lavoro *Rules*. Anche se le regole attive entrano in vigore immediatamente, potrebbero essere necessari fino a 15 minuti perché i risultati delle query memorizzate nella cache vengano aggiornati nella vetrina.
 
 ## Visualizza dettagli
 
 Questa opzione consente di visualizzare rapidamente tutti i parametri delle regole, mantenendo la tabella Regole.
 
-1. Il giorno *Cerca nel merchandising* Workspace, individua la regola nella griglia da modificare e fai clic su **Altro** (...) opzioni.
-1. Clic **Visualizza dettagli** per visualizzare i parametri della regola.
-1. Scegli **Modifica** o **Elimina**, oppure fai clic sulla X per chiudere il pannello.
+1. Nell&#39;area di lavoro *Ricerca merchandising*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altre** (...) opzioni.
+1. Fai clic su **Visualizza dettagli** per visualizzare i parametri della regola.
+1. Scegliere **Modifica** o **Elimina** oppure fare clic sulla X per chiudere il pannello.
 
 ## Elimina regola
 
-1. Il giorno *Regole* , individuare la regola nella griglia che si desidera modificare e fare clic su **Altro** (...) opzioni.
-1. Clic **Elimina**.
+1. Nell&#39;area di lavoro *Regole*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altre** (...) opzioni.
+1. Fare clic su **Elimina**.

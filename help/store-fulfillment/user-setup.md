@@ -20,13 +20,13 @@ Il modello utente dell’app Store Fulfillment è separato dagli altri modelli u
 
 >[!TIP]
 >
->Per ottenere risultati ottimali, [configurare la connessione](connect-set-up-service.md) prima di aggiungere utenti e autorizzazioni per gli associati allo store che utilizzano l’app Store Assist.
+>Per ottenere risultati ottimali, [configura la connessione](connect-set-up-service.md) prima di aggiungere utenti e autorizzazioni per gli associati allo store che utilizzano l&#39;app Assist per lo store.
 
 ## App assistenza store - Ruoli utente
 
 Durante la configurazione iniziale dell’utente per l’app Store Assist, crea i ruoli utente per personalizzare le autorizzazioni utente per l’app Store Assist. Ad esempio, puoi creare ruoli diversi per i responsabili dei negozi e gli associati ai negozi e assegnare risorse di ruolo diverse per gestire le autorizzazioni per ogni tipo di utente.
 
-Configura ruoli utente da **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Configurare i ruoli utente da **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 ### Informazioni ruolo
 
@@ -42,7 +42,7 @@ Configura ruoli utente da **[!UICONTROL System > Store Fulfillment App Permissio
 
 ## Store Assist - Informazioni utente
 
-Gestisci i profili utente dell&#39;app Store Assist dalle impostazioni di Admin System:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Gestire i profili utente dell&#39;app Store Assist dalle impostazioni del sistema di amministrazione: **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -53,5 +53,5 @@ Gestisci i profili utente dell&#39;app Store Assist dalle impostazioni di Admin 
 | **[!UICONTROL Role]** | Ruolo associato all’utente | Globale | No |
 | **[!UICONTROL Access to all locations]** | Assegnare agli utenti l&#39;accesso a tutti i negozi o selezionare i singoli negozi. | Globale | No |
 | **Impostazioni internazionali interfaccia** | Se lo store dispone di più lingue, impostare Impostazioni internazionali interfaccia sulla lingua da utilizzare per l&#39;interfaccia di amministrazione. | Globale | No |
-| **Attivo da** | Per impostare una data di inizio, seleziona l’icona del calendario. | Globale | No |
-| **Attivo a** | Impostare la Data di scadenza selezionando l&#39;icona del calendario. L&#39;impostazione di una data di scadenza è utile per impostare assegnazioni temporanee di utenti o ruoli. Dopo la data di scadenza, lo stato dell’account utente cambia in `Inactive`, ma l’account può comunque essere aggiornato, se necessario. | Globale | No |
+| **Attivo Da** | Per impostare una data di inizio, seleziona l’icona del calendario. | Globale | No |
+| **Attivo A** | Impostare la Data di scadenza selezionando l&#39;icona del calendario. L&#39;impostazione di una data di scadenza è utile per impostare assegnazioni temporanee di utenti o ruoli. Dopo la data di scadenza, lo stato dell&#39;account utente cambia in `Inactive`, ma l&#39;account può comunque essere aggiornato, se necessario. | Globale | No |

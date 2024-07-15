@@ -15,19 +15,19 @@ ht-degree: 0%
 
 Quando i clienti arrivano per un ritiro a bordo, utilizzano il modulo Pickup Order per effettuare il check-in e fornire informazioni sulla loro posizione, marca dell’auto e modello dell’auto. Queste informazioni vengono inviate a Store Associates tramite l’app Store Assist in modo che possano consegnare rapidamente gli ordini di prelievo a blocchi.
 
-![[!DNL Check-In Experience Car Make] e [!DNL Model] impostazioni per il prelievo a bordo campo](assets/checkin-system-settings-car-options.png)
+Impostazioni ![[!DNL Check-In Experience Car Make] e [!DNL Model] per il ritiro a blocchi](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->È possibile configurare l&#39;interfaccia del modulo Ordine di prelievo dalla [Menu Configurazione store](merchant-store-configuration.md#configure-check-in-experience-interface-options). Ad esempio, puoi specificare quali campi di input visualizzare e se sono obbligatori o facoltativi.
+>È possibile configurare l&#39;interfaccia del modulo Ordine di prelievo dal [menu Configurazione archivio](merchant-store-configuration.md#configure-check-in-experience-interface-options). Ad esempio, puoi specificare quali campi di input visualizzare e se sono obbligatori o facoltativi.
 
 
 ## Configurare le selezioni di marca e colore dell’auto
 
 Gli utenti amministratori possono gestire le selezioni della marca e del modello dell’auto disponibili nel Modulo di prelievo dalle impostazioni dei sistemi Adobe Commerce:
 
-- **[!UICONTROL System]> Check-In > Carrozzeria**
-- **[!UICONTROL System]> Check-In > Colori auto**
+- **[!UICONTROL System]> Check-In > Produttori auto**
+- **[!UICONTROL System]> Archivia > Colori auto**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 

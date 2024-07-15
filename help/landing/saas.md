@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-Alcune funzioni di Adobe Commerce e di Magento Open Source sono basate su [!DNL Commerce Services] e distribuito come SaaS (software as a service). Per utilizzare questi servizi, è necessario connettere [!DNL Commerce] utilizzando le chiavi API di produzione e sandbox e specifica lo spazio di dati in [configurazione](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). È necessario configurarlo una sola volta.
+Alcune funzionalità di Adobe Commerce e Magento Open Source sono basate su [!DNL Commerce Services] e distribuite come SaaS (software as a service). Per utilizzare questi servizi, è necessario connettere l&#39;istanza [!DNL Commerce] utilizzando le chiavi API di produzione e sandbox e specificare lo spazio dati nella [configurazione](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). È necessario configurarlo una sola volta.
 
 ## Servizi disponibili {#availableservices}
 
-Di seguito sono elencati i [!DNL Commerce] funzionalità accessibili tramite [!DNL Commerce Services Connector]:
+Di seguito sono elencate le funzionalità di [!DNL Commerce] a cui è possibile accedere tramite [!DNL Commerce Services Connector]:
 
 | Servizio | Disponibilità |
 | ---|--- |
@@ -31,7 +31,7 @@ Di seguito sono elencati i [!DNL Commerce] funzionalità accessibili tramite [!D
 
 ## Architettura
 
-Ad alto livello, la [!DNL Commerce Services Connector] è costituito dai seguenti elementi essenziali:
+A un livello avanzato, [!DNL Commerce Services Connector] è costituito dai seguenti elementi principali:
 
 ![Architettura di Commerce Services Connector](assets/saas-config-sync-workflow.png)
 
@@ -39,11 +39,11 @@ Le sezioni seguenti descrivono ciascuno di questi elementi in modo più dettagli
 
 ## Credenziali {#apikey}
 
-Le chiavi API di produzione e sandbox sono generate dal [!DNL Commerce] conto del [proprietario licenza](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) che è identificato da un [!DNL Commerce] ID (MageID). Per superare la convalida dell&#39;adesione per servizi quali [!DNL Product Recommendations] o [!DNL Live Search], il proprietario della licenza per l’organizzazione del commerciante può generare il set di chiavi API, purché l’account sia in buono stato.
+Le chiavi API di produzione e sandbox sono generate dall&#39;account [!DNL Commerce] del [proprietario licenza](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) identificato da un ID [!DNL Commerce] univoco (MageID). Per superare la convalida dei diritti per servizi come [!DNL Product Recommendations] o [!DNL Live Search], il proprietario della licenza per l&#39;organizzazione del commerciante può generare il set di chiavi API, purché l&#39;account sia in buono stato.
 
-Le chiavi possono essere condivise in base alla necessità di sapere con l&#39;integratore di sistemi o il team di sviluppo che gestisce progetti e ambienti per conto del titolare della licenza. Sviluppatori che hanno ottenuto [!DNL Shared Access] dal proprietario della licenza non può generare le chiavi per loro conto anche se l&#39;organizzazione del commerciante è presente nel [!DNL Switch Accounts] nell’elenco a discesa del loro account.
+Le chiavi possono essere condivise in base alla necessità di sapere con l&#39;integratore di sistemi o il team di sviluppo che gestisce progetti e ambienti per conto del titolare della licenza. Gli sviluppatori a cui il proprietario della licenza ha concesso [!DNL Shared Access] non possono generare le chiavi per loro conto anche se l&#39;organizzazione del commerciante è presente nel menu a discesa [!DNL Switch Accounts] sul loro account.
 
-Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL Commerce Services]. Se sei un integratore di soluzioni, il firmatario del [!DNL Commerce] Il contratto del partner deve generare le chiavi API.
+Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL Commerce Services]. Se sei un integratore di soluzioni, il firmatario del contratto partner [!DNL Commerce] deve generare le chiavi API.
 
 >[!NOTE]
 >
@@ -51,13 +51,13 @@ Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL 
 
 ### Generare le chiavi API di produzione e sandbox {#genapikey}
 
-1. Accedi al tuo [!DNL Commerce] account in [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
+1. Accedi al tuo account [!DNL Commerce] all&#39;indirizzo [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
-1. Sotto **Magento** , seleziona **Portale API** sulla barra laterale.
+1. Nella scheda **Magento**, seleziona **Portale API** nella barra laterale.
 
-1. Dalla sezione _Ambiente_ menu, seleziona **Produzione** o **Sandbox**.
+1. Dal menu _Ambiente_, seleziona **Produzione** o **Sandbox**.
 
-1. Immetti un nome in _Chiavi API_ e fai clic su **Aggiungi nuovo**.
+1. Immetti un nome nella sezione _Chiavi API_ e fai clic su **Aggiungi nuovo**.
 
    Viene visualizzata una finestra di dialogo per il download della nuova chiave.
 
@@ -67,53 +67,53 @@ Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL 
    >
    > Questa è l&#39;unica opportunità di copiare o scaricare le chiavi.
 
-1. Clic **Scarica** quindi fai clic su **Annulla**.
+1. Fai clic su **Scarica**, quindi su **Annulla**.
 
 1. Ripeti i passaggi precedenti per ogni ambiente (produzione e sandbox).
 
-   Il **Chiavi API** Nella sezione sono ora visualizzate le chiavi API (pubbliche). Sono necessari sia i tasti di produzione che i tasti sandbox (pubblico+privato) quando [selezionare o creare un progetto SaaS](#createsaasenv).
+   Nella sezione **Chiavi API** sono ora visualizzate le chiavi API (pubbliche). Quando si [seleziona o si crea un progetto SaaS](#createsaasenv), sono necessarie sia le chiavi di produzione che quelle di sandbox (pubblico+privato).
 
 ## Configurazione SaaS {#saasenv}
 
-[!DNL Commerce] le istanze devono essere configurate con un progetto SaaS e uno spazio dati SaaS in modo che [!DNL Commerce Services] può inviare i dati alla posizione giusta. Un progetto SaaS raggruppa tutti gli spazi di dati SaaS. Gli spazi dati SaaS vengono utilizzati per raccogliere e memorizzare dati che consentono [!DNL Commerce Services] al lavoro. Alcuni di questi dati possono essere esportati da [!DNL Commerce] e alcuni possono essere raccolti dal comportamento dell’acquirente nella vetrina. Tali dati vengono quindi salvati in modo permanente nell’archiviazione cloud protetta.
+Le istanze di [!DNL Commerce] devono essere configurate con un progetto SaaS e uno spazio dati SaaS in modo che [!DNL Commerce Services] possa inviare i dati alla posizione giusta. Un progetto SaaS raggruppa tutti gli spazi di dati SaaS. Gli spazi dati SaaS vengono utilizzati per raccogliere e archiviare dati che consentono il funzionamento di [!DNL Commerce Services]. Alcuni di questi dati possono essere esportati dall&#39;istanza [!DNL Commerce] e altri possono essere raccolti dal comportamento dell&#39;acquirente nella vetrina. Tali dati vengono quindi salvati in modo permanente nell’archiviazione cloud protetta.
 
-Per [!DNL Product Recommendations], lo spazio dati SaaS contiene dati di catalogo e comportamentali. Puoi puntare una [!DNL Commerce] a uno spazio di dati SaaS da [selezione](https://docs.magento.com/user-guide/configuration/services/saas.html) nel [!DNL Commerce] configurazione.
+Per [!DNL Product Recommendations], lo spazio dati SaaS contiene dati di catalogo e comportamentali. È possibile indirizzare un&#39;istanza [!DNL Commerce] a uno spazio dati SaaS [selezionandola](https://docs.magento.com/user-guide/configuration/services/saas.html) nella configurazione [!DNL Commerce].
 
 >[!WARNING]
 >
-> Utilizza lo spazio dati SaaS di produzione solo per la produzione [!DNL Commerce] per evitare conflitti di dati. In caso contrario, si rischia di inquinare i dati del sito di produzione con i dati di test, causando ritardi nell’implementazione. Ad esempio, i dati del prodotto di produzione potrebbero essere erroneamente sovrascritti dai dati di staging, come gli URL di staging.
+> Utilizzare lo spazio dati SaaS di produzione solo nell&#39;installazione di [!DNL Commerce] di produzione per evitare conflitti di dati. In caso contrario, si rischia di inquinare i dati del sito di produzione con i dati di test, causando ritardi nell’implementazione. Ad esempio, i dati del prodotto di produzione potrebbero essere erroneamente sovrascritti dai dati di staging, come gli URL di staging.
 
 ### Selezionare o creare un progetto SaaS {#createsaasenv}
 
-Per selezionare o creare un progetto SaaS, richiedi [!DNL Commerce] Chiave API da [!DNL Commerce] proprietario licenza per il tuo negozio:
+Per selezionare o creare un progetto SaaS, richiedere la chiave API [!DNL Commerce] al proprietario della licenza [!DNL Commerce] per l&#39;archivio:
 
 >[!NOTE]
 >
-> Se non vede il **[!UICONTROL Commerce Services Connector]** sezione nella sezione [!DNL Commerce] , è necessario installare il [!DNL Commerce] moduli per il [[!DNL Commerce] servizio](#availableservices).
+> Se la sezione **[!UICONTROL Commerce Services Connector]** non è visualizzata nella configurazione di [!DNL Commerce], è necessario installare i moduli [!DNL Commerce] per il [[!DNL Commerce] servizio](#availableservices) desiderato.
 
-1. Il giorno _Amministratore_ barra laterale, vai a **Sistema** > Servizi > **Connettore servizi Commerce**.
+1. Nella barra laterale _Admin_, vai a **Sistema** > Servizi > **Connettore servizi Commerce**.
 
-   Se non vede il **[!UICONTROL Commerce Services Connector]** sezione nella sezione [!DNL Commerce] , installare [!DNL Commerce] moduli per il [[!DNL Commerce] servizio](#availableservices). Inoltre, assicurati che le `magento/module-services-id` è installato.
+   Se non vedi la sezione **[!UICONTROL Commerce Services Connector]** nella configurazione [!DNL Commerce], installa i moduli [!DNL Commerce] per il [[!DNL Commerce] servizio](#availableservices) desiderato. Verificare inoltre che il pacchetto `magento/module-services-id` sia installato.
 
-1. In _Chiavi API sandbox_ e _Chiavi API di produzione_ sezioni, incolla i valori chiave.
+1. Nelle sezioni _Chiavi API sandbox_ e _Chiavi API di produzione_, incolla i valori chiave.
 
-   Le chiavi private devono includere `----BEGIN PRIVATE KEY---` all’inizio della chiave e `----END PRIVATE KEY----` alla fine della chiave privata.
+   Le chiavi private devono includere `----BEGIN PRIVATE KEY---` all&#39;inizio della chiave e `----END PRIVATE KEY----` alla fine della chiave privata.
 
-1. Clic **Salva**.
+1. Fai clic su **Salva**.
 
-Tutti i progetti SaaS associati alle chiavi vengono visualizzati nel **Progetto** campo in **Identificatore SaaS** sezione.
+Tutti i progetti SaaS associati alle chiavi vengono visualizzati nel campo **Progetto** della sezione **Identificatore SaaS**.
 
-1. Se non esistono progetti SaaS, fai clic su **Crea progetto**. Quindi nel **Progetto** immettere un nome per il progetto SaaS.
+1. Se non esistono progetti SaaS, fare clic su **Crea progetto**. Quindi nel campo **Progetto**, inserisci un nome per il progetto SaaS.
 
-   Quando crei un progetto SaaS, [!DNL Commerce] genera uno o più spazi di dati SaaS a seconda [!DNL Commerce] licenza:
-   - Adobe Commerce: uno spazio dati di produzione; due spazi dati di test. Nei progetti Cloud Pro con più ambienti di staging, puoi richiedere spazi di dati di test aggiuntivi per ogni ambiente di staging tramite [invio di una richiesta di assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+   Quando si crea un progetto SaaS, [!DNL Commerce] genera uno o più spazi di dati SaaS a seconda della licenza di [!DNL Commerce]:
+   - Adobe Commerce: uno spazio dati di produzione; due spazi dati di test. Nei progetti Cloud Pro con più ambienti di staging, puoi richiedere spazi di dati di test aggiuntivi per ogni ambiente di staging [inviando una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source: uno spazio dati di produzione; nessuno spazio dati di prova
 
-1. Seleziona la **Spazio dati** da utilizzare per la configurazione corrente del [!DNL Commerce] archiviare.
+1. Seleziona lo **Spazio dati** da utilizzare per la configurazione corrente dell&#39;archivio [!DNL Commerce].
 
 >[!NOTE]
 >
->Se disponi di istanze separate da integrare con i servizi Commerce, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) per richiedere un nuovo progetto SaaS per ogni istanza aggiuntiva. Dopo aver creato il progetto SaaS, configura l’integrazione dei servizi Commerce per l’istanza utilizzando la stessa chiave API e selezionando il nuovo progetto SaaS per lo spazio dati.
+>Se si dispone di istanze separate da integrare con Commerce Services, [inviare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) per richiedere un nuovo progetto SaaS per ogni istanza aggiuntiva. Dopo aver creato il progetto SaaS, configura l’integrazione dei servizi Commerce per l’istanza utilizzando la stessa chiave API e selezionando il nuovo progetto SaaS per lo spazio dati.
 
 >[!WARNING]
 >
@@ -127,4 +127,4 @@ Per collegare la tua istanza di Adobe Commerce a Adobe Experience Platform, acce
 
 ## Esportazione dati SaaS
 
-Quando [!DNL Commerce] l’istanza si connette correttamente a [!DNL Commerce Services], il processo di esportazione dei dati SaaS esporta i dati Commerce dal [!DNL Commerce] server a [!DNL Commerce SaaS Services] in modo che possa essere sincronizzato con i servizi Commerce connessi. In Admin, puoi controllare lo stato di sincronizzazione utilizzando [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Per ulteriori informazioni, vedere [Guida all’esportazione dei dati SaaS](../data-export/overview.md).
+Quando l&#39;istanza [!DNL Commerce] si connette a [!DNL Commerce Services], il processo di esportazione dei dati SaaS esporta i dati Commerce dal server [!DNL Commerce] in [!DNL Commerce SaaS Services] in modo che possano essere sincronizzati con i servizi Commerce connessi. In Admin, puoi controllare lo stato di sincronizzazione utilizzando [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Per informazioni dettagliate, vedere la [Guida all&#39;esportazione dei dati SaaS](../data-export/overview.md).

@@ -1,9 +1,10 @@
 ---
 title: Stima del volume dei dati e del tempo di trasmissione
-description: "Scopri come stimare il volume di dati e il tempo di trasmissione necessari per [!DNL data export] per sincronizzare i dati dei feed tra Adobe Commerce e i servizi connessi."
+description: Scopri come stimare il volume di dati e il tempo di trasmissione necessari affinché lo strumento  [!DNL data export]  sincronizzi i dati dei feed tra Adobe Commerce e i servizi connessi.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Per impostazione predefinita, lo strumento di esportazione dei dati elabora i da
 In base alla configurazione predefinita, i seguenti fattori influiscono sul tempo di trasmissione dei dati durante la sincronizzazione.
 
 - Il conteggio dei thread è impostato su 1 (per impostazione predefinita)
-- Dimensione batch impostata su _100_ per tutti i feed ad eccezione di `prices` feed, dove è impostato su _500_.
+- La dimensione del batch è impostata su _100_ per tutti i feed ad eccezione del feed `prices`, dove è impostata su _500_.
 - Il tasso di accettazione dei feed è di 2 richieste al secondo.
 - Tutti i prodotti vengono assegnati a tutti i siti Web esistenti
 - Per gli scenari di calcolo dei prezzi, a tutti i prodotti vengono assegnati prezzi speciali e raggruppati
@@ -49,4 +50,3 @@ Utilizzare i valori e le formule della tabella seguente per calcolare il volume 
 | Autorizzazioni categoria | Numero di tutte le autorizzazioni per categoria + 4 record di fallback (CP): 10000 | CP = 10000 | 10000/Dimensione batch (100) = 100 richieste | (100 richieste * 0,5 secondi per richiesta) / 60 = 0,8 minuti (50 secondi) |
 | Stato scorte | Prodotti (P): 10000, Scorte prodotti assegnati a (S): 5 (supponendo che ogni prodotto sia assegnato a ogni scorta) | P * S = 50000 | 50000/Dimensione batch (100) = 500 richieste | (500 richieste * 0,5 secondi per richiesta) / 60 = 4,2 minuti |
 | Ordini di vendita | Tutti i record ordine (comprese fatture, spedizioni e così via) (SO): 10000 | SO = 10000 | 10000/Dimensione batch (100) = 100 richieste | (100 richieste * 0,5 secondi per richiesta) / 60 = 0,8 minuti (50 secondi) |
-

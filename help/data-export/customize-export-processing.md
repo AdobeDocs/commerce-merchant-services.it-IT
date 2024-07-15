@@ -1,9 +1,10 @@
 ---
 title: Miglioramento delle prestazioni di esportazione dei dati SaaS
-description: "Scopri come migliorare le prestazioni di esportazione dei dati SaaS per Commerce Services utilizzando la modalità di esportazione dei dati con più thread."
+description: Scopri come migliorare le prestazioni di esportazione dei dati SaaS per Commerce Services utilizzando la modalità di esportazione dei dati con più thread.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Miglioramento delle prestazioni di esportazione dei dati SaaS
 
-**Modalità di esportazione dati multi-thread** velocizza il processo di esportazione suddividendo i dati di feed in batch ed elaborandoli in parallelo.
+**Modalità di esportazione dati multi-thread** accelera il processo di esportazione suddividendo i dati di feed in batch ed elaborandoli in parallelo.
 
 Gli sviluppatori o gli integratori di sistemi possono migliorare le prestazioni utilizzando la modalità di esportazione dati multi-thread invece della modalità single-thread predefinita. Nella modalità a thread singolo, non esiste alcuna parallelizzazione del processo di invio del feed. Inoltre, a causa dei limiti predefiniti impostati, tutti i client possono utilizzare un solo thread. Nella maggior parte dei casi, la personalizzazione della configurazione non è necessaria.
 
@@ -23,13 +24,13 @@ L’Adobe consiglia di utilizzare la configurazione predefinita per l’acquisiz
 
 Quando decidi se personalizzare la configurazione di esportazione dei dati, considera i seguenti fattori chiave:
 
-- **Sincronizzazione iniziale**-Valutare il numero di prodotti e [stimare il volume dei dati e il tempo di trasmissione](estimate-data-volume-sync-time.md) in base alla configurazione predefinita. Chiediti: puoi attendere questa sincronizzazione iniziale dei dati dopo aver effettuato l’onboarding di un servizio Commerce?
+- **Sincronizzazione iniziale**-Valutare il numero di prodotti e [stimare il volume di dati e il tempo di trasmissione](estimate-data-volume-sync-time.md) in base alla configurazione predefinita. Chiediti: puoi attendere questa sincronizzazione iniziale dei dati dopo aver effettuato l’onboarding di un servizio Commerce?
 
-- **Aggiunta di nuove visualizzazioni del Negozio o siti Web**- Se prevedi di aggiungere le visualizzazioni dello store o i siti web con lo stesso numero di prodotti dopo la pubblicazione, stima il volume di dati e il tempo di trasmissione. Determina se il tempo di sincronizzazione è accettabile con la configurazione predefinita o se è necessaria l’elaborazione multi-thread.
+- **Aggiunta di nuove visualizzazioni dello store o siti Web** - Se si prevede di aggiungere visualizzazioni dello store o siti Web con lo stesso numero di prodotti dopo la pubblicazione, stimare il volume di dati e il tempo di trasmissione. Determina se il tempo di sincronizzazione è accettabile con la configurazione predefinita o se è necessaria l’elaborazione multi-thread.
 
-- **Importazioni regolari**-Anticipare le importazioni regolari, ad esempio aggiornamenti dei prezzi o modifiche dello stato delle scorte. Valuta se questi aggiornamenti possono essere applicati entro un intervallo di tempo accettabile o se è necessaria un’elaborazione più rapida.
+- **Importazioni regolari**-Anticipa le importazioni regolari, ad esempio gli aggiornamenti dei prezzi o le modifiche dello stato delle scorte. Valuta se questi aggiornamenti possono essere applicati entro un intervallo di tempo accettabile o se è necessaria un’elaborazione più rapida.
 
-- **Peso del prodotto**-Valuta se i tuoi prodotti sono leggeri o pesanti. Regolare di conseguenza la dimensione del batch se le descrizioni o gli attributi del prodotto aumentano la dimensione del prodotto.
+- **Peso prodotto**-Valuta se i tuoi prodotti sono leggeri o pesanti. Regolare di conseguenza la dimensione del batch se le descrizioni o gli attributi del prodotto aumentano la dimensione del prodotto.
 
 Tenere presente che una pianificazione attenta, che includa la stima del volume dei dati e del tempo di sincronizzazione, può spesso eliminare la necessità di personalizzazione. Pianifica le operazioni di acquisizione dei feed in base a queste stime per ottenere risultati ottimali.
 
@@ -39,10 +40,10 @@ Tenere presente che una pianificazione attenta, che includa la stima del volume 
 
 ## Configurare il multithreading
 
-La modalità multi-thread è supportata per tutti [metodi di sincronizzazione](data-synchronization.md#synchronization-process): sincronizzazione completa, sincronizzazione parziale e sincronizzazione degli elementi non riuscita. Per configurare il multithreading, specificare il numero di thread e la dimensione del batch da utilizzare durante la sincronizzazione.
+La modalità multithread è supportata per tutti i [metodi di sincronizzazione](data-synchronization.md#synchronization-process): sincronizzazione completa, sincronizzazione parziale e sincronizzazione elementi non riuscita. Per configurare il multithreading, specificare il numero di thread e la dimensione del batch da utilizzare durante la sincronizzazione.
 
 - `threadCount` è il numero di thread attivati per elaborare le entità. Il valore predefinito `threadCount` è `1`.
-- `batchSize` è il numero di entità elaborate in un&#39;iterazione. Il valore predefinito `batchSize` è `100` registrazioni di tutti i feed ad eccezione di quello relativo ai prezzi. Per il feed di prezzo, il valore predefinito è `500` record.
+- `batchSize` è il numero di entità elaborate in un&#39;iterazione. Il valore predefinito `batchSize` è `100` record per tutti i feed ad eccezione del feed di prezzo. Per il feed di prezzo, il valore predefinito è `500` record.
 
 È possibile configurare il multithreading come opzione temporanea durante l&#39;esecuzione di un comando di risincronizzazione oppure aggiungendo la configurazione del multithread alla configurazione dell&#39;applicazione Adobe Commerce.
 
@@ -52,13 +53,13 @@ La modalità multi-thread è supportata per tutti [metodi di sincronizzazione](d
 
 ### Configurare il multithreading in fase di runtime
 
-Quando si esegue un comando di sincronizzazione completa dalla riga di comando, specificare l&#39;elaborazione multi-thread aggiungendo `threadCount` e `batchSize` opzioni del comando CLI.
+Quando si esegue un comando di sincronizzazione completa dalla riga di comando, specificare l&#39;elaborazione multi-thread aggiungendo le opzioni `threadCount` e `batchSize` al comando CLI.
 
 ```
 bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
 ```
 
-Le opzioni specificate nella riga di comando sovrascrivono la configurazione di esportazione dei dati specificata nell’applicazione Adobe Commerce `config.php` file.
+Le opzioni specificate nella riga di comando sovrascrivono la configurazione di esportazione dei dati specificata nel file dell&#39;applicazione Adobe Commerce `config.php`.
 
 ### Aggiungere il multithreading alla configurazione di Commerce
 

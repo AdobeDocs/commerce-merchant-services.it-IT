@@ -1,6 +1,6 @@
 ---
 title: "Tipi di sinonimi"
-description: "Unidirezionale e bidirezionale [!DNL Live Search] i sinonimi ampliano la definizione delle parole chiave."
+description: "I sinonimi unidirezionali [!DNL Live Search] consentono di espandere la definizione delle parole chiave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,19 +17,19 @@ I sinonimi unidirezionali e bidirezionali ampliano la definizione di parole chia
 
 I sinonimi bidirezionali hanno lo stesso significato e restituiscono gli stessi risultati di ricerca. Nell&#39;esempio seguente, la prima parola visualizzata in grassetto è la parola chiave utilizzata nel catalogo, seguita da parole che hanno lo stesso significato della parola chiave originale. È possibile creare una semplice coppia di sinonimi bidirezionali o una catena di più sinonimi bidirezionali per la stessa parola chiave.
 
-**giacca** ![Selettore bidirezionale](assets/btn-two-way.png) cappotto
-**pantaloni** ![Selettore bidirezionale](assets/btn-two-way.png) slack ![Selettore bidirezionale](assets/btn-two-way.png) pantaloni
+**giacca** ![Cappotto selettore bidirezionale](assets/btn-two-way.png)
+**pantaloni** ![Selettore bidirezionale](assets/btn-two-way.png) pantaloni ![Selettore bidirezionale](assets/btn-two-way.png) pantaloni
 
 ## Unidirezionale
 
 Un sinonimo unidirezionale è un sottoinsieme di una parola chiave, ma con un significato più specifico. Ad esempio, i capri e i pantaloni corti sono pantaloni, ma non tutti i pantaloni sono capri o pantaloncini corti. La ricerca di pantaloni include capsule e pantaloncini. Tuttavia, la ricerca di pantaloncini non restituisce capris.
 
-**felpa** ![Selettore unidirezionale](assets/btn-one-way.png) felpa
-**pantaloni** ![Selettore unidirezionale](assets/btn-one-way.png) capri ![Selezione unidirezionale multipla](assets/btn-multiple-one-way.png) pantaloni a lunghezza di vitello ![Selezione unidirezionale multipla](assets/btn-multiple-one-way.png) spintori a pedale
+**felpa** ![selettore unidirezionale](assets/btn-one-way.png) felpa con cappuccio
+**pantaloni** ![Selettore unidirezionale](assets/btn-one-way.png) capri ![Selettore unidirezionale multiplo](assets/btn-multiple-one-way.png) vitello-lunghezza-pantaloni ![Selettore unidirezionale multiplo](assets/btn-multiple-one-way.png) pedinatori
 
 ## Best practice
 
-Tieni presente le seguenti best practice per ottenere il massimo da [!DNL Live Search] sinonimi.
+Per ottenere il massimo dai sinonimi [!DNL Live Search], tieni presente le seguenti best practice.
 
 ### Evita le &quot;parole non significative&quot;
 

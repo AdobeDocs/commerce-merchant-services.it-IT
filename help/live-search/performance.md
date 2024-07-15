@@ -1,6 +1,6 @@
 ---
 title: "Prestazioni"
-description: "Il [!DNL Live Search] Performance Workspace fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
+description: "L'area di lavoro Prestazioni  [!DNL Live Search]  fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Prestazioni
 
-Il *Prestazioni* workspace fornisce informazioni sui termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. L’area di lavoro Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
+L&#39;area di lavoro *Performance* fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. L’area di lavoro Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
 
 * Ricerche univoche
 * Nessun risultato
@@ -19,11 +19,11 @@ Il *Prestazioni* workspace fornisce informazioni sui termini di ricerca utilizza
 
 ![Prestazioni](assets/performance-unique-searches.png)
 
-È inoltre possibile fare riferimento al [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) per ulteriori dati sulla sincronizzazione dei dati.
+Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ## Visualizzare un rapporto
 
-1. Per inserire **Intervallo di date**, fare clic sul calendario (![Calendario](assets/btn-calendar.png)) ed effettuare una delle seguenti operazioni:
+1. Per immettere l&#39;**intervallo di date**, fare clic sul calendario (![Calendario](assets/btn-calendar.png)) ed eseguire una delle operazioni seguenti:
 
    * Per specificare una singola data, fare doppio clic sulla data nel calendario.
    * Per specificare un intervallo di date, fare clic sulla prima e sull&#39;ultima data del calendario.

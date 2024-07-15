@@ -9,19 +9,19 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-# Evasione store per Commerce {#store-fulfillment}
+# Evasione negozio per Commerce {#store-fulfillment}
 
 - [Panoramica della guida](guide-overview.md)
-- [Introduzione a [!DNL Store Fulfillment]](introduction.md)
+- [Introduzione a  [!DNL Store Fulfillment]](introduction.md)
 - [Flussi di lavoro di assistenza store](store-assist-modules.md)
 - [Requisiti](solution-requirements.md)
 - [Note sulla versione](release-notes.md)
-- Evasione del Negozio onboarding {#onboarding}
+- Evasione archivio integrato {#onboarding}
    - [Panoramica sull’onboarding](onboard.md)
    - [Installare l’estensione](install.md)
    - [Connetti evasione negozio](connect-set-up-service.md)
@@ -34,10 +34,10 @@ ht-degree: 10%
    - [Gestione delle scorte dei prodotti](product-stock.md)
    - [Trasferimento origine Inventory management](inventory-stock-transfer.md)
    - [Più siti Web/ambito](multi-site-and-scope-config.md)
-- Configurazione del sistema {#system-configuration}
+- Configurazione di sistema {#system-configuration}
    - [Processi in background](background-processes.md)
    - [Impostazione della posizione del negozio e della mappatura](store-location-map-provider-setup.md)
-   - [Configurazione esperienza di check-in](check-in-experience-setup.md)
+   - [Configurazione esperienza di archiviazione](check-in-experience-setup.md)
    - [Configurazione utente](user-setup.md)
    - [Configurazione dell’app](app-setup.md)
 
