@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
+source-git-commit: 7757cc382e306a6c074a815d5148a4dcd8fff284
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. È possibile controllare la versione installata nel sistema utilizzando Compositore. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versione principale corrente
+
+## Versione 103.3.8
+
+![Correzione](../assets/fix.svg) Le opzioni di configurazione disabilitate non vengono più esportate come opzioni attive.<!--MDEE-812-->
+![Correzione](../assets/fix.svg) Le opzioni e i valori vengono aggiornati in un prodotto configurabile quando si apportano modifiche a un prodotto secondario. <!--MDEE-835-->
+![Nuovo](../assets/new.svg) è stata aggiunta la possibilità di includere dati di attributi di sistema aggiuntivi nel feed di attributi di prodotto.
 
 ## Versione 103.3.7
 
