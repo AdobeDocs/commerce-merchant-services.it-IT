@@ -4,7 +4,7 @@ description: Scopri come utilizzare l’estensione  [!DNL data export] per i ser
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guida [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] migliora le prestazioni front-end ottimizzando la sincronizzazione dei dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando si aggiunge Live Search, Product Recommendations o Catalog Service a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
+[!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando si aggiunge Live Search, Product Recommendations o Catalog Service a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
 
 L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denominati _feed_, che aggregano tipi specifici di informazioni. A seconda dei servizi Commerce installati, i feed di esportazione dei dati SaaS includono:
 
@@ -22,7 +22,7 @@ L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denomina
 - Il **feed ordine di vendita** aggrega i dati degli ordini, incluse le entità correlate, quali fatture, spedizioni, note di accredito e così via.
 - Il **feed inventario per più Source** aggrega i dati relativi agli elementi dello stato delle scorte.
 
-L’estensione per l’esportazione dei dati supporta diversi metodi per avviare e gestire il processo di sincronizzazione dei dati.
+L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta diversi metodi per avviare e gestire il processo di sincronizzazione dei dati.
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
