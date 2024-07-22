@@ -4,9 +4,9 @@ description: Scopri come installare, aggiornare e disinstallare l'estensione  [!
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,17 +33,18 @@ Visualizzazione amministratore dell&#39;estensione ![[!DNL Data Connection]](ass
 
    Questo metapacchetto contiene i moduli e le estensioni seguenti:
 
-   * `module-experience-connector-admin` - Aggiorna l&#39;interfaccia utente di amministrazione in modo da poter selezionare l&#39;ID dello stream di dati per una specifica istanza di Adobe Commerce.
-   * `module-experience-connector` - Imposta `Organization ID` e `datastreamId` nell&#39;SDK degli eventi Storefront.
-   * `data-services` - Fornisce il contesto degli attributi per gli eventi storefront. Ad esempio, quando si verifica un evento di pagamento, vengono incluse informazioni sul numero di elementi presenti nel carrello e i dati degli attributi del prodotto relativi a tali elementi.
-   * `services-id` - Connette l&#39;istanza Adobe Commerce a [Adobe Commerce SaaS](../landing/saas.md) utilizzando le chiavi sandbox e API di produzione e a Adobe Experience Platform per recuperare l&#39;ID organizzazione IMS.
-   * `orders-connector` - Collega il servizio di stato degli ordini alla tua istanza Adobe Commerce.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (Facoltativo) Per includere [!DNL Live Search] dati, che comprendono [eventi di ricerca](events.md#search-events), installare l&#39;estensione [[!DNL Live Search]](../live-search/install.md).
 
 1. (Facoltativo) Per includere i dati B2B, che comprendono [eventi richiesta](events.md#b2b-events), installare l&#39;estensione [B2B](#install-the-b2b-extension).
 
-### Installare gli eventi Adobe I/O
+### Installa eventi Adobi I/O
 
 Dopo aver installato l&#39;estensione `experience-platform-connector`, è necessario installare Adobe I/O Events per Adobe Commerce.
 

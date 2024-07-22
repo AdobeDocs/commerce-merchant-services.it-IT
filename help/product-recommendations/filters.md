@@ -2,9 +2,9 @@
 title: Filtra prodotti
 description: Definisci le condizioni che includono o escludono l’utilizzo dei prodotti come consigli.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro cat
 ### Prodotto
 
 I filtri dei prodotti specificano quali prodotti specifici sono idonei, o non idonei, per la visualizzazione nei consigli. Non puoi selezionare prodotti disabilitati o non visibili singolarmente, in quanto tali prodotti non possono mai essere visualizzati nei consigli.
+
+>[!NOTE]
+>
+>I prodotti secondari di un prodotto configurabile non vengono visualizzati in un&#39;unità di consigli perché tali prodotti secondari hanno la visibilità di _Non visibile singolarmente_.
 
 ### Tipo
 

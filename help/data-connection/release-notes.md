@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _12 ottobre 2022_
 
 +++
 
-## 3.1.2.
+## 3.1.3.
+
+_22 luglio 2024_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
+![Correzione](../assets/new.svg) - Aggiornamento del metapackage del connettore Experience Platform per rimuovere gli esportatori e gli indicizzatori di dati inutilizzati.
+
+## 3.1.2.
+
 _5 giugno 2024_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Correzione](../assets/new.svg) - È stato risolto un problema che causava l&#39;utilizzo di un formato di data errato durante l&#39;avvio di una [sincronizzazione cronologica](connect-data.md#specify-order-history-date-range).
 ![Correzione](../assets/new.svg) - È stato risolto un problema che impediva l&#39;invio dell&#39;evento [startCheckout](events.md#startcheckout) in Adobe Commerce 2.4.7.
 
 ## 3.1.1.
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
-
 _4 aprile 2024_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per PHP 8.3 per tutte le estensioni [!DNL Data Connection].
 ![Nuovo](../assets/new.svg) - Aggiunto articolo su come [integrare](mobile-sdk-epc.md) l&#39;SDK di Adobe Experience Platform Mobile con Commerce.
@@ -132,7 +140,6 @@ _27 giugno 2023_
 ![Correzione](../assets/fix.svg) - Configurazioni criteri di sicurezza dei contenuti aggiornate.
 ![Correzione](../assets/fix.svg): è stato corretto il supporto per gli eventi di back office nella versione 2.4.7 di Commerce.
 ![Nuovo](../assets/new.svg) - È stato aggiunto un messaggio di notifica sull&#39;annullamento della validità della cache quando si salvano le modifiche al modulo dell&#39;estensione [!DNL Data Connection].
-
 
 ## 3.0.0-beta1 (solo interno)
 

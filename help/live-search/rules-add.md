@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare regole di Search Merchandising."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 
 * Più acquistati: classifica i prodotti in base agli acquisti totali per SKU nei 7 giorni precedenti.
 * La maggior parte è stata aggiunta al carrello, in ordine di attività totali &quot;Aggiungi al carrello&quot; nei 7 giorni precedenti.
-* Più visualizzato: classifica le visualizzazioni totali per SKU nei 7 giorni precedenti.
-* Consigliato per te - Utilizza il punto dati `viewed-viewed` - Gli acquirenti che hanno visualizzato questo SKU hanno guardato anche gli altri SKU
-* Tendenza: considera gli eventi di visualizzazione della pagina delle ultime 72 ore per gli eventi in background e 24 ore per gli eventi in primo piano
-* Nessuno: i prodotti sono ordinati in base alla rilevanza
+* Più visualizzati: classifica le visualizzazioni totali per SKU nei 7 giorni precedenti.
+* Consigliato per te - Utilizza il punto dati `viewed-viewed` - Gli acquirenti che hanno visualizzato questo SKU hanno esaminato anche questi altri SKU.
+* Tendenza: considera gli eventi di visualizzazione della pagina delle ultime 72 ore per gli eventi in background e 24 ore per gli eventi in primo piano.
+* Nessuno: i prodotti vengono ordinati in base alla rilevanza.
 
-1. Selezionare il tipo di strategia per la regola. Nella finestra Test regola vengono visualizzati i risultati previsti.
+Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola** vengono visualizzati i risultati previsti.
 
->[!NOTE]
->
->Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
+### Avvertenze
+
+* Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
+* Per garantire il corretto funzionamento della classificazione intelligente, assicurati che il **Peso di ricerca** per tutti gli attributi di prodotto utilizzati per la ricerca o il filtraggio (facet) sia pari o inferiore a `5`. Per trovare questa impostazione nell&#39;amministratore [!DNL Commerce]:
+
+   1. Seleziona **Archivi** > _Attributi_ > **Prodotto**.
+   1. Cerca l’attributo, ad esempio &quot;name&quot;.
+   1. Nella pagina **Informazioni attributo** > **Proprietà storefront**, impostare lo spessore della ricerca su minore o uguale a `5`.
+
+      ![Prodotto - Peso ricerca](assets/set-search-weight.png)
 
 ## Classificazione manuale
 
