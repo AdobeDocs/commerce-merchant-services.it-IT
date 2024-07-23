@@ -5,10 +5,10 @@ breadcrumb-title: "[!DNL Data Export] Guida per i servizi SaaS"
 hide: true
 role: Admin
 feature: Services
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 51238f86f36a756b86d07bdf6bb0a5cf0c61cbeb
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 6%
 - [Riferimento comando CLI](data-export-cli-commands.md)
 - [Revisione dei registri e risoluzione dei problemi](troubleshooting-logging.md)
 - [Gestire l’estensione di esportazione dei dati SaaS](manage-extension.md)
+- [Estendere e personalizzare i feed di esportazione dei dati SaaS](extensibility-and-customizations.md)
 - [Note sulla versione](release-notes.md)
 - [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
