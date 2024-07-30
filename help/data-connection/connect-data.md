@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Gli eventi di profilo della serie temporale contengono dati sulle informazioni d
 
 La disponibilità di un record di profilo in Real-Time CDP può richiedere circa 10 minuti. Lo streaming degli eventi del profilo inizia immediatamente.
 
+>[!TIP]
+>
+>Se nell&#39;Experience Platform non vengono visualizzati i dati del profilo, consultare [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) per suggerimenti sulla risoluzione dei problemi.
+
 #### Descrizioni dei campi
 
 | Campo | Descrizione |
@@ -277,6 +281,10 @@ Per verificare che i dati vengano raccolti dall&#39;archivio Commerce, utilizzar
 In questo esempio vengono visualizzati i dati evento di [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) e così via. Questa vista ti consente di verificare che i dati Commerce siano arrivati al server Edge di.
 
 Se i risultati non sono quelli previsti, apri il set di dati e cerca eventuali importazioni batch non riuscite. Ulteriori informazioni su [risoluzione dei problemi relativi alle importazioni batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Verifica che i dati del profilo vengano visualizzati nell’Experience Platform
+
+Se nell&#39;Experience Platform non vengono visualizzati i dati del profilo, consultare [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) per suggerimenti sulla risoluzione dei problemi.
 
 ## Passaggi successivi
 
