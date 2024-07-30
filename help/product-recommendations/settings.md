@@ -2,16 +2,16 @@
 title: Impostazioni
 description: Scopri come modificare l'origine dei tuoi dati di [!DNL Product Recommendations]  e come abilitare i consigli visivi.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Impostazioni
 
-Quando si [configura uno spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) per Recommendations, lo spazio dati SaaS raccoglie i dati del catalogo e i dati comportamentali della vetrina. [Adobe Sensei](https://www.adobe.com/sensei.html) analizza tali dati e calcola le associazioni di prodotti utilizzate per fornire Recommendations di prodotto.
+Quando si [configura uno spazio dati SaaS](../landing/saas.md#saas-configuration) per Recommendations, lo spazio dati SaaS raccoglie i dati del catalogo e i dati comportamentali della vetrina. [Adobe Sensei](https://www.adobe.com/sensei.html) analizza tali dati e calcola le associazioni di prodotti utilizzate per fornire Recommendations di prodotto.
 
 Gli ambienti non di produzione per il test o la gestione temporanea di solito non dispongono della quantità o della qualità dei dati comportamentali della vetrina per fornire consigli di prodotto realistici. Il comportamento effettivo degli acquirenti su larga scala può essere acquisito solo in un ambiente di produzione. Per risolvere questo problema, Adobe Commerce consente di utilizzare i consigli di prodotto dell’ambiente di produzione con altri spazi di dati SaaS non di produzione. L’utilizzo di dati vetrina reali in un ambiente non di produzione consente di visualizzare in anteprima i consigli visualizzati dagli acquirenti e di sperimentarli con diversi tipi di consigli e posizioni di posizionamento. Gli acquirenti possono visualizzare in anteprima i Recommendations provenienti da uno spazio dati SaaS diverso, ma non fare clic su di essi.
 
