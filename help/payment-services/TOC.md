@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 4%
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a  [!DNL Payment Services]](overview.md)
 - [Note sulla versione](release-notes.md)
-- Pagamenti e pagamento {#payments-checkout}
-   - [Opzioni di pagamento](payments-options.md)
-   - [Vaulting con carta di credito](vaulting.md)
-   - [Pagamento](checkout.md)
 - Onboarding [!DNL Payment Services] {#get-started}
    - [Panoramica sull’onboarding](onboard.md)
    - [Installa l&#39;estensione  [!DNL Payment Services] ](install.md)
@@ -34,18 +30,23 @@ ht-degree: 4%
    - [Impostazioni [!DNL Payment Services]](settings.md)
    - [Configurazione della riga di comando](configure-cli.md)
    - [Configurazione legacy](configure-admin.md)
-- [Test e convalida](test-validate.md)
-- [Crea un ordine](create-order.md)
+   - [Test e convalida](test-validate.md)
+- Pagamenti e pagamento {#payments-checkout}
+   - [Opzioni di pagamento](payments-options.md)
+   - [Vaulting con carta di credito](vaulting.md)
+   - [Pagamento](checkout.md)
+   - [Creare un ordine in Admin](create-order.md)
+   - Gestisci pagamenti {#manage}
+      - [Elementi riga per  [!DNL Payment Services]](line-items.md)
+      - [Rimborsi](refunds.md)
+      - [Vuoti](voids.md)
 - Reporting finanziario {#reporting}
    - [Rapporto Transazioni](transactions.md)
    - [Rapporto stato pagamento ordine](order-payment-status.md)
    - [Rapporto Pagamenti](payouts.md)
    - [Dati disponibili](data.md)
    - [Elaborazione di livello 2 e livello 3](levels-card-payment-transactions.md)
-- Gestisci pagamenti {#manage}
-   - [Rimborsi](refunds.md)
-   - [Vuoti](voids.md)
-- Protezione {#security-compliance}
-   - [Sicurezza e conformità](security.md)
+- Sicurezza e conformità {#security-compliance}
+   - [Sicurezza](security.md)
    - [Protezione contro le frodi significative](fraud-protection.md)
 - [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -3,7 +3,7 @@ title: Crea un ordine con  [!DNL Payment Services]
 description: L'amministratore consente di evadere un ordine utilizzando  [!DNL Payment Services]  direttamente dall'amministratore da un commerciante per i propri clienti che necessitano di assistenza.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Puoi personalizzare i servizi di pagamento in base alle tue esigenze utilizzando
 
 ## Campi carta di credito ospitati
 
-[!DNL Payment Services] sono disponibili come metodo di pagamento durante la creazione di un ordine in Admin:
+[!DNL Payment Services] è disponibile nell&#39;amministratore come metodo di pagamento durante la creazione di un ordine:
 
 1. Nella barra laterale _Admin_ espandere **[!UICONTROL Sales]** e scegliere **[!UICONTROL Orders]**.
 1. Fare clic su **[!UICONTROL Create New Order]**.
