@@ -2,7 +2,7 @@
 title: "Impostazioni"
 description: "Configurare le impostazioni per il servizio  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ L&#39;impostazione della lingua indica al servizio [!DNL Live Search] la lingua 
 1. In Amministrazione, vai a **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. Nell&#39;area di lavoro **Settings** in *Price faceting*, eseguire le operazioni seguenti:
    * Immetti il **numero di selezioni** o i raggruppamenti di prezzi da rendere disponibili. È possibile definire fino a 50 raggruppamenti di prezzi.
-   * Immettere il valore **Intervallo** o l&#39;intervallo di prezzi per ogni gruppo. Il valore massimo è 10.000.
+   * Immettere il valore **Intervallo** o l&#39;intervallo di prezzi per ogni gruppo. Il valore massimo è 40.000.000.
 1. Fai clic su **Salva**.
 
    La disponibilità delle impostazioni aggiornate nella vetrina richiede circa 15 minuti.
