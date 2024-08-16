@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
+source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Puoi aggiungere [!UICONTROL Soft Descriptor] alla configurazione dei tuoi siti W
 | [!UICONTROL Enable] | sito web | Attiva o disattiva [!DNL Payment Services] per il tuo sito Web. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | visualizzazione store | Imposta il metodo o l’ambiente per lo store. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | visualizzazione store | L’ID venditore della sandbox, generato automaticamente durante l’onboarding della sandbox. |
-| [!UICONTROL Payment Services Production ID] | visualizzazione store | L’ID esercente di produzione, generato automaticamente durante l’onboarding della sandbox. |
+| [!UICONTROL Payment Services Production ID] | visualizzazione store | L’ID esercente di produzione, generato automaticamente durante l’onboarding della produzione (dal vivo). |
 | [!UICONTROL Soft Descriptor] | visualizzazione sito Web o store | Aggiungi un soft descriptor ai tuoi siti web e alle viste store per aggiungere informazioni alle transazioni dei clienti che delineano marchi, store o linee di prodotti. L&#39;opzione [!UICONTROL Use website] applica qualsiasi soft descriptor aggiunto a livello di sito Web. L&#39;opzione [!UICONTROL Use default] applica qualsiasi descrittore soft aggiunto come predefinito. |
 
 ## Configurare le opzioni di pagamento
