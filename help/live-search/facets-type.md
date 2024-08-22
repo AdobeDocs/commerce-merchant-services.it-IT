@@ -2,9 +2,9 @@
 title: "Tipi di facet"
 description: "[!DNL Live Search] facet sono dinamici e vengono visualizzati nell'elenco Filtri quando necessario."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 
 * Facet bloccati: i facet più comunemente utilizzati possono essere bloccati in alto nell’elenco. I facet rimanenti sono elencati nell&#39;ordine *Tipo di ordinamento* dopo i facet bloccati.
 * Facet dinamici - Attributi del prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe Sensei](https://www.adobe.com/sensei.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
+
+  >[!NOTE]
+  >
+  >Se dopo la creazione dei facet dinamici nella risposta alla query di GraphQL vengono visualizzati degli errori di timeout, modifica tutti i facet in modo che siano bloccati per vedere se i problemi di prestazioni vengono risolti.
+
 * Facet popolari: attributi di prodotto più spesso presenti nei risultati di ricerca.
 * Facet di prezzo - Restituisci i prodotti per fascia di prezzo. È possibile specificare il numero di selezioni e l&#39;intervallo di prezzi nell&#39;area di lavoro [*Impostazioni*](settings.md).
 

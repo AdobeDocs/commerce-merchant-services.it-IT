@@ -2,7 +2,7 @@
 title: "Impostazioni"
 description: "Configurare le impostazioni per il servizio  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -36,7 +36,7 @@ L&#39;impostazione della lingua indica al servizio [!DNL Live Search] la lingua 
 | Campo | Descrizione |
 |--- |--- |
 | Numero di selezioni | Specifica il numero di raggruppamenti di intervalli di prezzi che possono essere utilizzati come filtri di ricerca nella vetrina. Valore predefinito: 8, valore massimo: 50 |
-| Valore intervallo | Specifica l&#39;intervallo di prezzo per ogni gruppo. Ad esempio, cinque selezioni con un valore di intervallo pari a 20 creano cinque raggruppamenti di 0-20, 20-40, 40-60, 60-80 e >80. Valore predefinito: 5, valore massimo: 10.000 |
+| Valore intervallo | Specifica l&#39;intervallo di prezzo per ogni gruppo. Ad esempio, cinque selezioni con un valore di intervallo pari a 20 creano cinque raggruppamenti di 0-20, 20-40, 40-60, 60-80 e >80. Valore predefinito: 5, valore massimo: 40.000.000 |
 
 ## Lingua
 

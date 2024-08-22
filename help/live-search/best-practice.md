@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Best Practice'
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Il widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) abilita le 
 
 Ulteriori informazioni sul widget [popover](storefront-popover.md).
 
-### Sinonimi e grafia
+### Sinonimi e errori di ortografia
 
-Incorpora sinonimi e errori ortografici comuni per garantire risultati di ricerca completi. Inoltre, puoi espandere la query di ricerca per includere parole che gli acquirenti potrebbero utilizzare, che sono diverse dalle parole specificate nel catalogo. Non si vuole perdere una vendita perché qualcuno sta cercando un &quot;divano&quot;, mentre il vostro prodotto è elencato come un &quot;divano&quot;. È possibile acquisire un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero utilizzare per trovare i prodotti. È possibile [impostare i sinonimi in un modo o in due](synonyms-add.md#step-2-define-the-synonym-by-type) per migliorare i risultati.
+Per impostazione predefinita, Live Search gestisce gli errori di ortografia. È possibile impostare sinonimi per includere parole che gli acquirenti potrebbero utilizzare, diverse dalle parole specificate nel catalogo. Non si vuole perdere una vendita perché qualcuno sta cercando un &quot;divano&quot;, mentre il vostro prodotto è elencato come un &quot;divano&quot;. È possibile acquisire un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero utilizzare per trovare i prodotti. È possibile [impostare i sinonimi in un modo o in due](synonyms-add.md#step-2-define-the-synonym-by-type) per migliorare i risultati.
 
 #### Suggerimenti per ottimizzare i sinonimi
 
