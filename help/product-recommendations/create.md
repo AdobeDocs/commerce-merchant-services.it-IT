@@ -2,9 +2,9 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 ## Indicatori di preparazione
 
-Gli indicatori di preparazione mostrano quali tipi di consigli funzioneranno meglio in base ai dati di catalogo e comportamentali disponibili. Puoi inoltre utilizzare gli indicatori di preparazione per determinare se si sono verificati problemi con l’evento o se il traffico è insufficiente per popolare il tipo di consiglio.
+Gli indicatori di preparazione mostrano quali tipi di consigli funzioneranno meglio in base ai dati di catalogo e comportamentali disponibili. Puoi inoltre utilizzare gli indicatori di preparazione per determinare se si sono verificati problemi con l&#39;[evento](events.md) o se non si dispone di abbastanza traffico per popolare il tipo di consiglio.
 
 Gli indicatori di preparazione sono classificati in [static-based](#static-based) o [dynamic-based](#dynamic-based). Solo dati del catalogo di utilizzo basati su statici; mentre dati comportamentali di utilizzo basati su dinamiche provenienti dai tuoi acquirenti. Questi dati comportamentali vengono utilizzati per [addestrare modelli di apprendimento automatico](behavioral-data.md) per creare consigli personalizzati e calcolare il loro punteggio di preparazione.
+
+### Calcolo degli indicatori di preparazione
+
+Gli indicatori di preparazione indicano quanto il modello è addestrato. Gli indicatori dipendono dai tipi di eventi raccolti, dall’ampiezza dei prodotti con cui si interagisce e dalle dimensioni del catalogo.
+
+La percentuale dell’indicatore di preparazione è derivata da un calcolo che indica quanti prodotti potrebbero essere consigliati a seconda del tipo di consiglio. Le statistiche vengono applicate ai prodotti in base alle dimensioni complessive del catalogo, al volume di interazioni (come visualizzazioni, clic, aggiunte ai carrelli) e alla percentuale di SKU che registrano tali eventi entro una determinata finestra temporale. Ad esempio, durante il traffico di picco durante le festività, gli indicatori di prontezza potrebbero mostrare valori più elevati rispetto ai tempi del volume normale.
+
+In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questo spiega perché potresti vedere che i tipi di consigli sono &quot;Pronti per la distribuzione&quot;.
 
 Gli indicatori di preparazione sono calcolati in base a due fattori:
 
@@ -95,15 +103,15 @@ In base ai fattori di cui sopra, un valore di fattibilità viene calcolato e vis
 
 * Il 75% o più significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno altamente pertinenti.
 * Almeno il 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno meno pertinenti.
-* Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione non saranno pertinenti.
+* Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](behavioral-data.md#backuprecs).
 
-Si tratta di linee guida generali, ma ogni singolo caso può variare in base alla natura dei dati raccolti, come indicato sopra. Ulteriori informazioni su [come vengono calcolati gli indicatori di preparazione](#understand-how-readiness-indicators-are-calculated) e [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Ulteriori informazioni su [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Basato su statico
 
 I seguenti tipi di consigli sono basati su statico perché richiedono solo dati di catalogo. Non vengono utilizzati dati comportamentali.
 
-* _Articoli più simili_
+* _Altri argomenti correlati_
 * _Somiglianza Visiva_
 
 ### Basato su Dynamic
@@ -119,10 +127,12 @@ Ultimi sei mesi di dati comportamentali della vetrina:
 
 Ultimi sette giorni di dati comportamentali della vetrina:
 
-* Articoli più visualizzati
-* Più acquistati
-* Aggiunto al carrello
-* Di tendenza
+* _Più visualizzati_
+* _Più acquistati_
+* _Più aggiunti al carrello_
+* _Di tendenza_
+* _Visualizza per conversione acquisto_
+* _Conversione da visualizzazione a carrello_
 
 Dati comportamentali più recenti degli acquirenti (solo visualizzazioni):
 
@@ -150,17 +160,9 @@ Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa pro
 * **Basato su statico** - Le percentuali basse per questi indicatori possono essere causate da dati di catalogo mancanti per i prodotti visualizzabili. Se sono inferiori al previsto, il problema può essere risolto con una sincronizzazione completa.
 * **Basato su dinamica** - Le percentuali basse per gli indicatori basati su dinamica possono essere causate da:
 
-   * Campi mancanti negli eventi vetrina richiesti per i rispettivi tipi di consigli (requestId, contesto prodotto e così via).
+   * Campi mancanti nei [eventi storefront](events.md) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
    * Traffico ridotto nello store, quindi il volume di eventi comportamentali che riceviamo è basso.
    * La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità saranno bassi.
-
-#### Calcolo degli indicatori di preparazione
-
-Gli indicatori di preparazione indicano quanto il modello è addestrato. Gli indicatori sono indipendenti dai tipi di eventi raccolti, dall’ampiezza dei prodotti con cui si interagisce e dalle dimensioni del catalogo.
-
-La percentuale dell’indicatore di preparazione è derivata da un calcolo che indica quanti prodotti potrebbero essere consigliati a seconda del tipo di consiglio. Le statistiche vengono applicate ai prodotti in base alle dimensioni complessive del catalogo, al volume di interazioni (come visualizzazioni, clic, aggiunte ai carrelli) e alla percentuale di SKU che registrano tali eventi entro una determinata finestra temporale. Ad esempio, durante il traffico di picco durante le festività, gli indicatori di prontezza potrebbero mostrare valori più elevati rispetto ai tempi del volume normale.
-
-In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questo spiega perché potresti vedere che i tipi di consigli sono &quot;Pronti per la distribuzione&quot;.
 
 ## Anteprima Recommendations {#preview}
 
