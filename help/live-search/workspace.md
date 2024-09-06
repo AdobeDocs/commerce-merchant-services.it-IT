@@ -2,9 +2,9 @@
 title: "Configurazione di Live Search"
 description: L'area di lavoro  [!DNL Live Search]  viene utilizzata per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ Nella sezione seguente vengono descritte le impostazioni di configurazione di Co
 
 ### Valori di configurazione supportati
 
+>[!IMPORTANT]
+>
+>Si consiglia vivamente di utilizzare i widget di elenco prodotti, abilitati per impostazione predefinita in Live Search 4.0.0. I widget sono destinati a sostituire completamente l’implementazione dell’adattatore nelle versioni future. Per ulteriori informazioni, consulta [abilitare i widget dell&#39;elenco prodotti](install.md#enable-product-listing-widgets).
+
 | Impostazione configurazione Commerce | Descrizione | Supportato da Popover | Supportato dall&#39;adattatore |
 |---|---|---|---|
 | Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Consenti tutti i prodotti per pagina | Se è impostato su `Yes`, include l&#39;opzione `ALL` nel controllo &quot;Mostra per pagina&quot;. | Sì. Max. 500 prodotti | Sì. Max. 500 prodotti |
 | Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Lunghezza minima query | Numero minimo di caratteri consentito in una ricerca nel catalogo. | Sì | Sì |
 | Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Prodotti per pagina sulla griglia Valori consentiti | Determina il numero di prodotti visualizzati in Visualizzazione griglia. | Sì | Sì |
 | Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Prodotti per pagina sulla griglia Valore predefinito | Determina il numero di prodotti visualizzati per pagina per impostazione predefinita nella visualizzazione griglia. | Sì. Max. 500 prodotti | Sì. Max. 500 prodotti |
-| Negozi > Configurazione > Catalogo > Inventario > Visualizza prodotti esauriti | Visualizza i prodotti esauriti. | Sì con v2.0.4+ | Sì con v2.0.4+ |
-| Archivi > Configurazione > Valuta > Valuta di visualizzazione predefinita | Valuta principale utilizzata per visualizzare i prezzi. | Sì con 3.1.0+ | Sì con 3.1.0+ |
+| Negozi > Configurazione > Catalogo > Inventario > Visualizza prodotti esauriti | Visualizza i prodotti esauriti. | Sì | Sì |
+| Archivi > Configurazione > Valuta > Valuta di visualizzazione predefinita | Valuta principale utilizzata per visualizzare i prezzi. | Sì | Sì |
 | Archivi > Configurazione > Generale > Impostazione divisa > Opzioni divisa > Divisa di base | La valuta principale utilizzata per tutte le transazioni di pagamento online. | Sì | Sì |
 
 I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono convertiti nella valuta di visualizzazione predefinita utilizzando i tassi di valuta configurati.

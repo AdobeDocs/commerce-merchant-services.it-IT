@@ -2,9 +2,9 @@
 title: Filtra prodotti
 description: Definisci le condizioni che includono o escludono l’utilizzo dei prodotti come consigli.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Gli operatori logici `AND` e `OR` vengono utilizzati per unire più condizioni. 
 
 ### Categoria
 
-I filtri basati sulla categoria di un prodotto utilizzano le assegnazioni dirette delle categorie e le relative sottocategorie. Se ad esempio si abilita una condizione di esclusione per la categoria `Gear`, verranno esclusi i prodotti assegnati a `Gear` e tutte le relative sottocategorie, ad esempio `Gear/Bags` o `Gear/Fitness Equipment`. Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurata.
+I filtri basati sulla categoria di un prodotto utilizzano le assegnazioni dirette delle categorie e le relative sottocategorie. Se ad esempio si abilita una condizione di esclusione per la categoria `Gear`, verranno esclusi i prodotti assegnati a `Gear` e tutte le relative sottocategorie, ad esempio `Gear/Bags` o `Gear/Fitness Equipment`. Lo stesso vale per un filtro di inclusione per una categoria. Ad esempio, l&#39;abilitazione di una condizione di inclusione per la categoria `Gear` include i prodotti assegnati a `Gear` e a tutte le relative sottocategorie, ad esempio `Gear/Bags` o `Gear/Fitness Equipment`.
+
+>[!NOTE]
+>
+>Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurata.
 
 Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro categorie quando distribuisci i consigli ai tipi di pagina:
 
