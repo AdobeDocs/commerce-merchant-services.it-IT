@@ -1,16 +1,17 @@
 ---
-title: Pagamento
-description: Personalizza il pagamento in base alle esigenze del cliente.
+title: Estrai in [!DNL Payment Services]
+description: Personalizza [!DNL Payment Services] l'estrazione in base alle esigenze del cliente.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Pagamento
+
+# Estrai in [!DNL Payment Services]
 
 È possibile configurare l&#39;estrazione per Adobe Commerce [!DNL Payment Services] in base alle proprie esigenze. Funzionalità quali [svuotamento automatico dell&#39;ordine](#order-auto-voided-if-error) e [vaulting di carte di credito](#credit-card-vaulting) garantiscono agli acquirenti un&#39;esperienza utente fluida.
 
