@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> È ora possibile personalizzare i dati visualizzati nel [report sullo stato dei pagamenti dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e nel [report sui pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.8.1
+
+_13 settembre 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Correzione](../assets/fix.svg)<!-- PAY-5644 --> è stato risolto un problema relativo alla cache dei parametri SDK quando si utilizzano più ambiti in [!DNL Payment Services]. La configurazione dell’SDK ora viene memorizzata nella cache separatamente per ciascun ambito, anziché sotto una singola chiave. In questo modo la cache di ogni ambito viene invalidata in modo indipendente, migliorando l&#39;affidabilità durante la gestione di più ambiti.
 
 ## v2.8.0
 
