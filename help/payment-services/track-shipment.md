@@ -2,7 +2,7 @@
 title: Tracciamento delle spedizioni in [!DNL Payment Services]
 description: Personalizza [!DNL Payment Services] le spedizioni e le informazioni di registrazione visualizzate nel dashboard di Paypal Merchant.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Le seguenti istruzioni ti guideranno nel processo di creazione di una spedizione
 
 ### Compatibilità con terzi
 
-Qualsiasi estensione di terze parti è compatibile con la funzionalità quando viene creata un&#39;entità di spedizione tramite [API Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Qualsiasi estensione di terze parti è compatibile con la funzionalità quando viene creata un&#39;entità di spedizione tramite [API Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
