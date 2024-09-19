@@ -2,7 +2,7 @@
 title: "Aggiungi facet"
 description: "Scopri come aggiungere attributi di prodotto filtrabili come  [!DNL Live Search] facet."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Il facet viene aggiunto nella parte inferiore dell&#39;elenco *Facet dinamici* e
 
    * Etichetta - ([Solo headless](facets-type.md)) Immettere l&#39;etichetta facet che si desidera utilizzare.
    * Tipo di ordinamento: i facet sono ordinati alfabeticamente per tutti i [!DNL Commerce] storefront. Per le implementazioni headless, i facet possono essere ordinati alfabeticamente o per conteggio. Opzioni: Alfabetico, Conteggio (solo headless)
-   * Valore massimo: immettere il numero massimo di valori di facet visualizzati nella vetrina. Voci valide: 0 - 30; valore predefinito: 8
+   * Valore massimo: immettere il numero massimo di valori di facet visualizzati nella vetrina. Voci valide: 0 - 100; valore predefinito: 8
 
 1. Al termine, fare clic su **Salva**.
 
@@ -65,7 +65,7 @@ Se il facet non è disponibile dopo due ore, vedere [Verifica esportazione](inst
 |--- |--- |
 | Etichetta | ([Solo headless](facets-type.md)) L&#39;[etichetta facet](facets-type.md) visibile nella vetrina può essere modificata per coerenza con il tuo marchio. |
 | Tipo di ordinamento | Metodo utilizzato per [ordinare](facets-type.md) facet. Tutti i [!DNL Commerce] storefront ordinano i facet in ordine alfabetico. Anche le implementazioni headless possono essere ordinate per `Count`. Opzioni:<br />Alfabetico - Ordina alfabeticamente i facet.<br />Conteggio - (solo headless) Ordina i facet in base al numero di corrispondenze trovate. |
-| Valore massimo | Il numero massimo di valori che possono essere visualizzati nella vetrina per ogni facet. I facet che rappresentano un intervallo di valori vengono distribuiti in modo uniforme. Voci valide: 0 - 30; valore predefinito: 8 |
+| Valore massimo | Il numero massimo di valori che possono essere visualizzati nella vetrina per ogni facet. I facet che rappresentano un intervallo di valori vengono distribuiti in modo uniforme. Voci valide: 0 - 100; valore predefinito: 8 |
 
 ### Controlli
 

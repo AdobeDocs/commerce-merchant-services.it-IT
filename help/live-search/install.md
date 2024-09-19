@@ -3,9 +3,9 @@ title: "Introduzione a  [!DNL Live Search]"
 description: "Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ A un livello avanzato, l&#39;onboarding di [!DNL Live Search] richiede:
    ```bash
    bin/magento setup:upgrade
    ```
+
+### Installa [!DNL Live Search] versione beta
+
+>[!IMPORTANT]
+>
+>Se si desidera esplorare le nuove funzionalità disponibili in [!DNL Live Search], è consigliabile installare la versione beta.
+
+Questa versione beta supporta tre nuove funzionalità nella query [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Ricerca a livelli** - Ricerca in un altro contesto di ricerca - Con questa funzionalità è possibile eseguire fino a due livelli di ricerca per le query di ricerca. Ad esempio:
+
+   - **Ricerca livello 1** - Ricerca &quot;motor&quot; in &quot;product_attribute_1&quot;.
+   - **Ricerca livello 2** - Cercare &quot;numero parte 123&quot; in &quot;product_attribute_2&quot;. In questo esempio viene cercata la voce &quot;part number 123&quot; all&#39;interno dei risultati per &quot;motor&quot;.
+
+  La ricerca con livelli è disponibile sia per l&#39;indicizzazione di ricerca `startsWith` che per quella `contains` come descritto di seguito:
+
+- **startsWith indicizzazione ricerca** - Effettua la ricerca utilizzando l&#39;indicizzazione `startsWith`. Questa nuova funzionalità consente di:
+
+   - Ricerca di prodotti in cui il valore dell&#39;attributo inizia con una stringa specifica.
+   - La configurazione di una ricerca &quot;termina con&quot; consente agli acquirenti di cercare prodotti in cui il valore dell’attributo termina con una stringa specifica. Per abilitare una ricerca &quot;termina con&quot;, l’attributo del prodotto deve essere acquisito in ordine inverso e anche la chiamata API deve essere una stringa inversa.
+
+- **contiene l&#39;indicizzazione della ricerca** -Cercare un attributo utilizzando l&#39;indicizzazione contains. Questa nuova funzionalità consente di:
+
+   - Ricerca di una query all&#39;interno di una stringa più grande. Ad esempio, se un acquirente cerca il numero di prodotto &quot;PE-123&quot; nella stringa &quot;HAPE-123&quot;.
+
+      - Nota: questo tipo di ricerca è diverso dalla [ricerca frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) esistente, che esegue una ricerca di completamento automatico. Ad esempio, se il valore dell’attributo del prodotto è &quot;pantaloni da esterni&quot;, la ricerca di una frase restituisce una risposta per &quot;out pan&quot;, ma non restituisce una risposta per &quot;o formiche&quot;. Una ricerca contiene, tuttavia, restituisce una risposta per &quot;o formiche&quot;.
+
+Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale.
+
+Puoi implementare queste nuove condizioni nella pagina dei risultati della ricerca. Ad esempio, puoi aggiungere una nuova sezione nella pagina in cui l’acquirente può perfezionare ulteriormente i risultati della ricerca. È possibile consentire agli acquirenti di selezionare attributi di prodotto specifici, ad esempio &quot;Produttore&quot;, &quot;Numero parte&quot; e &quot;Descrizione&quot;. Da lì, eseguono ricerche all&#39;interno di tali attributi utilizzando le condizioni `contains` o `startsWith`. Per un elenco degli [attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ricercabili, consulta la Guida dell&#39;amministratore.
+
+1. Per installare la versione beta, esegui quanto segue dalla riga di comando:
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   Questa versione beta aggiunge **[!UICONTROL Search types]** caselle di controllo per **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** e **[!UICONTROL Starts with]** nell&#39;amministratore. Aggiorna inoltre l&#39;API GraphQL `productSearch` per includere queste nuove funzionalità di ricerca.
+
+1. Nell&#39;amministratore, [imposta un attributo di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) in modo che sia possibile eseguire ricerche e specifica la funzionalità di ricerca per tale attributo, ad esempio **Contains** (impostazione predefinita) o **Starts with**. È possibile specificare un massimo di sei attributi da abilitare per **Contains** e sei attributi da abilitare per **Starts with**. Per la versione beta, tieni presente che l’amministratore non applica questa restrizione, ma che la applica nelle ricerche API.
+
+   ![Specificare la funzionalità di ricerca](./assets/search-filters-admin.png)
+
+1. Consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) per scoprire come aggiornare le chiamate API di [!DNL Live Search] utilizzando le nuove funzionalità di ricerca di `contains` e `startsWith`.
+
+### Descrizioni dei campi
+
+| Campo | Descrizione |
+|--- |--- |
+| `Autocomplete` | È attivata per impostazione predefinita e non può essere modificata. Con `Autocomplete` puoi utilizzare `contains` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). In questo caso, la query di ricerca in `contains` restituisce una risposta di ricerca di tipo completamento automatico. L’Adobe consiglia di utilizzare questo tipo di ricerca per i campi di descrizione, che in genere contengono più di 50 caratteri. |
+| `Contains` | Abilita una ricerca vera e propria di tipo &quot;testo contenuto in una stringa&quot; invece di una ricerca di completamento automatico. Utilizza `contains` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Per ulteriori informazioni, consulta le [limitazioni](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations). |
+| `Starts with` | Consente di eseguire query sulle stringhe che iniziano con un determinato valore. Utilizza `startsWith` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
 ## 2. Configurare le chiavi API
 
