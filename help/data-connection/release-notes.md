@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _12 ottobre 2022_
 
 +++
 
+## 3.2.0
+
+_7 ottobre 2024_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Nuovo](../assets/new.svg) - Aggiunta la possibilità di creare [attributi di ordine personalizzati](custom-attributes.md) per i dati di back office.
+![Nuovo](../assets/new.svg) - Aggiunta nuova tabella [Attributi ordine personalizzati](connect-data.md#data-customization) per consentire la visualizzazione degli attributi personalizzati configurati in [!DNL Commerce] e inviati all&#39;Experience Platform.
+![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [raccogliere e inviare record del profilo](connect-data.md#send-customer-profile-data) e dati ad Experience Platform.
+
 ## 3.2.0-beta3
 
 _27 agosto 2024_
@@ -128,7 +138,7 @@ _4 marzo 2024_
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg) - Se partecipi alla versione beta, assicurati che il tuo file `composer.json` abbia le seguenti caratteristiche a livello di radice: ` "minimum-stability": "beta"`. Aggiungi anche `composer require "magento/customers-connector: ^1.2.0"` per inviare i profili cliente dall&#39;istanza Commerce a SaaS.
-![Nuovo](../assets/new.svg) - Aggiunta della possibilità di [aggiungere attributi personalizzati](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nuovo](../assets/new.svg) - Aggiunta della possibilità di [aggiungere attributi personalizzati](custom-attributes.md).
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [raccogliere e inviare record del profilo](connect-data.md#send-customer-profile-data) e dati ad Experience Platform.
 
 ## 3.1.0.

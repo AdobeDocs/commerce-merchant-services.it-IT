@@ -4,9 +4,9 @@ description: Scopri come creare schemi, set di dati e flussi di dati per raccogl
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ In questa sezione imparerai ad aggiornare lo schema esistente o a creare uno sch
 Con gli schemi, i set di dati e i flussi di dati configurati per i dati comportamentali e di back office, puoi [configurare](connect-data.md#data-collection) l&#39;istanza Commerce per raccogliere e inviare tali dati all&#39;Experience Platform.
 
 Per includere le informazioni sul profilo dell&#39;acquirente, vedere [dati evento profilo serie temporale](#time-series-profile-event-data).
-
-### Aggiungere attributi personalizzati
-
-È possibile utilizzare gli attributi personalizzati se si desidera trasmettere dati evento back office personalizzati dall’istanza Commerce all’Experience Platform.
-
-Gli attributi personalizzati sono supportati a due livelli:
-
-- Livello dell’ordine
-- Livello articolo ordine
-
->[!NOTE]
->
->Adobe Commerce supporta attributi personalizzati con un tipo di dati stringa o matrice di stringhe.
-
-1. Aggiungere e abilitare un modulo aggiuntivo nell&#39;applicazione [!DNL Commerce]. Vedi il seguente [esempio](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-   È necessario modificare il codice di esempio per esporre attributi personalizzati aggiuntivi. L’implementazione varia in base alla posizione in cui sono memorizzati questi attributi e alla logica necessaria per estrarli.
-
-1. Estendi lo schema XDM esistente. Consulta la [guida](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) seguente per creare attributi personalizzati per i livelli di elementi Ordine e Ordine. Il campo ID tenant viene generato in modo dinamico, tuttavia la struttura del campo deve essere simile all’esempio fornito.
-
-   >[!IMPORTANT]
-   >
-   >Gli attributi personalizzati XDM devono corrispondere agli attributi inviati da [!DNL Commerce].
-
-1. Assicurati che lo stream di dati associato allo schema XDM sia lo stesso specificato nella scheda [Raccolta dati](connect-data.md#data-collection).
-
-1. Fare clic su **[!UICONTROL Save]** nella scheda **Raccolta dati** per recuperare gli attributi personalizzati specificati.
 
 ## Dati evento profilo serie temporali
 
