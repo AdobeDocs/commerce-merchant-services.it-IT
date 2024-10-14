@@ -3,7 +3,7 @@ title: Test in ambiente di staging
 description: Scopri come utilizzare  [!DNL Product Recommendations]  dall'ambiente di produzione nell'ambiente di staging a scopo di test.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Prima di implementare i consigli nell’ambiente di produzione, testa il servizio in un ambiente non di produzione per assicurarti che tutto funzioni come previsto.
 
-[!DNL Product Recommendations] restituiscono i prodotti in base a [dati sul comportamento dell&#39;acquirente](behavioral-data.md) raccolti dalla tua vetrina. In un ambiente non di produzione, tuttavia, è probabile che non siano presenti dati comportamentali provenienti dagli acquirenti. L&#39;unico tipo di consiglio che è possibile verificare senza dati comportamentali è `More like this`. Questo tipo di consiglio non richiede alcun dato di input, in quanto utilizza una corrispondenza diretta di somiglianza dei contenuti.
+[!DNL Product Recommendations] restituiscono i prodotti in base a [dati sul comportamento dell&#39;acquirente](events.md) raccolti dalla tua vetrina. In un ambiente non di produzione, tuttavia, è probabile che non siano presenti dati comportamentali provenienti dagli acquirenti. L&#39;unico tipo di consiglio che è possibile verificare senza dati comportamentali è `More like this`. Questo tipo di consiglio non richiede alcun dato di input, in quanto utilizza una corrispondenza diretta di somiglianza dei contenuti.
 
 I seguenti tipi di consigli richiedono dati comportamentali:
 

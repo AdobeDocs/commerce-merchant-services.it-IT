@@ -3,34 +3,25 @@ title: '[!DNL Live Search] eventi'
 description: Scopri come gli eventi raccolgono i dati per  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] eventi
 
-[!DNL Live Search] utilizza gli eventi per attivare gli algoritmi di ricerca, ad esempio &quot;Più visualizzati&quot; e &quot;Più visualizzati, visualizzati&quot;. Anche se gli utenti LUMA ottengono eventi pronti all’uso, headless e altre implementazioni personalizzate devono implementare gli eventi in base alle proprie esigenze.
+[!DNL Live Search] utilizza gli eventi per attivare gli algoritmi di ricerca, ad esempio &quot;Più visualizzati&quot; e &quot;Più visualizzati, visualizzati&quot;. Anche se il [tema Luma di esempio di Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) ottiene eventi pronti all&#39;uso, le implementazioni headless e personalizzate devono implementare eventi per le proprie esigenze.
 
-Poiché [!DNL Live Search] e [!DNL Product Recommendations] utilizzano lo stesso algoritmo di back-end, alcuni eventi sono condivisi da entrambi i servizi. Per compilare il dashboard di Recommendations sono necessari alcuni eventi di Product Recommendations.
+Questa tabella descrive gli eventi utilizzati da [!DNL Live Search] [strategie di classificazione](rules-add.md#intelligent-ranking).
 
-Questa tabella descrive gli eventi utilizzati dalle strategie [!DNL Live Search].
-
-| Strategia | Prodotti | Eventi | Pagina |
+| Strategia di classificazione | Eventi | Pagina |
 | --- | --- | --- | ---|
-| Articoli più visualizzati | Live Search<br>Registri prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Più acquistati | Live Search<br>Registri prodotti | visualizzazione pagina<br>estrazione completata | Carrello/Pagamento |
-| Più aggiunti al carrello | Live Search<br>Registri prodotti | visualizzazione pagina<br>aggiungi al carrello | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
-| Ha visualizzato questo, ha visualizzato quello | Live Search<br>Registri prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Di tendenza | Live Search<br>Registri prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Ho visto questo, ho comprato quello | Registrazioni dei prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto<br>Carrello/Pagamento |
-| Ho comprato questo e quello | Registrazioni dei prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Conversione: Visualizza per acquisto | Registrazioni dei prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Conversione: Visualizza per acquisto | Registrazioni dei prodotti | visualizzazione pagina<br>estrazione completata | Carrello/Pagamento |
-| Conversione: Visualizza in carrello | Registrazioni dei prodotti | visualizzazione pagina<br>visualizzazione prodotto | Pagina dettagli prodotto |
-| Conversione: Visualizza in carrello | Registrazioni dei prodotti | visualizzazione pagina<br>aggiungi al carrello | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
+| Articoli più visualizzati | `page-view`<br>`product-view` | Pagina dettagli prodotto |
+| Più acquistati | `page-view`<br>`complete-checkout` | Carrello/Pagamento |
+| Più aggiunti al carrello | `page-view`<br>`add-to-cart` | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
+| Ha visualizzato questo, ha visualizzato quello | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ Alcuni eventi sono necessari per popolare il [dashboard di Live Search](performa
 
 | Area del dashboard | Eventi | Unisci campo |
 | ------------------- | ------------- | ---------- |
-| Ricerche univoche | `page-view`, `search-request-sent`, | searchRequestId |
-| Nessuna ricerca di risultati | `page-view`, `search-request-sent`, | searchRequestId |
-| Percentuale risultati zero | `page-view`, `search-request-sent`, | searchRequestId |
-| Ricerche comuni | `page-view`, `search-request-sent`, | searchRequestId |
+| Ricerche univoche | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Nessuna ricerca di risultati | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Percentuale risultati zero | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Ricerche comuni | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Media posizione clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| Percentuale di click-through | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| Tasso di conversione | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| Percentuale di click-through | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| Tasso di conversione | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### Contesti richiesti
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Avvertenze
 
-Gli ad blocker e le impostazioni di privacy possono impedire l&#39;acquisizione degli eventi e causare la mancata generazione di rapporti per [metriche](workspace.md) relative a coinvolgimento e ricavi.
-
-Eventing non acquisisce ogni transazione che avviene sul sito del commerciante. L&#39;evento ha lo scopo di dare al mercante un&#39;idea generale degli eventi che stanno accadendo sul sito.
-
-Le implementazioni headless devono implementare l&#39;evento per alimentare il [dashboard di Product Recommendations](../product-recommendations/events.md).
+- Gli ad blocker e le impostazioni di privacy possono impedire l&#39;acquisizione degli eventi e causare la mancata generazione di rapporti per [metriche](performance.md) relative a coinvolgimento e ricavi. Inoltre, alcuni eventi potrebbero non essere inviati a causa di acquirenti che abbandonano la pagina o di problemi di rete.
+- Le implementazioni headless devono implementare eventi per potenziare il merchandising intelligente.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # [!DNL Product Recommendations] Workspace
 
 Nell&#39;area di lavoro [!DNL Product Recommendations] viene visualizzato un elenco di consigli configurati in precedenza con metriche che consentono di tenere traccia del successo di ogni consiglio. L’elenco può essere configurato per calcolare le metriche per l’ultimo giorno, settimana o mese. Puoi utilizzare le metriche per creare informazioni fruibili in base alla frequenza con cui viene visualizzata o cliccata un’unità di consigli, oppure per analizzare le prestazioni dei consigli.
+
+>[!INFO]
+>
+>Un&#39;unità di consigli è un widget che contiene il prodotto consigliato _elementi_.
 
 ![Area di lavoro Recommendations](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-adm
    - Ultimi 30 giorni
 
    I valori calcolati nelle colonne delle metriche cambiano per riflettere l’intervallo di date corrente.
+
+   >[!NOTE]
+   >
+   >Le metriche di consigli del prodotto sono ottimizzate per le vetrine di Luma. Se la vetrina non è basata su Luma, il modo in cui le metriche tengono traccia dei dati dipende dal modo in cui [implementa la raccolta di eventi](events.md).
 
 ## Mostra/nascondi colonne
 
@@ -95,12 +103,12 @@ Dalla pagina dei dettagli dei consigli, fai clic su **Crea**. Per ulteriori info
 | Stato | Lo stato del consiglio. Opzioni: Inattivo/Attivo/Bozza |
 | Creato | Data di creazione del consiglio. |
 | Ultima modifica | Data dell’ultima modifica apportata al consiglio. |
-| Impression | Il numero di volte in cui un’unità di consigli viene caricata e sottoposta a rendering su una pagina. Nella pagina viene eseguito il rendering di un’unità di consigli che si trova sotto la piega del riquadro di visualizzazione del browser, ma non viene visualizzata dall’acquirente. In questo caso, l’unità di cui è stato eseguito il rendering viene conteggiata come impression, ma una visualizzazione viene conteggiata solo se l’utente fa scorrere l’unità fino alla visualizzazione. |
-| vImpression | (Impression visualizzabili) Il numero di unità di consigli che registrano almeno una visualizzazione. |
-| Visualizzazioni | Il numero di unità di consigli visualizzate nella finestra della vista del browser del cliente. Questo evento può essere attivato più volte su una pagina. |
+| Impression | Il numero di volte in cui un’unità di consigli viene caricata e sottoposta a rendering su una pagina. Nella pagina viene eseguito il rendering di un’unità di consigli che si trova sotto la piega della finestra della vista del browser, anche se non viene visualizzata dall’acquirente. In questo caso, l’unità sottoposta a rendering viene conteggiata come un’impression, ma una visualizzazione viene conteggiata solo se il cliente fa scorrere l’unità verso la visualizzazione. |
+| vImpression | (Impression visualizzabili) Il numero di unità di consigli che registrano almeno una visualizzazione. Ad esempio, se l’unità di consigli ha due righe, ciascuna con due prodotti, e gli ultimi due prodotti non sono visibili dal cliente, ma i primi due lo sono, l’attività verrà comunque conteggiata come un’impression. |
+| Visualizzazioni | Il numero di unità di consigli visualizzate nella finestra della vista del browser del cliente. Se il cliente scorre la pagina verso l&#39;alto o verso il basso più volte, l&#39;evento si attiva più volte ogni volta che l&#39;unità è visualizzabile. |
 | Clic | Somma del numero di volte in cui un acquirente fa clic su un elemento nell&#39;unità di consigli e del numero di volte in cui fa clic sul pulsante **Aggiungi al carrello** nell&#39;unità di consigli |
 | Ricavi | I ricavi determinati dai consigli per l’intervallo di tempo corrente. |
 | Ricavi Lt | (Ricavi ciclo di vita) I ricavi del ciclo di vita generati da un consiglio. |
 | Visibilità | Percentuale di unità di consigli registrate per la visualizzazione. |
-| Ctr | (Percentuale di click-through) Percentuale di unit impression per il consiglio che registra un clic. |
-| vCtr | (Percentuale di click-through visualizzabile) Percentuale di impression visualizzabili per l’unità di consigli che registra un clic. |
+| Tasso di click-through | (Percentuale di click-through) Percentuale di unit impression per il consiglio che registra un clic. CTR conta tutte le impression anche se l&#39;unità non entra nella vista dell&#39;acquirente. Se l’unità di consigli non viene visualizzata, è improbabile che venga cliccata. Tuttavia, quelle impressioni non viste contano per il punteggio CTR e riducono la percentuale complessiva di CTR. |
+| vCTR | (Percentuale di click-through visualizzabile) misura i clic solo in base alle impression visualizzabili (consigli effettivamente visualizzati nella parte visibile dello schermo del cliente), fornendo un indicatore più preciso del coinvolgimento del cliente. |

@@ -2,9 +2,9 @@
 title: Sviluppo per amministratori Recommendations di prodotto
 description: Panoramica dell’architettura e delle funzioni di sviluppo di Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ Ad alto livello, i Recommendations di prodotto Commerce vengono distribuiti come
 ![Diagramma dell&#39;architettura dei consigli di prodotto](assets/arch-diag-sensei.svg)
 
 Una volta installati e configurati i moduli di consigli, la vetrina inizierà a raccogliere i dati comportamentali. Adobe Sensei elabora questi dati comportamentali insieme ai dati del catalogo e calcola le associazioni di prodotti utilizzate dal servizio Recommendations. A questo punto, il commerciante può creare, gestire e distribuire unità di consigli di prodotto nella vetrina direttamente dall’interfaccia utente di amministrazione.
-
-## Tipi di dati
-
-I Recommendations del prodotto richiedono i seguenti dati:
-
-- **Comportamento**: dati del coinvolgimento di un acquirente sul tuo sito, ad esempio visualizzazioni di prodotti, elementi aggiunti a un carrello e acquisti. Commerce e Adobe Sensei non raccolgono informazioni personali.
-
-- **Catalogo** - Metadati del prodotto come nome, prezzo, disponibilità e così via.
-
-Quando installi il modulo `magento/product-recommendations`, Adobe Sensei aggrega i dati comportamentali e di catalogo, creando Product Recommendations per ogni tipo di consiglio. Il servizio Product Recommendations distribuisce quindi tali consigli nella vetrina.
-
->[!NOTE]
->
->Per i prodotti configurabili, Product Recommendations utilizza l’immagine del prodotto principale nell’unità di consigli. Se per il prodotto configurabile non è stata specificata un’immagine, l’unità di consigli sarà vuota per quel prodotto specifico.
 
 ## Passaggi successivi
 

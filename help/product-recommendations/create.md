@@ -2,21 +2,25 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Crea nuovo consiglio
 
-Quando crei un consiglio, crei una _unità di consigli_ contenente il prodotto consigliato _elementi_.
+Quando crei un consiglio, crei una _unità di consigli_, o widget, che contiene il prodotto consigliato _elementi_.
 
 ![Unità consigli](assets/unit.png)
 _Unità consigli_
 
 Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dati](workspace.md) per misurare impression, visualizzazioni, clic e così via. La tabella [!DNL Product Recommendations] visualizza le metriche per ogni unità di consigli per aiutarti a prendere decisioni aziendali informate.
+
+>[!NOTE]
+>
+>Le metriche di consigli del prodotto sono ottimizzate per le vetrine di Luma. Se la vetrina non è basata su Luma, il modo in cui le metriche tengono traccia dei dati dipende dal modo in cui [implementa la raccolta di eventi](events.md).
 
 1. Nella barra laterale _Amministratore_, vai a **Marketing** > _Promozioni_ > **Product Recommendations** per visualizzare l&#39;area di lavoro _Product Recommendations_.
 
@@ -83,7 +87,7 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 Gli indicatori di preparazione mostrano quali tipi di consigli funzioneranno meglio in base ai dati di catalogo e comportamentali disponibili. Puoi inoltre utilizzare gli indicatori di preparazione per determinare se si sono verificati problemi con l&#39;[evento](events.md) o se non si dispone di abbastanza traffico per popolare il tipo di consiglio.
 
-Gli indicatori di preparazione sono classificati in [static-based](#static-based) o [dynamic-based](#dynamic-based). Solo dati del catalogo di utilizzo basati su statici; mentre dati comportamentali di utilizzo basati su dinamiche provenienti dai tuoi acquirenti. Questi dati comportamentali vengono utilizzati per [addestrare modelli di apprendimento automatico](behavioral-data.md) per creare consigli personalizzati e calcolare il loro punteggio di preparazione.
+Gli indicatori di preparazione sono classificati in [static-based](#static-based) o [dynamic-based](#dynamic-based). Solo dati del catalogo di utilizzo basati su statici; mentre dati comportamentali di utilizzo basati su dinamiche provenienti dai tuoi acquirenti. Questi dati comportamentali vengono utilizzati per [addestrare modelli di apprendimento automatico](events.md) per creare consigli personalizzati e calcolare il loro punteggio di preparazione.
 
 ### Calcolo degli indicatori di preparazione
 
@@ -95,7 +99,7 @@ In seguito a queste variabili, la percentuale dell’indicatore di prontezza pu�
 
 Gli indicatori di preparazione sono calcolati in base a due fattori:
 
-* Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono stati restituiti risultati sufficienti per evitare di utilizzare [consigli di backup](behavioral-data.md#backuprecs)?
+* Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono stati restituiti risultati sufficienti per evitare di utilizzare [consigli di backup](events.md#backuprecs)?
 
 * Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
 
@@ -103,7 +107,7 @@ In base ai fattori di cui sopra, un valore di fattibilità viene calcolato e vis
 
 * Il 75% o più significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno altamente pertinenti.
 * Almeno il 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno meno pertinenti.
-* Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](behavioral-data.md#backuprecs).
+* Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](events.md#backuprecs).
 
 Ulteriori informazioni su [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ La percentuale dell’indicatore di preparazione per i tipi di consigli che dipe
 
 #### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
 
-Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](behavioral-data.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
+Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](events.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
 
 Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa prontezza comuni:
 
@@ -175,7 +179,7 @@ Per testare un consiglio quando si lavora in un ambiente non di produzione, è p
 | Nome | Il nome del prodotto. |
 | SKU | Unità di stoccaggio assegnata al prodotto |
 | Prezzo | Il prezzo del prodotto. |
-| Tipo di risultato | Principale: indica che sono stati raccolti dati di formazione sufficienti per visualizzare un consiglio.<br />Backup: indica che i dati di formazione raccolti non sono sufficienti, pertanto per riempire lo slot viene utilizzato un consiglio di backup. Vai a [Dati comportamentali](behavioral-data.md) per ulteriori informazioni sui modelli di apprendimento automatico e sui consigli di backup. |
+| Tipo di risultato | Principale: indica che sono stati raccolti dati di formazione sufficienti per visualizzare un consiglio.<br />Backup: indica che i dati di formazione raccolti non sono sufficienti, pertanto per riempire lo slot viene utilizzato un consiglio di backup. Vai a [Dati comportamentali](events.md) per ulteriori informazioni sui modelli di apprendimento automatico e sui consigli di backup. |
 
 Quando crei la tua unità di consigli, prova con il tipo di pagina, il tipo di consiglio e i filtri per ottenere un feedback in tempo reale e immediato sui prodotti che verranno inclusi. Quando inizi a capire quali prodotti vengono visualizzati, puoi configurare l’unità di consigli in base alle tue esigenze aziendali.
 

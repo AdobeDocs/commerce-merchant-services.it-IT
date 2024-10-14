@@ -2,9 +2,9 @@
 title: Flusso di lavoro di implementazione
 description: Scopri i passaggi per implementare correttamente [!DNL Product Recommendations] sulla vetrina.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Quando installi `magento/product-recommendations module`, Adobe Sensei aggrega i
 
 1. **Distribuisci raccolta dati in produzione**
 
-   La distribuzione di [!DNL Product Recommendations] richiede due [origini dati principali](type.md): catalogo e comportamento. Poiché la produzione è l’unico ambiente in cui le azioni degli acquirenti vengono acquisite e analizzate, è nel tuo interesse iniziare la raccolta dei dati sulla produzione il prima possibile. [Scopri](behavioral-data.md) come Adobe Sensei addestra modelli di apprendimento automatico che offrono consigli di qualità superiore. Inoltre, quando inizi a raccogliere dati comportamentali in produzione, puoi [recuperare consigli](verify.md) in base a questi dati di produzione mentre operi in ambienti non di produzione. Puoi quindi testare e sperimentare diversi consigli calcolati in base ai dati reali dell’acquirente raccolti in produzione.
+   La distribuzione di [!DNL Product Recommendations] richiede due [origini dati principali](type.md): catalogo e comportamento. Poiché la produzione è l’unico ambiente in cui le azioni degli acquirenti vengono acquisite e analizzate, inizia la raccolta dei dati sulla produzione il prima possibile. [Scopri](events.md) come Adobe Sensei addestra modelli di apprendimento automatico che offrono consigli di qualità superiore. Inoltre, quando inizi a raccogliere dati comportamentali in produzione, puoi [recuperare consigli](verify.md) in base a questi dati di produzione mentre operi in ambienti non di produzione. Puoi quindi testare e sperimentare diversi consigli calcolati in base ai dati reali dell’acquirente raccolti in produzione.
 
    Per distribuire la raccolta dati in produzione, è necessario [installare e configurare](install-configure.md) il modulo [!DNL Product Recommendations] fornendo una [chiave API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
