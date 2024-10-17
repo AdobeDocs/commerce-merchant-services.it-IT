@@ -3,7 +3,7 @@ title: Raccogli dati
 description: Scopri come gli eventi raccolgono i dati per i consigli di prodotto.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ In caso di raccolta dati di input insufficiente, i seguenti tipi di consigli ese
 L&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) elenca tutti gli eventi distribuiti nella vetrina. Da tale elenco, tuttavia, è disponibile un sottoinsieme di eventi specifici per Product Recommendations. Questi eventi raccolgono dati quando gli acquirenti interagiscono con le unità di consigli sulla vetrina e alimentano le metriche utilizzate per aiutarti ad analizzare le prestazioni dei consigli.
 
 | Evento | Descrizione |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Inviato quando viene eseguito il rendering dell’unità di consigli sulla pagina. Se una pagina ha due unità di consigli (acquistate, visualizzate), vengono inviati due eventi `impression-render`. Questo evento viene utilizzato per tenere traccia della metrica delle impression. |
 | `rec-add-to-cart-click` | L&#39;acquirente fa clic sul pulsante **Aggiungi al carrello** per un elemento nell&#39;unità di consigli. |
 | `rec-click` | L’acquirente fa clic su un prodotto nell’unità di consigli. |
@@ -113,7 +113,7 @@ I seguenti eventi non sono specifici di Product Recommendations, ma sono necessa
 Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 | Tipo di consiglio | Eventi | Pagina |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Articoli più visualizzati | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 | Più acquistati | `page-view`<br>`complete-checkout` | Carrello/Pagamento |
 | Più aggiunti al carrello | `page-view`<br>`add-to-cart` | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
