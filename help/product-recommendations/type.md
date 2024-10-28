@@ -2,9 +2,9 @@
 title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
+source-git-commit: 60e75d626f142002e327b96062bacd5d2e686df2
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ Come best practice, l’Adobe consiglia le seguenti linee guida nell’utilizzo 
 
 - Se il tuo negozio vende vestiti, il consiglio `More like this` può suggerire prodotti specifici per genere che non corrispondono al genere del prodotto visualizzato. Prendi in considerazione l’utilizzo di questo tipo di consigli solo per categorie non di abbigliamento.
 
+>[!NOTE]
+>
+>Per ulteriori informazioni sugli eventi descritti in questo articolo, vedi [eventi](events.md).
+
 ## Personalizzato {#personalized}
 
-Questi tipi di consigli consigliano prodotti in base alla cronologia comportamentale dell’acquirente specifica sul tuo sito.
+Questi tipi di consigli consigliano prodotti in base alla cronologia comportamentale dell’acquirente specifica sul tuo sito. Ad esempio, se un acquirente cerca una giacca in precedenza o ne ha acquistata una sul tuo sito, questi consigli in pratica rilevano da dove hanno lasciato e consigliano altre giacche o prodotti simili.
 
 | Tipo | Descrizione |
 |---|---|
@@ -39,18 +43,18 @@ Questi tipi di consigli consigliano prodotti in base alla cronologia comportamen
 
 ## Cross-selling e up-sell {#crossup}
 
-Questi tipi di consigli sono orientati alla protezione dai social network per aiutare gli acquirenti a trovare ciò che piace ad altri o i prodotti per aiutarli a trovare altri prodotti simili
+Questi tipi di consigli sono orientati alla social-proof per aiutare gli acquirenti a trovare ciò che piace ad altri o orientati ai prodotti per aiutarli a trovare altri prodotti simili. I prodotti consigliati spesso integrano il prodotto selezionato.
 
 >[!NOTE]
 >
->I tipi di consigli &quot;visualizzato questo, visualizzato quello&quot;, &quot;visualizzato questo, acquistato quello&quot; e &quot;comprato questo, comprato che&quot; non sono basati su una metrica di occorrenza semplice, ma piuttosto su un algoritmo di machine learning più sofisticato per il filtraggio collaborativo che cerca *somiglianze interessanti* che non sono sbilanciati verso i prodotti più popolari.
+>I tipi di consigli &quot;visualizzato questo, visualizzato quello&quot;, &quot;visualizzato questo, acquistato quello&quot; e &quot;comprato questo, comprato che&quot; non utilizzano una metrica di occorrenza semplice, ma piuttosto un algoritmo di filtro collaborativo più sofisticato che cerca *somiglianze interessanti* che non sono distorti verso i prodotti più popolari. I dati utilizzati per informare questi tipi di consigli si basano sul comportamento aggregato dell’acquirente derivante da più sessioni sul sito. I dati non si basano sul comportamento dell’acquirente derivato da una singola occorrenza nella sessione sul sito. Questi tipi di consigli aiutano gli acquirenti a trovare i prodotti adiacenti che potrebbero non essere evidenti da abbinare al prodotto attualmente visualizzato.
 
 | Tipo | Descrizione |
 |---|---|
 | Ha visualizzato questo, ha visualizzato quello | Consiglia i prodotti che gli acquirenti visualizzano con maggiore frequenza rispetto al prodotto attualmente visualizzato.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Sono stati visualizzati anche i clienti che hanno visualizzato il prodotto (PDP) |
-| Ho visto questo, ho comprato quello | Consiglia i prodotti che gli acquirenti tendono ad acquistare in modo sproporzionato più spesso dopo aver visualizzato il prodotto corrente. Aiuta gli acquirenti a scoprire prodotti che altrimenti non avrebbero notato.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette suggerite:**<br/>- Clienti che hanno visualizzato questo acquisto finale<br/>- Clienti che hanno acquistato<br/>- Cosa acquistano gli altri dopo aver visualizzato questo prodotto? |
-| Ho comprato questo e quello | Consiglia i prodotti che gli acquirenti acquistano con maggiore frequenza rispetto al prodotto attualmente visualizzato. Visualizza prodotti di grande rilevanza che gli acquirenti possono aggiungere al carrello aggregando ciò che altri acquirenti hanno acquistato con il prodotto corrente.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Ottieni tutto il necessario<br/>- Non dimenticare queste<br/>- Spesso acquistate insieme |
-| Altri argomenti correlati | Consiglia prodotti basati su metadati simili, ad esempio nome, descrizione, assegnazione di categorie e attributi. Valutando gli attributi dei prodotti visualizzati, consiglia prodotti simili nella stessa categoria. Ad esempio, se un acquirente sta navigando tra i tappetini da yoga, si consigliano altri prodotti nella categoria attrezzatura. Poiché questo tipo di consiglio non distingue i sessi, non è consigliato per abbigliamento, moda o altri verticali specifici per genere.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Altri prodotti come questo<br/>- Simile a questo |
+| Ho visto questo, ho comprato quello | Consiglia i prodotti che gli acquirenti tendono ad acquistare in modo sproporzionato più spesso dopo aver visualizzato il prodotto corrente. Questo tipo aiuta a guidare gli acquirenti a scoprire prodotti che altrimenti potrebbero non aver notato.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette suggerite:**<br/>- Clienti che hanno visualizzato questo acquisto finale<br/>- Clienti che hanno acquistato<br/>- Cosa acquistano gli altri dopo aver visualizzato questo prodotto? |
+| Ho comprato questo e quello | Consiglia i prodotti che gli acquirenti acquistano con maggiore frequenza rispetto al prodotto attualmente visualizzato. Questo tipo mostra prodotti molto rilevanti che gli acquirenti possono aggiungere al carrello aggregando ciò che altri acquirenti hanno acquistato con il prodotto corrente.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Ottieni tutto il necessario<br/>- Non dimenticare queste<br/>- Spesso acquistate insieme |
+| Altri argomenti correlati | Consiglia prodotti basati su metadati simili, ad esempio nome, descrizione, assegnazione di categorie e attributi. Valutando gli attributi dei prodotti visualizzati, questo tipo consiglia prodotti simili nella stessa categoria. Ad esempio, se un acquirente sta navigando tra i tappetini da yoga, si consigliano altri prodotti nella categoria attrezzatura. Poiché questo tipo di consiglio non distingue i sessi, non è consigliato per abbigliamento, moda o altri verticali specifici per genere.<br/><br/>**Dove usato:**<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Altri prodotti come questo<br/>- Simile a questo |
 | [Somiglianza visiva](#visualsim) | Consiglia prodotti dall’aspetto simile al prodotto visualizzato. Questo tipo di consiglio è più utile se le immagini e gli aspetti visivi dei prodotti sono importanti per l’esperienza di acquisto. |
 
 ## Popolarità {#popularity}
