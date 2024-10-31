@@ -4,16 +4,16 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Alcune funzionalità di Adobe Commerce e Magento Open Source sono basate su [!DNL Commerce Services] e distribuite come SaaS (software as a service). Per utilizzare questi servizi, è necessario connettere l&#39;istanza [!DNL Commerce] utilizzando le chiavi API di produzione e sandbox e specificare lo spazio dati nella [configurazione](#saas-configuration). È sufficiente configurare la connessione una sola volta per ogni istanza di Commerce.
+Alcune funzionalità di Adobe Commerce e Magento Open Source sono basate su [!DNL Commerce Services] e distribuite come SaaS (software as a service). Per utilizzare questi servizi, è necessario connettere l&#39;istanza [!DNL Commerce] utilizzando le chiavi API di produzione e sandbox e specificare lo spazio dati nella [configurazione](#saas-configuration). È sufficiente configurare la connessione una sola volta per ogni istanza.
 
 ## Servizi disponibili {#availableservices}
 
@@ -45,6 +45,7 @@ Le chiavi possono essere condivise in base alla necessità di sapere con l&#39;i
 Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL Commerce Services]. Se sei un integratore di soluzioni, il firmatario del contratto partner [!DNL Commerce] deve generare le chiavi API.
 
 >[!NOTE]
+>Gli identificatori chiave *Produzione* e *Sandbox* non fanno riferimento al tuo ambiente. Utilizza lo stesso set di chiavi API per ogni ambiente, ad esempio locale, di sviluppo, di staging o di produzione.
 >
 >Il proprietario della licenza è in genere il contatto principale sull’account Adobe Commerce e non è sempre lo stesso del proprietario del progetto di infrastruttura cloud Adobe Commerce on.
 
@@ -68,7 +69,7 @@ Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL 
 
 1. Ripeti i passaggi precedenti per ogni ambiente (produzione e sandbox).
 
-   Nella sezione **Chiavi API** sono ora visualizzate le chiavi API (pubbliche). Quando si [seleziona o si crea un progetto SaaS](#createsaasenv), sono necessarie sia le chiavi di produzione che quelle di sandbox (pubblico+privato).
+   Nella sezione **Chiavi API** sono ora visualizzate le chiavi API (pubbliche). Sono necessarie tutte e quattro le chiavi (sia quelle di produzione che quelle di sandbox, Public+Private) quando si [seleziona o si crea un progetto SaaS](#createsaasenv) in uno qualsiasi degli ambienti/installazioni associati alla licenza.
 
 ## Configurazione SaaS {#saasenv}
 
@@ -78,7 +79,7 @@ Per [!DNL Product Recommendations], lo spazio dati SaaS contiene dati di catalog
 
 >[!WARNING]
 >
-> Utilizzare lo spazio dati SaaS di produzione solo nell&#39;installazione di [!DNL Commerce] di produzione per evitare conflitti di dati. In caso contrario, si rischia di inquinare i dati del sito di produzione con i dati di test, causando ritardi nell’implementazione. Ad esempio, i dati del prodotto di produzione potrebbero essere erroneamente sovrascritti dai dati di staging, come gli URL di staging.
+> Utilizza lo spazio dati **SaaS di produzione** solo nell&#39;installazione di [!DNL Commerce] di produzione per evitare conflitti di dati. In caso contrario, si rischia di inquinare i dati del sito di produzione con i dati di test, causando ritardi nell’implementazione. Ad esempio, i dati del prodotto di produzione potrebbero essere erroneamente sovrascritti dai dati di staging, come gli URL di staging.
 > In questo caso, [invia una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) per richiedere la pulizia dei dati.
 
 ### Provisioning dello spazio dati SaaS
