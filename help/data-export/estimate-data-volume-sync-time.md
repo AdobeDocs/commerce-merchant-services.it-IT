@@ -3,23 +3,23 @@ title: Stima del volume dei dati e del tempo di trasmissione
 description: Scopri come stimare il volume di dati e il tempo di trasmissione necessari affinché lo strumento  [!DNL data export]  sincronizzi i dati dei feed tra Adobe Commerce e i servizi connessi.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
 # Stimare il volume dei dati e il tempo di trasmissione per la sincronizzazione dei dati
 
-L’Adobe consiglia di stimare il volume dei dati e il tempo di sincronizzazione prima di avviare qualsiasi sincronizzazione dei feed di dati per garantire una pianificazione fluida ed evitare interruzioni nelle operazioni del sito. Questa stima è importante quando si pianificano sincronizzazioni iniziali o aggiornamenti di cataloghi su larga scala, ad esempio le variazioni dei prezzi di massa.
+Adobe consiglia di stimare il volume dei dati e il tempo di sincronizzazione prima di avviare qualsiasi sincronizzazione dei feed di dati per garantire una pianificazione fluida ed evitare interruzioni nelle operazioni del sito. Questa stima è importante quando si pianificano sincronizzazioni iniziali o aggiornamenti di cataloghi su larga scala, ad esempio le variazioni dei prezzi di massa.
 
-Per impostazione predefinita, lo strumento di esportazione dei dati elabora i dati in modalità a thread singolo con una dimensione batch predefinita. Con la configurazione predefinita, non esiste alcuna parallelizzazione del processo di invio dei feed. Inoltre, il criterio di limitazione predefinito consente ad Adobe Commerce di accettare due richieste al secondo (RPS), il che si traduce nel seguente:
+Per impostazione predefinita, lo strumento di esportazione dei dati elabora i dati in modalità a thread singolo con una dimensione batch predefinita. Con la configurazione predefinita, non esiste alcuna parallelizzazione del processo di invio dei feed. Questo componente accetta anche le richieste al secondo (RPS), il che si traduce nel modo seguente:
 
 - Fino a 10.000 prodotti al minuto in cui un prodotto è una SKU con attributi in una visualizzazione dello store specifica
 - Fino a 50.000 prezzi al minuto
 
-In base alla configurazione predefinita, i seguenti fattori influiscono sul tempo di trasmissione dei dati durante la sincronizzazione.
+I seguenti fattori influiscono sul tempo di trasmissione dei dati durante la sincronizzazione.
 
 - Il conteggio dei thread è impostato su 1 (per impostazione predefinita)
 - La dimensione del batch è impostata su _100_ per tutti i feed ad eccezione del feed `prices`, dove è impostata su _500_.
@@ -27,9 +27,6 @@ In base alla configurazione predefinita, i seguenti fattori influiscono sul temp
 - Tutti i prodotti vengono assegnati a tutti i siti Web esistenti
 - Per gli scenari di calcolo dei prezzi, a tutti i prodotti vengono assegnati prezzi speciali e raggruppati
 
->[!NOTE]
->
->Se necessario, il limite dei criteri di limitazione può essere aumentato in base a un&#39;analisi dell&#39;impatto sulle prestazioni. Per assistenza, contatta il tuo Technical Account Manager (TAM) o invia un ticket di supporto.
 
 ## Calcolare la trasmissione dei dati per feed
 
