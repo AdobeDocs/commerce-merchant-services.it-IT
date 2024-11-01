@@ -4,7 +4,7 @@ description: Utilizzare il rapporto Transazioni per ottenere visibilità sui tas
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ I rapporti sulle transazioni includono le seguenti informazioni.
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine Commerce (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare le [informazioni sull&#39;ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine Commerce (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare le [informazioni sull&#39;ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
 | [!UICONTROL PayPal Transaction ID] | ID transazione fornito dal provider dei pagamenti; contiene solo valori per le transazioni riuscite e un trattino per le transazioni rifiutate. Puoi fare clic su questo ID per accedere alla pagina dei dettagli della transazione PayPal. |
 | [!UICONTROL Customer ID] | ID cliente Commerce di un ordine<br> <br>Per ulteriori informazioni, vedere l&#39;argomento [Informazioni cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
 | [!UICONTROL Transaction Date] | Timestamp data transazione |

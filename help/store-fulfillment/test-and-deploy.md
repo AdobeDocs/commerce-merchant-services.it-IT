@@ -5,7 +5,7 @@ role: User, Admin
 level: Intermediate
 feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2661'
 ht-degree: 0%
@@ -645,4 +645,4 @@ L’implementazione e i test variano a seconda dell’infrastruttura e delle fun
 
 >[!TIP]
 >
->Per le linee guida per la distribuzione, gli elenchi di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuire l&#39;archivio](https://devdocs.magento.com/cloud/live/stage-prod-live.html) nella documentazione per sviluppatori di Adobe Commerce.
+>Per le linee guida per la distribuzione, gli elenchi di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuire l&#39;archivio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) nella documentazione per sviluppatori di Adobe Commerce.

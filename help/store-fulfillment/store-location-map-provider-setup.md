@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Impostazione della posizione del negozio e della mappatura
 
-Abilitare le funzionalità di mappatura e posizione del negozio per il completamento del negozio configurando un provider di [distanza](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) per la ricerca di posizioni del negozio al dettaglio.
+Abilitare le funzionalità di mappatura e posizione del negozio per il completamento del negozio configurando un provider di [distanza](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) per la ricerca di posizioni del negozio al dettaglio.
 
 **Requisiti**
 
-Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. In caso contrario, [generarne uno dalla piattaforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. In caso contrario, [generarne uno dalla piattaforma Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Per configurare il provider di distanze:
 

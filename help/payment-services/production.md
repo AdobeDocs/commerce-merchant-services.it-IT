@@ -3,7 +3,7 @@ title: Abilita  [!DNL Payment Services]  per la produzione
 description: Completa il processo di onboarding abilitando  [!DNL Payment Services]  per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Dopo aver [configurato i servizi Commerce](connect.md#configure-commerce-service
 
    Questa opzione è visibile se non hai ancora configurato [!DNL Payment Services] come metodo di pagamento per uno o più siti Web.
 
-   Si viene indirizzati all&#39;area delle impostazioni nella visualizzazione Home con le opzioni pertinenti espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare le opzioni [!DNL Payment Services] come [metodo di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Si viene indirizzati all&#39;area delle impostazioni nella visualizzazione Home con le opzioni pertinenti espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare le opzioni [!DNL Payment Services] come [metodo di pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, impostare **[!UICONTROL Enable]**su `Yes`.
 1. Impostare **[!UICONTROL Payment Action]**, sia per _[!UICONTROL Credit Card Fields]_che per_[!UICONTROL PayPal payment buttons]_, su una delle opzioni seguenti:
@@ -121,7 +121,7 @@ Dopo aver selezionato il paese:
 
 ## Richiedi diritti pagamenti da Adobe
 
-Per abilitare la pubblicazione dei tuoi store, richiedi pagamenti a Adobe (solo per [onboarding avanzato](#advanced-onboarding)):
+Per abilitare la pubblicazione dei tuoi store, richiedi pagamenti a Adobe (solo per [l&#39;onboarding avanzato](#advanced-onboarding)):
 
 1. Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Fai clic su **[!UICONTROL Get Live Payments]** nella Home di [!DNL Payment Services].
@@ -131,7 +131,7 @@ Per abilitare la pubblicazione dei tuoi store, richiedi pagamenti a Adobe (solo 
 1. Compila il modulo.
 1. Un membro del team vendite ti contatterà.
 
-In alternativa, puoi richiedere i pagamenti per l&#39;adesione da Adobe all&#39;indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+In alternativa, puoi richiedere i pagamenti spettanti da Adobe all&#39;indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -157,7 +157,7 @@ Abilita pagamenti live:
 1. Nella Home, fare clic su **[!UICONTROL Settings]** in alto a destra della pagina. Per ulteriori informazioni, vedere [Home](payments-home.md).
 1. Nella sezione _[!UICONTROL General Configuration]_impostare **[!UICONTROL Payment mode]**su `Production`.
 1. Fare clic su **[!UICONTROL Save]**.
-1. [Cancella la cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Cancella la cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

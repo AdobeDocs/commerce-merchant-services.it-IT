@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Gestione magazzino prodotto
 
-In qualità di commerciante, puoi utilizzare le opzioni di azioni e origini di Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html). È inoltre possibile utilizzare la soluzione di evasione del punto vendita per controllare altre opzioni di disponibilità del magazzino correlate alle operazioni del punto vendita esercente.
+In qualità di commerciante, puoi utilizzare le opzioni di azioni e origini di Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). È inoltre possibile utilizzare la soluzione di evasione del punto vendita per controllare altre opzioni di disponibilità del magazzino correlate alle operazioni del punto vendita esercente.
 
 - Opzione di consegna a domicilio da negozi mercantili
 

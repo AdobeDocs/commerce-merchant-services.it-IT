@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ La soluzione [!DNL Store Fulfillment] utilizza Adobe Commerce Inventory manageme
 
 Queste modifiche alla configurazione consentono di eseguire tre operazioni:
 
-1. [Trasferisci scorte all&#39;origine](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) per spostare le scorte dall&#39;origine/scorta predefinita alla nuova origine/scorta.
+1. [Trasferisci scorte all&#39;origine](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) per spostare le scorte dall&#39;origine/scorta predefinita alla nuova origine/scorta.
 
-1. [Assegna in blocco le origini](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) per aggiungere nuove origini per tutti i prodotti.
+1. [Assegna in blocco le origini](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) per aggiungere nuove origini per tutti i prodotti.
 
-1. [Completare gli aggiornamenti in blocco per gli attributi del prodotto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) per aggiungere gli attributi `Allow Store Pickup` e `Allow Home Delivery` ai prodotti esistenti. Al momento dell&#39;installazione della soluzione, gli attributi hanno i valori *default* ottimali. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non si completa il processo di updaContes in blocco.
+1. [Completare gli aggiornamenti in blocco per gli attributi del prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) per aggiungere gli attributi `Allow Store Pickup` e `Allow Home Delivery` ai prodotti esistenti. Al momento dell&#39;installazione della soluzione, gli attributi hanno i valori *default* ottimali. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non si completa il processo di updaContes in blocco.
 
-L&#39;inventario viene detratto dall&#39;origine selezionata (ubicazione negozio al dettaglio o magazzino di e-commerce). Le origini utilizzate come magazzini di e-commerce devono essere assegnate alla stessa scorta del luogo di prelievo del negozio e prioritarie prima delle posizioni di vendita al dettaglio. Per ulteriori informazioni, vedere [Assegnazione di priorità alle origini per un Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+L&#39;inventario viene detratto dall&#39;origine selezionata (ubicazione negozio al dettaglio o magazzino di e-commerce). Le origini utilizzate come magazzini di e-commerce devono essere assegnate alla stessa scorta del luogo di prelievo del negozio e prioritarie prima delle posizioni di vendita al dettaglio. Per ulteriori informazioni, vedere [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Per ulteriori informazioni sulla gestione di inventario, scorte e origini, consulta la documentazione utente di Adobe Commerce:
 
-- [Gestione dell&#39;inventario](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Gestione dell&#39;inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Gestione delle quantità di magazzino](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Gestione delle quantità di magazzino](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Gestione Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Gestione Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Gestione delle origini](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Gestione delle origini](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Assegnazione di priorità alle origini per un Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Aggiornamenti in blocco per attributi prodotto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Aggiornamenti in blocco per attributi prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

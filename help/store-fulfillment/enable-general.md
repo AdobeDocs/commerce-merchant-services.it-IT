@@ -4,7 +4,7 @@ description: Configura le impostazioni generali per abilitare  [!DNL Store Fulfi
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ Configurare queste impostazioni dall&#39;amministratore selezionando <strong>[!U
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) nella _Guida utente di Adobe Commerce_.
+>Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) nella _Guida utente di Adobe Commerce_.
 
 
 ### Configurazione dei metodi di consegna

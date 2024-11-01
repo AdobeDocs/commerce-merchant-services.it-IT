@@ -4,7 +4,7 @@ description: Verifica i requisiti di sicurezza e conformità per il sito.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,13 +19,13 @@ La sicurezza è la preoccupazione principale di [!DNL Payment Services] e non ve
 
 [!DNL Adobe Commerce] e [!DNL Magento Open Source] includono il supporto per diverse funzionalità di sicurezza.
 
-Consulta [Sicurezza](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} nella guida utente di base per rivedere le best practice sulla sicurezza e scoprire come gestire le sessioni e le credenziali dell&#39;amministratore, implementare CAPTCHA e gestire le restrizioni per i siti Web.
+Consulta [Sicurezza](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} nella guida utente di base per rivedere le best practice sulla sicurezza e scoprire come gestire le sessioni e le credenziali dell&#39;amministratore, implementare CAPTCHA e gestire le restrizioni per i siti Web.
 
 ## Conformità PCI
 
 Il settore delle carte di pagamento (Payment Card Industry, PCI) ha stabilito una serie di requisiti per le imprese che accettano il pagamento tramite carta di credito su Internet. Oltre a mantenere un ambiente sicuro, i commercianti che gestiscono le informazioni della carta di credito del cliente sono responsabili del rispetto di alcune linee guida standard.
 
-Per ulteriori informazioni, vedere [Linee guida per la conformità PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"}.
+Per ulteriori informazioni, vedere [Linee guida per la conformità PCI](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
 
 Gli esercenti possono completare un [questionario di autovalutazione (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, che è uno strumento di auto-convalida per valutare la sicurezza dei dati dei titolari di carta.
 

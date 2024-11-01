@@ -4,7 +4,7 @@ description: Installare l'estensione Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Prima di installare l&#39;estensione da [Commerce Marketplace](https://experienc
 
 Composer utilizza queste chiavi durante l&#39;installazione iniziale di [!DNL Adobe Commerce] o in situazioni in cui le chiavi del Composer non sono state salvate in precedenza nel file `auth.json`.
 
-Per ulteriori informazioni su come ottenere le chiavi del Compositore, vedere [Ottieni le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+Per ulteriori informazioni su come ottenere le chiavi del Compositore, vedere [Ottieni le chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
-Per ulteriori informazioni su cosa considerare prima di scaricare e installare un&#39;estensione, vedere [Installare un&#39;estensione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html).
+Per ulteriori informazioni su cosa considerare prima di scaricare e installare un&#39;estensione, vedere [Installare un&#39;estensione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### [!DNL Adobe Commerce] sull&#39;infrastruttura cloud
 
@@ -155,7 +155,7 @@ Per vedere quali chiavi del Compositore sono configurate:
    cat /path/to/auth.json
    ```
 
-1. Consulta [quali chiavi sono associate al tuo account Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Consulta [quali chiavi sono associate al tuo account Commerce `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
 ### Memoria insufficiente per PHP
 
@@ -165,7 +165,7 @@ Se viene visualizzato il seguente errore che indica che non si dispone di memori
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Aumentare il limite di memoria](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) per PHP nell&#39;ambiente in `php.ini`.
+[Aumentare il limite di memoria](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) per PHP nell&#39;ambiente in `php.ini`.
 
 In alternativa, è possibile specificare il limite di memoria utilizzando questo comando: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

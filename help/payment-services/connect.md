@@ -3,7 +3,7 @@ title: Connetti l’istanza
 description: Connetti la tua istanza di Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio di dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## Ottenere le credenziali API
 
-Per utilizzare un servizio SaaS di Commerce, è necessario utilizzare le chiavi API dell&#39;istanza (chiave API pubblica di Commerce e chiave privata) sia per la sandbox che per la produzione, che vengono create e gestite nel [dashboard del mio account](https://account.magento.com/customer/account/login). [È possibile creare la coppia di chiavi](https://docs.magento.com/user-guide/configuration/services/saas.html) per un account Commerce, uno per sandbox e uno per la produzione, anche se è possibile utilizzare attivamente una sola coppia alla volta.
+Per utilizzare un servizio SaaS di Commerce, è necessario utilizzare le chiavi API dell&#39;istanza (chiave API pubblica di Commerce e chiave privata) sia per la sandbox che per la produzione, che vengono create e gestite nel [dashboard del mio account](https://account.magento.com/customer/account/login). [È possibile creare la coppia di chiavi](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) per un account Commerce, uno per sandbox e uno per la produzione, anche se è possibile utilizzare attivamente una sola coppia alla volta.
 
 >[!NOTE]
 >
->Hai bisogno di assistenza per accedere al tuo dashboard [!UICONTROL My Account]? Consulta [Creare un account Commerce](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Hai bisogno di assistenza per accedere al tuo dashboard [!UICONTROL My Account]? Consulta [Creare un account Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Una volta creata, una chiave API pubblica è sempre disponibile nella dashboard Il mio account. Può essere copiata o eliminata in base alle esigenze. La chiave API privata diventa visibile quando crei una chiave API pubblica per sandbox o produzione; è disponibile solo per la copia o il salvataggio dalla finestra di dialogo successiva e non è più accessibile in un secondo momento.
 
@@ -40,7 +40,7 @@ Una determinata coppia di chiavi API è valida per tutti i servizi Commerce in u
 
 Se la chiave API viene persa, una nuova coppia di chiavi API deve essere [generate](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) e [applicate](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) alla configurazione di Commerce Services Connector nell&#39;amministratore. Se nella configurazione sono configurate le chiavi errate o non ne esistono, in Payment Services viene visualizzata una finestra di dialogo di errore di verifica dell&#39;account che informa che l&#39;account non è stato verificato.
 
-Visualizza un elenco [dei servizi Commerce disponibili che utilizzano l&#39;API](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Visualizza un elenco [dei servizi Commerce disponibili che utilizzano l&#39;API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 Per informazioni su come generare una chiave API per ambienti sandbox o di produzione, consulta [Credenziali](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 

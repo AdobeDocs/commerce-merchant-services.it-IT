@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Accesso all&#39;archivio del software Store Fulfillment di Walmart Commerce Technologies (file .zip)**. Durante il processo di onboarding e abilitazione, rivolgiti al tuo Account Manager per accedere al file di installazione per l&#39;estensione Store Fulfillment.
 
-- **Informazioni account Adobe Commerce**-L&#39;installazione della soluzione [!DNL Store Fulfillment] richiede un account [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. È necessario disporre di un ID account e di credenziali con accesso proprietario o amministratore al progetto [!DNL Adobe Commerce].
+- **Informazioni account Adobe Commerce**-L&#39;installazione della soluzione [!DNL Store Fulfillment] richiede un account [[!DNL Commerce] account](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. È necessario disporre di un ID account e di credenziali con accesso proprietario o amministratore al progetto [!DNL Adobe Commerce].
 
-- Per [!DNL Adobe Commerce] su progetti di infrastruttura cloud, i programmi di installazione software devono avere accesso come amministratore al progetto Cloud. Consulta [Gestire l&#39;accesso utente](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Per [!DNL Adobe Commerce] su progetti di infrastruttura cloud, i programmi di installazione software devono avere accesso come amministratore al progetto Cloud. Consulta [Gestire l&#39;accesso utente](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Esperienza con Composer e[!DNL Commerce CLI]**. Per informazioni sull&#39;utilizzo di questi strumenti per installare e gestire le estensioni sulla piattaforma [!DNL Adobe Commerce], vedere [Installazione CLI generale](https://devdocs.magento.com/extensions/install/){target="_blank"}.
+- **Esperienza con Composer e[!DNL Commerce CLI]**. Per informazioni sull&#39;utilizzo di questi strumenti per installare e gestire le estensioni sulla piattaforma [!DNL Adobe Commerce], vedere [Installazione CLI generale](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}.
 
 - **Prova a installare estensioni di terze parti su Adobe Commerce**. Per maggiori informazioni, consulta la documentazione di Adobe Commerce.
 
-   - [Installa un&#39;estensione per un&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [Installa un&#39;estensione per un&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Installa un&#39;estensione per un&#39;istanza locale di Adobe Commerce](https://devdocs.magento.com/extensions/install/).
+   - [Installa un&#39;estensione per un&#39;istanza locale di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Passaggio 1: scaricare il bundle dell’estensione
 
@@ -135,7 +135,7 @@ Dal server Adobe Commerce, verifica che i moduli per l’estensione Store Fulfil
 
 1. Accedi al server.
 
-   Per le installazioni su Adobe Commerce nell&#39;infrastruttura cloud, [utilizza SSH per accedere all&#39;ambiente remoto](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Per le installazioni su Adobe Commerce nell&#39;infrastruttura cloud, [utilizza SSH per accedere all&#39;ambiente remoto](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Verificare che i moduli Servizi di evasione del punto vendita siano abilitati.
 

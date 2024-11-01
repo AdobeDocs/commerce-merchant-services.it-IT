@@ -3,7 +3,7 @@ title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Gli acquirenti utilizzano il token memorizzato per completare un pagamento futur
 
 ![Usa credenziali archiviate per acquisti futuri](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Possono anche eliminare facilmente le loro carte di credito archiviate da [Metodi di pagamento archiviati](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) nel loro Account personale.
+Possono anche eliminare facilmente le loro carte di credito archiviate da [Metodi di pagamento archiviati](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) nel loro Account personale.
 
 ![Metodi di pagamento memorizzati nel mio account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

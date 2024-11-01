@@ -4,7 +4,7 @@ description: "Scopri come  [!DNL Store Fulfillment for Adobe Commerce by Walmart
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies è una soluzione di implementazione omnicanale avanzata che si integra con il tuo store [!DNL Commerce] per offrire un acquisto superiore online, pick up in store (BOPIS) esperienza del cliente.
 
-![Adobe di configurazione dell&#39;amministratore della soluzione Store Fulfillment](assets/store-fulfillment-admin-home.png)
+Adobe ![Configurazione amministrazione soluzione di evasione archivio](assets/store-fulfillment-admin-home.png)
 
 Il servizio di evasione del punto vendita offre inoltre un flusso di lavoro di evasione end-to-end che consente ai commercianti di ridurre i costi aumentando i tassi di conversione, il valore medio dell&#39;ordine e i tassi di soddisfazione del cliente. Questo flusso di lavoro offre:
 
@@ -35,7 +35,7 @@ La soluzione Store Fulfillment supporta e migliora le funzionalità native di Ad
 
 * Supporta la maggior parte dei tipi di prodotto: semplice, configurabile, raggruppato, in bundle e virtuale
 
-* Si integra con [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* Si integra con [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * Integrazione con i sistemi di gestione delle scorte dei commercianti nei punti vendita (POS) come ERP, OMS e WMS
 

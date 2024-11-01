@@ -3,7 +3,7 @@ title: Test e convalida
 description: I test e la convalida garantiscono che  [!DNL Payment Services]  funzioni funzionino come previsto e forniscono le migliori opzioni di pagamento per i clienti
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Prima di esporre [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magen
 Il test di [!DNL Payment Services] in un ambiente sandbox è un passaggio importante di convalida, anche se si tratta di un ambiente simulato connesso solo alla sandbox PayPal, non a banche e commercianti reali.
 
 1. Completa l&#39;estrazione dal tuo Negozio con [Campi carta di credito](payments-options.md#credit-card-fields) o con uno dei [pulsanti di pagamento PayPal](payments-options.md#paypal-smart-buttons). Per ulteriori informazioni sull&#39;utilizzo di carte di credito false per i test, vedere [Verifica delle credenziali](#testing-credentials).
-1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
+1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
 1. Entro 24-48 ore, visualizzare la transazione e altre informazioni nel [report Pagamenti](payouts.md).
 1. Vedi i dettagli dell&#39;ordine nel [report sullo stato del pagamento dell&#39;ordine](order-payment-status.md).
 
