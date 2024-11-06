@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> È ora possibile personalizzare i dati visualizzati nel [report sullo stato dei pagamenti dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e nel [report sui pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.9.0
+
+_7 novembre 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] ora supporta un **URL SDK aggiornato per Apple Pay**, migliorando l&#39;integrazione per gli esercenti che utilizzano Apple Pay. Questa funzionalità è compatibile con macOS 14 e versioni successive. I dispositivi che eseguono versioni precedenti di macOS non visualizzeranno questa funzionalità.
+
+![Nuovo](../assets/new.svg)<!-- PAY-5630 --> ha aggiornato le pagine **Estrazione**, **Prodotto**, **Carrello** e **MiniCarrello** per supportare l&#39;**URL SDK aggiornato per Apple Pay**, migliorando l&#39;esperienza utente per gli esercenti che offrono Apple Pay come opzione di pagamento.
+
+![Nuovo](../assets/new.svg)<!-- PAY-5635 --> sono state migliorate le stime di spedizione **in base all&#39;indirizzo Apple Pay**, consentendo ai clienti di visualizzare i costi di spedizione precisi durante l&#39;acquisto.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5661 --> sono stati risolti diversi **[!DNL Payment Services]problemi al pagamento**, migliorando l&#39;affidabilità del processo di pagamento per gli esercenti e gli acquirenti.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5692 --> è stato risolto un problema che impediva l&#39;aggiunta all&#39;ordine del **nome e cognome del cliente** quando si utilizzavano **pulsanti avanzati per il pagamento rapido**.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5712 --> è stato risolto un problema che impediva agli esercenti di completare l&#39;estrazione con l&#39;opzione di pagamento Pagamento totale parziale pari a zero **quando l&#39;importo totale era gratuito.**
 
 ## v2.8.1
 
