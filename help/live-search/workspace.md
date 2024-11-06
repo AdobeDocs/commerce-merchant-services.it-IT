@@ -2,7 +2,7 @@
 title: "Configurazione di Live Search"
 description: L'area di lavoro  [!DNL Live Search]  viene utilizzata per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-adm
 | [Sinonimi](synonyms.md) | Estendi la portata della ricerca per includere le parole che gli acquirenti potrebbero usare per trovare prodotti diversi da quelli nel catalogo. |
 | [Cerca nel merchandising](rules.md) | Forma l’esperienza di ricerca con regole logiche che attivano le azioni pianificate. Puoi promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca e supportare gli obiettivi aziendali. |
 | [Merchandising categoria](category-merch.md) | Applica regole e merchandising intelligente a livello di categoria. |
-| [GraphQL](graphql.md) | Gli sviluppatori che hanno effettuato l’accesso all’amministratore del tuo archivio possono comporre e verificare le query con i dati del catalogo effettivo. Per ulteriori informazioni, vai a [Panoramica di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) nella documentazione per gli sviluppatori di [!DNL Live Search]. |
+| [GraphQL](graphql.md) | Gli sviluppatori che hanno effettuato l’accesso all’amministratore del tuo archivio possono comporre e verificare le query con i dati del catalogo effettivo. Per ulteriori informazioni, vai a [Panoramica di GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) nella documentazione per gli sviluppatori di [!DNL Live Search]. |
 | [Impostazioni](settings.md) | Determina il modo in cui i valori del facet di prezzo vengono raggruppati per intervallo di prezzi nella vetrina e imposta il linguaggio di indicizzazione. |
 
 ## Imposta attributi come ricercabili

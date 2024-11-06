@@ -2,9 +2,9 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ La percentuale dell’indicatore di preparazione per i tipi di consigli che dipe
 #### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
 
 Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](events.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
+
+>[!IMPORTANT]
+>
+>_I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati. Se il catalogo contiene un numero elevato di questi tipi di prodotti, il livello di preparazione sarà basso. Inoltre, qualsiasi SKU con spazi può ridurre la rilevanza dei consigli e deve essere evitata.
 
 Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa prontezza comuni:
 

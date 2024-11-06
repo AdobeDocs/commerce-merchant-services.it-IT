@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni aggiornate sulla versione per  [!DNL Live Search]  da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 
 [!BADGE Supportato]{type="Informativo" tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg) [L&#39;attributo di prezzo personalizzato](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) non restituisce più un errore se configurato come [facet]({% link live-search/facets-add.md %}).
-![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore se non era disponibile alcun [simbolo di valuta](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`).
+![Correzione](../assets/fix.svg) [L&#39;attributo di prezzo personalizzato](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) non restituisce più un errore se configurato come [facet](facets-add.md).
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore se non era disponibile alcun [simbolo di valuta](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`).
 ![Correzione](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ora mostra il [Prezzo speciale](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (prezzo finale minimo) quando disponibile.
 
 ### [!DNL Live Search] 1.3.0 {#130}

@@ -2,9 +2,9 @@
 title: Filtra prodotti
 description: Definisci le condizioni che includono o escludono l’utilizzo dei prodotti come consigli.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ I filtri dei prodotti specificano quali prodotti specifici sono idonei, o non id
 
 ### Tipo
 
-Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico. I tipi supportati includono _Simple_, _Configurable_, _Virtual_, _Downloadable_ o _Gift card_. _I prodotti_ e _Raggruppati_ non sono ancora supportati.
+Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico. I tipi supportati sono _simple_, _configurable_, _virtual_, _downloadable_ o _gift card_. _I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati.
 
 ### Visibilità
 

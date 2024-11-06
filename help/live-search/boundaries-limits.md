@@ -3,9 +3,9 @@ title: 'Limiti e limiti'
 description: Scopri i limiti e le limitazioni di  [!DNL Live Search]  per garantire che soddisfi le esigenze della tua azienda.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 - I facet dinamici possono causare problemi di prestazioni in indici e indici di grandi dimensioni con elevata ordinalità. Se hai creato facet dinamici e noti un deterioramento delle prestazioni o una pagina non caricata con errori di timeout, prova a modificare i facet in modo che siano bloccati per determinare se questo risolve il problema di prestazioni.
 - Lo stato del titolo (`quantity_and_stock_status`) non è supportato come facet. È possibile utilizzare `inStock: 'true'` per filtrare i prodotti in stock. Questa funzionalità è supportata automaticamente nel modulo `LiveSearchAdapter` quando &quot;Display out of stock products&quot; è impostato su &quot;True&quot; nell&#39;amministratore [!DNL Commerce].
 - Gli attributi del tipo di data non sono supportati come facet.
+- Eventuali modifiche apportate ai metadati dell’attributo dopo l’aggiunta dell’attributo come facet non vengono riportate nel facet.
 
 ## Query
 

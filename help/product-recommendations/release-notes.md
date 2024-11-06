@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di  [!DNL Product Recommendations]  da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 aprile 2023_
 I clienti di ![New](../assets/new.svg) [!DNL Product Recommendations] ora possono usufruire dell&#39;indicizzazione dei prezzi di [SaaS](../price-index/price-indexing.md).
 
 ## Versione principale corrente
+
+### 6.0.3 di magento/product-recommendations
+
+_6 novembre 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale il [filtro categoria](filters.md#category) includeva categorie non appartenenti allo storeview corrente.
+![Correzione](../assets/fix.svg) è stato risolto un problema di dipendenza nel metapackage `magento/product-recommendations`.
 
 ### 6.0.2 di magento/product-recommendations
 
@@ -142,7 +151,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) aggiunti nuovi [tipi di consigli](type.md): Conversione (da vista a carrello), Conversione (da vista a acquisto) e Visualizzato di recente. Questi nuovi tipi di consigli sono disponibili nel modulo `magento/product-recommendations` 3.2.2 e versioni successive.
-![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Fastly Web Application Firewall (WAF)
 ![Correzione](../assets/fix.svg) è stato risolto un problema che impediva la visualizzazione dei prodotti assegnati alla visualizzazione Store non predefinita nel pannello _Anteprima prodotto Recommendations_ durante la creazione di un consiglio per quella visualizzazione Store specifica
 ![Correzione](../assets/fix.svg) è stato corretto un problema a causa del quale alcuni nomi di unità di consigli in Page Builder impedivano la visualizzazione dell&#39;unità di consigli nella vetrina
 
@@ -162,14 +171,14 @@ _20 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto di Adobe Client Data Layer per standardizzare la raccolta di dati comportamentali tra le funzioni e i servizi di Adobe Commerce. Per ulteriori informazioni, consulta il [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
+![Nuovo](../assets/new.svg) È stato aggiunto il supporto per Adobe Client Data Layer per standardizzare la raccolta di dati comportamentali tra le funzioni e i servizi di Adobe Commerce. Per ulteriori informazioni, consulta il [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) è stato corretto un errore modale di JavaScript
-![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava il blocco errato di un cookie da parte di Fastly Web Application Firewall (WAF)
 
 ### 3.2.5 di magento/product-recommendations
 

@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Best Practice'
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei
 - Le regole di ricerca sono fondamentali in quanto possono aumentare la visibilità di alcuni prodotti in base alla popolarità, ai nuovi arrivi, ai criteri promozionali o a qualsiasi altra strategia di merchandising per soddisfare le esigenze aziendali.
 - La navigazione a facet consente ai clienti di perfezionare le ricerche e ottenere rapidamente risultati rilevanti.
 
-Per gestire [!DNL Live Search], vai a **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]** nell&#39;Adobe [!DNL Commerce] Admin. 
+Per gestire [!DNL Live Search], vai a **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]** nell&#39;amministratore di [!DNL Commerce] Adobe. 
 
 ## Ottimizzazione della funzionalità di ricerca
 
@@ -137,7 +138,7 @@ Ulteriori informazioni sulle regole di ricerca:
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi di prodotto precisi e dettagliati siano [configurati come ricercabili](workspace.md#set-attributes-as-searchable). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. 
+Assicurati che gli attributi di prodotto precisi e dettagliati siano [configurati come ricercabili](workspace.md#set-attributes-as-searchable). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 
