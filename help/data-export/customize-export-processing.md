@@ -3,7 +3,7 @@ title: Miglioramento delle prestazioni di esportazione dei dati SaaS
 description: Scopri come migliorare le prestazioni di esportazione dei dati SaaS per Commerce Services utilizzando la modalità di esportazione dei dati con più thread.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Gli sviluppatori o gli integratori di sistemi possono migliorare le prestazioni 
 ## Considerazioni per l’utilizzo della modalità multi-thread
 
 Quando si lavora con i servizi di esportazione dei dati, è necessario ottimizzare le prestazioni garantendo al contempo una sincronizzazione accurata.
-L’Adobe consiglia di utilizzare la configurazione predefinita per l’acquisizione dei dati, che in genere soddisfa i requisiti di sincronizzazione per gli esercenti Commerce. Tuttavia, in alcuni scenari la personalizzazione può velocizzare i tempi di elaborazione.
+Adobe consiglia di utilizzare la configurazione predefinita per l’acquisizione dei dati, che in genere soddisfa i requisiti di sincronizzazione per gli esercenti Commerce. Tuttavia, in alcuni scenari la personalizzazione può velocizzare i tempi di elaborazione.
 
 Quando decidi se personalizzare la configurazione di esportazione dei dati, considera i seguenti fattori chiave:
 
@@ -35,14 +35,14 @@ Tenere presente che una pianificazione attenta, che includa la stima del volume 
 
 >[!NOTE]
 >
->L’Adobe consiglia di prestare attenzione quando si utilizza l’elaborazione con più thread. Questa funzionalità è una funzione di accesso anticipato ancora in fase di miglioramento. Se configuri il multi-threading per prestazioni più veloci, puoi attivare i guardrail dei servizi Adobe Commerce inclusi per evitare l’uso improprio del sistema durante l’acquisizione dei dati. Questi guardrail impediscono inoltre agli utenti di attivare le modifiche di sincronizzazione che possono sovraccaricare il sistema. Quando vengono attivate le protezioni, le richieste vengono bloccate e il sistema restituisce 429 errori. Se si verificano questi errori, regolare la configurazione e inviare un ticket di supporto per assistenza.
+>Adobe consiglia di prestare attenzione quando si utilizza l’elaborazione con più thread. Questa funzionalità è una funzione di accesso anticipato ancora in fase di miglioramento. Se configuri il multi-threading per prestazioni più veloci, puoi attivare i guardrail dei servizi Adobe Commerce inclusi per evitare l’uso improprio del sistema durante l’acquisizione dei dati. Questi guardrail impediscono inoltre agli utenti di attivare le modifiche di sincronizzazione che possono sovraccaricare il sistema. Quando vengono attivate le protezioni, le richieste vengono bloccate e il sistema restituisce 429 errori. Se si verificano questi errori, regolare la configurazione e inviare un ticket di supporto per assistenza.
 
 ## Configurare il multithreading
 
 La modalità multithread è supportata per tutti i [metodi di sincronizzazione](data-synchronization.md#synchronization-process): sincronizzazione completa, sincronizzazione parziale e sincronizzazione elementi non riuscita. Per configurare il multithreading, specificare il numero di thread e la dimensione del batch da utilizzare durante la sincronizzazione.
 
-- `threadCount` è il numero di thread attivati per elaborare le entità. Il valore predefinito `threadCount` è `1`.
-- `batchSize` è il numero di entità elaborate in un&#39;iterazione. Il valore predefinito `batchSize` è `100` record per tutti i feed ad eccezione del feed di prezzo. Per il feed di prezzo, il valore predefinito è `500` record.
+- `thread-count` è il numero di thread attivati per elaborare le entità. Il valore predefinito `thread-count` è `1`.
+- `batch-size` è il numero di entità elaborate in un&#39;iterazione. Il valore predefinito `batch-size` è `100` record per tutti i feed ad eccezione del feed di prezzo. Per il feed di prezzo, il valore predefinito è `500` record.
 
 È possibile configurare il multithreading come opzione temporanea durante l&#39;esecuzione di un comando di risincronizzazione oppure aggiungendo la configurazione del multithread alla configurazione dell&#39;applicazione Adobe Commerce.
 
@@ -52,10 +52,10 @@ La modalità multithread è supportata per tutti i [metodi di sincronizzazione](
 
 ### Configurare il multithreading in fase di runtime
 
-Quando si esegue un comando di sincronizzazione completa dalla riga di comando, specificare l&#39;elaborazione multi-thread aggiungendo le opzioni `threadCount` e `batchSize` al comando CLI.
+Quando si esegue un comando di sincronizzazione completa dalla riga di comando, specificare l&#39;elaborazione multi-thread aggiungendo le opzioni `thread-count` e `batch-size` al comando CLI.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 Le opzioni specificate nella riga di comando sovrascrivono la configurazione di esportazione dei dati specificata nel file dell&#39;applicazione Adobe Commerce `config.php`.
