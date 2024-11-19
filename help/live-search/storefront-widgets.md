@@ -2,9 +2,9 @@
 title: Widget vetrina
 description: Scopri la finestra a comparsa vetrina e i widget di pagina per l’elenco dei prodotti.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Puoi personalizzare l’aspetto di questi widget in base alle linee guida di sti
 
 Quando si inizia a digitare nella casella di ricerca della vetrina di Commerce, [!DNL Live Search] risponde con i prodotti suggeriti e un&#39;immagine in miniatura dei risultati di ricerca principali nel [widget popopover](storefront-popover.md).
 
-![Widget popover](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 Per ulteriori informazioni sul widget popover e su come personalizzarlo per la vetrina, vedere [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -30,6 +30,6 @@ Per ulteriori informazioni sul widget popover e su come personalizzarlo per la v
 
 Quando fai clic su per visualizzare tutti i risultati dal popover vetrina, il widget della pagina di elenco dei prodotti mostra le funzioni che puoi utilizzare per perfezionare continuamente la ricerca.
 
-![Widget pagina elenco prodotti](assets/ls-plp.png)
+![Risultati widget pagina elenco prodotti](assets/plp-css-widgets.png)
 
 Per ulteriori informazioni sul widget della pagina di elenco prodotti e su come personalizzare il widget per la vetrina, consulta [widget della pagina di elenco prodotti](plp-styling.md).
