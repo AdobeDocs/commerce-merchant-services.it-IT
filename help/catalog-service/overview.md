@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] per Adobe Commerce consente di recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine dell''elenco dei prodotti molto più rapidamente delle query native di Adobe Commerce GraphQL.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ Lo schema riduce la diversità dei tipi di prodotto a due casi d’uso:
 * I prodotti complessi sono costituiti da più prodotti semplici. Il componente prodotti semplici può avere prezzi diversi. Un prodotto complesso può anche essere definito in modo che l&#39;acquirente possa specificare la quantità di componenti semplici prodotti. Catalog Service mappa i tipi di prodotto configurabili, raggruppati e raggruppati su `complexProductViews`.
 
 Le opzioni di prodotto complesse sono unificate e si distinguono per il loro comportamento, non per il tipo. Ogni valore di opzione rappresenta un prodotto semplice. Questo valore di opzione ha accesso agli attributi di prodotto semplici, incluso il prezzo. Quando l’acquirente seleziona tutte le opzioni per un prodotto complesso, la combinazione di opzioni selezionate punta a un prodotto semplice specifico. Il prodotto semplice rimane ambiguo finché l’acquirente non seleziona un valore per tutte le opzioni disponibili.
+
+#### Attributi di visualizzazione del prodotto
+
+Sia i prodotti semplici che quelli complessi dispongono di attributi definiti dal cliente che possono essere visualizzati nella vetrina. Questi attributi vengono restituiti come [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). In Adobe Commerce, gli attributi disponibili vengono definiti al momento della creazione del prodotto. Puoi aggiungere attributi aggiuntivi dal backend di Adobe Commerce o a livello di programmazione. Vedi [Estendere e personalizzare i dati del feed di esportazione dei dati SaaS](../data-export/extensibility-and-customizations.md).
+
+>[!TIP]
+>
+>Anziché aggiungere tipi di dati al backend di Commerce, è possibile utilizzare [Mesh API con Catalog Service](mesh.md) per estendere lo schema GraphQL di Catalog Service per aggiungere dati o configurare dati di catalogo esistenti per abilitare nuove funzionalità.
 
 ### Prezzi
 
