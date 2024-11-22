@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Per selezionare o creare un progetto SaaS, richiedere la chiave API [!DNL Commer
 Tutti i progetti SaaS associati alle chiavi vengono visualizzati nel campo **Progetto** della sezione **Identificatore SaaS**.
 
 1. Se non esistono progetti SaaS, fare clic su **Crea progetto**. Quindi nel campo **Progetto**, inserisci un nome per il progetto SaaS.
+
+>[!NOTE]
+>
+>Per evitare confusione, non utilizzare un servizio Commerce specifico come nome del progetto, ad esempio *Live Search*, *Product Recommendations* o *Data Connection*.  A meno che la licenza non sia stata fornita per più progetti SaaS, è possibile utilizzare lo stesso progetto SaaS per più servizi.
 
 1. Seleziona lo **Spazio dati** da utilizzare per la configurazione corrente dell&#39;archivio [!DNL Commerce].
 
