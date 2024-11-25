@@ -5,7 +5,7 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: b2425eb7204400899dfe6eaa9978e49c3ff00ec7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
           </ul>
         </td>
       <td><strong>Servizi di integrazione</strong>
-        <p>Scopri gli ultimi miglioramenti ai servizi di integrazione che consentono ai servizi Commerce di connettersi con altri servizi ed estensioni e prodotti di Adobe.</p>
+        <p>Scopri gli ultimi miglioramenti ai servizi di integrazione che consentono ai servizi Commerce di connettersi con altri servizi ed estensioni e prodotti Adobe.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">[!DNL Services Connector]</a></li>
@@ -38,7 +38,7 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
       <td><strong>Servizi dati</strong>
         <p>Scopri gli ultimi miglioramenti al servizio dati che consentono ai servizi Commerce di gestire i dati dei prodotti.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-export/release-notes.html">Estensione SaaS Data Export</a></li>
+           <li><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes">Estensione SaaS Data Export</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Sincronizzazione catalogo</a></li>
           </ul>
       </td>
