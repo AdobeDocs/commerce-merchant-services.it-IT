@@ -1,6 +1,6 @@
 ---
-title: "Introduzione a  [!DNL Live Search]"
-description: "Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce."
+title: Introduzione a  [!DNL Live Search]
+description: Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
@@ -50,7 +50,7 @@ A un livello avanzato, l&#39;onboarding di [!DNL Live Search] richiede:
 
 ## 1. Installare l&#39;estensione [!DNL Live Search]
 
-[!DNL Live Search] è installato come estensione da [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) a [Composer](https://getcomposer.org/). Dopo aver installato e configurato [!DNL Live Search], l&#39;Adobe [!DNL Commerce] inizia a condividere i dati di ricerca e catalogo con i servizi SaaS. A questo punto, *Amministratore* utenti possono impostare, personalizzare e gestire facet di ricerca, sinonimi e regole di merchandising.
+[!DNL Live Search] è installato come estensione da [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) a [Composer](https://getcomposer.org/). Dopo aver installato e configurato [!DNL Live Search], Adobe [!DNL Commerce] inizia a condividere i dati di ricerca e catalogo con i servizi SaaS. A questo punto, *Amministratore* utenti possono impostare, personalizzare e gestire facet di ricerca, sinonimi e regole di merchandising.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Puoi implementare queste nuove condizioni nella pagina dei risultati della ricer
 
 | Campo | Descrizione |
 |--- |--- |
-| `Autocomplete` | È attivata per impostazione predefinita e non può essere modificata. Con `Autocomplete` puoi utilizzare `contains` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). In questo caso, la query di ricerca in `contains` restituisce una risposta di ricerca di tipo completamento automatico. Questo Adobe consiglia di utilizzare questo tipo di ricerca per i campi di descrizione, che in genere contengono più di 50 caratteri. |
+| `Autocomplete` | È attivata per impostazione predefinita e non può essere modificata. Con `Autocomplete` puoi utilizzare `contains` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). In questo caso, la query di ricerca in `contains` restituisce una risposta di ricerca di tipo completamento automatico. Adobe consiglia di utilizzare questo tipo di ricerca per i campi di descrizione, che in genere contengono più di 50 caratteri. |
 | `Contains` | Abilita una ricerca vera e propria di tipo &quot;testo contenuto in una stringa&quot; invece di una ricerca di completamento automatico. Utilizza `contains` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Per ulteriori informazioni, consulta le [limitazioni](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations). |
 | `Starts with` | Consente di eseguire query sulle stringhe che iniziano con un determinato valore. Utilizza `startsWith` nel [filtro di ricerca](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
@@ -390,7 +390,7 @@ Nelle sezioni seguenti vengono forniti argomenti più avanzati quando si utilizz
 
 Poiché [!DNL Live Search] non ha accesso al database completo dei prodotti, le API principali di GraphQL e Commerce GraphQL per [!DNL Live Search] non dispongono della parità completa.
 
-L’Adobe consiglia di chiamare direttamente le API SaaS, in particolare l’endpoint Catalog Service.
+Adobe consiglia di chiamare direttamente le API SaaS, in particolare l’endpoint Catalog Service.
 
 - Migliorare le prestazioni e ridurre il carico del processore ignorando il database Commerce/processo Graphql
 - Sfruttare la federazione [!DNL Catalog Service] per chiamare [!DNL Live Search], [!DNL Catalog Service] e [!DNL Product Recommendations] da un singolo endpoint.

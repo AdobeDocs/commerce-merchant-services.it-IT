@@ -1,6 +1,6 @@
 ---
 title: Reporting finanziario
-description: "[!DNL Payment Services] offre funzionalità di reporting complete che consentono di ottenere una visualizzazione chiara degli ordini e dei pagamenti del tuo Negozio."
+description: '[!DNL Payment Services] offre una segnalazione completa che consente di ottenere una chiara visualizzazione degli ordini e dei pagamenti del tuo Negozio.'
 role: User
 feature: Payments, Checkout
 level: Intermediate

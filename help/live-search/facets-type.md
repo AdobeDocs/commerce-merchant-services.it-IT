@@ -1,6 +1,6 @@
 ---
-title: "Tipi di facet"
-description: "[!DNL Live Search] facet sono dinamici e vengono visualizzati nell'elenco Filtri quando necessario."
+title: Tipi di facet
+description: '[!DNL Live Search] facet sono dinamici e vengono visualizzati nell''elenco Filtri quando necessario.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

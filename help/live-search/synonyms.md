@@ -1,6 +1,6 @@
 ---
 title: Sinonimi
-description: "[!DNL Live Search] Sinonimi espande le query con parole diverse da quelle presenti nel catalogo."
+description: '[!DNL Live Search] I sinonimi consentono di espandere le query con parole diverse da quelle del catalogo.'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

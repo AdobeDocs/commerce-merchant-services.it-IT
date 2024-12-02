@@ -1,5 +1,5 @@
 ---
-title: "Configurazione di Live Search"
+title: Configurazione di Live Search
 description: L'area di lavoro  [!DNL Live Search]  viene utilizzata per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

@@ -1,6 +1,6 @@
 ---
-title: "Prestazioni"
-description: "L'area di lavoro Prestazioni  [!DNL Live Search]  fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti."
+title: Prestazioni
+description: L'area di lavoro Prestazioni  [!DNL Live Search]  fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

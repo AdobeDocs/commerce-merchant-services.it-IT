@@ -1,6 +1,6 @@
 ---
-title: "Aggiungi sinonimi"
-description: "Aggiungi  [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca."
+title: Aggiungi sinonimi
+description: Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt

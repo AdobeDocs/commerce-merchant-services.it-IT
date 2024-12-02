@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione'
-description: "Per informazioni su tutte le  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versioni, consulta le note sulla versione."
+title: Note sulla versione [!DNL Store Fulfillment by Walmart Commerce Technologies]
+description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versioni.
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0

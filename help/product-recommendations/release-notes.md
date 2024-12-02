@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Product Recommendations] Note sulla versione'
+title: Note sulla versione [!DNL Product Recommendations]
 description: Informazioni aggiornate sulla versione di  [!DNL Product Recommendations]  da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes

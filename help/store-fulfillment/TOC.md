@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per i negozi Adobe Commerce.
 breadcrumb-title: Evasione store per Adobe Commerce
 index: true

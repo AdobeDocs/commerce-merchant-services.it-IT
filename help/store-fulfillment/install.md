@@ -1,6 +1,6 @@
 ---
 title: Installazione
-description: "Installa  [!DNL Store Fulfillment solution] per una vetrina Adobe Commerce utilizzando Composer for PHP."
+description: Installa  [!DNL Store Fulfillment solution]  per una vetrina Adobe Commerce utilizzando Composer for PHP.
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install

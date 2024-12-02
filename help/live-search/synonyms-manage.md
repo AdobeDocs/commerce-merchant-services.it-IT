@@ -1,6 +1,6 @@
 ---
-title: "Gestisci sinonimi"
-description: "Scopri come gestire i sinonimi  [!DNL Live Search]  esistenti."
+title: Gestisci sinonimi
+description: Scopri come gestire i sinonimi esistenti [!DNL Live Search] .
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt

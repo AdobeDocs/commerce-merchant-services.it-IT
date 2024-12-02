@@ -1,6 +1,6 @@
 ---
-title: "Facet"
-description: "[!DNL Live Search] facet utilizzano più dimensioni di valori di attributo come criteri di ricerca."
+title: Facet
+description: '[!DNL Live Search] facet utilizzano più dimensioni di valori di attributo come criteri di ricerca.'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt

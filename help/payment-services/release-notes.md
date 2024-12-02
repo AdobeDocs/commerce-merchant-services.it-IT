@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Payment Services] Note sulla versione"
+title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes

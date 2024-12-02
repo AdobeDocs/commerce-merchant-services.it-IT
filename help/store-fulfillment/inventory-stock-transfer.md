@@ -1,6 +1,6 @@
 ---
 title: Trasferimento Source Inventory management
-description: "Configura le scorte per  [!DNL Store Fulfillment solution]  con Adobe Commerce Inventory management. Impostare un nuovo magazzino e trasferirlo al di fuori del magazzino predefinito in modo da poterlo assegnare alle origini configurate per abilitare le funzionalità di prelievo del magazzino richieste dalla soluzione di evasione del magazzino."
+description: Configura le scorte per  [!DNL Store Fulfillment solution]  con Adobe Commerce Inventory management. Impostare un nuovo magazzino e trasferirlo al di fuori del magazzino predefinito in modo da poterlo assegnare alle origini configurate per abilitare le funzionalità di prelievo del magazzino richieste dalla soluzione di evasione del magazzino.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

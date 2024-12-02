@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] Best Practice'
+title: Best practice per [!DNL Live Search]
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034

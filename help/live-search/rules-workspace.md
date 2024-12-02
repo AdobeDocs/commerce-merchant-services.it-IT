@@ -1,6 +1,6 @@
 ---
-title: "Cerca nel Workspace di merchandising"
-description: "Scopri come utilizzare l’area di lavoro Search Merchandising."
+title: Cerca in Merchandising Workspace
+description: Scopri come utilizzare l’area di lavoro Search Merchandising.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

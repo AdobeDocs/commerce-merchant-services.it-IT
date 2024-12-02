@@ -1,6 +1,6 @@
 ---
-title: "Aggiungi regole"
-description: "Scopri come creare regole di Search Merchandising."
+title: Aggiungi regole
+description: Scopri come creare regole di Search Merchandising.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt

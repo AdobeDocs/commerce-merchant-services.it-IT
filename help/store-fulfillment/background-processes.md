@@ -1,6 +1,6 @@
 ---
 title: Configurazione processo in background
-description: "Configurare le pianificazioni per  [!DNL Store Fulfillment] processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione."
+description: Configurare le pianificazioni per  [!DNL Store Fulfillment] processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

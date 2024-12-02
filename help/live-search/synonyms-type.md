@@ -1,6 +1,6 @@
 ---
-title: "Tipi di sinonimi"
-description: "I sinonimi unidirezionali [!DNL Live Search] consentono di espandere la definizione delle parole chiave."
+title: Tipi di sinonimi
+description: I sinonimi unidirezionali [!DNL Live Search] consentono di espandere la definizione delle parole chiave.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

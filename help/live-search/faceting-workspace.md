@@ -1,6 +1,6 @@
 ---
-title: "Faceting Workspace"
-description: "Scopri come utilizzare l'area di lavoro  [!DNL Live Search] faceting."
+title: Faceting Workspace
+description: Scopri come aggirare l'area di lavoro  [!DNL Live Search] faceting.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
