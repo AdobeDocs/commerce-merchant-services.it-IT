@@ -3,7 +3,7 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
+source-git-commit: 23743bb3cc62e1f4f33c4f1046f341b99e47d9c5
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%

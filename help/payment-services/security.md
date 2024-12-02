@@ -4,7 +4,7 @@ description: Verifica i requisiti di sicurezza e conformità per il sito.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
+source-git-commit: 23743bb3cc62e1f4f33c4f1046f341b99e47d9c5
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
