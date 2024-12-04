@@ -3,9 +3,9 @@ title: Best practice per [!DNL Live Search]
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.ado
 ## Migliorare la rilevanza dei risultati di ricerca
 
 Questa sezione illustra come migliorare la rilevanza dei risultati di ricerca implementando regole di ricerca efficaci e utilizzando i metadati del prodotto per garantire che sia possibile eseguire ricerche in attributi precisi e dettagliati.
+
+### Immagini
+
+Assicurati che i prodotti secondari dei prodotti configurabili dispongano di immagini con i ruoli corretti. Se si dispone di prodotti principali o secondari, il risultato della ricerca potrebbe non contenere immagini.
+
+>[!NOTE]
+>
+>Le immagini nei risultati di ricerca possono essere diverse a seconda del termine di ricerca. Se il termine di ricerca determina che un prodotto secondario è più rilevante, verranno utilizzate le immagini del prodotto secondario anziché le immagini del prodotto principale.
 
 ### Cerca regole
 
