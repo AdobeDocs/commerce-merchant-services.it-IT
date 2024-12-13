@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Per ulteriori informazioni, vedere [Opzioni di pagamento](payments-options.md#pa
 1. Per **[!UICONTROL Show on checkout page]**, scegliere `Yes` per abilitare i campi della carta di credito nella pagina di pagamento.
 1. Per **[!UICONTROL Vault Enabled]**, scegliere `Yes` per abilitare il vaulting della carta di credito per l&#39;estrazione.
 1. Per **[!UICONTROL Vault Enabled in Admin]**, scegli `Yes` per consentire al commerciante di creare ordini per i clienti che utilizzano la carta di credito a pagamento.
-1. Per abilitare **[!UICONTROL 3DS Secure authentication]** (`Off` per impostazione predefinita), scegliere `Always` o `When required`.
+1. Per abilitare **[!UICONTROL 3D Secure authentication]** (`Off` per impostazione predefinita), scegliere `Always` o `When required`.
 1. Per **[!UICONTROL Debug Mode]**, scegliere `Yes` per abilitare la modalità di debug oppure `No` per disabilitarla.
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 1. Passare a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
@@ -82,7 +82,7 @@ Per ulteriori informazioni, vedere [Opzioni di pagamento](payments-options.md#pa
 | [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | visualizzazione store | Attiva o disattiva [il vaulting della carta di credito](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | visualizzazione store | Abilita o disabilita la possibilità per l&#39;esercente [di completare gli ordini per i clienti nell&#39;Admin](vaulting.md) utilizzando un metodo di pagamento a scaffale. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [3DS Secure Authentication](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | sito web | Attiva o disattiva [3DS Secure Authentication](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ Per ulteriori informazioni, vedere [Opzioni di pagamento](payments-options.md#go
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Per abilitare **[!UICONTROL 3D Secure authentication]** (`Off` per impostazione predefinita), scegliere `Always` o `When required`.
 1. Per abilitare la modalità di debug, selezionare `Yes` per **[!UICONTROL Debug Mode]** (`No` la disabilita).
 1. Configurare l&#39;aspetto del pulsante _[!UICONTROL Google Pay]_selezionando **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**e **[!UICONTROL Button Style]**in base alle esigenze.
 1. Per impostare l&#39;altezza, utilizza il valore predefinito per l&#39;altezza definito in **[!UICONTROL Button Style]**.
@@ -153,6 +154,7 @@ Per ulteriori informazioni, vedere [Opzioni di pagamento](payments-options.md#go
 | [!UICONTROL Show buttons on product detail page] | visualizzazione store | Attiva o disattiva [!DNL Google Pay] nella pagina dei dettagli del prodotto. Opzioni: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | visualizzazione store | Attiva o disattiva [!DNL Google Pay] nell&#39;anteprima del mini-carrello. Opzioni: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | visualizzazione store | Attiva o disattiva [!DNL Google Pay] nella pagina del carrello. Opzioni: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | visualizzazione store | Attiva o disattiva [Autenticazione protetta 3D](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Visualizzazione store | Definire il colore del pulsante [!DNL Google Pay]. Opzioni: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Visualizzazione store | Definire il tipo del pulsante [!DNL Google Pay]. Opzioni: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |

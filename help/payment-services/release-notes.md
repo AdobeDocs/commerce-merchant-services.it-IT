@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,24 @@ _28 giugno 2021_
 
 +++
 
+## v2.10.0
+
+_13 dicembre 2024_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ora supporta gli endpoint GraphQL per il vaulting senza acquisto, consentendo ai clienti di salvare i metodi di pagamento senza completare una transazione.
+
+![Nuovo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ora supporta [l&#39;autenticazione protetta 3D con Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), migliorando la sicurezza per gli esercenti e i clienti durante le transazioni di pagamento.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] aggiunge la possibilità per [clienti di salvare le schede direttamente nel proprio **Account personale**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), migliorando la comodità e semplificando le future estrazioni. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Correzione](../assets/fix.svg)<!-- PAY-5762 --> è stato risolto un problema a causa del quale i codici coupon non venivano applicati nella pagina di revisione dell&#39;ordine quando l&#39;ordine veniva avviato dalla pagina dei dettagli del prodotto (PDP).
+
+![Correzione](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] visualizza ora le descrizioni e gli indirizzi di fatturazione per [carte in deposito nella pagina di pagamento](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), dando ai clienti maggiore visibilità sui metodi di pagamento salvati.
+
+![Correzione](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] consente ai commercianti di memorizzare l&#39;indirizzo di fatturazione per le carte in deposito direttamente dalla pagina di pagamento, garantendo informazioni di pagamento accurate e complete.
+
 ## v2.9.0
 
 _7 novembre 2024_
@@ -115,7 +133,7 @@ _13 settembre 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Correzione](../assets/fix.svg)<!-- PAY-5644 --> è stato risolto un problema relativo alla cache dei parametri SDK quando si utilizzano più ambiti in [!DNL Payment Services]. La configurazione dell’SDK ora viene memorizzata nella cache separatamente per ciascun ambito, anziché sotto una singola chiave. In questo modo la cache di ogni ambito viene invalidata in modo indipendente, migliorando l&#39;affidabilità durante la gestione di più ambiti.
+![Correzione](../assets/fix.svg)<!-- PAY-5644 --> è stato risolto un problema con la cache dei parametri di SDK quando si utilizzano più ambiti in [!DNL Payment Services]. La configurazione di SDK ora viene memorizzata nella cache separatamente per ogni ambito anziché sotto una singola chiave. In questo modo la cache di ogni ambito viene invalidata in modo indipendente, migliorando l&#39;affidabilità durante la gestione di più ambiti.
 
 ## v2.8.0
 
