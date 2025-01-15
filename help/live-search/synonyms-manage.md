@@ -2,9 +2,9 @@
 title: Gestisci sinonimi
 description: Scopri come gestire i sinonimi esistenti [!DNL Live Search] .
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Per facilitare la ricerca di un sinonimo, è possibile filtrare l&#39;elenco per
 1. Fai clic su **Modifica**.
 La parola chiave è il primo termine dell&#39;elenco e ogni termine è separato da una virgola. È possibile aggiornare la parola chiave e i termini di espansione, ma non è possibile modificare il tipo di sinonimo.
 1. Fare clic sull&#39;elemento da modificare. Quindi, aggiorna il testo in base alle esigenze.
-
-   ![modifica sinonimo bidirezionale](assets/synonym-two-way-edit.png)
 
 1. Al termine, fare clic su **Salva**.
 
