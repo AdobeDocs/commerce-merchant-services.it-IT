@@ -5,9 +5,9 @@ breadcrumb-title: Estensione [!DNL Data Connection] per Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Estensione [!DNL Data Connection] per Adobe Commerce {#data-connection}
 
 - [Panoramica della guida](overview.md)
+- [Preparazione HIPAA per i servizi Commerce](hipaa-readiness.md)
+- [Gestione delle richieste di accesso a dati personali da parte dei servizi Commerce](handle-privacy-request.md)
 - [Note sulla versione](release-notes.md)
 - Nozioni di base {#fundamentals}
    - [Installa l&#39;estensione  [!DNL Data Connection] ](install.md)
@@ -22,7 +24,7 @@ ht-degree: 3%
    - [Aggiornare gli schemi evento serie temporali per l’acquisizione dei dati di Commerce](update-xdm.md)
    - [Aggiornamento dello schema dei record di profilo per l’acquisizione di dati Commerce](profile-data.md)
    - [Collegare i dati Commerce a Adobe Experience Platform](connect-data.md)
-   - [Integrare l’SDK di Adobe Experience Platform Mobile con Commerce](mobile-sdk-epc.md)
+   - [Integrare Adobe Experience Platform Mobile SDK con Commerce](mobile-sdk-epc.md)
 - Acquisisci dati {#event-forwarding}
    - [Eventi comportamentali](events.md)
    - [Eventi di back office](events-backoffice.md)

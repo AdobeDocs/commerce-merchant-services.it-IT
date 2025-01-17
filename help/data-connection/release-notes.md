@@ -3,7 +3,7 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -73,18 +73,18 @@ _30 marzo 2023_
 
 _12 ottobre 2022_
 
-![Nuovo](../assets/new.svg) - Aggiunti due [eventi storefront](events.md), `openCart` e `removeFromCart`, all&#39;SDK e all&#39;agente di raccolta eventi Adobe Commerce Storefront.
+![Nuovo](../assets/new.svg) - Sono stati aggiunti due [eventi storefront](events.md), `openCart` e `removeFromCart` a Adobe Commerce Storefront Events SDK and Collector.
 ![Nuovo](../assets/new.svg) - Aggiunto supporto per una [vetrina AEM](overview.md#aem-support).
 
 +++
 
 ## 3.2.1.
 
-_2 dicembre 2024_
+_17 gennaio 2025_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg) - Aggiunta dell&#39;estensione compatibile con HIPAA a [!DNL Data Connection] per consentire ai commercianti di condividere [!DNL Commerce] dati di eventi back office con Experience Platform e mantenere la conformità HIPAA.
+![Nuovo](../assets/new.svg) - Aggiunta dell&#39;estensione [compatibile con HIPAA](hipaa-readiness.md) a [!DNL Data Connection] in modo che i commercianti possano condividere con Experience Platform i dati di [!DNL Commerce] eventi di back office e mantenere la conformità HIPAA.
 ![Correzione](../assets/fix.svg) - È stato risolto un problema a causa del quale l&#39;estensione [!DNL Data Connection] sovrascriveva i dati di `eventForwarding` e impostava il flag `HIPAA` per tutti i clienti. Ora l’estensione imposta solo il flag per i clienti HIPAA.
 
 ## 3.2.0
@@ -138,7 +138,7 @@ _4 aprile 2024_
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per PHP 8.3 per tutte le estensioni [!DNL Data Connection].
-![Nuovo](../assets/new.svg) - Aggiunto articolo su come [integrare](mobile-sdk-epc.md) l&#39;SDK di Adobe Experience Platform Mobile con Commerce.
+![Nuovo](../assets/new.svg) - È stato aggiunto un articolo su come [integrare](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK con Commerce.
 
 ## 3.2.0-beta2
 
@@ -214,7 +214,7 @@ _17 gennaio 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) - È stata aggiornata l&#39;estensione [[!DNL Data Connection] Amministratore](connect-data.md) in modo da poter specificare il proprio AEP Web SDK (alloy).
+![Nuovo](../assets/new.svg) - Aggiornamento dell&#39;[[!DNL Data Connection] estensione Admin](connect-data.md) per consentire di specificare il proprio AEP Web SDK (alloy).
 ![Correzione](../assets/fix.svg) è stato modificato in utilizzando `identityMap` invece di `personID` durante l&#39;impostazione dell&#39;identità primaria per tutti i dati inviati al server Edge.
 
 ## 2.0.1.
@@ -231,7 +231,7 @@ _12 ottobre 2022_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) - Aggiunta la possibilità di specificare il proprio Web SDK AEP quando [connette](connect-data.md) la tua istanza Adobe Commerce all&#39;Experience Platform.
+![Nuovo](../assets/new.svg) - Aggiunta la possibilità di specificare il proprio SDK Web AEP quando [connette](connect-data.md) l&#39;istanza Adobe Commerce all&#39;Experience Platform.
 ![Correzione](../assets/fix.svg) - È stato aggiornato il requisito dell&#39;ambito dello stream di dati in modo che gli ID dello stream di dati debbano essere inclusi nell&#39;ambito del sito Web anziché della visualizzazione archivio.
 
 ## 1,0,0

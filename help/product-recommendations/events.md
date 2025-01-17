@@ -1,22 +1,26 @@
 ---
 title: Raccogli dati
-description: Scopri come gli eventi raccolgono i dati per i consigli di prodotto.
+description: Scopri come gli eventi raccolgono i dati per  [!DNL Product Recommendations].
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # Raccogli dati
 
-Quando installi e configuri funzionalità di Adobe Commerce basate su SaaS come [Product Recommendations](install-configure.md) o [Live Search](../live-search/install.md), i moduli distribuiscono la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dai tuoi acquirenti e alimenta i consigli sui prodotti e i risultati di [Live Search](../live-search/overview.md). Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
+Quando si installano e si configurano le funzionalità di Adobe Commerce basate su SaaS, ad esempio [[!DNL Product Recommendations]](install-configure.md) o [[!DNL Live Search]](../live-search/install.md), i moduli distribuiscono la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dagli acquirenti e potenzia [!DNL Product Recommendations]. Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
 
 >[!NOTE]
 >
->La raccolta dei dati ai fini delle raccomandazioni sui prodotti non include informazioni personali identificabili (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. Ulteriori informazioni [su](https://www.adobe.com/privacy/experience-cloud.html).
+>La raccolta dei dati ai fini di [!DNL Product Recommendations] non include informazioni personali (PII). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. Ulteriori informazioni [su](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Clienti del settore sanitario
+
+Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), i dati dell&#39;evento storefront utilizzati da [!DNL Product Recommendations] non vengono più acquisiti. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare a catturare e inviare i dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, consulta la [configurazione generale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services).
 
 ## Tipi di dati ed eventi
 
@@ -75,7 +79,7 @@ In caso di raccolta dati di input insufficiente, i seguenti tipi di consigli ese
 
 ### Eventi
 
-L&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) elenca tutti gli eventi distribuiti nella vetrina. Da tale elenco, tuttavia, è disponibile un sottoinsieme di eventi specifici per Product Recommendations. Questi eventi raccolgono dati quando gli acquirenti interagiscono con le unità di consigli sulla vetrina e alimentano le metriche utilizzate per aiutarti ad analizzare le prestazioni dei consigli.
+L&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) elenca tutti gli eventi distribuiti nella vetrina. Nell&#39;elenco è presente un sottoinsieme di eventi specifici di [!DNL Product Recommendations]. Questi eventi raccolgono dati quando gli acquirenti interagiscono con le unità di consigli sulla vetrina e alimentano le metriche per analizzare le prestazioni dei consigli.
 
 | Evento | Descrizione |
 | --- | --- |
