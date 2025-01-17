@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Live Search]
 description: Informazioni aggiornate sulla versione di  [!DNL Live Search]  da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _13 novembre 2023_
 ### Aggiornamenti
 
 ![Correzione](../assets/fix.svg) Il widget PLP [!DNL Live Search] è ora abilitato per impostazione predefinita per le nuove installazioni.
+![Correzione](../assets/fix.svg) La scheda di ricerca è obsoleta. In futuro, l&#39;adattatore di ricerca verrà aggiornato solo per risolvere i problemi di sicurezza.
 ![Correggi](../assets/fix.svg) Stili CSS riconfigurati per isolare meglio le classi widget.
 ![Correzione](../assets/fix.svg) correzioni di bug minori
 
