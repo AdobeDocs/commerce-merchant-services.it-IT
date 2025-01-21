@@ -2,7 +2,7 @@
 title: Gestisci facet
 description: Scopri come gestire i  [!DNL Live Search]  facet esistenti.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ Consulta [Impostazioni](settings.md) per configurare intervalli e raggruppamenti
 
 1. Nella colonna **Valore massimo** impostare il numero massimo (da 0 a 10) di valori di filtro facet da visualizzare nella vetrina.
 1. Al termine, fare clic su **Salva**.
-Le modifiche verranno visualizzate nella vetrina solo dopo la loro pubblicazione.
+
+   Le modifiche verranno visualizzate nella vetrina solo dopo la loro pubblicazione.
 
 ## Faccetta pin/spin
 
 Il pin cambia colore quando si fa clic e viene utilizzato per spostare il facet nella sezione *Facet bloccati* o *Facet dinamici*.
 
 1. Per aggiungere un facet all&#39;inizio dell&#39;elenco *Filtri*, individuarlo nell&#39;elenco *Facet dinamici* e fare clic sul pin grigio (![Selettore pin](assets/btn-pin-gray.png)).
-Il pin diventa blu e il facet si sposta nella sezione *Facet bloccati*.
+
+   Il pin diventa blu e il facet si sposta nella sezione *Facet bloccati*.
+
 1. Per sbloccare un facet, individuarlo nell&#39;elenco *Facet bloccati* e fare clic sul pin blu (![Selettore pin](assets/btn-pin-blue.png)).
-Il pin diventa grigio e il facet si sposta nella sezione *Facet dinamici*.
+
+   Il pin diventa grigio e il facet si sposta nella sezione *Facet dinamici*.
 
    ![Facet bloccati e dinamici](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ L&#39;ordine delle sfaccettature fissate può essere modificato spostando la rig
 
 1. Trova il facet nella sezione *Facet bloccati* dell&#39;elenco.
 1. Utilizza l&#39;icona **Sposta** (![Sposta selettore](assets/btn-move.png)) per trascinare la riga in una nuova posizione nella sezione *Facet bloccati*.
-Dopo la pubblicazione delle modifiche, i facet riordinati vengono visualizzati nell&#39;elenco *Filtri* della vetrina.
+
+   Dopo la pubblicazione delle modifiche, i facet riordinati vengono visualizzati nell&#39;elenco *Filtri* della vetrina.
 
 ## Elimina facet
 
