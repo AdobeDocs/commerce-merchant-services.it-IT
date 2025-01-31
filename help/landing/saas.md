@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Tutti i commercianti di Adobe Commerce possono accedere a uno spazio di dati di 
 
 È possibile utilizzare gli spazi di dati di test in qualsiasi ambiente non di produzione, purché non si utilizzi lo stesso spazio di dati in più ambienti contemporaneamente. Per utilizzare lo spazio dati di test in un ambiente diverso, eseguire una pulizia dei dati prima di selezionare e configurare lo spazio dati in tale ambiente.
 
-Per i progetti Adobe Commerce Cloud Pro con più ambienti di gestione temporanea, è possibile richiedere spazi dati di test aggiuntivi per ogni ambiente di gestione temporanea [inviando una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Tuttavia, se disponi di un solo ambiente di staging e richiedi spazi di dati di test aggiuntivi, disponi delle seguenti opzioni:
-- Contatta il team Customer Success o il Customer Success Manager designato per richiedere un ulteriore ambiente di staging. Ciò comporta un costo aggiuntivo.
-- [Inviare una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) per un ulteriore spazio dati di test e indicare la giustificazione aziendale per lo spazio dati aggiuntivo. Questa richiesta è soggetta ad approvazione.
+Per i progetti Adobe Commerce Cloud Pro con più ambienti di gestione temporanea, è possibile richiedere spazi dati di test aggiuntivi per ogni ambiente di gestione temporanea [inviando una richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support). Tuttavia, se disponi di un solo ambiente di staging e richiedi spazi di dati di test aggiuntivi, disponi delle seguenti opzioni:
+- Contatta il team Customer Success o il Customer Success Manager designato per richiedere un ulteriore ambiente di staging.
+- [Inviare una richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support) per richiedere spazio dati di test aggiuntivo e indicare la giustificazione aziendale per lo spazio dati aggiuntivo. Questa richiesta è soggetta ad approvazione.
+
+I clienti del Magento Open Source che utilizzano Adobe Payment Services possono richiedere anche uno spazio di dati aggiuntivo. Contatta il team dei pagamenti per ottenere l&#39;approvazione preventiva degli spazi di dati aggiuntivi prima di inviare una [richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support) per richiedere lo spazio di dati di prova.
 
 ### Selezionare o creare un progetto SaaS {#createsaasenv}
 
