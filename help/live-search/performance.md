@@ -2,9 +2,9 @@
 title: Prestazioni
 description: L'area di lavoro Prestazioni  [!DNL Live Search]  fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ L&#39;area di lavoro *Performance* fornisce informazioni approfondite sui termin
 
 Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
+>[!NOTE]
+>
+>L’area di lavoro delle prestazioni viene aggiornata ogni 12 ore.
+
 ## Visualizzare un rapporto
 
 1. Per immettere l&#39;**intervallo di date**, fare clic sul calendario (![Calendario](assets/btn-calendar.png)) ed eseguire una delle operazioni seguenti:
@@ -30,7 +34,7 @@ Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile
 
 >[!NOTE]
 >
->L’area di lavoro delle prestazioni viene aggiornata ogni 12 ore.
+>L’intervallo di date non può superare un anno.
 
 ## Descrizioni dei campi
 

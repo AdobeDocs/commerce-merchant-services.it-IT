@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Live Search]
 description: Informazioni aggiornate sulla versione di  [!DNL Live Search]  da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Gli aggiornamenti includono:
 ## Aggiornamenti dei servizi in hosting
 
 Queste note descrivono gli aggiornamenti pubblicati al di fuori di una versione con versione o i miglioramenti al servizio ospitato.
+
+_31 gennaio 2025_
+
+![Nuovo](../assets/new.svg) Nell&#39;ambiente di test è presente un nuovo criterio di conservazione dei dati per i dati del catalogo non interrogati. [Ulteriori informazioni](overview.md#catalog-data-retention-policy).
 
 _19 settembre 2024_
 
