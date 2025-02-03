@@ -4,9 +4,9 @@ description: Scopri come integrare la tua istanza di Adobe Commerce o di Magento
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL 
 
 1. Dal menu _Ambiente_, seleziona **Produzione** o **Sandbox**.
 
+   >[!NOTE]
+   >
+   >*Produzione* e *Sandbox* fanno riferimento agli ambienti di spazio dati in cui i dati vengono archiviati nei sistemi back-end Adobe SaaS. Non fa riferimento agli ambienti commerce in cui utilizzerai le chiavi.
+
 1. Immetti un nome nella sezione _Chiavi API_ e fai clic su **Aggiungi nuovo** per aprire la finestra di dialogo e scaricare la nuova chiave.
 
    ![Scarica chiave privata](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Inoltre, gli integratori di soluzioni sono anche autorizzati a utilizzare [!DNL 
 
 1. Ripeti i passaggi precedenti per ogni ambiente (produzione e sandbox).
 
-   Nella sezione **Chiavi API** sono ora visualizzate le chiavi API (pubbliche). Sono necessarie tutte e quattro le chiavi (sia quelle di produzione che quelle di sandbox, Public+Private) quando si [seleziona o si crea un progetto SaaS](#createsaasenv) in uno qualsiasi degli ambienti/installazioni associati alla licenza.
+   Nella sezione **Chiavi API** sono ora visualizzate le chiavi API (pubbliche). Sono necessarie tutte e quattro le chiavi (sia quelle di produzione che quelle di sandbox, Public+Private) quando si [seleziona o si crea un progetto SaaS](#createsaasenv) in uno qualsiasi degli ambienti o delle installazioni associati alla licenza.
 
 ## Configurazione SaaS {#saasenv}
 
