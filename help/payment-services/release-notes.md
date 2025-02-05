@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _28 giugno 2021_
 
 +++
 
+## v2.10.1
+
+_5 febbraio 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg)<!-- PAY-5813 --> aggiunto supporto per Adobe Commerce 2.4.8 e PHP 8.4.
+
 ## v2.10.0
 
 _13 dicembre 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ora supporta gli endpoint GraphQL per il vaulting senza acquisto, consentendo ai clienti di salvare i metodi di pagamento senza completare una transazione.
+![Nuovo](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] ora supporta un [[!DNL Payment Services] componente di eliminazione](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) nella vetrina [Edge Delivery Services per Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![Nuovo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ora supporta [endpoint GraphQL per il vaulting senza acquisto](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), consentendo ai clienti di salvare i metodi di pagamento senza completare una transazione.
 
 ![Nuovo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ora supporta [l&#39;autenticazione protetta 3D con Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), migliorando la sicurezza per gli esercenti e i clienti durante le transazioni di pagamento.
 
