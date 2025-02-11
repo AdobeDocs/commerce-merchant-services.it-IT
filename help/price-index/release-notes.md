@@ -5,9 +5,9 @@ feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
-source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
+## Versione 1.0.9
+
+![Correzione](../assets/fix.svg) Aggiunta compatibilità per PHP 8.4. <!--MDEE-941-->
+
 ## Versione 1.0.8
 
-![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore nel registro eccezioni durante l&#39;aggiunta di varianti di prodotti configurabili con SKU numeriche alla lista dei desideri. &lt;!-MDEE-876—>
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore nel registro eccezioni durante l&#39;aggiunta di varianti di prodotti configurabili con SKU numeriche alla lista dei desideri. <!--MDEE-876-->
