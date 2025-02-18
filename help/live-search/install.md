@@ -3,9 +3,9 @@ title: Introduzione a  [!DNL Live Search]
 description: Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ A un livello avanzato, l&#39;onboarding di [!DNL Live Search] richiede:
 
    >[!IMPORTANT]
    >
-   >A causa dell’annuncio di fine del supporto di Elasticsearch 7 relativo ad agosto 2023, si consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante un aggiornamento del prodotto, vedere [Migrazione a OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) nella _Guida all&#39;aggiornamento_.
+   >A causa dell’annuncio sulla fine del supporto di Elasticsearch 7 relativo ad agosto 2023, si consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante un aggiornamento del prodotto, vedere [Migrazione a OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) nella _Guida all&#39;aggiornamento_.
 
 1. Scarica il pacchetto `live-search` da [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
 
@@ -227,7 +227,7 @@ Per verificare se i dati del catalogo sono stati esportati da Adobe Commerce e s
   >
   >Se si verifica un errore `table does not exist`, cercare le voci nelle tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_attributes`. Questi nomi di tabella vengono utilizzati in [!DNL Live Search] versioni precedenti alla 4.2.1.
 
-- Utilizza il [parco giochi GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) con la query predefinita per verificare quanto segue:
+- Utilizza il [parco giochi GraphQL](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) con la query predefinita (consulta [riferimento GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) per ulteriori dettagli) per verificare quanto segue:
 
    - Il conteggio dei prodotti restituito si avvicina a quello previsto per la visualizzazione Store.
    - Vengono restituiti i facet.
@@ -250,7 +250,7 @@ Se la versione di [!DNL Live Search] è precedente alla 4.0.0+, è necessario ab
 
    ![Abilita widget elenco prodotti](assets/ls-admin-enable-widget.png)
 
-Quando si modifica questa configurazione, viene visualizzato il messaggio `Page cache is invalidated`. Per salvare le modifiche, è necessario svuotare la cache del Magento.
+Quando si modifica questa configurazione, viene visualizzato il messaggio `Page cache is invalidated`. Per salvare le modifiche, è necessario svuotare la cache di Magento.
 
 1. Accedere alla pagina [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) effettuando una delle operazioni seguenti:
 
@@ -402,7 +402,7 @@ Se hai un&#39;implementazione headless personalizzata, vedi le [!DNL Live Search
 - [widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-La raccolta automatica dei dati di interazione dell’utente non funziona per impostazione predefinita quando non si utilizzano i componenti standard come l’adattatore di ricerca, i widget Luma o i widget CIF AEM. Adobe Sensei utilizza i dati raccolti per il merchandising intelligente e il tracciamento delle prestazioni. Per risolvere questo problema, devi sviluppare una soluzione personalizzata per implementare questa raccolta dati in modo headless.
+La raccolta automatica dei dati di interazione dell’utente non funziona per impostazione predefinita quando non si utilizzano i componenti standard come Search Adapter, widget Luma o widget CIF di AEM. Adobe Sensei utilizza i dati raccolti per il merchandising intelligente e il tracciamento delle prestazioni. Per risolvere questo problema, devi sviluppare una soluzione personalizzata per implementare questa raccolta dati in modo headless.
 
 La versione più recente di [!DNL Live Search] utilizza già [!DNL Catalog Service].
 
@@ -510,9 +510,9 @@ Questo modulo aggiunge contesti aggiuntivi alle query GraphQL:
 
 [!DNL Live Search] funziona con PWA Studio, ma gli utenti potrebbero vedere lievi differenze rispetto ad altre implementazioni di Commerce. Le funzionalità di base, come la ricerca e la pagina di elenco dei prodotti, funzionano in Venia, ma alcune permutazioni di Graphql potrebbero non funzionare correttamente. Potrebbero esserci anche differenze di prestazioni.
 
-- L&#39;attuale implementazione di PWA di [!DNL Live Search] richiede più tempo di elaborazione per restituire i risultati della ricerca rispetto a [!DNL Live Search] con la vetrina nativa di Commerce.
-- [!DNL Live Search] in PWA non supporta [gestione eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Di conseguenza, la generazione di rapporti di ricerca e il merchandising intelligente non funzionano sui PWA storefront.
-- Quando si utilizza [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/), GraphQL non supporta il filtro diretto per `description`, `name`, `short_description`, ma questi campi possono essere restituiti con un filtro più generale.
+- L&#39;implementazione PWA corrente di [!DNL Live Search] richiede più tempo di elaborazione per restituire i risultati della ricerca rispetto a [!DNL Live Search] con la vetrina nativa di Commerce.
+- [!DNL Live Search] in PWA non supporta [gestione eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Di conseguenza, la generazione di rapporti di ricerca e il merchandising intelligente non funzionano sui punti vendita di PWA.
+- Quando si utilizza [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), GraphQL non supporta il filtraggio diretto su `description`, `name`, `short_description`, ma questi campi possono essere restituiti con un filtro più generale.
 
 Per utilizzare [!DNL Live Search] con PWA Studio, gli integratori devono anche:
 
