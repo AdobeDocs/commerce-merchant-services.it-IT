@@ -2,8 +2,10 @@
 title: '[!DNL Composable Catalog Data Model]'
 description: Scopri in che modo  [!DNL Composable Catalog Data Model] for Adobe Commerce ti consente di configurare il catalogo per adattarlo al tuo modello di business e alla tua strategia di commercializzazione
 hidefromtoc: true
+hide: true
 recommendations: noCatalog
-source-git-commit: 0c90180e571faa2e41508efd697e043a050d480e
+exl-id: c743c020-0f32-4e23-9ea8-9cc992784613
+source-git-commit: 28a0743231c64b10844007db1a86e3448bae46c2
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 0%
